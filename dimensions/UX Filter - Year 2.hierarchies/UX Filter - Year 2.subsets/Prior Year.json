@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Prior Year",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('UX Filter - Year 2')/Hierarchies('UX Filter - Year 2')/Elements('2019')"
+		}
+	]
+}

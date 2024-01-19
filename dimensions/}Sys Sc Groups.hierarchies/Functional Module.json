@@ -1,0 +1,69 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Functional Module",
+	"Elements":
+	[
+		{
+			"Name":"ALL Functional Module Groups",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Func - Sales Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Workforce Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Sales Reporting",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - GL Reporting",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Workforce Reporting",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Admin Planning",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Functional Module Groups",
+			"ComponentName":"Func - Sales Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Functional Module Groups",
+			"ComponentName":"Func - Workforce Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Functional Module Groups",
+			"ComponentName":"Func - Sales Reporting",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Functional Module Groups",
+			"ComponentName":"Func - GL Reporting",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Functional Module Groups",
+			"ComponentName":"Func - Workforce Reporting",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Functional Module Groups",
+			"ComponentName":"Func - Admin Planning",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

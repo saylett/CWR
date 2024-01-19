@@ -1,0 +1,23 @@
+{
+	"@type":"Hierarchy",
+	"Name":"GL Reporting Measure",
+	"Elements":
+	[
+		{
+			"Name":"Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"String",
+			"Type":"String"
+		},
+		{
+			"Name":"Comment",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"GL Reporting Measure.subsets/}Export.All.json"
+	]
+}

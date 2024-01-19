@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Staffing Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Staffing Measure')/Hierarchies('Staffing Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Staffing Measure.hierarchies/Staffing Measure.json"
+	]
+}

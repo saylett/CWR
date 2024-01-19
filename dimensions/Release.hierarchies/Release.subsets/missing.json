@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"missing",
+	"Expression":"{FILTER({TM1FILTERBYLEVEL( {TM1SUBSETALL( [Release] )}, 0)}, [Release].[artists] = \"\")}"
+}

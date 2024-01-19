@@ -1,0 +1,69 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+cDim = 'Employee';
+cHier = 'Last Name';
+cHier_Node = 'All Last Names';
+
+cProcessName = GetProcessName;
+
+If( HierarchyExists( cDim, cHier ) = 1 );
+  HierarchyDestroy( cDim, cHier );
+EndIf;
+HierarchyCreate( cDim, cHier );
+HierarchyElementInsert( cDim, cHier, '', cHier_Node, 'C');
+
+sNode = 'All Planning Employees';
+sMDX = '{TM1FilterByLevel({Descendants({[' | cDim | '].[' | sNode | ']})}, 0)}';
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( cDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+SubsetCreatebyMDX( sSub, sMDX, cDim, 1 );
+nElem = SubsetGetSize( cDim, sSub );
+sElem_Last = SubsetGetElementName( cDim, sSub, nElem );
+SubsetElementDelete( cDim, sSub, nElem );
+SubsetElementInsert( cDim, sSub, sElem_Last, nElem );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = SubsetGetElementName( cDim, sSub, nCnt );
+  sAttr = AttrS( cDim, sElem, 'Last Name');
+  If( sAttr @= '' );
+    sLastName = 'NA Last Name';
+  Else;
+    sLastName = SubSt( sAttr, 1, 1 ) | '...';
+  EndIf;
+  If( HierarchyElementExists( cDim, cHier, sLastName) = 0 );
+    HierarchyElementInsert( cDim, cHier, '', sLastName, 'C' );
+    HierarchyElementComponentAdd( cDim, cHier, cHier_Node, sLastName, 1 );
+  EndIf;
+  HierarchyElementInsert( cDim, cHier, '', sElem, 'N' );
+  HierarchyElementComponentAdd( cDim, cHier, sLastName, sElem, 1 );
+  nCnt = nCnt + 1;
+End;
+
+HierarchySortOrder(cDim, cHier, 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+
+sMDX = '{{[' | cDim | '].[' | cHier | '].[' | cHier_Node | ']},{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}}';
+SubsetCreatebyMDX( 'Default', sMDX, cDim | ':' | cHier  );
+
+sMDX = '{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}';
+SubsetCreatebyMDX( 'Default no Total', sMDX, cDim | ':' | cHier  );
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

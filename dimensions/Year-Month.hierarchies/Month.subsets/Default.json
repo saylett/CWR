@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{DRILLDOWNMEMBER({DRILLUPMEMBER({[Year-Month].[Month].Members}, {[Year-Month].[Month].[All Months]})}, {[Year-Month].[Month].[All Months]})}"
+}

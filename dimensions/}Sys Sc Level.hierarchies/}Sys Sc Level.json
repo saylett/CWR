@@ -1,0 +1,41 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Sc Level",
+	"Elements":
+	[
+		{
+			"Name":"0",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"1",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"3",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"4",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"5",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Sc Level.subsets/Picklist - Application Security.json",
+		"}Sys Sc Level.subsets/Picklist - Chore Security.json",
+		"}Sys Sc Level.subsets/Picklist - Cube Security.json",
+		"}Sys Sc Level.subsets/Picklist - Dimension Security.json",
+		"}Sys Sc Level.subsets/Picklist - Element Security.json",
+		"}Sys Sc Level.subsets/Picklist - Process Security.json",
+		"}Sys Sc Level.subsets/}Export.All.json"
+	]
+}

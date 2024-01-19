@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Genres",
+	"Expression":"{[Release Planning].[Release Planning].[Genre].CHILDREN}"
+}

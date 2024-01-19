@@ -1,0 +1,91 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Object Type",
+	"Elements":
+	[
+		{
+			"Name":"ALL Object Types",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Application",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dimension",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Process",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rule",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Subset",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"View",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"Application",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"Chore",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"Cube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"Dimension",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"Process",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"Rule",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"Subset",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Object Types",
+			"ComponentName":"View",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Object Type.subsets/Default.json",
+		"}Sys Object Type.subsets/}Export.All.json"
+	]
+}

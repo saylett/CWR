@@ -1,0 +1,21 @@
+{
+	"@type":"Process",
+	"Name":"ab",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"ab.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pMessage",
+			"Prompt":"",
+			"Value":"OK",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

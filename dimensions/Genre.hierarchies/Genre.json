@@ -1,0 +1,173 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Genre",
+	"Elements":
+	[
+		{
+			"Name":"All Genres",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Funk Soul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jazz",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Latin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Electronic",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Reggae",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Non-Music",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Classical",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stage Screen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Folk",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hip Hop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"No Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Childrens",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Blues",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Brass Military",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Folk World Country",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Blues",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Brass Military",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Childrens",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Classical",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Electronic",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Folk",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Folk World Country",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Funk Soul",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Hip Hop",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Jazz",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Latin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Pop",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Reggae",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Rock",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Stage Screen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"Non-Music",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Genres",
+			"ComponentName":"No Genre",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Genre.subsets/Default.json",
+		"Genre.subsets/Leaf Level Genre.json",
+		"Genre.subsets/}Export.All.json"
+	]
+}

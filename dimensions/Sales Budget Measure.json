@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Sales Budget Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Sales Budget Measure.hierarchies/Sales Budget Measure.json"
+	]
+}

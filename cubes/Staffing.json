@@ -1,0 +1,29 @@
+{
+	"@type":"Cube",
+	"Name":"Staffing",
+	"Rules@Code.link":"Staffing.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Employee')"
+		},
+		{
+			"@id":"Dimensions('Staffing Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Staffing.views/FTE.json",
+		"Staffing.views/hours forecast.json",
+		"Staffing.views/temp.json"
+	]
+}

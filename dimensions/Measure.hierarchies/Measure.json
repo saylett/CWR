@@ -1,0 +1,19 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Measure",
+	"Elements":
+	[
+		{
+			"Name":"Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Comment",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Measure.subsets/}Export.All.json"
+	]
+}

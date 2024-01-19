@@ -1,0 +1,58 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Funk Soul')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Jazz')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Latin')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Electronic')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Rock')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Pop')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Reggae')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Non-Music')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Classical')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Stage Screen')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Folk')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Hip Hop')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('No Genre')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Childrens')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Blues')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Brass Military')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Folk World Country')"
+		}
+	]
+}

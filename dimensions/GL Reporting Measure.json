@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"GL Reporting Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('GL Reporting Measure')/Hierarchies('GL Reporting Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"GL Reporting Measure.hierarchies/GL Reporting Measure.json"
+	]
+}

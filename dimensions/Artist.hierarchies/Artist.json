@@ -1,0 +1,6211 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Artist",
+	"Elements":
+	[
+		{
+			"Name":"All Artists",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"ABBA",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Acker Bilk",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aishat Mohammed",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Alan Sorrenti",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Albert Macon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aleke Kanonu",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Alexander's Discotime Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Al Foster",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Al Green",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Al Hirt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Al Jackson Nakwe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allan Caswell",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Alphonse Mouzon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Alphonse Mouzon Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Al Stricklin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Amadeo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Amanda Lear",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ambros Seelos",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aretha Franklin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Arlo Guthrie",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Armando Sciascia Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Armando Trovaioli",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Arni Egilsson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Art Webb",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aseptic White Age",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Astrud Gilberto",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ataklan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Atmosfear",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aurora Bora",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aylin Urgal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Azteca",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Baccara",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Baciotti",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bad News Travels Fast",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bar-Kays",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Barrabas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Barry White",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bebu Silvetti",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bee Gees",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Belinda Bell",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ben Bagby",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Benjamin Ball",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Benny Golson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Biddu Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Big-Band De Faverges",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Big Bill Broonzy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Big Joe Williams",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Big John Oaikhena",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bill And Bonnie Hearne",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bill Bourne",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bill Oliver",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bill Preston Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Billy Vaughn",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Black Light Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Blue Mitchell",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bobbi Humphrey",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bobby Broom",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bobby Lyle",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bob Roy Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Boney M.",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bongos Ikwue",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Boo And The Tru Tones",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Boots Randolph",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Botticelli And His Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Brother Mudada",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Brother Resistance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Brownie McGhee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Buddy Greco",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Buddy Guy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Buddy Rich",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bukka White",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bunny Mack",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bunny Sigler",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bunny Wailer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bus Connection",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Butch E. Ford",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Byron Lee And The Dragonaires",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cabo Verde Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"California Smoker",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Calypso Rose",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Camil Petrescu",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Campur DKI",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Caravelli",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Caress (4)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Carlos Franzetti",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Carlos Garnett",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Carlos Sakyi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Carl Smith And The Natural Gas Company",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Carol Douglas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Caroline Peyton",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Celia Gladys",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cerrone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chanter Sisters",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Charles Adolphe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Charles Earland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Charles Earland And Odyssey",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Charlies Roots",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chevy Chase",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chic",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chikara Ueda",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chocolat's",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chukwuma Ejelonu",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cindy Hurt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Circle",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"City Soul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Claire Lawrence",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Clancy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Clarence Gatemouth Brown",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Claudja Barry",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cliff Bruner's Texas Wanderers",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Climax Blues Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Clive Stevens",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Conny Wagner Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cornell Dupree",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cosme Adrover",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cy Coleman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Czechoslovak Radio Dance Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dadadi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Daddy Hotcakes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Daddy Mory",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Daly-Wilson Big Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dana (9)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Danagog",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dancin' Drums",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dan Hill",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Daniel Lopez Orkester",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dave Valentin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dave Van Ronk",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"David Benoit",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"David Bromberg",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"David Fathead Newman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Debra Laws",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dee Dee Bridgewater",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"De La Polyvalente Hyacinthe-Delorme",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dennis Brown",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dennis Buck",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Denroy Morgan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Derrick Harriott",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dino Solera",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dock Boggs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Doc Severinsen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Doctor Rhythm",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Doctor Ross",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Domenic Troiano",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Donald Byrd",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Don Blackman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Don Ellis And Survival",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Donna Summer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Don Pancho",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dr. Adolf Ahanotu",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dream Express",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dumpty Cooper Group",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Earnock High School",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eberhard Schoener",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eddie And The Movements",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eddie Palmieri",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eddie Russ",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eddy Arsenault",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eden Rose",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ed Watson And The Brass Circle",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Edwin Hubbard",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eji Oyewole",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"El Chicano",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eli's Second Coming",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elvin Stones",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elwyn McQuilken",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Enchantment",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ernest Ranglin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ernie Watts",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Esther Phillips",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ethel Merman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eugene Chadbourne",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eumir Deodato",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Evelyn King",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Fat Larry's Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"FdA-Productions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"First Choice",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"First Planet",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Flora Molton And The Truth Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Fourteen Octaves",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Francis Guillon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Franco Bertagnini",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Frank Hatchett",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Frank Sinatra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Freddie Hubbard",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Furry Lewis",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"G. Obinna Azubuike",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gabor Szabo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gap Mangione",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Garrett Morris",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gary Moore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gato Barbieri",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gavin Christopher",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gay Desperadoes Steel Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"George Benson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"George Howard",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"George Martin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"George Saxon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Georges Happy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Geraldo Pino",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gerry Lockran",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gian Piero Reverberi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gibson Brothers",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gilla",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gilles Sala",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gil Ventura",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Giovanni Fenati",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Giovanni Fenati E La Sua Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Giovanni Unterberger",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gloria Schneider",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gordon Henderson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Grace Ekpeyong",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gregory James Edition",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Grover Washington",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gustav Brom Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hammatan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hank Crawford",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hanna Banaszak",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Harris Chalkitis",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Harry Mosco",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Harvey Mason",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Helmut Zacharias",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Henghel Gualdi E La Sua Big Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Henry Mancini",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Henry Mancini And His Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Henry Townsend",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Herb Alpert",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Herbie Mann",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Heuer & Westphal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hizuru",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hodges",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Holde Fee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Holly Near",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Honey Machine",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Horst Jankowski Und Sein RIAS Tanzorchester",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hot Blood",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hot Ice",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hot Property",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Houston Person",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hozan Yamamoto",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hubert Laws",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hugo Strasser Und Sein Tanzorchester",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hugues Onestas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"I.S.C.A.C. Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ian Gillan Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Idris Muhammad",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Inga Sulin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ingemar Olsson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Inner Circle",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Intercity Sound Association",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Irakere",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Irwin The Disco Duck",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Isaac Hayes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Iyke Peters",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"J.A.L.N. Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"J. L. Moraleda Y Su Combo Pop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jackie Mclean",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jacques Morali",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jadwiga Strzelecka",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"James Last",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"James Lloyd",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"James Son Thomas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"James Talley",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jan Delay",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jean-Claude Borelly",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jean-Claude Pelletier",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jean-Claude Pelletier Et Son Orchestre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jean-Claude Petit Et Son Orchestre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jean Derome",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jean Michel De France",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jeff Tyzik",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jennifer (6)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jenny Ano",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jermaine Jackson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jerry Allen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jim Horn",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jimmy McGriff",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jiro Inagaki",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Joe Beck",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Joe Dolan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Joe Farrell",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Joe Thomas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Cephas & Phil Wiggins",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Coltrane",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Henry Barbee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Jackson (4)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Kaizan Neptune",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Lee Hooker",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Lennon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Johnny Martinez",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Johnny Shines / Blind Will Dukes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Paul Hammond",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Tinsley",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Tropea",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"John Valenti",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jorma Kaukonen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jose Mangual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Josh Williams (10)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Juan Carlos Calderón",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Judi Sheppard Missett",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Judy Fjell",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Juhani Korjus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jun Fukamachi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Junko Ohashi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kalapana",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kalyan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kay Ishiguro",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kellee Patterson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kenichi Sawa",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kiki Gyan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kim Gutman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kim Trio",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"King Henry",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"King Short Shirt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"King Sporty",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kio Amachree",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kirth Morrison",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"KP's Sunshine Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kurtis Blow",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kwame Heshimu",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"La Banda",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lagos State Christian Corpers Fellowship Music Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lalo Schifrin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lancelot Layne",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lance Lumsden",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Larry Elgart And His Hooked On Swing Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Larry Harlow",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Larry Young",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lars Samuelson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lasse Wellander",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Leadbelly",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lee Chul Hyuk",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Leeloojamais",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Le Grand Orchestre Du Splendid",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lenny White",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Leon Huff",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Leon Ndugu Chancler",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Leo Sayer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Leroy Vohn",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Les Beatniks",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Les McCann",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lex De Azevedo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Liberty Belle",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lightnin' Hopkins",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Linda Herre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lionel Hampton",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lipstique (2)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lisa Dal Bello",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Little Beaver",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Liza Minnelli",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lloyd Lovindeer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lonnie Hoppers",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lonnie Liston Smith",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lonnie Liston Smith And The Cosmic Echoes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lonnie Smith",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lonnie Youngblood",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lou Donaldson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Louie Bluie",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Louie Ramirez",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Louie Ramirez Y Sus Amigos",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lou Perez",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Love & Kisses",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lucifer's Friend",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Luther Henderson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"M.B.T. Soul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Machiko Watanabe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mahagon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Maitre Mathurin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mandingo Brass",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mandré",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Manhattans",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mansa Musa",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Manuel Combo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Marcel Bianchi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Marc Jordan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Maria Asahina",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Marijan Smode",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mario Brancaleoni",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mario Lehner",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Markku Suominen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Marshall Hain",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Martee Lebous",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Martha Velez",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Marvin Holmes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mary Afi Usuah",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Masaki Matsubara",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Masutatsu Oyama",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Matti Caspi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Matt Walsh Blues Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Max Greger",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Maxwell Udoh",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Maye Cavallaro",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mayflower Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Maynard Ferguson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"MDGA",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Meco Monardo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mel Brooks",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Memphis Jug Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Merchant",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"MFSB",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Miatta Fahinbulleh",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Michael Pedicin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Michael Tschudin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Michel Colombier",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Michiru Akiyoshi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mighty Duke",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mighty Sparrow",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mike Curb Congregation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mike Makhalemele",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mike Melvoin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Miki Satoh",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Millie Jackson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Milton Di Sao Paulo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Minoru Muraoka and New Dimension Group",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mississippi John Hurt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Miss Misty",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mixed Grill",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Moe Koffman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mojo Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Monk Higgins",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Montreal Sound (2)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Morrissey Mullen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mose Allison",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Munich Machine",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Musical Youth",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Music From Free Creek",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nana McLean",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Negro Abba",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Neil Larsen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nel Oliver",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"NG La Banda",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nick Ingman Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nightair",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nobu Saito",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nordisle Bois Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Norio Maeda",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Obianwu Family",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Odeurs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Odyssey (2)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Off Course",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oki Martins",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oleta Adams",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oliver Sain",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orchester Joachim Kurzweg",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orchester Kookie Freeman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orchester Peter Thomas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orchester Werner Twardy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orchestra Gian Piero Reverberi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orchestra Piero Soffici",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orchestre Jack Hammer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oriental Mechanic Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orkest Koos Mark",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Orquesta Dimitri Papadopoulos",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oscar Rocchi",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Otis Spann",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Paco Ros",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pape Seye",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Parisdam",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pat Biodun Fagbuaro",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pat Lundy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pattie Brooks",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Paul Cacia Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Paul Chutzie",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Paul Hurlock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Paul Jabara",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pelham Goddard",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Penny McLean",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Per-Erik Hallin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Perry Rosewood",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Perucho Conde",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pete Baja",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Peter Allen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Peter Brown (2)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Peter Himmelstrand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Peter Nero",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Phil Keaggy Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Piero Piccioni",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pigbag",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pink Anderson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"R.L. Burnside",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rafael José",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rajans",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ramsey Lewis",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Randy Irwin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rashani",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Raul De Souza",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Raul Porchetto",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ray Barretto",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Raúl Gómez",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Red-Key",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Red Redford Sound System One",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Reflexband",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Remi Kabaka",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Renzo Arbore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Revelacion",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rhythm Heritage",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rice And Beans Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Richard Hieronymus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Richie Snyder",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rick Dees & His Cast Of Idiots",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rinder & Lewis",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Robbie Rox",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Roberta Kelly",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Roberta Vandervort",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Roberto Delgado",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Robert Pete Williams",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Robin Kenyatta",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rock Ensemble",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rock Town Express",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rock Workshop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rod McKuen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Roland Bautista",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rolando Faria",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rolf Kühn",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ronnie Laws",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Roots Foundation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rosebud",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ruben Blades",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Saint Tropez",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Samantha Rose",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Samba Soul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sam Chatmon And His Barbeque Boys",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Santa Esmeralda",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Savas Christodoulou",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Scarlet Rivera",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Seawind",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Seppo Rannikko",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Shalamar",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sheila Hylton",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Shin Joong Hyun",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Shirley Bassey",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Showdown (3)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Silver Convention",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sine (3)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Singing Francine",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sippie Wallace",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sir Nature Alexander",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Skeets McDonald",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Son House",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sonny Okosun",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sonny Rollins",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sonny Terry",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sonny Terry & Brownie McGhee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Soundorchester Roy Etzel",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Southern Contemporary Rock Assembly",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Spade Cooley",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Special Jam Company",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Speed Limit (4)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Spiritual Souls",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Squish",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stani Labonia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stanley Clarke",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stanley Edet (Jr)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stanley Turrentine",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Steely Dan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stefan Grossman",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stelvio Cipriani",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sterling Harrison",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Steve Swindells",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Strawberry Shortcake",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sugarhill Gang",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Summits",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Supermax",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Super Morris",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Surprise Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sweet Fussion",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sweet Mama",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sweet Soweto Swingsters",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Süheyl Denizci Orkestrası",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"T-Bones & The Coritz Family",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"T-Connection",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"T-Square",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Taeko Ohnuki",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Taeko Rei",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Teach-In",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Team 74",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Teddy Pendergrass",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Telly Savalas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Teresa Brewer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Teresa Carpio",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Terry Callier",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Alyn Ainsworth Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Bald Heads (2)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Bendeth Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Beta Yama Group",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Blackbyrds",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Bottom Line",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Brecker Brothers",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Crash Crew",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Crusaders",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Dutch Rhythm Steel & Showband",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Eddy Starr Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Elcados",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Emotions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Equals",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Equitables",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Fatback Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Film Studio Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Five Clarinettes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Frank Barber Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Freedom Express",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Headhunters",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The House-Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Jericos",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Larry Joseph Project",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Light Crust Doughboys",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Lost World Stringband",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Lovelets",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Love Machine",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Maytals",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Miracles",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Them Mushrooms Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Monaco Family",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Mystery Kindaichi Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Mystic Moods Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Nice Sensation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Pink Family",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Pioneers",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Pop Singers And Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Ritchie Family",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Salsa '78 Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Salsoul Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Sequence",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Sons Of Champlin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Soul Show Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Spamm Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Stony Island Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Stylistics",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Sunshine Terrace Swing Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Trammps",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"The Willie Dayson Blues Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Thijs van Leer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Third World",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"THP Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tierra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Times Square",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tina Charles",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tito Puente",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tom Browne",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tom Coster",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tom Gribbin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tommy Snyder",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tom Shaw",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Toulouse (2)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Trans Africa Show Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Travelin' On",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Trax",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Treacherous Three",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Trinidad Oil Company",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tuxedo Junction",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tyrone Evans",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Uche Ibeto",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"UK Players",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Uncle Walt's Band",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Urbie Green",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Urszula Dudziak",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Van Dango",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Van McCoy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Various",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Veno",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vesna Mimica",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vicki Sue Robinson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Village People",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vladimir Cosma",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Voyage",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vyacheslav Ganelin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Waldorf Travers",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Watsonian Institute",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Wayne Henderson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Wayne Roland Brown",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Web Women's Collective",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Wendy Alleyne",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"West Street Mob",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Wild Cherry",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"William DeVaughn",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Willie Dixon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Willie P. Bennett",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Willis Jackson",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Wing And A Prayer Fife And Drum Corps.",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Yoshihiro Naruse",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Yuko Iwasaki",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Yumi Murata",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Yumi Seino",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Yuri Nishimura",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Zakala",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Zappatta Schmidt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Zim Zemarel Orchestra",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Zoikhem",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"ABBA",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Acker Bilk",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Aishat Mohammed",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Alan Sorrenti",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Albert Macon",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Aleke Kanonu",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Alexander's Discotime Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Al Foster",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Al Green",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Al Hirt",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Al Jackson Nakwe",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Allan Caswell",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Alphonse Mouzon",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Alphonse Mouzon Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Al Stricklin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Amadeo",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Amanda Lear",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ambros Seelos",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Aretha Franklin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Arlo Guthrie",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Armando Sciascia Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Armando Trovaioli",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Arni Egilsson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Art Webb",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Aseptic White Age",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Astrud Gilberto",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ataklan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Atmosfear",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Aurora Bora",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Aylin Urgal",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Azteca",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Baccara",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Baciotti",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bad News Travels Fast",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bar-Kays",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Barrabas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Barry White",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bebu Silvetti",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bee Gees",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Belinda Bell",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ben Bagby",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Benjamin Ball",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Benny Golson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Biddu Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Big-Band De Faverges",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Big Bill Broonzy",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Big Joe Williams",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Big John Oaikhena",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bill And Bonnie Hearne",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bill Bourne",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bill Oliver",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bill Preston Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Billy Vaughn",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Black Light Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Blue Mitchell",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bobbi Humphrey",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bobby Broom",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bobby Lyle",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bob Roy Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Boney M.",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bongos Ikwue",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Boo And The Tru Tones",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Boots Randolph",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Botticelli And His Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Brother Mudada",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Brother Resistance",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Brownie McGhee",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Buddy Greco",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Buddy Guy",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Buddy Rich",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bukka White",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bunny Mack",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bunny Sigler",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bunny Wailer",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Bus Connection",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Butch E. Ford",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Byron Lee And The Dragonaires",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Cabo Verde Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"California Smoker",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Calypso Rose",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Camil Petrescu",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Campur DKI",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Caravelli",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Caress (4)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Carlos Franzetti",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Carlos Garnett",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Carlos Sakyi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Carl Smith And The Natural Gas Company",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Carol Douglas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Caroline Peyton",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Celia Gladys",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Cerrone",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Chanter Sisters",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Charles Adolphe",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Charles Earland",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Charles Earland And Odyssey",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Charlies Roots",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Chevy Chase",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Chic",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Chikara Ueda",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Chocolat's",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Chukwuma Ejelonu",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Cindy Hurt",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Circle",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"City Soul",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Claire Lawrence",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Clancy",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Clarence Gatemouth Brown",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Claudja Barry",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Cliff Bruner's Texas Wanderers",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Climax Blues Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Clive Stevens",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Conny Wagner Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Cornell Dupree",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Cosme Adrover",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Cy Coleman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Czechoslovak Radio Dance Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dadadi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Daddy Hotcakes",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Daddy Mory",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Daly-Wilson Big Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dana (9)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Danagog",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dancin' Drums",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dan Hill",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Daniel Lopez Orkester",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dave Valentin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dave Van Ronk",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"David Benoit",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"David Bromberg",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"David Fathead Newman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Debra Laws",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dee Dee Bridgewater",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"De La Polyvalente Hyacinthe-Delorme",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dennis Brown",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dennis Buck",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Denroy Morgan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Derrick Harriott",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dino Solera",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dock Boggs",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Doc Severinsen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Doctor Rhythm",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Doctor Ross",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Domenic Troiano",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Donald Byrd",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Don Blackman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Don Ellis And Survival",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Donna Summer",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Don Pancho",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dr. Adolf Ahanotu",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dream Express",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Dumpty Cooper Group",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Earnock High School",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eberhard Schoener",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eddie And The Movements",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eddie Palmieri",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eddie Russ",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eddy Arsenault",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eden Rose",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ed Watson And The Brass Circle",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Edwin Hubbard",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eji Oyewole",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"El Chicano",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eli's Second Coming",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Elvin Stones",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Elwyn McQuilken",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Enchantment",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ernest Ranglin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ernie Watts",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Esther Phillips",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ethel Merman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eugene Chadbourne",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Eumir Deodato",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Evelyn King",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Fat Larry's Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"FdA-Productions",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"First Choice",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"First Planet",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Flora Molton And The Truth Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Fourteen Octaves",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Francis Guillon",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Franco Bertagnini",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Frank Hatchett",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Frank Sinatra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Freddie Hubbard",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Furry Lewis",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"G. Obinna Azubuike",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gabor Szabo",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gap Mangione",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Garrett Morris",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gary Moore",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gato Barbieri",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gavin Christopher",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gay Desperadoes Steel Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"George Benson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"George Howard",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"George Martin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"George Saxon",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Georges Happy",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Geraldo Pino",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gerry Lockran",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gian Piero Reverberi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gibson Brothers",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gilla",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gilles Sala",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gil Ventura",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Giovanni Fenati",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Giovanni Fenati E La Sua Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Giovanni Unterberger",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gloria Schneider",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gordon Henderson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Grace Ekpeyong",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gregory James Edition",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Grover Washington",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Gustav Brom Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hammatan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hank Crawford",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hanna Banaszak",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Harris Chalkitis",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Harry Mosco",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Harvey Mason",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Helmut Zacharias",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Henghel Gualdi E La Sua Big Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Henry Mancini",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Henry Mancini And His Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Henry Townsend",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Herb Alpert",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Herbie Mann",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Heuer & Westphal",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hizuru",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hodges",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Holde Fee",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Holly Near",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Honey Machine",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Horst Jankowski Und Sein RIAS Tanzorchester",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hot Blood",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hot Ice",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hot Property",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Houston Person",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hozan Yamamoto",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hubert Laws",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hugo Strasser Und Sein Tanzorchester",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Hugues Onestas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"I.S.C.A.C. Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ian Gillan Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Idris Muhammad",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Inga Sulin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ingemar Olsson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Inner Circle",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Intercity Sound Association",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Irakere",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Irwin The Disco Duck",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Isaac Hayes",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Iyke Peters",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"J.A.L.N. Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"J. L. Moraleda Y Su Combo Pop",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jackie Mclean",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jacques Morali",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jadwiga Strzelecka",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"James Last",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"James Lloyd",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"James Son Thomas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"James Talley",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jan Delay",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jean-Claude Borelly",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jean-Claude Pelletier",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jean-Claude Pelletier Et Son Orchestre",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jean-Claude Petit Et Son Orchestre",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jean Derome",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jean Michel De France",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jeff Tyzik",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jennifer (6)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jenny Ano",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jermaine Jackson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jerry Allen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jim Horn",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jimmy McGriff",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jiro Inagaki",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Joe Beck",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Joe Dolan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Joe Farrell",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Joe Thomas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Cephas & Phil Wiggins",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Coltrane",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Henry Barbee",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Jackson (4)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Kaizan Neptune",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Lee Hooker",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Lennon",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Johnny Martinez",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Johnny Shines / Blind Will Dukes",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Paul Hammond",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Tinsley",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Tropea",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"John Valenti",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jorma Kaukonen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jose Mangual",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Josh Williams (10)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Juan Carlos Calderón",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Judi Sheppard Missett",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Judy Fjell",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Juhani Korjus",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Jun Fukamachi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Junko Ohashi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kalapana",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kalyan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kay Ishiguro",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kellee Patterson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kenichi Sawa",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kiki Gyan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kim Gutman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kim Trio",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"King Henry",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"King Short Shirt",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"King Sporty",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kio Amachree",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kirth Morrison",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"KP's Sunshine Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kurtis Blow",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Kwame Heshimu",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"La Banda",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lagos State Christian Corpers Fellowship Music Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lalo Schifrin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lancelot Layne",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lance Lumsden",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Larry Elgart And His Hooked On Swing Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Larry Harlow",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Larry Young",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lars Samuelson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lasse Wellander",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Leadbelly",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lee Chul Hyuk",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Leeloojamais",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Le Grand Orchestre Du Splendid",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lenny White",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Leon Huff",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Leon Ndugu Chancler",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Leo Sayer",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Leroy Vohn",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Les Beatniks",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Les McCann",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lex De Azevedo",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Liberty Belle",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lightnin' Hopkins",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Linda Herre",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lionel Hampton",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lipstique (2)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lisa Dal Bello",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Little Beaver",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Liza Minnelli",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lloyd Lovindeer",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lonnie Hoppers",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lonnie Liston Smith",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lonnie Liston Smith And The Cosmic Echoes",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lonnie Smith",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lonnie Youngblood",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lou Donaldson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Louie Bluie",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Louie Ramirez",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Louie Ramirez Y Sus Amigos",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lou Perez",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Love & Kisses",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Lucifer's Friend",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Luther Henderson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"M.B.T. Soul",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Machiko Watanabe",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mahagon",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Maitre Mathurin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mandingo Brass",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mandré",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Manhattans",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mansa Musa",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Manuel Combo",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Marcel Bianchi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Marc Jordan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Maria Asahina",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Marijan Smode",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mario Brancaleoni",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mario Lehner",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Markku Suominen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Marshall Hain",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Martee Lebous",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Martha Velez",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Marvin Holmes",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mary Afi Usuah",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Masaki Matsubara",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Masutatsu Oyama",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Matti Caspi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Matt Walsh Blues Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Max Greger",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Maxwell Udoh",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Maye Cavallaro",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mayflower Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Maynard Ferguson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"MDGA",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Meco Monardo",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mel Brooks",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Memphis Jug Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Merchant",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"MFSB",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Miatta Fahinbulleh",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Michael Pedicin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Michael Tschudin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Michel Colombier",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Michiru Akiyoshi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mighty Duke",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mighty Sparrow",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mike Curb Congregation",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mike Makhalemele",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mike Melvoin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Miki Satoh",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Millie Jackson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Milton Di Sao Paulo",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Minoru Muraoka and New Dimension Group",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mississippi John Hurt",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Miss Misty",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mixed Grill",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Moe Koffman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mojo Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Monk Higgins",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Montreal Sound (2)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Morrissey Mullen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Mose Allison",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Munich Machine",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Musical Youth",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Music From Free Creek",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Nana McLean",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Negro Abba",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Neil Larsen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Nel Oliver",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"NG La Banda",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Nick Ingman Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Nightair",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Nobu Saito",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Nordisle Bois Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Norio Maeda",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Obianwu Family",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Odeurs",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Odyssey (2)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Off Course",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Oki Martins",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Oleta Adams",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Oliver Sain",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orchester Joachim Kurzweg",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orchester Kookie Freeman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orchester Peter Thomas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orchester Werner Twardy",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orchestra Gian Piero Reverberi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orchestra Piero Soffici",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orchestre Jack Hammer",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Oriental Mechanic Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orkest Koos Mark",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Orquesta Dimitri Papadopoulos",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Oscar Rocchi",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Otis Spann",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Paco Ros",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pape Seye",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Parisdam",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pat Biodun Fagbuaro",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pat Lundy",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pattie Brooks",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Paul Cacia Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Paul Chutzie",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Paul Hurlock",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Paul Jabara",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pelham Goddard",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Penny McLean",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Per-Erik Hallin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Perry Rosewood",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Perucho Conde",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pete Baja",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Peter Allen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Peter Brown (2)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Peter Himmelstrand",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Peter Nero",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Phil Keaggy Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Piero Piccioni",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pigbag",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Pink Anderson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"R.L. Burnside",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rafael José",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rajans",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ramsey Lewis",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Randy Irwin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rashani",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Raul De Souza",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Raul Porchetto",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ray Barretto",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Raúl Gómez",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Red-Key",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Red Redford Sound System One",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Reflexband",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Remi Kabaka",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Renzo Arbore",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Revelacion",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rhythm Heritage",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rice And Beans Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Richard Hieronymus",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Richie Snyder",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rick Dees & His Cast Of Idiots",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rinder & Lewis",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Robbie Rox",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Roberta Kelly",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Roberta Vandervort",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Roberto Delgado",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Robert Pete Williams",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Robin Kenyatta",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rock Ensemble",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rock Town Express",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rock Workshop",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rod McKuen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Roland Bautista",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rolando Faria",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rolf Kühn",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ronnie Laws",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Roots Foundation",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Rosebud",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Ruben Blades",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Saint Tropez",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Samantha Rose",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Samba Soul",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sam Chatmon And His Barbeque Boys",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Santa Esmeralda",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Savas Christodoulou",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Scarlet Rivera",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Seawind",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Seppo Rannikko",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Shalamar",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sheila Hylton",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Shin Joong Hyun",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Shirley Bassey",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Showdown (3)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Silver Convention",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sine (3)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Singing Francine",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sippie Wallace",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sir Nature Alexander",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Skeets McDonald",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Son House",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sonny Okosun",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sonny Rollins",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sonny Terry",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sonny Terry & Brownie McGhee",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Soundorchester Roy Etzel",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Southern Contemporary Rock Assembly",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Spade Cooley",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Special Jam Company",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Speed Limit (4)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Spiritual Souls",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Squish",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Stani Labonia",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Stanley Clarke",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Stanley Edet (Jr)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Stanley Turrentine",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Steely Dan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Stefan Grossman",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Stelvio Cipriani",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sterling Harrison",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Steve Swindells",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Strawberry Shortcake",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sugarhill Gang",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Summits",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Supermax",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Super Morris",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Surprise Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sweet Fussion",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sweet Mama",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Sweet Soweto Swingsters",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Süheyl Denizci Orkestrası",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"T-Bones & The Coritz Family",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"T-Connection",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"T-Square",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Taeko Ohnuki",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Taeko Rei",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Teach-In",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Team 74",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Teddy Pendergrass",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Telly Savalas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Teresa Brewer",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Teresa Carpio",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Terry Callier",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Alyn Ainsworth Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Bald Heads (2)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Bendeth Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Beta Yama Group",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Blackbyrds",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Bottom Line",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Brecker Brothers",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Crash Crew",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Crusaders",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Dutch Rhythm Steel & Showband",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Eddy Starr Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Elcados",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Emotions",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Equals",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Equitables",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Fatback Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Film Studio Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Five Clarinettes",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Frank Barber Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Freedom Express",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Headhunters",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The House-Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Jericos",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Larry Joseph Project",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Light Crust Doughboys",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Lost World Stringband",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Lovelets",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Love Machine",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Maytals",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Miracles",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Them Mushrooms Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Monaco Family",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Mystery Kindaichi Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Mystic Moods Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Nice Sensation",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Pink Family",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Pioneers",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Pop Singers And Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Ritchie Family",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Salsa '78 Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Salsoul Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Sequence",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Sons Of Champlin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Soul Show Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Spamm Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Stony Island Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Stylistics",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Sunshine Terrace Swing Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Trammps",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"The Willie Dayson Blues Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Thijs van Leer",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Third World",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"THP Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tierra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Times Square",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tina Charles",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tito Puente",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tom Browne",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tom Coster",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tom Gribbin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tommy Snyder",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tom Shaw",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Toulouse (2)",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Trans Africa Show Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Travelin' On",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Trax",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Treacherous Three",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Trinidad Oil Company",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tuxedo Junction",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Tyrone Evans",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Uche Ibeto",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"UK Players",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Uncle Walt's Band",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Urbie Green",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Urszula Dudziak",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Van Dango",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Van McCoy",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Various",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Veno",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Vesna Mimica",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Vicki Sue Robinson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Village People",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Vladimir Cosma",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Voyage",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Vyacheslav Ganelin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Waldorf Travers",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Watsonian Institute",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Wayne Henderson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Wayne Roland Brown",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Web Women's Collective",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Wendy Alleyne",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"West Street Mob",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Wild Cherry",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"William DeVaughn",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Willie Dixon",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Willie P. Bennett",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Willis Jackson",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Wing And A Prayer Fife And Drum Corps.",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Yoshihiro Naruse",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Yuko Iwasaki",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Yumi Murata",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Yumi Seino",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Yuri Nishimura",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Zakala",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Zappatta Schmidt",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Zim Zemarel Orchestra",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Artists",
+			"ComponentName":"Zoikhem",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Artist.subsets/Default.json",
+		"Artist.subsets/}Export.All.json"
+	]
+}

@@ -1,0 +1,198 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Promotions Measure')/Hierarchies('Promotions Measure')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Promotions Measure')/Hierarchies('Promotions Measure')/Elements('Units Lift')"
+					},
+					{
+						"@id":"Dimensions('Promotions Measure')/Hierarchies('Promotions Measure')/Elements('Discount')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Line Item')/Hierarchies('Line Item')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('All Line Items')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0001')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0002')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0003')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0004')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0005')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0006')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0007')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0008')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0009')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0010')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0011')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0012')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0013')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0014')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0015')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0016')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0017')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0018')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0019')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0020')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0021')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0022')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0023')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0024')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0025')"
+					}
+				]
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Budget')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Store')/Hierarchies('Store')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('All Countries')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Australia')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Melbourne')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Queensland')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Sydney')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Asia')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('China')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Beijing')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('FuZhou')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Shanghai')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Hong Kong')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Taipei')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Singapore')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('India')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Europe')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('North America')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Melbourne')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

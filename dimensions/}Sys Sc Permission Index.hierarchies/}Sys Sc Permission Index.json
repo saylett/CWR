@@ -1,0 +1,67 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Sc Permission Index",
+	"Elements":
+	[
+		{
+			"Name":"ALL Permissions",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Overall Permission",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Permissions",
+			"ComponentName":"001",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Permissions",
+			"ComponentName":"002",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Permissions",
+			"ComponentName":"003",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Permissions",
+			"ComponentName":"004",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Permissions",
+			"ComponentName":"005",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Sc Permission Index.subsets/}Export.All.json"
+	]
+}

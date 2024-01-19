@@ -1,0 +1,31 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('50s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('60s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('70s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('80s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('90s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('00s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('10s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('No Decade')"
+		}
+	]
+}

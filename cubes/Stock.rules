@@ -1,0 +1,41 @@
+SKIPCHECK;
+
+# opening stock 2017 warehouse comes from the attribute cube
+
+
+['Opening Stock', '2017', 'Warehouse'] = N: DB('}ElementAttributes_Release', !Release, 'stock');
+
+# opening stock 2017 is a random number for stores
+
+
+['Opening Stock', '2017'] = N: STET;
+
+# opening stock is the closing stock of the prev month
+
+['Opening Stock'] = N:
+  DB('Stock',DB ('}ElementAttributes_Year',!Year, 'Previous'),!Store,!Release,'Closing Stock');
+
+# sales comes from the sales cube or warehouse restock
+
+['Stock Measure':'Sales', 'Warehouse'] = N:
+  DB('Stock',!Year,'All Stores',!Release,'Purchases');
+
+['Stock Measure':'Sales'] = N:
+  DB('Sales','Actual',!Year, 'All Months',!Store,!Release,'Units');
+
+# if closing stock is zero then need to restock from warehouse (or warehouse needs to buy)
+
+['Purchases'] = N: If ( ['Stock Measure':'Sales'] > ['Opening Stock'],
+  ['Stock Measure':'Sales'] - ['Opening Stock'],
+  0);
+
+
+FEEDERS;
+
+['Closing Stock'] =>
+  DB('Stock',AttrS('Year',!Year, 'Next'), !Store,!Release,'Opening Stock');
+
+['Stock Measure':'Sales'] => ['Purchases'];
+
+['Purchases', 'All Stores'] => DB('Stock',!Year,'Warehouse',!Release,'Sales');
+

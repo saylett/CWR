@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Store.Count Employees",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Store.Count Employees.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

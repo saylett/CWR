@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Current Year",
+	"Expression":"{TM1FILTERBYPATTERN(TM1SUBSETALL([Year].[Year]) , [System Info].([System Info Param].[Current Year],[System Info Measure].[String]))}"
+}

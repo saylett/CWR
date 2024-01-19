@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"PF Version",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('PF Version')/Hierarchies('PF Version')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"PF Version.hierarchies/PF Version.json"
+	]
+}

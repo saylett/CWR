@@ -1,0 +1,15 @@
+{
+	"@type":"Cube",
+	"Name":"Plant Material Details",
+	"Rules@Code.link":"Plant Material Details.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Plant Material')"
+		},
+		{
+			"@id":"Dimensions('Plant Material Details Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

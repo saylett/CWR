@@ -1,0 +1,13 @@
+{
+	"@type":"Subset",
+	"Name":"Act Bud",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Budget')"
+		}
+	]
+}

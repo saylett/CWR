@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Current Month",
+	"Expression":"{TM1FILTERBYPATTERN(TM1SUBSETALL([Month].[Month]) , [System Info].([System Info Param].[Current Month],[System Info Measure].[String]))}"
+}

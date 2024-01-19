@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"PF Measure",
+	"Elements":
+	[
+		{
+			"Name":"Value",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"String",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

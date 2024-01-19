@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Release Planning",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Release Planning.hierarchies/Release Planning.json"
+	]
+}

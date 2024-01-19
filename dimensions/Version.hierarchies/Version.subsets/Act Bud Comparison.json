@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Act Bud Comparison",
+	"Expression":"{[Version].[Version].[Actual],[Version].[Version].[Budget],[Version].[Version].[Act vs Bud],[Version].[Version].[Act vs Bud %]}"
+}

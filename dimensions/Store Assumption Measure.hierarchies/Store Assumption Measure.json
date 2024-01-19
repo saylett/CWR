@@ -1,0 +1,64 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Store Assumption Measure",
+	"Elements":
+	[
+		{
+			"Name":"Employee Count",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hourly Wage (USD)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Work Hours per Week",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Work Hours per Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rent per Sq Foot",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Planning Hierarchy",
+			"Type":"String"
+		},
+		{
+			"Name":"Low Staffing Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Med Staffing Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"High Staffing Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Actuals for Decade",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planner",
+			"Type":"String"
+		},
+		{
+			"Name":"Reviewer",
+			"Type":"String"
+		},
+		{
+			"Name":"Position Subset",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Store Assumption Measure.subsets/Staffing Levels.json",
+		"Store Assumption Measure.subsets/}Export.All.json"
+	]
+}

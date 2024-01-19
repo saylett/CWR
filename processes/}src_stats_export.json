@@ -1,0 +1,37 @@
+{
+	"@type":"Process",
+	"Name":"}src_stats_export",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}src_stats_export.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"}PerfCubes",
+		"dataSourceNameForServer":"}PerfCubes",
+		"subset":"All"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pPath",
+			"Prompt":"Path to file",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vCubeName",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

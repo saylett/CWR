@@ -1,0 +1,5 @@
+['GL Account':'Record Sales'] = S: 'GeneralLedgerToRecordSales';
+['GL Account':'Merchandise'] = S: 'GeneralLedgerToMerchandise';
+['GL Account':'Books'] = S: 'GeneralLedgerToBooks';
+
+['GL Account':'Revenue'] = S: 'GeneralLedgerToRecordSales,GeneralLedgerToMerchandise,GeneralLedgerToBooks';

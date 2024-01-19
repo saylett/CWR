@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"US Employees",
+	"Expression":"{{FILTER(TM1SubsetAll([Employee].[Employee]), ([Employee].[Employee].CURRENTMEMBER.PROPERTIES(\"Store\") = \"America\"))}}"
+}

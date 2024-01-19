@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Genre",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Genre')/Hierarchies('Genre')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Genre.hierarchies/Genre.json"
+	]
+}

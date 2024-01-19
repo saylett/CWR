@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Budget Year",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+		}
+	]
+}

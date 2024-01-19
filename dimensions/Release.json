@@ -1,0 +1,23 @@
+{
+	"@type":"Dimension",
+	"Name":"Release",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Release')/Hierarchies('Release')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Release.hierarchies/Release.json",
+		"Release.hierarchies/Artists.json",
+		"Release.hierarchies/Chris.json",
+		"Release.hierarchies/Decade.json",
+		"Release.hierarchies/Genre.json",
+		"Release.hierarchies/Genre ex Plan.json",
+		"Release.hierarchies/Genre Plan.json",
+		"Release.hierarchies/Hierarchy 10.json",
+		"Release.hierarchies/Hierarchy 11.json",
+		"Release.hierarchies/Release Country.json",
+		"Release.hierarchies/Release Year.json"
+	]
+}

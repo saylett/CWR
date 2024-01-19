@@ -1,0 +1,114 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Customer",
+	"Elements":
+	[
+		{
+			"Name":"All Customers",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"0010018555",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010019733",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010022918",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010026063",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010026807",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010027519",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010063644",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010316528",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010345634",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010354356",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010365262",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010018555",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010019733",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010022918",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010026063",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010026807",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010027519",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010063644",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010316528",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010345634",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010354356",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Customers",
+			"ComponentName":"0010365262",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

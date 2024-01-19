@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"2020 Months",
+	"Expression":"{[Year-Month].[Year-Month].[2020-M01],[Year-Month].[Year-Month].[2020-M02],[Year-Month].[Year-Month].[2020-M03],[Year-Month].[Year-Month].[2020-M04],[Year-Month].[Year-Month].[2020-M05],[Year-Month].[Year-Month].[2020-M06],[Year-Month].[Year-Month].[2020-M07],[Year-Month].[Year-Month].[2020-M08],[Year-Month].[Year-Month].[2020-M09],[Year-Month].[Year-Month].[2020-M10],[Year-Month].[Year-Month].[2020-M11],[Year-Month].[Year-Month].[2020-M12]}"
+}

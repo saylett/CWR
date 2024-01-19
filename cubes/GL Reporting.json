@@ -1,0 +1,27 @@
+{
+	"@type":"Cube",
+	"Name":"GL Reporting",
+	"Rules@Code.link":"GL Reporting.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('GL Account')"
+		},
+		{
+			"@id":"Dimensions('GL Reporting Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"GL Reporting.views/Default.json"
+	]
+}

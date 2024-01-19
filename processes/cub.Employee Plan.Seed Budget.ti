@@ -1,0 +1,232 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Src = 'Existing Employee Staging';
+cCub_Tgt = 'Employee Plan';
+
+cPeriod = pPeriod;
+cYear_To = pYear_To;
+
+cYear = AttrS('Year-Month', cPeriod, 'Year');
+cMonth = AttrS('Year-Month', cPeriod, 'Month');
+
+cDL_Dim = Char(176);
+cDL_Start = Char(177);
+cDL_Elem = Char(178);
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Validation
+#########################################################################################################################
+
+If( pConfirm @<> '1' );
+  ProcessQuit;
+EndIf;
+
+#########################################################################################################################
+###  Create Source View
+#########################################################################################################################
+
+###  Define Temp Object Name and Create View  ###
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( ViewExists( cCub_Src, cTempName | '_Src' ) <> 0 );
+    cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cView_Src = cTempName | '_Src';
+cSub = cTempName | '_Src';
+ViewCreate( cCub_Src, cView_Src, 1 );
+
+###  Assign Subset  ###
+sDim = 'Year-Month';
+sElem = cPeriod;
+If (SubsetExists(sDim, cSub) = 0);
+  SubsetCreate(sDim, cSub, 1);
+EndIf;
+SubsetDeleteAllElements(sDim, cSub);
+SubsetElementInsert(sDim, cSub, sElem, 1);
+ViewSubsetAssign(cCub_Src, cView_Src, sDim, cSub);
+
+###  Assign Subset  ###
+sDim = 'Line Item';
+sNode = 'All Line Items';
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If (SubsetExists(sDim, cSub) <> 0);
+  SubsetDestroy(sDim, cSub);
+EndIf;
+SubsetCreatebyMDX(cSub, sMDX, sDim, 1);
+nElem = SubsetGetSize(sDim, cSub);
+sElem_Last = SubsetGetElementName(sDim, cSub, nElem);
+SubsetElementDelete(sDim, cSub, nElem);
+SubsetElementInsert(sDim, cSub, sElem_Last, nElem);
+ViewSubsetAssign(cCub_Src, cView_Src, sDim, cSub);
+
+###  Assign Subset  ###
+sDim = 'Existing Employee Staging Measure';
+sElem = 'All Validation';
+If (SubsetExists(sDim, cSub) = 0);
+  SubsetCreate(sDim, cSub, 1);
+EndIf;
+SubsetDeleteAllElements(sDim, cSub);
+SubsetElementInsert(sDim, cSub, sElem, 1);
+ViewSubsetAssign(cCub_Src, cView_Src, sDim, cSub);
+
+###  Set View as Data Source  ###
+nCnt = 1;
+While( TabDim( cCub_Src, nCnt ) @<> '' );
+  sDim = TabDim( cCub_Src, nCnt );
+  ViewRowDimensionSet( cCub_Src, cView_Src, sDim, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewExtractSkipCalcsSet( cCub_Src, cView_Src, 0 );
+ViewExtractSkipRuleValuesSet( cCub_Src, cView_Src, 0 );
+ViewExtractSkipZeroesSet( cCub_Src, cView_Src, 1 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Src;
+DataSourceNameForClient = cCub_Src;
+DataSourceCubeView = cView_Src;
+
+#########################################################################################################################
+###  Toggle off Cube Logging
+#########################################################################################################################
+
+CellPutS( 'NO', '}CubeProperties', cCub_Tgt, 'LOGGING' );
+
+#########################################################################################################################
+###  Clear Existing Data
+#########################################################################################################################
+
+###  Filter  ###
+sFilter = 'Year' | cDL_Start | cYear_To;
+sFilter = sFilter | cDL_Dim | 'Month' | cDL_Start | 'NA Month';
+sFilter = sFilter | cDL_Dim | 'Version' | cDL_Start | 'Budget';
+sFilter = sFilter | cDL_Dim | 'Employee' | cDL_Start | 'Existing Employees';
+sFilter = sFilter | cDL_Dim | 'Employee Plan Measure' | cDL_Start | 'Salary - Annual';
+
+###  Clear Data  ###
+ExecuteProcess( '}bedrock.cube.data.clear',
+  'pLogOutput', 0,
+  'pCube', cCub_Tgt,
+  'pView', '',
+  'pFilter', sFilter,
+  'pFilterParallel', '',
+  'pParallelThreads', 0,
+  'pDimDelim', cDL_Dim,
+  'pEleStartDelim', cDL_Start,
+  'pEleDelim', cDL_Elem,
+  'pCubeLogging', 0,
+  'pTemp', 1 );
+
+
+###  Filter  ###
+sFilter = 'Year' | cDL_Start | cYear_To;
+sFilter = sFilter | cDL_Dim | 'Employee' | cDL_Start | 'Existing Employees';
+sFilter = sFilter | cDL_Dim | 'Version' | cDL_Start | 'Budget';
+
+###  Clear Data  ###
+ExecuteProcess( '}bedrock.cube.data.clear',
+  'pLogOutput', 0,
+  'pCube', 'Employee Plan Assumptions',
+  'pView', '',
+  'pFilter', sFilter,
+  'pFilterParallel', '',
+  'pParallelThreads', 0,
+  'pDimDelim', cDL_Dim,
+  'pEleStartDelim', cDL_Start,
+  'pEleDelim', cDL_Elem,
+  'pCubeLogging', 0,
+  'pTemp', 1 );
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sEmployee = CellGetS(cCub_Src, vPeriod, vItem, 'Name');
+sStore = CellGetS(cCub_Src, vPeriod, vItem, 'Store');
+sPosition = CellGetS(cCub_Src, vPeriod, vItem, 'Position');
+nSalary = CellGetN(cCub_Src, vPeriod, vItem, 'Annual Salary');
+nBonus_Rate = CellGetN(cCub_Src, vPeriod, vItem, 'Bonus Rate');
+nAllowance = CellGetN(cCub_Src, vPeriod, vItem, 'Monthly Allowance');
+
+If( DimIx( 'Employee', sEmployee ) = 0 );
+  ProcessQuit;
+Else;
+  sName = DimensionElementPrincipalName( 'Employee', sEmployee );
+EndIf;
+
+AttrPutS(sPosition, 'Employee', sName, 'Position');
+AttrPutS(sStore, 'Employee', sName, 'Store Budget');
+
+CellPutN(nSalary, cCub_Tgt, 'Budget', 'Local', cYear_To, 'NA Month', sStore, 'Existing Employee Model', sName, 'Salary - Annual');
+#CellPutN(nBonus_Rate, cCub_Tgt, 'Budget', 'Local', cYear_To, 'NA Month', sStore, 'Existing Employee Model', sName, 'Bonus - Rate');
+#CellPutN(nAllowance, cCub_Tgt, 'Budget', 'Local', cYear_To, 'NA Month', sStore, 'Existing Employee Model', sName, 'Allowance');
+
+CellPutN(nBonus_Rate, 'Employee Plan Assumptions', 'Budget', cYear_To, sName, 'Bonus - Rate');
+CellPutN(nAllowance, 'Employee Plan Assumptions', 'Budget', cYear_To, sName, 'Allowance - Monthly');
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+  
+#########################################################################################################################
+###  Update Virtual Hierarchies
+#########################################################################################################################
+
+#ExecuteProcess('}bedrock.hier.create.fromattribute',
+#   'pLogOutput', 0,
+#   'pDim', 'Employee',
+#   'pSrcHier', '',
+#   'pTgtHier', 'Position',
+#   'pAttr', 'Position',
+#   'pTopNode', 'All <pAttr>',
+#   'pPrefix', '',
+#   'pSuffix', '',
+#   'pSkipBlank', 0,
+#   'pUnallocated', 'NA Position');
+   
+#ExecuteProcess('Dim.Employee.Update Hierarchy.Position');
+#
+#ExecuteProcess('}bedrock.hier.create.fromattribute',
+#   'pLogOutput', 0,
+#   'pDim', 'Employee',
+#   'pSrcHier', '',
+#   'pTgtHier', 'Store Budget',
+#   'pAttr', 'Store Budget',
+#   'pTopNode', 'All <pAttr>',
+#   'pPrefix', '',
+#   'pSuffix', '',
+#   'pSkipBlank', 0,
+#   'pUnallocated', 'NA Position');
+#
+
+#endregion

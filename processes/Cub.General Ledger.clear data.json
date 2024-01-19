@@ -1,0 +1,44 @@
+{
+	"@type":"Process",
+	"Name":"Cub.General Ledger.clear data",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Cub.General Ledger.clear data.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pVersion",
+			"Prompt":"Version",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pYear",
+			"Prompt":"Year",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pAccount",
+			"Prompt":"Account",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pStore",
+			"Prompt":"Store",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pConfirm",
+			"Prompt":"Confirm? (1/0)",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

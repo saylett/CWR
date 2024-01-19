@@ -1,0 +1,43 @@
+{
+	"@type":"Hierarchy",
+	"Name":"New Employee Plan Measure",
+	"Elements":
+	[
+		{
+			"Name":"Name",
+			"Type":"String"
+		},
+		{
+			"Name":"Position",
+			"Type":"String"
+		},
+		{
+			"Name":"Start Date",
+			"Type":"String"
+		},
+		{
+			"Name":"Annual Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Monthly Allowance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus Rate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Job Grade",
+			"Type":"String"
+		},
+		{
+			"Name":"Exempt",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"New Employee Plan Measure.subsets/}Export.All.json"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"@type":"Cube",
+	"Name":"User Staging",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Line Item')"
+		},
+		{
+			"@id":"Dimensions('User Staging Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

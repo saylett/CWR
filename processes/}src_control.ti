@@ -1,0 +1,103 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+DatasourceASCIIQuoteCharacter = '';
+DatasourceASCIIDelimiter = CHAR(9);
+SetOutputCharacterSet( pPath, 'TM1CS_UTF8'  );
+
+sDim = '}Cubes';
+nCount = DIMSIZ(sDim);
+n = 1;
+WHILE( n <= nCount);
+  sName = DIMNM(sDim, n);
+  TEXTOUTPUT(pPath, 'Cube', sName);
+  n = n + 1;
+END;
+
+sDim = '}Dimensions';
+nCount = DIMSIZ(sDim);
+n = 1;
+WHILE( n <= nCount);
+  sName = DIMNM(sDim, n);
+  IF(SCAN(':', sName) = 0);
+      TEXTOUTPUT(pPath, 'Dimension', sName);
+  ENDIF;
+  n = n + 1;
+END;
+
+sDim = '}Processes';
+nCount = DIMSIZ(sDim);
+n = 1;
+WHILE( n <= nCount);
+  sName = DIMNM(sDim, n);
+  TEXTOUTPUT(pPath, 'Process', sName);
+  n = n + 1;
+END;
+
+sDim = '}Chores';
+nCount = DIMSIZ(sDim);
+n = 1;
+WHILE( n <= nCount);
+  sName = DIMNM(sDim, n);
+  TEXTOUTPUT(pPath, 'Chore', sName);
+  n = n + 1;
+END;
+
+sDim = '}Clients';
+nCount = DIMSIZ(sDim);
+n = 1;
+WHILE( n <= nCount);
+  sName = DIMNM(sDim, n);
+  TEXTOUTPUT(pPath, 'Client', sName);
+  n = n + 1;
+END;
+
+sDim = '}Groups';
+nCount = DIMSIZ(sDim);
+n = 1;
+WHILE( n <= nCount);
+  sName = DIMNM(sDim, n);
+  TEXTOUTPUT(pPath, 'Group', sName);
+  n = n + 1;
+END;
+
+sDim = '}ApplicationEntries';
+If( DimensionExists(sDim) = 1);
+  nCount = DIMSIZ(sDim);
+  n = 1;
+  WHILE( n <= nCount);
+    sName = DIMNM(sDim, n);
+    TEXTOUTPUT(pPath, 'Application', sName);
+    n = n + 1;
+  END;
+EndIf;
+
+
+
+
+
+
+
+
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

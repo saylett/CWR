@@ -1,0 +1,44 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+nFill = 1;
+
+sFileName = pPath;
+
+DatasourceASCIIQuoteCharacter = '';
+DatasourceASCIIDelimiter = CHAR(9);
+SetOutputCharacterSet( sFileName, 'TM1CS_UTF8'  );
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+    sControlCubeName = '}StatsByCube';
+    sControlName = '}StatsStatsByCube';
+    If( DimensionExists(sControlName) = 1 & CubeExists(sControlCubeName) = 1);
+      TextOutput(sFileName, vCubeName);
+      nPropCount = DIMSIZ( sControlName );
+      p = 1;
+      WHILE (p <= nPropCount);
+          sProp = DIMNM( sControlName , p);
+          sValue = sProp | ':=' | TRIM(STR(CellGetN(sControlCubeName, sProp, vCubeName, 'LATEST' ), 15, 0));
+          TextOutput(sFileName, Fill(' ', nFill) | sValue);
+          p = p + 1;
+      END;
+      TextOutput(sFileName, '');
+    EndIf;
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

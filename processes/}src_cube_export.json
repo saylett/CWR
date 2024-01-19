@@ -1,0 +1,39 @@
+{
+	"@type":"Process",
+	"Name":"}src_cube_export",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}src_cube_export.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pCubeName",
+			"Prompt":"Name of the Cube to Export",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pStructureOnly",
+			"Prompt":"Do not export data",
+			"Value":1,
+			"Type":"Numeric"
+		},
+		{
+			"Name":"pIncludeSecurity",
+			"Prompt":"Include the security of the cube",
+			"Value":1,
+			"Type":"Numeric"
+		},
+		{
+			"Name":"pPath",
+			"Prompt":"Path to file",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Sc Level",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Sc Level.hierarchies/}Sys Sc Level.json"
+	]
+}

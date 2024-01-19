@@ -1,0 +1,26 @@
+{
+	"@type":"Cube",
+	"Name":"Store Assumption",
+	"Rules@Code.link":"Store Assumption.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('Store Assumption Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Store Assumption.views/Default.json",
+		"Store Assumption.views/Planning Method.json",
+		"Store Assumption.views/default.json"
+	]
+}

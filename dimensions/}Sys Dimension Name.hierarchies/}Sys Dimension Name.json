@@ -1,0 +1,1260 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Dimension Name",
+	"Elements":
+	[
+		{
+			"Name":"ALL Dimensions",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Artist",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Currency",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Assumptions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Model",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Existing Employee Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"General Ledger Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GL Account",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GL Reporting Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Navigation Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Employee Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Plan Module",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Price Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Promotions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Measures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Budget Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"State",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"State Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stock Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store Assumption Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"System Info Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"System Info Param",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"User Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workflow Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Year-Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Annotation_ApplicationID",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}AnnotationMeasures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CAMAssociatedGroups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Chores",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ClientProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ClientSettings",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeAttributes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Cube Functions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Cubes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeSecurityProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Cultures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}DimensionAttributes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}DimensionProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Dimensions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Artist",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Calendar Day",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Calendar Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Calendar Week",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Assumptions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Model",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Existing Employee Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_General Ledger Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_GL Account",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_GL Reporting Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Navigation Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_P&L Account",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_P&L Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Price Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Promotions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Release Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Budget Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_State",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_State Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Store",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Store Assumption Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Param",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Tim123",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Time",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Year-Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ClientProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Cultures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Object Access Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Features",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Hierarchies",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Hierarchies_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Hierarchies_Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}HierarchyProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}LineNumber",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PerfClients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PerfCubes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Permissions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Processes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}RuleStats",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsByProcess",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsByClient",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsByCube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsByCubeByClient",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsForServer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Object Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Object Type",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Object Type Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Object Access Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Permission Index",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}TimeIntervals",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Artist",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Currency",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee Plan Assumptions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee Plan Model",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Existing Employee Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"General Ledger Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"GL Account",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"GL Reporting Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Navigation Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"New Employee Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"New Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Plan Module",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Price Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Promotions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Release Measures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Release Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Sales Budget Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Sales Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Staffing Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Staffing Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"State",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"State Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Stock Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Store",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Store Assumption Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"System Info Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"System Info Param",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"User Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Workflow Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Year",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Year-Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Annotation_ApplicationID",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}AnnotationMeasures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}CAMAssociatedGroups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Chores",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ClientProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ClientSettings",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}CubeAttributes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Cube Functions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}CubeProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Cubes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}CubeSecurityProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Cultures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}DimensionAttributes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}DimensionProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Dimensions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Artist",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Calendar Day",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Calendar Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Calendar Week",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Employee Plan Assumptions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Employee Plan Model",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Existing Employee Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_General Ledger Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_GL Account",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_GL Reporting Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Navigation Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_New Employee Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_New Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_P&L Account",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_P&L Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Price Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Promotions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Release Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Sales Budget Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Sales Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Staffing Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Staffing Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_State",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_State Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Store",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Store Assumption Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_System Info Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_System Info Param",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Tim123",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Time",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Year",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_Year-Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}ClientProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Cultures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Hierarchies_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Hierarchies_Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Sys Object Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Sys Object Type",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Sys Object Type Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Sys Sc Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Sys Sc Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}ElementAttributes_}Sys Sc Object Access Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Features",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Hierarchies",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Hierarchies_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Hierarchies_Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}HierarchyProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}LineNumber",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}PerfClients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}PerfCubes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Permissions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}PickList",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Processes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}RuleStats",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsByProcess",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsByClient",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsByCube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsByCubeByClient",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsForServer",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Object Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Object Type",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Object Type Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Object Access Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Permission Index",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}TimeIntervals",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Dimension Name.subsets/}Export.All.json"
+	]
+}

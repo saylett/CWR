@@ -1,0 +1,89 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Tgt = 'General Ledger';
+
+cDL_Dim = Char(176);
+cDL_Start = Char(177);
+cDL_Elem = Char(178);
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Validation
+#########################################################################################################################
+
+If( pConfirm @<> '1' );
+  ProcessQuit;
+EndIf;
+
+#########################################################################################################################
+###  Clear Existing Data
+#########################################################################################################################
+
+###  Filter  ###
+sFilter = 'Year' | cDL_Start | pYear;
+sFilter = sFilter | cDL_Dim | 'Version' | cDL_Start | 'Actual';
+
+abc = DimIx( 'Year', '2000' );
+
+
+###  Clear Data  ###
+ExecuteProcess( '}bedrock.cube.data.clear',
+  'pLogOutput', 0,
+  'pCube', cCub_Tgt,
+  'pView', '',
+  'pFilter', sFilter,
+  'pFilterParallel', '',
+  'pParallelThreads', 0,
+  'pDimDelim', cDL_Dim,
+  'pEleStartDelim', cDL_Start,
+  'pEleDelim', cDL_Elem,
+  'pCubeLogging', 0,
+  'pTemp', 1 );
+
+#########################################################################################################################
+###  Data Load from CSV
+#########################################################################################################################
+
+DatasourceNameForServer = '..\Import\GL Ledger CSV data load.csv';
+DatasourceNameForClient = '..\Import\GL Ledger CSV data load.csv';
+DatasourceType = 'CHARACTERDELIMITED';
+DatasourceASCIIHeaderRecords = 1;
+DatasourceASCIIDelimiter = ',';
+DatasourceASCIIQuoteCharacter = '';
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+If( vYear @<> pYear );
+  ItemSkip;
+EndIf;
+
+CellPutN(vValue, cCub_Tgt, 'Actual', vYear, vMonth, vStore, vAccount, 'Amount');
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

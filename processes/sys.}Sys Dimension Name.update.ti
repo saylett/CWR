@@ -1,0 +1,75 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cDim = '}Sys Dimension Name';
+
+cNode = 'ALL Dimensions';
+
+DimensionDeleteAllElements( cDim );
+HierarchyDeleteAllElements( cDim, 'User Dimension' );
+HierarchyDeleteAllElements( cDim, 'Control Dimension' );
+
+DimensionElementInsert( cDim, '', cNode, 'C' );
+
+HierarchyElementInsert( cDim, 'User Dimension', '', 'ALL User Dimensions', 'C');
+HierarchyElementInsert( cDim, 'Control Dimension', '', 'ALL Control Dimensions', 'C');
+
+#########################################################################################################################
+###  Update Elements
+#########################################################################################################################
+
+###  Add Dimensions  ###
+nCnt = 1;
+While( nCnt <= ElCompN('}Sys Object Name', 'ALL Cubes' ));
+  sCub = ElComp('}Sys Object Name', 'ALL Cubes', nCnt );
+  nCnt_Dim = 1;
+  While( TabDim( sCub, nCnt_Dim ) @<> '' );
+    sDim = TabDim( sCub, nCnt_Dim );
+    If( DimIx( cDim, sDim ) = 0 );
+      DimensionElementInsert( cDim, '', sDim, 'N' );
+      DimensionElementComponentAdd( cDim, 'ALL Dimensions', sDim, 1 );
+    EndIf;
+    If( Subst( sDim, 1, 1 ) @= '}' );
+      sHier = 'Control Dimension';      
+    Else;
+      sHier = 'User Dimension';      
+    EndIf;
+    If( HierarchyElementExists( cDim, sHier, sDim ) = 0 );
+      HierarchyElementInsert( cDim, sHier, '', sDim, 'N' );
+      HierarchyElementComponentAdd( cDim, sHier, 'ALL ' | sHier | 's', sDim, 1 );
+    EndIf;
+    nCnt_Dim = nCnt_Dim + 1;
+  End;
+  nCnt = nCnt + 1;
+End;
+
+DimensionSortOrder( cDim, 'ByName', 'Ascending', 'ByHierarchy', 'Ascending' );
+HierarchySortOrder( cDim, 'User Dimension', 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+HierarchySortOrder( cDim, 'Control Dimension', 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Update Attributes
+#########################################################################################################################
+#endregion

@@ -1,0 +1,106 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub = 'Sales';
+cCub_View = 'Drill - General Ledger to Sales';
+
+cProcessName = GetProcessName();
+cSub_Drill = cProcessName | '_Drill_TMP';
+
+#########################################################################################################################
+###  Define Subsets
+#########################################################################################################################
+
+If( ViewExists( cCub, cCub_View ) = 0 );
+  ViewCreate( cCub, cCub_View );
+EndIf;
+
+###  Month  ###
+sDim = 'Month';
+If( SubsetExists( sDim, cSub_Drill ) = 1 );
+  SubsetDeleteAllElements( sDim, cSub_Drill );
+Else;
+  SubsetCreate( sDim, cSub_Drill );
+EndIf;
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( sDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+sMDX = '{Descendants([Month].[All Months])}';
+
+SubsetCreatebyMDX( sSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, sSub );
+sElem_Last = SubsetGetElementName( sDim, sSub, nElem );
+SubsetElementDelete( sDim, sSub, nElem );
+SubsetElementInsert( sDim, sSub, sElem_Last, nElem );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = SubsetGetElementName( sDim, sSub, nCnt );
+  SubsetElementInsert( sDim, cSub_Drill, sElem, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+SubsetAliasSet( sDim, cSub_Drill, 'Report' ) ;
+ViewSubsetAssign( cCub, cCub_View, sDim, cSub_Drill );
+ViewColumnDimensionSet( cCub, cCub_View, sDim, 1 );
+
+###  Measure  ###
+sDim = 'Sales Measure';
+If( SubsetExists( sDim, cSub_Drill ) = 1 );
+  SubsetDeleteAllElements( sDim, cSub_Drill );
+Else;
+  SubsetCreate( sDim, cSub_Drill );
+EndIf;
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( sDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+sMDX = '{[Sales Measure].[Units],[Sales Measure].[Revenue],[Sales Measure].[Cost],[Sales Measure].[Unit Price],[Sales Measure].[Unit Cost]}';
+
+SubsetCreatebyMDX( sSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, sSub );
+sElem_Last = SubsetGetElementName( sDim, sSub, nElem );
+SubsetElementDelete( sDim, sSub, nElem );
+SubsetElementInsert( sDim, sSub, sElem_Last, nElem );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = SubsetGetElementName( sDim, sSub, nCnt );
+  SubsetElementInsert( sDim, cSub_Drill, sElem, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewSubsetAssign( cCub, cCub_View, sDim, cSub_Drill );
+ViewRowDimensionSet( cCub, cCub_View, sDim, 1 );
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements***
+
+RETURNVIEWHANDLE(cCub, cCub_View);
+#endregion

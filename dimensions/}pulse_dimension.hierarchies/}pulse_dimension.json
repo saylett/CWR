@@ -1,0 +1,904 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}pulse_dimension",
+	"Elements":
+	[
+		{
+			"Name":"Artist",
+			"Type":"String"
+		},
+		{
+			"Name":"Currency",
+			"Type":"String"
+		},
+		{
+			"Name":"Customer",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Exempt",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Job Grade",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Last Name",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Position",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Start Month",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Store",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Store Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Store Current",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee:Store Input",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee Plan Assumptions Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee Plan Model",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee Position",
+			"Type":"String"
+		},
+		{
+			"Name":"Exempt Status",
+			"Type":"String"
+		},
+		{
+			"Name":"Existing Employee Staging Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"General Ledger Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Genre",
+			"Type":"String"
+		},
+		{
+			"Name":"GL Account",
+			"Type":"String"
+		},
+		{
+			"Name":"GL Reporting Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Job Grade",
+			"Type":"String"
+		},
+		{
+			"Name":"Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine:Machine Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine:Plant",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Material",
+			"Type":"String"
+		},
+		{
+			"Name":"Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Month",
+			"Type":"String"
+		},
+		{
+			"Name":"Navigation Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"New Employee Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"New Employee Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"PF Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"PF Version",
+			"Type":"String"
+		},
+		{
+			"Name":"PF Year",
+			"Type":"String"
+		},
+		{
+			"Name":"Plan Method",
+			"Type":"String"
+		},
+		{
+			"Name":"Plan Module",
+			"Type":"String"
+		},
+		{
+			"Name":"Plant",
+			"Type":"String"
+		},
+		{
+			"Name":"Plant Material",
+			"Type":"String"
+		},
+		{
+			"Name":"Plant Material Details Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Price Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Promotions Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Region",
+			"Type":"String"
+		},
+		{
+			"Name":"Release",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Artists",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Chris",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Decade",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Genre",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Genre ex Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Genre Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Hierarchy 10",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Hierarchy 11",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Release Country",
+			"Type":"String"
+		},
+		{
+			"Name":"Release:Release Year",
+			"Type":"String"
+		},
+		{
+			"Name":"Release Measures",
+			"Type":"String"
+		},
+		{
+			"Name":"Release Planning",
+			"Type":"String"
+		},
+		{
+			"Name":"Sales Budget Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Sales Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Staffing Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Staffing Seasonality Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Stock Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Store",
+			"Type":"String"
+		},
+		{
+			"Name":"Store:Country",
+			"Type":"String"
+		},
+		{
+			"Name":"Store:Director",
+			"Type":"String"
+		},
+		{
+			"Name":"Store:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"Store:Reporting Region",
+			"Type":"String"
+		},
+		{
+			"Name":"Store Assumption Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"System Info Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"System Info Param",
+			"Type":"String"
+		},
+		{
+			"Name":"User Staging Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"UX Filter - Boolean",
+			"Type":"String"
+		},
+		{
+			"Name":"UX Filter - Threshold",
+			"Type":"String"
+		},
+		{
+			"Name":"UX Filter - Year 1",
+			"Type":"String"
+		},
+		{
+			"Name":"UX Filter - Year 2",
+			"Type":"String"
+		},
+		{
+			"Name":"UX Filter - }Sys Sc Group",
+			"Type":"String"
+		},
+		{
+			"Name":"Version",
+			"Type":"String"
+		},
+		{
+			"Name":"Workflow Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"Workflow Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"Workflow Status",
+			"Type":"String"
+		},
+		{
+			"Name":"Year",
+			"Type":"String"
+		},
+		{
+			"Name":"Year-Month",
+			"Type":"String"
+		},
+		{
+			"Name":"Year-Month:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"Year-Month:Month",
+			"Type":"String"
+		},
+		{
+			"Name":"Year-Month:Year",
+			"Type":"String"
+		},
+		{
+			"Name":"}Annotation_ApplicationID",
+			"Type":"String"
+		},
+		{
+			"Name":"}AnnotationAppContextFacets",
+			"Type":"String"
+		},
+		{
+			"Name":"}AnnotationMeasures",
+			"Type":"String"
+		},
+		{
+			"Name":"}ApplicationEntries",
+			"Type":"String"
+		},
+		{
+			"Name":"}CAMAssociatedGroups",
+			"Type":"String"
+		},
+		{
+			"Name":"}Chores",
+			"Type":"String"
+		},
+		{
+			"Name":"}ClientProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}Clients",
+			"Type":"String"
+		},
+		{
+			"Name":"}ClientSettings",
+			"Type":"String"
+		},
+		{
+			"Name":"}ConnectionProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}Connections",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeAttributes",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeDrillString",
+			"Type":"String"
+		},
+		{
+			"Name":"}Cube Functions",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}Cubes",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeSecurityProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}Cultures",
+			"Type":"String"
+		},
+		{
+			"Name":"}DimensionAttributes",
+			"Type":"String"
+		},
+		{
+			"Name":"}DimensionFormatAttributes",
+			"Type":"String"
+		},
+		{
+			"Name":"}DimensionFormatItems",
+			"Type":"String"
+		},
+		{
+			"Name":"}DimensionProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}Dimensions",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Artist",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Customer",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Assumptions Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Model",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Existing Employee Staging Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_General Ledger Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Genre",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_GL Account",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_GL Reporting Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Machine",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Machine Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Material",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Month",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Navigation Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Plant",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Plant Material",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Plant Material Details Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Price Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Promotions Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Release",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Release Planning",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Budget Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Seasonality Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Store",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Store Assumption Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Param",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Version",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Status",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Year",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Year-Month",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ClientProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Clients",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Cultures",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Version",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_}Sys Dimension Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_}Sys Sc Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Machine",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Release",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Subsets_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Dimension Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type Level",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Element Access Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Level",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Object Access Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}Features",
+			"Type":"String"
+		},
+		{
+			"Name":"}Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}Hierarchies",
+			"Type":"String"
+		},
+		{
+			"Name":"}HierarchyProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}Hold",
+			"Type":"String"
+		},
+		{
+			"Name":"}LineNumber",
+			"Type":"String"
+		},
+		{
+			"Name":"}PerfClients",
+			"Type":"String"
+		},
+		{
+			"Name":"}PerfCubes",
+			"Type":"String"
+		},
+		{
+			"Name":"}Permissions",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList",
+			"Type":"String"
+		},
+		{
+			"Name":"}Processes",
+			"Type":"String"
+		},
+		{
+			"Name":"}RuleStats",
+			"Type":"String"
+		},
+		{
+			"Name":"}SecurityOverlay",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsByProcess",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsStatsByClient",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsStatsByCube",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsStatsByCubeByClient",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsStatsForServer",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Dimension Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Dimension Name:Control Dimension",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Dimension Name:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Dimension Name:User Dimension",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Element Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Element Name:Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Element Name:GL Account",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Element Name:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Element Name:Store",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Element Name:Version",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Element Name:Workflow Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Object Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Object Name:Cube",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Object Name:Dimension",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Object Name:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Object Name:Process",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Object Type",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Object Type Level",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Clients",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Element Access Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Groups:Functional Module",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Groups:General User",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Groups:Leaves",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Groups:Store Element Security",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Level",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Object Access Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Permission Index",
+			"Type":"String"
+		},
+		{
+			"Name":"}TimeIntervals",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

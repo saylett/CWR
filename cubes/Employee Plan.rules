@@ -1,0 +1,58 @@
+SKIPCHECK;
+
+###  C-Level for subtotal  ###
+['All Months', 'Salary - Annual' ] = C:
+  [ 'Dec' ];
+
+###  Initial Salary pre-loaded from TI  ###
+[ 'Budget', 'Salary - Annual', 'NA Month' ] = N: STET;
+
+###  Annual Salary based on user input  ###
+[ 'Budget', 'Salary - Annual', {'M01'} ] = N: 
+  [ 'NA Month' ] + [ 'Salary - Individual Increase' ];
+
+[ 'Budget', 'Salary - Annual', {'M02','M03','M04','M05','M06','M07','M08','M09','M10','M11','M12'} ] = N: 
+  DB('Employee Plan', !Version, !Currency, !Year, AttrS('Month',!Month,'Previous'), !Store, !Employee Plan Model, !Employee, !Employee Plan Measure)
+  + [ 'Salary - Individual Increase' ];
+
+[ 'Budget', 'Salary', {'M01','M02','M03','M04','M05','M06','M07','M08','M09','M10','M11','M12'} ] = N:
+  [ 'Salary - Annual' ] 
+    * ( 1 + [ 'Salary - Percent Increase' ] ) / 12
+    * ['Headcount'];
+      
+###  Start/End Date  ###
+[ 'NA Month', 'Local', {'Date - Start', 'Date - End'} ] = S: STET;
+
+[ {'Date - Start', 'Date - End'} ] = S: '';
+
+[ 'Month - Start' ] = N:
+  If( DB('Employee Plan', !Version, !Currency, !Year, !Month, !Store, !Employee Plan Model, !Employee, 'Date - Start') @= '',
+      1,
+      Numbr( SubSt( DB('Employee Plan', !Version, !Currency, !Year, !Month, !Store, !Employee Plan Model, !Employee, 'Date - Start'), 1, 2)));
+
+[ 'Month - End' ] = N:
+  If( DB('Employee Plan', !Version, !Currency, !Year, !Month, !Store, !Employee Plan Model, !Employee, 'Date - End') @= '',
+      12,
+      Numbr( SubSt( DB('Employee Plan', !Version, !Currency, !Year, !Month, !Store, !Employee Plan Model, !Employee, 'Date - End'), 1, 2)));
+
+[ 'Headcount', {'M01','M02','M03','M04','M05','M06','M07','M08','M09','M10','M11','M12'}] = N: 
+  If( AttrN('Month', !Month, 'Month Num') >= ['Month - Start', 'NA Month'] & AttrN('Month', !Month, 'Month Num') <= ['Month - End', 'NA Month'],
+      1,
+      0 );
+
+###  Bonus  ###
+[ 'Bonus', 'Budget', {'M01','M02','M03','M04','M05','M06','M07','M08','M09','M10','M11','M12'} ] = N:
+  DB('Employee Plan Assumptions', !Version, !Year, !Employee, 'Bonus - Rate')
+  * [ 'Salary' ];
+
+
+###  Allowance  ###
+[ 'Allowance', 'Budget', {'M01','M02','M03','M04','M05','M06','M07','M08','M09','M10','M11','M12'} ] = N:
+  If( [ 'Salary' ] = 0,
+      0,
+      DB('Employee Plan Assumptions', !Version, !Year, !Employee, 'Allowance - Monthly'));
+
+FEEDERS;
+
+[ 'Salary - Annual', 'Budget', 'NA Month', 'Local' ] => [ 'Salary', 'All Months' ];
+[ 'Salary', 'Budget', 'All Months', 'Local' ] => [ 'Bonus' ],[ 'Allowance' ];

@@ -1,0 +1,60 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## constants
+
+cDim = 'Release';
+cParent = 'All Releases';
+cAttrDim = '}ElementAttributes_' | cDim;
+
+
+
+## set the datasource as per the params
+
+cLoc = 'C:\TM1Models\CubewiseRecords\Import';
+cFile = cLoc | '\discogs_' | pStyle | pYear | '.txt';
+
+## check file exists
+
+If ( FileExists(cFile) = 0 );
+  ProcessBreak;
+EndIf;
+
+DataSourceType ='CHARACTERDELIMITED';
+DatasourceNameForServer = cFile;
+DatasourceASCIIHeaderRecords = 0;
+DatasourceASCIIDelimiter=',';
+DatasourceASCIIDecimalSeparator='.';
+DatasourceASCIIThousandSeparator='';
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## insert the element and attributes
+
+DimensionElementComponentAdd( cDim, cParent, vID, 1);
+
+
+If ( DimIx( cAttrDim, vAttr) = 0 );
+  AttrInsert( cDim, '', vAttr, 'S');
+EndIf;
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## load the attribute data
+
+
+If ( DType( cAttrDim, vAttr) @= 'S' ); 
+  AttrPutS( vValue, cDim, vID, vAttr);
+ElseIf ( DType( cAttrDim, vAttr) @= 'N' );
+  CellPutN ( Numbr(VValue), cAttrDim, vID, vAttr);
+EndIf;
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Electronic",
+	"Expression":"{{FILTER(TM1SubsetAll([Release].[Release]), ([Release].[Release].CURRENTMEMBER.PROPERTIES(\"Genre\") = \"Electronic\"))}}"
+}

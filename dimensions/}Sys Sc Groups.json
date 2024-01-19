@@ -1,0 +1,16 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Sc Groups",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Sc Groups')/Hierarchies('}Sys Sc Groups')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Sc Groups.hierarchies/}Sys Sc Groups.json",
+		"}Sys Sc Groups.hierarchies/Functional Module.json",
+		"}Sys Sc Groups.hierarchies/General User.json",
+		"}Sys Sc Groups.hierarchies/Store Element Security.json"
+	]
+}

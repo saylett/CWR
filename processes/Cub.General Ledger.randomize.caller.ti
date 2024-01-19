@@ -1,0 +1,49 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cYear_Beg = StringToNumber( pYear_Beg );
+cYear_End = StringToNumber( pYear_End );
+cMult = pMult;
+
+nCnt = cYear_Beg;
+While( nCnt <= cYear_End );
+  cYear = NumberToString( nCnt );
+  ExecuteProcess('Cub.General Ledger.randomize',
+     'pYear', cYear,
+     'pVersion', 'Actual',
+     'pMult', pMult );
+  
+  ExecuteProcess('Cub.General Ledger.randomize',
+     'pYear', cYear,
+     'pVersion', 'Budget',
+     'pMult', pMult );
+  
+  ExecuteProcess('Cub.General Ledger.randomize',
+     'pYear', cYear,
+     'pVersion', 'Forecast',
+     'pMult', pMult );
+  
+  nCnt = nCnt + 1;
+End;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

@@ -1,0 +1,60 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Version",
+	"Elements":
+	[
+		{
+			"Name":"Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PY ACT",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Act vs Bud %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Act vs Bud",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Var Symbol",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bud vs PY ACT %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bud vs PY ACT",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dimension User Input",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Act vs Fct %",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Act vs Fct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Versions",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

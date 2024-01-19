@@ -1,0 +1,170 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#######################################################################################
+#
+# READ ME
+# This is a script that uses Windows Powershell sending e-mail
+# In order to use the script properly, please make sure the Powershell version is at least version 3
+# For Windows 2008 R2:
+# http://social.technet.microsoft.com/wiki/contents/articles/20623.step-by-step-upgrading-the-powershell-version-4-on-2008-r2.aspx
+# Installing_the_DOTnet_amp_after_that_reboot_is_required
+# Written by: Cubewise
+# Date: 13 Nov 2019
+#
+#######################################################################################
+
+
+cCub_Cfg = 'System Info';
+
+cMailDelim01 = ',';
+cMailDelim02 = ';';
+
+cRecipients = pRecipients;
+cMailSubject = pSubject;
+cMailBody = pBody;
+cMailAttachments = pAttachment;
+
+cSMTPServer = CellGetS('System Info', 'SMTP Server', 'String');
+cSMTPPort = CellGetS('System Info', 'SMTP Port', 'String');
+cMailSender = CellGetS('System Info', 'Email Sender', 'String');
+cMailCredentialUserName = CellGetS('System Info', 'Email User Name', 'String');
+cMailCredentialPassword = CellGetS('System Info', 'Email Password', 'String');
+cMailSSL = CellGetS('System Info', 'Email SSL', 'String');
+
+nError = 0;
+
+#######################################################################################
+#
+# VALIDATION
+#
+#######################################################################################
+
+If (nError <> 0);
+    ProcessBreak();
+Endif;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+######################
+### Quit Process When Validation Failed
+######################
+If (nError <> 0);
+    ProcessQuit();
+Endif;
+
+######################
+### Update Recipients so that it supports the format that Powershell supports
+######################
+sMailRecipients = '';
+sRecipients = cRecipients;
+nDelimIndex = 1;
+While (nDelimIndex <> 0 & Long(sRecipients) > 0);
+     nDelimIndex01 = Scan(cMailDelim01, sRecipients);
+     nDelimIndex02 = Scan(cMailDelim02, sRecipients);
+     If (nDelimIndex01 <> 0 & nDelimIndex02 <> 0);
+         If (nDelimIndex01 < nDelimIndex02);
+             nDelimIndex = nDelimIndex01;
+         Else;
+             nDelimIndex = nDelimIndex02;
+         Endif;
+     ElseIf (nDelimIndex01 <> 0 & nDelimIndex02 = 0);
+         nDelimIndex = nDelimIndex01;
+     ElseIf (nDelimIndex01 = 0 & nDelimIndex02 <> 0);
+         nDelimIndex = nDelimIndex02;
+     ElseIf (nDelimIndex01 = 0 & nDelimIndex02 = 0);
+         nDelimIndex = 0;
+     Endif;
+     sRecipient = '';
+     If (nDelimIndex <> 0);
+         sRecipient = Trim(SubSt(sRecipients, 1, nDelimIndex - 1));
+         sRecipients = Trim(Subst(sRecipients, nDelimIndex + 1, Long(sRecipients) - Long(sRecipient)));
+     Else;
+         sRecipient = Trim(sRecipients);
+     Endif;
+     If (sRecipient @<> '');
+         sMailRecipient = Char(39) | Trim(sRecipient) | Char(39);
+         If (sMailRecipients @<> '');
+             sMailRecipients = sMailRecipients | ',';
+         Endif;
+         sMailRecipients = sMailRecipients | sMailRecipient;
+     Endif;
+End;
+
+######################
+### Update Attachments so that it supports the format that Powershell supports
+######################
+sMailAttachments = '';
+sAttachments = cMailAttachments;
+nDelimIndex = 1;
+While (nDelimIndex <> 0 & Long(sAttachments) > 0);
+     nDelimIndex01 = Scan(cMailDelim01, sAttachments);
+     nDelimIndex02 = Scan(cMailDelim02, sAttachments);
+     If (nDelimIndex01 <> 0 & nDelimIndex02 <> 0);
+         If (nDelimIndex01 < nDelimIndex02);
+             nDelimIndex = nDelimIndex01;
+         Else;
+             nDelimIndex = nDelimIndex02;
+         Endif;
+     ElseIf (nDelimIndex01 <> 0 & nDelimIndex02 = 0);
+         nDelimIndex = nDelimIndex01;
+     ElseIf (nDelimIndex01 = 0 & nDelimIndex02 <> 0);
+         nDelimIndex = nDelimIndex02;
+     ElseIf (nDelimIndex01 = 0 & nDelimIndex02 = 0);
+         nDelimIndex = 0;
+     Endif;
+
+     sAttachment = '';
+     If (nDelimIndex <> 0);
+         sAttachment = Trim(SubSt(sAttachments, 1, nDelimIndex - 1));
+         sAttachments = Trim(Subst(sAttachments, nDelimIndex + 1, Long(sAttachments) - Long(sAttachment)));
+     Else;
+         sAttachment = Trim(sAttachments);
+     Endif;
+     If (sAttachment @<> '');
+         sMailAttachment = Char(39) | Trim(sAttachment) | Char(39);
+         If (sMailAttachments @<> '');
+             sMailAttachments = sMailAttachments | ',';
+         Endif;
+         sMailAttachments = sMailAttachments | sMailAttachment;
+     Endif;
+End;
+
+######################
+### Create Command and Execute
+######################
+sCommandPS = '$securepass = ConvertTo-SecureString -AsPlainText -String ' | Char(39) | cMailCredentialPassword | Char(39) | ' -Force;';
+
+sCommandPS  = sCommandPS | 'Send-MailMessage';
+sCommandPS = sCommandPS | ' -From ' | Char(39) | cMailSender | Char(39) | ' -Subject ' | Char(39) | cMailSubject | Char(39) | ' -Body ' | Char(39) | cMailBody | Char(39);
+sCommandPS = sCommandPS | ' -To ' | sMailRecipients;
+sCommandPS = sCommandPS | ' -SmtpServer ' | Char(39) | cSMTPServer | Char(39);
+sCommandPS = sCommandPS | ' -Port ' | cSMTPPort;
+sCommandPS = sCommandPS | ' -Credential (New-Object System.Management.Automation.PSCredential(' | Char(39) | cMailCredentialUserName | Char(39) | ',$securepass))';
+sCommandPS = sCommandPS | If (sMailAttachments @<> '', ' -Attachments ' | sMailAttachments, '');
+sCommandPS = sCommandPS | If (cMailSSL @= 'Y', ' -UseSsl', '');
+sCommandPS = sCommandPS | ' -DeliveryNotificationOption never';
+
+#asciioutput('Powershell Email Command.txt', sCommandPS);
+
+sCommandPS = 'powershell ' | sCommandPS;
+
+If (pDebug = 0);
+    ExecuteCommand(sCommandPS, 1);
+Endif;
+#endregion

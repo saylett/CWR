@@ -1,0 +1,14 @@
+SKIPCHECK;
+
+[ 'Name' ] = S:
+  '<a href="'
+    | AttrS('Customer', DB('Plant Material Details', !Plant Material, 'Customer'), 'Website URL')
+    | '">'
+    | AttrS('Customer', DB('Plant Material Details', !Plant Material, 'Customer'), 'Description') 
+    | '</a>';
+
+
+[ 'Material Description' ] = S:
+  AttrS('Material', SubSt(!Plant Material, 6, 9), 'Description');
+
+

@@ -1,0 +1,33 @@
+{
+	"@type":"Process",
+	"Name":"Cub.General Ledger.randomize.caller",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Cub.General Ledger.randomize.caller.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pYear_Beg",
+			"Prompt":"",
+			"Value":"2017",
+			"Type":"String"
+		},
+		{
+			"Name":"pYear_End",
+			"Prompt":"",
+			"Value":"2019",
+			"Type":"String"
+		},
+		{
+			"Name":"pMult",
+			"Prompt":"",
+			"Value":"5",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

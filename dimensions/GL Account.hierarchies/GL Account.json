@@ -1,0 +1,150 @@
+{
+	"@type":"Hierarchy",
+	"Name":"GL Account",
+	"Elements":
+	[
+		{
+			"Name":"Operating Profit",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Gross Margin",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Revenue",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Record Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Merchandise",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Books",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Direct Costs",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Cost of Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Distribution Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"General and Admin Costs",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Warehouse Costs Allocation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Other Indirect Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rent and Rates",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staff Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"51100",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Operating Profit",
+			"ComponentName":"Gross Margin",
+			"Weight":1
+		},
+		{
+			"ParentName":"Operating Profit",
+			"ComponentName":"General and Admin Costs",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Revenue",
+			"Weight":1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Direct Costs",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Revenue",
+			"ComponentName":"Record Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"Revenue",
+			"ComponentName":"Merchandise",
+			"Weight":1
+		},
+		{
+			"ParentName":"Revenue",
+			"ComponentName":"Books",
+			"Weight":1
+		},
+		{
+			"ParentName":"Direct Costs",
+			"ComponentName":"Cost of Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"Direct Costs",
+			"ComponentName":"Distribution Costs",
+			"Weight":1
+		},
+		{
+			"ParentName":"General and Admin Costs",
+			"ComponentName":"Warehouse Costs Allocation",
+			"Weight":1
+		},
+		{
+			"ParentName":"General and Admin Costs",
+			"ComponentName":"Other Indirect Costs",
+			"Weight":1
+		},
+		{
+			"ParentName":"General and Admin Costs",
+			"ComponentName":"Rent and Rates",
+			"Weight":1
+		},
+		{
+			"ParentName":"General and Admin Costs",
+			"ComponentName":"Bonus",
+			"Weight":1
+		},
+		{
+			"ParentName":"General and Admin Costs",
+			"ComponentName":"Staff Costs",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"GL Account.subsets/Reporting.json",
+		"GL Account.subsets/Waterfall.json",
+		"GL Account.subsets/}Export.All.json"
+	]
+}

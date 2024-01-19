@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{{[Employee].[Job Grade].[All Job Grades]},{[Employee].[Job Grade].[All Job Grades].Children}}"
+}

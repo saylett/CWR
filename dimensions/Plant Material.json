@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Plant Material",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Plant Material')/Hierarchies('Plant Material')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Plant Material.hierarchies/Plant Material.json"
+	]
+}

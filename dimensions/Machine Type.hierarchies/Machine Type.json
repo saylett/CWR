@@ -1,0 +1,28 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Machine Type",
+	"Elements":
+	[
+		{
+			"Name":"CLT",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"MBL",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Slitter",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"LTF",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"LT7",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

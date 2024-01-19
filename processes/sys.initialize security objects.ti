@@ -1,0 +1,165 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Cube for reviewing security by object
+#########################################################################################################################
+
+sCub = '}Sys Sc Object Access';
+
+sDim_01 = '}Sys Sc Groups';
+sDim_02 = '}Sys Object Type';
+sDim_03 = '}Sys Sc Permission Index';
+sDim_04 = '}Sys Object Name';
+sDim_05 = '}Sys Sc Object Access Measure';
+sDim_06 = '}Sys Sc Level';
+
+sDim_02_Node = 'ALL Object Types';
+sDim_03_Node = 'ALL Permissions';
+sDim_06_Node = 'ALL Levels';
+
+nCnt_Dim_Total = 6;
+
+###  Create Dimensions  ###
+nCnt_Dim = 1;
+While( nCnt_Dim <= nCnt_Dim_Total );
+  sDim = Expand( '%sDim_' | NumberToStringEx( nCnt_Dim, '00', '', '') | '%' );
+  If( DimensionExists( sDim ) = 0 );
+    DimensionCreate( sDim );
+  EndIf;
+  nCnt_Dim = nCnt_Dim + 1;
+End;
+
+
+###  Add Elements: Object Type  ###
+DimensionElementInsert( sDim_02, '', sDim_02_Node, 'C' );
+DimensionElementInsert( sDim_02, '', 'Application', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'Application', 1 );
+DimensionElementInsert( sDim_02, '', 'Chore', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'Chore', 1 );
+DimensionElementInsert( sDim_02, '', 'Cube', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'Cube', 1 );
+DimensionElementInsert( sDim_02, '', 'Dimension', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'Dimension', 1 );
+DimensionElementInsert( sDim_02, '', 'Process', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'Process', 1 );
+DimensionElementInsert( sDim_02, '', 'Rule', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'Rule', 1 );
+DimensionElementInsert( sDim_02, '', 'Subset', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'Subset', 1 );
+DimensionElementInsert( sDim_02, '', 'View', 'N' );
+DimensionElementComponentAdd( sDim_02, sDim_02_Node, 'View', 1 );
+
+###  Add Elements: Permission Index  ###
+DimensionElementInsert( sDim_03, '', 'Overall Permission', 'N' );
+DimensionElementInsert( sDim_03, '', sDim_03_Node, 'C' );
+DimensionElementInsert( sDim_03, '', '001', 'N' );
+DimensionElementComponentAdd( sDim_03, sDim_03_Node, '001', 1 );
+DimensionElementInsert( sDim_03, '', '002', 'N' );
+DimensionElementComponentAdd( sDim_03, sDim_03_Node, '002', 1 );
+DimensionElementInsert( sDim_03, '', '003', 'N' );
+DimensionElementComponentAdd( sDim_03, sDim_03_Node, '003', 1 );
+DimensionElementInsert( sDim_03, '', '004', 'N' );
+DimensionElementComponentAdd( sDim_03, sDim_03_Node, '004', 1 );
+DimensionElementInsert( sDim_03, '', '005', 'N' );
+DimensionElementComponentAdd( sDim_03, sDim_03_Node, '005', 1 );
+
+###  Add Elements: Measure  ###
+DimensionElementInsert( sDim_05, '', 'IsObject', 'N' );
+DimensionElementInsert( sDim_05, '', 'Inactive', 'N' );
+DimensionElementInsert( sDim_05, '', 'Permission Numeric', 'N' );
+DimensionElementInsert( sDim_05, '', 'Permission Type', 'S' );
+DimensionElementInsert( sDim_05, '', 'Wildcard Entry', 'S' );
+DimensionElementInsert( sDim_05, '', 'Attribute Name', 'S' );
+DimensionElementInsert( sDim_05, '', 'Permission Level', 'S' );
+DimensionElementInsert( sDim_05, '', 'Permission Level Override', 'S' );
+DimensionElementInsert( sDim_05, '', 'Current Permission Level', 'S' );
+DimensionElementInsert( sDim_05, '', 'Current Permission Validation', 'N' );
+
+###  Add Elements: Security Level  ###
+DimensionElementInsert( sDim_06, '', sDim_06_Node, 'C' );
+DimensionElementInsert( sDim_06, '', '0', 'N' );
+DimensionElementComponentAdd( sDim_06, sDim_06_Node, '0', 1 );
+DimensionElementInsert( sDim_06, '', '1', 'N' );
+DimensionElementComponentAdd( sDim_06, sDim_06_Node, '1', 1 );
+DimensionElementInsert( sDim_06, '', '2', 'N' );
+DimensionElementComponentAdd( sDim_06, sDim_06_Node, '2', 1 );
+DimensionElementInsert( sDim_06, '', '3', 'N' );
+DimensionElementComponentAdd( sDim_06, sDim_06_Node, '3', 1 );
+DimensionElementInsert( sDim_06, '', '4', 'N' );
+DimensionElementComponentAdd( sDim_06, sDim_06_Node, '4', 1 );
+DimensionElementInsert( sDim_06, '', '5', 'N' );
+DimensionElementComponentAdd( sDim_06, sDim_06_Node, '5', 1 );
+
+###  Create Dimension  ###
+If( CubeExists( sCub ) = 1 );
+#  CubeDestroy( sCub );
+EndIf;
+#CubeCreate( sCub, sDim_01, sDim_02, sDim_03, sDim_04, sDim_05 );
+
+#########################################################################################################################
+###  Contingent dimensions
+#########################################################################################################################
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+AttrInsert(sDim_06, '', 'Description', 'A');
+
+AttrPutS('NONE', sDim_06, '0', 'Description' );
+AttrPutS('READ', sDim_06, '1', 'Description' );
+AttrPutS('WRITE', sDim_06, '2', 'Description' );
+AttrPutS('RESERVE', sDim_06, '3', 'Description' );
+AttrPutS('LOCK', sDim_06, '4', 'Description' );
+AttrPutS('ADMIN', sDim_06, '5', 'Description' );
+
+
+
+sAttr = 'TM1 Object Name';
+AttrInsert(sDim_02, '', sAttr, 'S');
+
+AttrPutS('}ApplicationEntries', sDim_02, 'Application', sAttr );
+AttrPutS('}Chores', sDim_02, 'Chore', sAttr );
+AttrPutS('}Cubes', sDim_02, 'Cube', sAttr );
+AttrPutS('}Dimensions', sDim_02, 'Dimension', sAttr );
+AttrPutS('}Processes', sDim_02, 'Process', sAttr );
+
+
+sAttr = 'TM1 Sc Object Name';
+AttrInsert(sDim_02, '', sAttr, 'S');
+
+AttrPutS('}ApplicationSecurity', sDim_02, 'Application', sAttr );
+AttrPutS('}ChoreSecurity', sDim_02, 'Chore', sAttr );
+AttrPutS('}CubeSecurity', sDim_02, 'Cube', sAttr );
+AttrPutS('}DimensionSecurity', sDim_02, 'Dimension', sAttr );
+AttrPutS('}ProcessSecurity', sDim_02, 'Process', sAttr );
+
+#endregion

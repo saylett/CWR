@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Sc Permission Index",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Sc Permission Index')/Hierarchies('}Sys Sc Permission Index')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Sc Permission Index.hierarchies/}Sys Sc Permission Index.json"
+	]
+}

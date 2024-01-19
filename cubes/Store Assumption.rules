@@ -1,0 +1,34 @@
+#Region System
+FEEDSTRINGS;
+SKIPCHECK;
+#EndRegion
+
+
+# make budget = actual
+
+['Budget', {'Employee Count',' Rent per Sq Foot', 'Hourly Wage (USD)'} , {'2017'}] = N: ['Actual'];
+
+## stet out 2017 as a base
+
+['Actual', {'Employee Count',' Rent per Sq Foot', 'Hourly Wage (USD)'} , '2017'] = N: STET;
+
+## lets just roll forward the employee count - it won't change and not really going to be modelling changes
+
+[{'Budget', 'Actual'}, 'Employee Count'] = N: DB ( 'Store Assumption', 'Actual', '2017', !Store, !Store Assumption Measure );
+
+## lets copy over hourly wage and rent per sq ft too but add 5%
+
+[{'Actual', 'Budget'}, {'Rent per Sq Foot', 'Hourly Wage (USD)'}] =N:
+  DB('Store Assumption',!Version, ATTRS ('Year', !Year, 'Previous' ),!Store,!Store Assumption Measure) * 1.05;
+
+# Work Hours per Month for Budget
+[{'Actual', 'Budget'},'Work Hours per Month']=N:['Work Hours per Week']*52/12;
+
+#Region Feeders
+FEEDERS;
+
+['Actual', {'Employee Count',' Rent per Sq Foot', 'Hourly Wage (USD)'}] =>   DB('Store Assumption',!Version, DB ('}ElementAttributes_Year', !Year, 'Next' ),!Store,!Store Assumption Measure);
+['Actual'] => ['Budget'];
+
+[{'Actual', 'Budget'},'Work Hours per Week']=>['Work Hours per Month'];
+#EndRegion

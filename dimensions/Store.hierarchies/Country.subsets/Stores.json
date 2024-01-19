@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Stores",
+	"Expression":"{TM1Sort({TM1FilterByLevel({Descendants([Store].[Store].[All Countries])},0)},ASC)}"
+}

@@ -1,0 +1,27 @@
+{
+	"@type":"Process",
+	"Name":"LocalizeCube",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"LocalizeCube.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pNewName",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pCube",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

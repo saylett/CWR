@@ -1,0 +1,56 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+If( pConfirm @<> '1' );
+  ProcessQuit;
+EndIf;
+
+cDim = '}Sys Sc Groups';
+
+nCnt = 1;
+While( nCnt <= DimSiz( '}Groups' ));
+  sGroup = DimNm( '}Groups', nCnt );
+  If( sGroup @= 'ADMIN' % sGroup @= 'DataAdmin' % sGroup @= 'OperationsAdmin' % sGroup @= 'SecurityAdmin' );
+    nCnt = nCnt + 1;
+  Else;
+    If( DimIx( cDim, sGroup ) = 0 );
+      DeleteGroup( sGroup );
+    Else;
+      nCnt = nCnt + 1;
+    EndIf;
+  EndIf;
+End;
+
+nCnt = 1;
+While( nCnt <= ElCompN( cDim, 'ALL Groups' ));
+  sGroup = ElComp( cDim, 'ALL Groups', nCnt );
+  If( DimIx( '}Groups', sGroup ) = 0 );
+    AddGroup( sGroup );
+  EndIf;
+  nCnt = nCnt + 1;
+End;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+#endregion

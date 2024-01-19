@@ -1,0 +1,29 @@
+{
+	"@type":"Process",
+	"Name":"sys.Arc Demo Loop",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"sys.Arc Demo Loop.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"Release",
+		"dataSourceNameForServer":"Release",
+		"subset":"All"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vElement",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

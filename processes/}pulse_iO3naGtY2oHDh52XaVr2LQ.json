@@ -1,0 +1,20 @@
+{
+	"@type":"Process",
+	"Name":"}pulse_iO3naGtY2oHDh52XaVr2LQ",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}pulse_iO3naGtY2oHDh52XaVr2LQ.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pCubeName",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

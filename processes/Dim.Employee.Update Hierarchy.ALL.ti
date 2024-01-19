@@ -1,0 +1,112 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+If( pConfirm @<> '1' & pConfirm @<> 'Y'  );
+  ProcessQuit;
+EndIf;
+
+cDim = 'Employee';
+
+
+sHier_01 = 'Position';
+sHier_02 = 'Last Name';
+sHier_03 = 'Start Month';
+sHier_04 = 'Exempt';
+sHier_05 = 'Job Grade';
+sHier_06 = 'Store Current';
+sHier_07 = 'Store Budget';
+
+nCnt_Total = 7;
+
+nCnt_Hier = 1;
+While( nCnt_Hier <= nCnt_Total );
+  sHier = Expand( '%sHier_' | NumberToStringEx( nCnt_Hier, '00', '', '') | '%' );
+
+  sProcess = 'Dim.Employee.Update Hierarchy.' | sHier;
+  ExecuteProcess( sProcess );
+
+  AttrPutS( sHier, '}Hierarchies_Employee', cDim | ':' | sHier, 'UX Filter' );
+
+  nCnt_Hier = nCnt_Hier + 1;
+End;
+
+
+sSub = '_TI_Temp';
+sDim = '}ElementAttributes_Employee';
+sMDX = '{Filter({TM1SubsetAll([}ElementAttributes_Employee])},[}ElementAttributes_Employee].[Hierarchy Flag]="1")}}';
+
+If( SubsetExists( sDim, sSub ) <> 0 );
+  SubsetDestroy( sDim, sSub );
+EndIf;
+SubsetCreatebyMDX( sSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, sSub );
+
+If( nElem > 0 );
+  sElem_Last = SubsetGetElementName( sDim, sSub, nElem );
+  SubsetElementDelete( sDim, sSub, nElem );
+  SubsetElementInsert( sDim, sSub, sElem_Last, nElem );
+
+  nCnt = 1;
+  While( nCnt <= nElem );
+    sAttr = SubsetGetElementName(sDim, sSub, nCnt);
+    
+    ExecuteProcess('}bedrock.hier.create.fromattribute',
+       'pLogOutput', 0,
+       'pStrictErrorHandling', 0,
+       'pDim', cDim,
+       'pSrcHier', '',
+       'pTgtHier', sAttr,
+       'pAttr', sAttr,
+       'pTopNode', 'All <pAttr>',
+       'pPrefix', '',
+       'pSuffix', '',
+       'pSkipBlank', 0,
+       'pUnallocated', 'NA <pAttr>' );
+
+    HierarchySortOrder(cDim, sAttr, 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+    
+    If( HierarchySubsetExists( cDim, sAttr, 'Default') = 1 );
+      HierarchySubsetDestroy( cDim, sAttr, 'Default' );
+    EndIf;
+    sMDX_Sub = '{{[' | cDim | '].[' | sAttr | '].[' | 'All ' | sAttr | ']},{[' | cDim | '].[' | sAttr | '].[' | 'All ' | sAttr | '].Children}}';
+    SubsetCreatebyMDX( 'Default', sMDX_Sub, cDim | ':' | sAttr  );
+
+    If( HierarchySubsetExists( cDim, sAttr, 'Default no Total') = 1 );
+      HierarchySubsetDestroy( cDim, sAttr, 'Default no Total' );
+    EndIf;
+    sMDX_Sub = '{[' | cDim | '].[' | sAttr | '].[' | 'All ' | sAttr | '].Children}';
+    SubsetCreatebyMDX( 'Default no Total', sMDX_Sub, cDim | ':' | sAttr  );
+
+    nCnt = nCnt + 1;
+  End;  
+EndIf;
+
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#nCnt_Hier = 1;
+#While( nCnt_Hier <= nCnt_Total );
+#  sHier = Expand( '%sHier_' | NumberToStringEx( nCnt_Hier, '00', '', '') | '%' );
+#  sSub = 'Hier Group';
+#  If( HierarchySubsetExists( cDim, sHier, sSub ) = 1 );
+#    HierarchySubsetDestroy( cDim, sHier, sSub );
+#  EndIf;
+#  
+#  sMDX = '{[' | cDim | '].[' | sHier | '].[' | 'All ' | sHier | 's' | '].Children}';
+#  SubsetCreatebyMDX('Hier Group', sMDX, cDim | ':' | sHier );
+#
+#  nCnt_Hier = nCnt_Hier + 1;
+#End;
+
+#endregion

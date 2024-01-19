@@ -1,0 +1,33 @@
+{
+	"@type":"Process",
+	"Name":"Cub.Staffing Seasonality.Copy",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Cub.Staffing Seasonality.Copy.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pYear_Fr",
+			"Prompt":"Year From",
+			"Value":"2020",
+			"Type":"String"
+		},
+		{
+			"Name":"pYear_To",
+			"Prompt":"Year To",
+			"Value":"2021",
+			"Type":"String"
+		},
+		{
+			"Name":"pConfirm",
+			"Prompt":"Confirm",
+			"Value":"1",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

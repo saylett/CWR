@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{[Version].[Version].[All Versions^Actual],[Version].[Version].[All Versions^Budget],[Version].[Version].[All Versions^Forecast]}"
+}

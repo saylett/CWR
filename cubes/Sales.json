@@ -1,0 +1,39 @@
+{
+	"@type":"Cube",
+	"Name":"Sales",
+	"Rules@Code.link":"Sales.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('Release')"
+		},
+		{
+			"@id":"Dimensions('Sales Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Sales.views/Budget.json",
+		"Sales.views/Budget Genre.json",
+		"Sales.views/Drill - General Ledger to Sales.json",
+		"Sales.views/DrillThrough.json",
+		"Sales.views/Top 10 Release Categories by Revenue.json",
+		"Sales.views/Country.json",
+		"Sales.views/Default.json",
+		"Sales.views/Export to Sales Budget.json",
+		"Sales.views/Forecasting by Genre.json",
+		"Sales.views/Genre.json"
+	]
+}

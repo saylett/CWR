@@ -1,0 +1,30 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Employee Position",
+	"Elements":
+	[
+		{
+			"Name":"Inventory Analyst",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Associate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store Manager",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Trainee",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Employee Position.subsets/All Positions.json",
+		"Employee Position.subsets/Default.json",
+		"Employee Position.subsets/Office.json",
+		"Employee Position.subsets/Retail.json"
+	]
+}

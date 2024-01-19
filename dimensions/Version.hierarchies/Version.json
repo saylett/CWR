@@ -1,0 +1,125 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Version",
+	"Elements":
+	[
+		{
+			"Name":"All Versions",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PY ACT",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Act vs Bud",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Act vs Bud %",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Act vs Fct %",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Act vs Fct",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Bud vs PY ACT %",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Bud vs PY ACT",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Versions",
+			"ComponentName":"Actual",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Versions",
+			"ComponentName":"Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Versions",
+			"ComponentName":"Forecast",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Versions",
+			"ComponentName":"PY ACT",
+			"Weight":1
+		},
+		{
+			"ParentName":"Act vs Bud",
+			"ComponentName":"Budget",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Act vs Bud",
+			"ComponentName":"Actual",
+			"Weight":1
+		},
+		{
+			"ParentName":"Act vs Bud %",
+			"ComponentName":"Act vs Bud",
+			"Weight":1
+		},
+		{
+			"ParentName":"Act vs Fct %",
+			"ComponentName":"Act vs Fct",
+			"Weight":1
+		},
+		{
+			"ParentName":"Act vs Fct",
+			"ComponentName":"Forecast",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Act vs Fct",
+			"ComponentName":"Actual",
+			"Weight":1
+		},
+		{
+			"ParentName":"Bud vs PY ACT %",
+			"ComponentName":"Bud vs PY ACT",
+			"Weight":1
+		},
+		{
+			"ParentName":"Bud vs PY ACT",
+			"ComponentName":"Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"Bud vs PY ACT",
+			"ComponentName":"PY ACT",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Version.subsets/Act Bud.json",
+		"Version.subsets/Act Bud Comparison.json",
+		"Version.subsets/Default.json"
+	]
+}

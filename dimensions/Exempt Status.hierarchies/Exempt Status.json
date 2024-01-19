@@ -1,0 +1,36 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Exempt Status",
+	"Elements":
+	[
+		{
+			"Name":"All Exempt Status",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Exempt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Non-Exempt",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Exempt Status",
+			"ComponentName":"Exempt",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Exempt Status",
+			"ComponentName":"Non-Exempt",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Exempt Status.subsets/}Export.All.json"
+	]
+}

@@ -1,0 +1,81 @@
+SKIPCHECK;
+FEEDSTRINGS;
+
+###  Is dimension in framework  ###
+[] = S: 
+  If( AttrS( '}Sys Dimension Name', !}Sys Dimension Name, 'Sys Element Flag' ) @= '1',
+      CONTINUE,
+      '' );
+
+###  Exceptions & exclusions  ###
+[ '}Sys Element Name':'Dimension User Input', '}Sys Sc Element Access Measure':{'Inactive','Exclusions'} ] = N: STET;
+
+[ '}Sys Element Name':'Dimension User Input', '}Sys Sc Element Access Measure':{'Permission Type','Permission Level'} ] = S: STET;
+
+[ '}Sys Sc Element Access Measure':{'Inactive','Exclusions'} ] = N: STET; 
+
+[ '}Sys Sc Element Access Measure':{'Permission Type','Permission Level'}] = S: STET;
+
+[ '}Sys Sc Element Access Measure':{'Wildcard Entry'} ] = S: 
+  If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Type' ) @= 'WILDCARD'
+        % DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Type' ) @= 'ATTRIBUTE',
+      STET,
+      '' );
+
+[ '}Sys Sc Element Access Measure':{'Exclusion Type','Exclusion Entry'} ] = S: 
+  If( [ '}Sys Sc Element Access Measure':'Exclusions' ] = 1,
+      STET,
+      '' );
+
+#[ '}Sys Sc Element Access Measure':'Exclusion Wildcard Alias' ] = S: 
+#  If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Exclusion Type' ) @= 'WILDCARD',
+#      If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Type' ) @= 'WILDCARD',
+#          DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Wildcard Alias' ),
+#          STET ),
+#      If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Exclusion Type' ) @= 'ATTRIBUTE',
+#          STET,
+#          '' ));
+
+[ '}Sys Sc Element Access Measure':'Effective Permission Level' ] = S: STET;
+
+#Region - Inheritance Level
+[ '}Sys Sc Element Access Measure':'InheritToDimLevel' ] = N: 
+  If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Type' ) @= 'ALL'
+        % DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Type' ) @= 'WILDCARD'
+        % DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Type' ) @= 'RECURSIVE',
+      STET,
+      If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Type' ) @= 'POINT',
+          ElLev( !}Sys Dimension Name, !}Sys Element Name ),
+          0 ));
+
+[ '}Sys Sc Element Access Measure':'ExcludeToDimLevel' ] = N: 
+  If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Exclusion Type' ) @= 'WILDCARD'
+        % DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Exclusion Type' ) @= 'RECURSIVE',
+      STET,
+      If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Exclusion Type' ) @= 'POINT',
+          ElLev( !}Sys Dimension Name, DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Exclusion Entry' ) ),
+          0 ));
+
+#Region - Check current security level
+[ '}Sys Sc Element Access Measure':'Current Permission Level' ] = S: 
+  If( DimIx( '}Cubes', '}ElementSecurity_' | !}Sys Dimension Name ) > 0,
+      DB( '}ElementSecurity_' | !}Sys Dimension Name, !}Sys Element Name, !}Sys Sc Groups ),
+      'WRITE' );
+
+# For validation NONE @= '' in terms of functional equivalence
+[ '}Sys Sc Element Access Measure':'Current Permission Validation' ] = N: 
+  If( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Level' ) 
+        @= DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Current Permission Level' ),
+      0,
+      If( ( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Level' ) @= '' 
+              & DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Current Permission Level' ) @= 'NONE' ) 
+            % ( DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Permission Level' ) @= 'NONE'
+                  & DB( '}Sys Sc Element Access', !}Sys Sc Groups, !}Sys Dimension Name, !}Sys Element Name, 'Current Permission Level' ) @= '' ),
+          0,
+          1 ));
+      
+FEEDERS;
+
+[ '}Sys Sc Element Access Measure':'Effective Permission Level' ] => 
+  [ '}Sys Sc Element Access Measure':'Current Permission Level' ], [ '}Sys Sc Element Access Measure':'Current Permission Validation' ];
+

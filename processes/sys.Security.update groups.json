@@ -1,0 +1,21 @@
+{
+	"@type":"Process",
+	"Name":"sys.Security.update groups",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"sys.Security.update groups.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pConfirm",
+			"Prompt":"",
+			"Value":"1",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

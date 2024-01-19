@@ -1,0 +1,18 @@
+{
+	"@type":"Cube",
+	"Name":"Machine Plan",
+	"Rules@Code.link":"Machine Plan.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Machine')"
+		},
+		{
+			"@id":"Dimensions('Machine Plan Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

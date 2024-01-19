@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Years",
+	"Expression":"{EXCEPT({DRILLDOWNMEMBER({DRILLUPMEMBER({[Year-Month].[Year].Members}, {[Year-Month].[Year].[All Years]})}, {[Year-Month].[Year].[All Years]})},{[Year-Month].[Year].[All Years]})}"
+}

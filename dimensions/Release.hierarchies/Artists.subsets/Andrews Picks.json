@@ -1,0 +1,148 @@
+{
+	"@type":"Subset",
+	"Name":"Andrews Picks",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Aerosmith')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Al Green')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Alabama')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Alice Cooper')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Black Oak Arkansas')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Blood,  Sweat And Tears')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Bob Seger')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Bobby Womack')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Bruce Springsteen')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Buddy Guy')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Buffalo Springfield')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Captain And Tennille')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Carlos Santana')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Carpenters')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Celia Cruz')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Cheap Trick')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Cher')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Creedence Clearwater Revival')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Crosby,  Stills & Nash')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Curtis Mayfield')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('David Bowie')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Dionne Warwick')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Dolly Parton')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Don McLean')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Dr. John')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Dusty Springfield')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Earth, Wind & Fire')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Elvis Presley')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Emerson,  Lake & Palmer')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Eric Clapton')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Etta James')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Everly Brothers')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Fleetwood Mac')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Four Tops')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Gene Autry')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('George Clinton')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Hank Williams')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Hank Williams Jr.')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('J.J. Cale')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Jackson Browne')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Janis Joplin')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Jerry Garcia')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Jerry Lee Lewis')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Jethro Tull')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Jim Morrison')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Jimi Hendrix')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Artists')/Elements('Jimmy Buffett')"
+		}
+	]
+}

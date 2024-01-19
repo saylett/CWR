@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Artist",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Artist')/Hierarchies('Artist')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Artist.hierarchies/Artist.json"
+	]
+}

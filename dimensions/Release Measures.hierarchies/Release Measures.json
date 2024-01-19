@@ -1,0 +1,540 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Release Measures",
+	"Elements":
+	[
+		{
+			"Name":"All Measures",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"thumb",
+			"Type":"String"
+		},
+		{
+			"Name":"title",
+			"Type":"String"
+		},
+		{
+			"Name":"master_url",
+			"Type":"String"
+		},
+		{
+			"Name":"uri",
+			"Type":"String"
+		},
+		{
+			"Name":"cover_image",
+			"Type":"String"
+		},
+		{
+			"Name":"resource_url",
+			"Type":"String"
+		},
+		{
+			"Name":"master_id",
+			"Type":"String"
+		},
+		{
+			"Name":"type",
+			"Type":"String"
+		},
+		{
+			"Name":"id",
+			"Type":"String"
+		},
+		{
+			"Name":"style",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode",
+			"Type":"String"
+		},
+		{
+			"Name":"label",
+			"Type":"String"
+		},
+		{
+			"Name":"country",
+			"Type":"String"
+		},
+		{
+			"Name":"catno",
+			"Type":"String"
+		},
+		{
+			"Name":"year",
+			"Type":"String"
+		},
+		{
+			"Name":"genre",
+			"Type":"String"
+		},
+		{
+			"Name":"format_quantity",
+			"Type":"String"
+		},
+		{
+			"Name":"style #1",
+			"Type":"String"
+		},
+		{
+			"Name":"format",
+			"Type":"String"
+		},
+		{
+			"Name":"format #1",
+			"Type":"String"
+		},
+		{
+			"Name":"format #2",
+			"Type":"String"
+		},
+		{
+			"Name":"format #3",
+			"Type":"String"
+		},
+		{
+			"Name":"label #1",
+			"Type":"String"
+		},
+		{
+			"Name":"label #2",
+			"Type":"String"
+		},
+		{
+			"Name":"genre #1",
+			"Type":"String"
+		},
+		{
+			"Name":"formats",
+			"Type":"String"
+		},
+		{
+			"Name":"style #2",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #1",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #2",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #3",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #4",
+			"Type":"String"
+		},
+		{
+			"Name":"label #3",
+			"Type":"String"
+		},
+		{
+			"Name":"label #4",
+			"Type":"String"
+		},
+		{
+			"Name":"label #5",
+			"Type":"String"
+		},
+		{
+			"Name":"style #3",
+			"Type":"String"
+		},
+		{
+			"Name":"artists",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #1",
+			"Type":"String"
+		},
+		{
+			"Name":"video #1",
+			"Type":"String"
+		},
+		{
+			"Name":"video #2",
+			"Type":"String"
+		},
+		{
+			"Name":"video #3",
+			"Type":"String"
+		},
+		{
+			"Name":"video #4",
+			"Type":"String"
+		},
+		{
+			"Name":"label #6",
+			"Type":"String"
+		},
+		{
+			"Name":"label #7",
+			"Type":"String"
+		},
+		{
+			"Name":"stock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"demand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"genre #2",
+			"Type":"String"
+		},
+		{
+			"Name":"label #8",
+			"Type":"String"
+		},
+		{
+			"Name":"label #9",
+			"Type":"String"
+		},
+		{
+			"Name":"format #4",
+			"Type":"String"
+		},
+		{
+			"Name":"format #5",
+			"Type":"String"
+		},
+		{
+			"Name":"genre #3",
+			"Type":"String"
+		},
+		{
+			"Name":"video #5",
+			"Type":"String"
+		},
+		{
+			"Name":"video #6",
+			"Type":"String"
+		},
+		{
+			"Name":"video #7",
+			"Type":"String"
+		},
+		{
+			"Name":"video #8",
+			"Type":"String"
+		},
+		{
+			"Name":"video #9",
+			"Type":"String"
+		},
+		{
+			"Name":"video #10",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #2",
+			"Type":"String"
+		},
+		{
+			"Name":"video #11",
+			"Type":"String"
+		},
+		{
+			"Name":"video #12",
+			"Type":"String"
+		},
+		{
+			"Name":"video #13",
+			"Type":"String"
+		},
+		{
+			"Name":"video #14",
+			"Type":"String"
+		},
+		{
+			"Name":"video #15",
+			"Type":"String"
+		},
+		{
+			"Name":"video #16",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #5",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #6",
+			"Type":"String"
+		},
+		{
+			"Name":"label #10",
+			"Type":"String"
+		},
+		{
+			"Name":"label #11",
+			"Type":"String"
+		},
+		{
+			"Name":"label #12",
+			"Type":"String"
+		},
+		{
+			"Name":"label #13",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #7",
+			"Type":"String"
+		},
+		{
+			"Name":"label #14",
+			"Type":"String"
+		},
+		{
+			"Name":"label #15",
+			"Type":"String"
+		},
+		{
+			"Name":"label #16",
+			"Type":"String"
+		},
+		{
+			"Name":"label #17",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #8",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #9",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #10",
+			"Type":"String"
+		},
+		{
+			"Name":"label #18",
+			"Type":"String"
+		},
+		{
+			"Name":"label #19",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #11",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #12",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #13",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #14",
+			"Type":"String"
+		},
+		{
+			"Name":"video #17",
+			"Type":"String"
+		},
+		{
+			"Name":"video #18",
+			"Type":"String"
+		},
+		{
+			"Name":"video #19",
+			"Type":"String"
+		},
+		{
+			"Name":"video #20",
+			"Type":"String"
+		},
+		{
+			"Name":"genre #4",
+			"Type":"String"
+		},
+		{
+			"Name":"label #20",
+			"Type":"String"
+		},
+		{
+			"Name":"style #4",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #3",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #4",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #5",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #6",
+			"Type":"String"
+		},
+		{
+			"Name":"format #6",
+			"Type":"String"
+		},
+		{
+			"Name":"format #7",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #15",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #16",
+			"Type":"String"
+		},
+		{
+			"Name":"format #8",
+			"Type":"String"
+		},
+		{
+			"Name":"format #10",
+			"Type":"String"
+		},
+		{
+			"Name":"genre #5",
+			"Type":"String"
+		},
+		{
+			"Name":"genre #6",
+			"Type":"String"
+		},
+		{
+			"Name":"style #5",
+			"Type":"String"
+		},
+		{
+			"Name":"style #6",
+			"Type":"String"
+		},
+		{
+			"Name":"style #7",
+			"Type":"String"
+		},
+		{
+			"Name":"style #8",
+			"Type":"String"
+		},
+		{
+			"Name":"genre #7",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #17",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #18",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #19",
+			"Type":"String"
+		},
+		{
+			"Name":"barcode #20",
+			"Type":"String"
+		},
+		{
+			"Name":"format #9",
+			"Type":"String"
+		},
+		{
+			"Name":"style #9",
+			"Type":"String"
+		},
+		{
+			"Name":"style #10",
+			"Type":"String"
+		},
+		{
+			"Name":"style #11",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #7",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #10",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #9",
+			"Type":"String"
+		},
+		{
+			"Name":"artists #8",
+			"Type":"String"
+		},
+		{
+			"Name":"format #17",
+			"Type":"String"
+		},
+		{
+			"Name":"format #15",
+			"Type":"String"
+		},
+		{
+			"Name":"format #13",
+			"Type":"String"
+		},
+		{
+			"Name":"format #12",
+			"Type":"String"
+		},
+		{
+			"Name":"format #16",
+			"Type":"String"
+		},
+		{
+			"Name":"format #14",
+			"Type":"String"
+		},
+		{
+			"Name":"format #11",
+			"Type":"String"
+		},
+		{
+			"Name":"format #20",
+			"Type":"String"
+		},
+		{
+			"Name":"format #19",
+			"Type":"String"
+		},
+		{
+			"Name":"format #18",
+			"Type":"String"
+		},
+		{
+			"Name":"youtube",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Release Measures.subsets/Default.json",
+		"Release Measures.subsets/}Export.All.json"
+	]
+}

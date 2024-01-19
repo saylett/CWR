@@ -1,0 +1,70 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+cDim = 'Release';
+cCube = 'Release Measures';
+cMeasureDim = 'Release Measures';
+
+nMax = DimSiz ( cMeasureDim );
+nCount = 1;
+
+## create a measure per attribute
+
+While ( nCount <= nMax );
+
+  sAttr = DimNm ( cMeasureDim, nCount);
+
+  sType = DType( cMeasureDim, sAttr );
+
+  If ( sType @= 'S' );
+    AttrInsert( cDim, '', sAttr, 'S' );
+  EndIf;
+
+  If ( sType @= 'N' );
+    AttrInsert( cDim, '', sAttr, 'N' );
+  EndIf;
+
+  nCount = nCount + 1;
+
+End;
+
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+### Lead the data
+
+
+sType = DType( cCube, vAttr );
+
+If ( sType @= 'S' );
+  AttrPutS( vValue, cDim,vRelease, vAttr );
+EndIf;
+
+If ( sType @= 'N' );
+  AttrPutN( NUMBR(vValue), cDim,vRelease, vAttr );
+EndIf;
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sAttr = 'Title (Code)';
+AttrInsert( cDim, '', sAttr, 'S' );
+
+#endregion

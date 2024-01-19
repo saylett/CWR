@@ -1,0 +1,79 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+
+cHier = 'Decade';
+cHier_Node = 'All Decades';
+sDim = 'Release';
+sNode = 'All Releases';
+cProcessName = GetProcessName();
+
+If( HierarchyExists( sDim, cHier ) = 1 );
+  HierarchyDestroy( sDim, cHier );
+EndIf;
+HierarchyCreate( sDim, cHier );
+HierarchyElementInsert(sDim, cHier, '', cHier_Node, 'C');
+
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( sDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+SubsetCreatebyMDX( sSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, sSub );
+sElem_Last = SubsetGetElementName( sDim, sSub, nElem );
+SubsetElementDelete( sDim, sSub, nElem );
+SubsetElementInsert( sDim, sSub, sElem_Last, nElem );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = SubsetGetElementName( sDim, sSub, nCnt );
+  sAttr = CellGetS('Release Info', sElem, 'Year');
+  If( sAttr @= '' );
+    sAttr = 'No Decade';
+  Else;
+    sAttr = Subst(sAttr, 3, 1) | '0s';
+  EndIf;
+  If( HierarchyElementExists( sDim, cHier, sAttr) = 0 );
+    HierarchyElementInsert( sDim, cHier, '', sAttr, 'C' );
+    HierarchyElementComponentAdd( sDim, cHier, cHier_Node, sAttr, 1 );
+  EndIf;
+  HierarchyElementInsert( sDim, cHier, '', sElem, 'N' );
+  HierarchyElementComponentAdd( sDim, cHier, sAttr, sElem, 1 );
+  nCnt = nCnt + 1;
+End;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#endregion

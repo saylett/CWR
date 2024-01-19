@@ -1,0 +1,36 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Employee Plan Model",
+	"Elements":
+	[
+		{
+			"Name":"New Employee Model",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Existing Employee Model",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Models",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Models",
+			"ComponentName":"New Employee Model",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Models",
+			"ComponentName":"Existing Employee Model",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Employee Plan Model.subsets/}Export.All.json"
+	]
+}

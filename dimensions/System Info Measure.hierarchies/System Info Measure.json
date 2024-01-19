@@ -1,0 +1,23 @@
+{
+	"@type":"Hierarchy",
+	"Name":"System Info Measure",
+	"Elements":
+	[
+		{
+			"Name":"String",
+			"Type":"String"
+		},
+		{
+			"Name":"Value",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Index",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"System Info Measure.subsets/}Export.All.json"
+	]
+}

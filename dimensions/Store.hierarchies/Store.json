@@ -1,0 +1,427 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Store",
+	"Elements":
+	[
+		{
+			"Name":"All Countries",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Australia",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Melbourne",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Queensland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sydney",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Asia",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"China",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Beijing",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"FuZhou",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Shanghai",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hong Kong",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Southeast Asia",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Singapore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Malaysia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Indonesia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Thailand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Taipei",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"India",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Europe",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Western Europe",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Benelux",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Belgium",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Netherlands",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"France",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Germany",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"London",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Switzerland",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Zurich",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Eastern Europe",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Poland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"North America",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"America",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Stores plus Warehouse",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"All Stores",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Warehouse",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Countries",
+			"ComponentName":"Australia",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Countries",
+			"ComponentName":"Asia",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Countries",
+			"ComponentName":"Europe",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Countries",
+			"ComponentName":"North America",
+			"Weight":1
+		},
+		{
+			"ParentName":"Australia",
+			"ComponentName":"Melbourne",
+			"Weight":1
+		},
+		{
+			"ParentName":"Australia",
+			"ComponentName":"Queensland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Australia",
+			"ComponentName":"Sydney",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asia",
+			"ComponentName":"China",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asia",
+			"ComponentName":"Southeast Asia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asia",
+			"ComponentName":"Taipei",
+			"Weight":1
+		},
+		{
+			"ParentName":"Asia",
+			"ComponentName":"India",
+			"Weight":1
+		},
+		{
+			"ParentName":"China",
+			"ComponentName":"Beijing",
+			"Weight":1
+		},
+		{
+			"ParentName":"China",
+			"ComponentName":"FuZhou",
+			"Weight":1
+		},
+		{
+			"ParentName":"China",
+			"ComponentName":"Shanghai",
+			"Weight":1
+		},
+		{
+			"ParentName":"China",
+			"ComponentName":"Hong Kong",
+			"Weight":1
+		},
+		{
+			"ParentName":"Southeast Asia",
+			"ComponentName":"Singapore",
+			"Weight":1
+		},
+		{
+			"ParentName":"Southeast Asia",
+			"ComponentName":"Malaysia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Southeast Asia",
+			"ComponentName":"Indonesia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Southeast Asia",
+			"ComponentName":"Thailand",
+			"Weight":1
+		},
+		{
+			"ParentName":"Europe",
+			"ComponentName":"Western Europe",
+			"Weight":1
+		},
+		{
+			"ParentName":"Europe",
+			"ComponentName":"Switzerland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Europe",
+			"ComponentName":"Eastern Europe",
+			"Weight":1
+		},
+		{
+			"ParentName":"Western Europe",
+			"ComponentName":"Benelux",
+			"Weight":1
+		},
+		{
+			"ParentName":"Western Europe",
+			"ComponentName":"France",
+			"Weight":1
+		},
+		{
+			"ParentName":"Western Europe",
+			"ComponentName":"Germany",
+			"Weight":1
+		},
+		{
+			"ParentName":"Western Europe",
+			"ComponentName":"London",
+			"Weight":1
+		},
+		{
+			"ParentName":"Benelux",
+			"ComponentName":"Belgium",
+			"Weight":1
+		},
+		{
+			"ParentName":"Benelux",
+			"ComponentName":"Netherlands",
+			"Weight":1
+		},
+		{
+			"ParentName":"Switzerland",
+			"ComponentName":"Zurich",
+			"Weight":1
+		},
+		{
+			"ParentName":"Eastern Europe",
+			"ComponentName":"Poland",
+			"Weight":1
+		},
+		{
+			"ParentName":"North America",
+			"ComponentName":"America",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores plus Warehouse",
+			"ComponentName":"All Stores",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores plus Warehouse",
+			"ComponentName":"Warehouse",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"America",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Beijing",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Belgium",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"France",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"FuZhou",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Germany",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Hong Kong",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"India",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"London",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Melbourne",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Netherlands",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Poland",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Queensland",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Shanghai",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Singapore",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Sydney",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Taipei",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Zurich",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Malaysia",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Indonesia",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Thailand",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Store.subsets/Countries.json",
+		"Store.subsets/Default.json",
+		"Store.subsets/Regions.json",
+		"Store.subsets/Stores.json"
+	]
+}

@@ -1,0 +1,198 @@
+{
+	"@type":"Hierarchy",
+	"Name":"New Employee Line Item",
+	"Elements":
+	[
+		{
+			"Name":"All Line Items",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"New Position 002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 006",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 008",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 010",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 011",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 012",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 014",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 015",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 016",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 017",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 018",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 019",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Position 020",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 001",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 002",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 003",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 004",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 005",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 006",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 007",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 008",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 009",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 010",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 011",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 012",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 013",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 014",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 015",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 016",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 017",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 018",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 019",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"New Position 020",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"New Employee Line Item.subsets/}Export.All.json"
+	]
+}

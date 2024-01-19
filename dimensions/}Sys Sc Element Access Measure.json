@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Sc Element Access Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Sc Element Access Measure')/Hierarchies('}Sys Sc Element Access Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Sc Element Access Measure.hierarchies/}Sys Sc Element Access Measure.json"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Release.Create Consol",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Release.Create Consol.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

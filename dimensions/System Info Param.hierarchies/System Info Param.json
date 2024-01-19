@@ -1,0 +1,92 @@
+{
+	"@type":"Hierarchy",
+	"Name":"System Info Param",
+	"Elements":
+	[
+		{
+			"Name":"Current Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current Time Period",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Budget Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Email",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"SMTP Server",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"SMTP Port",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Email Sender",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Email User Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Email Password",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Email SSL",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Email",
+			"ComponentName":"SMTP Server",
+			"Weight":1
+		},
+		{
+			"ParentName":"Email",
+			"ComponentName":"SMTP Port",
+			"Weight":1
+		},
+		{
+			"ParentName":"Email",
+			"ComponentName":"Email Sender",
+			"Weight":1
+		},
+		{
+			"ParentName":"Email",
+			"ComponentName":"Email User Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"Email",
+			"ComponentName":"Email Password",
+			"Weight":1
+		},
+		{
+			"ParentName":"Email",
+			"ComponentName":"Email SSL",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"System Info Param.subsets/}Export.All.json"
+	]
+}

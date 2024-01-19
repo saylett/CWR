@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{[Existing Employee Staging Measure].[Existing Employee Staging Measure].[Skip Flag],[Existing Employee Staging Measure].[Existing Employee Staging Measure].[Name],[Existing Employee Staging Measure].[Existing Employee Staging Measure].[Store],[Existing Employee Staging Measure].[Existing Employee Staging Measure].[Position],[Existing Employee Staging Measure].[Existing Employee Staging Measure].[Annual Salary],[Existing Employee Staging Measure].[Existing Employee Staging Measure].[Monthly Allowance],[Existing Employee Staging Measure].[Existing Employee Staging Measure].[Bonus Rate],[Existing Employee Staging Measure].[Existing Employee Staging Measure].[All Validation]}"
+}

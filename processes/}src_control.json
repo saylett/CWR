@@ -1,0 +1,21 @@
+{
+	"@type":"Process",
+	"Name":"}src_control",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}src_control.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pPath",
+			"Prompt":"Path to file",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

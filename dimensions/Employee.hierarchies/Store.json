@@ -1,0 +1,200 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Store",
+	"Elements":
+	[
+		{
+			"Name":"FuZhou",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Germany",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Netherlands",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Singapore",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Warehouse",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Taipei",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Queensland",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Beijing",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Belgium",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Hong Kong",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Shanghai",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Poland",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"America",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"India",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Melbourne",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Zurich",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"London",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"France",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Sydney",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"All Stores",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Australia",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Australia",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Warehouse",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"FuZhou",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Germany",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Netherlands",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Singapore",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Taipei",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Beijing",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Belgium",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Hong Kong",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Shanghai",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Poland",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"America",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"India",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"Zurich",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"London",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stores",
+			"ComponentName":"France",
+			"Weight":1
+		},
+		{
+			"ParentName":"Australia",
+			"ComponentName":"Sydney",
+			"Weight":1
+		},
+		{
+			"ParentName":"Australia",
+			"ComponentName":"Melbourne",
+			"Weight":1
+		},
+		{
+			"ParentName":"Australia",
+			"ComponentName":"Queensland",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Store.subsets/Default.json",
+		"Store.subsets/Planning.json",
+		"Store.subsets/Stores.json"
+	]
+}

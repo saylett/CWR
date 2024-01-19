@@ -1,0 +1,80 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+sDim = 'Release';
+
+#########################################################################################################################
+###  Define Data Source
+#########################################################################################################################
+
+###  Create MDX Temp Subset  ###
+cNode = 'All Releases';
+
+cProcessName = GetProcessName();
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( sDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cSub = cTempName;
+
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | cNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+  SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem ); 
+
+DataSourceType = 'SUBSET';
+DataSourceNameForServer = sDim;
+DatasourceDimensionSubset = cSub;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+vAlbum = vElement; 
+
+sTitle = AttrS( sDim, vElement, 'Title and Code');
+
+sGenre = AttrS( sDim, vElement, 'Genre');
+
+
+###  Do Stuff...
+
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+#endregion

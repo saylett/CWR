@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"User Staging Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('User Staging Measure')/Hierarchies('User Staging Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"User Staging Measure.hierarchies/User Staging Measure.json"
+	]
+}

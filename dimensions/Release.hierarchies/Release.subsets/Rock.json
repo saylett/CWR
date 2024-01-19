@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Rock",
+	"Expression":"{FILTER(TM1SUBSETALL([Release].[Release]) , ([Release].[Release].CURRENTMEMBER.PROPERTIES(\"Genre\") = \"Rock\"))}"
+}

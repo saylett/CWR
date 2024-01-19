@@ -1,0 +1,76 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Genre Plan",
+	"Elements":
+	[
+		{
+			"Name":"Planning - Funk Soul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Jazz",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Latin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Electronic",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Rock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Pop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Reggae",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Non-Music",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Classical",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Stage Screen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Folk",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Hip Hop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - No Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Childrens",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Blues",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Brass Military",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planning - Folk World Country",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

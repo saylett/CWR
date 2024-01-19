@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Promotions Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Promotions Measure')/Hierarchies('Promotions Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Promotions Measure.hierarchies/Promotions Measure.json"
+	]
+}

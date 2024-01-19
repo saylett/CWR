@@ -1,0 +1,64 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## constants
+
+cCub = 'Stock';
+cView = GetProcessName;
+
+## Create a Source View for the datasource
+
+sFilter = 'Year : 2017 & Stock Measure : Opening Stock';
+
+ExecuteProcess('}bedrock.cube.view.create',
+   'pLogOutput', 0,
+   'pCube', cCub,
+   'pView', cView,
+   'pFilter', sFilter,
+   'pSuppressZero', 0,
+   'pSuppressConsol', 1,
+   'pSuppressRules', 1,
+   'pDimDelim', '&',
+   'pEleStartDelim', ':',
+   'pEleDelim', '+',
+   'pTemp', 1,
+   'pSubN', 0
+  );
+  
+
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub;
+DatasourceCubeView = cView;
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+### ignore warehouse
+
+If ( vStore @= 'Warehouse' );
+  Itemskip;
+EndIf;
+
+## generate a random opening stock
+
+## 50% change of having opening stock
+
+If ( Rand() > 0.5 );
+  Itemskip;
+EndIf;
+
+nValue = Round ((Round ( Rand() * 10 )) * (Rand()));
+
+CellPutN ( nValue, cCub,  vYear, vStore, vRelease, vMeasure );
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

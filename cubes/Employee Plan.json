@@ -1,0 +1,37 @@
+{
+	"@type":"Cube",
+	"Name":"Employee Plan",
+	"Rules@Code.link":"Employee Plan.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Currency')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('Employee Plan Model')"
+		},
+		{
+			"@id":"Dimensions('Employee')"
+		},
+		{
+			"@id":"Dimensions('Employee Plan Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Employee Plan.views/Default.json",
+		"Employee Plan.views/Budget.json"
+	]
+}

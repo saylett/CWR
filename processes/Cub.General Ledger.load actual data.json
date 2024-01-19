@@ -1,0 +1,79 @@
+{
+	"@type":"Process",
+	"Name":"Cub.General Ledger.load actual data",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Cub.General Ledger.load actual data.ti",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=33€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"ASCII",
+		"asciiDecimalSeparator":".",
+		"asciiDelimiterChar":",",
+		"asciiDelimiterType":"Character",
+		"asciiHeaderRecords":1,
+		"asciiQuoteCharacter":"\"",
+		"asciiThousandSeparator":",",
+		"dataSourceNameForClient":"C:\\TM1\\CWR UX\\Import\\GL Ledger CSV data load.csv",
+		"dataSourceNameForServer":"C:\\TM1\\CWR UX\\Import\\GL Ledger CSV data load.csv"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pYear",
+			"Prompt":"Year",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pConfirm",
+			"Prompt":"Confirm? (1/0)",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vYear",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vMonth",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vStore",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vAccount",
+			"Type":"String",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vValue",
+			"Type":"Numeric",
+			"Position":5,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

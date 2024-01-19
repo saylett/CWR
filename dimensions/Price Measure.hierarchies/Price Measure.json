@@ -1,0 +1,15 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Price Measure",
+	"Elements":
+	[
+		{
+			"Name":"Purchase Price",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Price Measure.subsets/}Export.All.json"
+	]
+}

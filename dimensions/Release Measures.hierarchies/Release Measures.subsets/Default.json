@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release Measures')/Hierarchies('Release Measures')/Elements('video #1')"
+		}
+	]
+}

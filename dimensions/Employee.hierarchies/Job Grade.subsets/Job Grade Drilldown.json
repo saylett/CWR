@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Job Grade Drilldown",
+	"Expression":"{Descendants({[Employee].[Job Grade]})}"
+}

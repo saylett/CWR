@@ -1,0 +1,165 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+nFill = 1;
+
+sStructureFileName = pPath;
+DatasourceASCIIQuoteCharacter = '';
+DatasourceASCIIDelimiter = CHAR(9);
+SetOutputCharacterSet( sStructureFileName, 'TM1CS_UTF8'  );
+
+sSubset = '}Export.All';
+If( SubsetExists( pDimName, sSubset ) = 1 );
+  SubsetDeleteAllElements(  pDimName, sSubset );
+Else;
+  SubsetCreate(  pDimName, sSubset );
+EndIf;
+SubsetIsAllSet(  pDimName, sSubset, 1 );
+
+
+### Assign Data Source ###
+
+DatasourceNameForServer =  pDimName;
+DatasourceNameForClient =  pDimName;
+DataSourceType = 'SUBSET';
+DatasourceDimensionSubset = sSubset;
+
+SetOutputCharacterSet( sStructureFileName, 'TM1CS_UTF8'  );
+sAttrDimName = '}ElementAttributes_' | pDimName;
+nAttrCount = DIMSIZ( sAttrDimName );
+sSectionName = 'ElementAttributes:=';
+TEXTOUTPUT(sStructureFileName, sSectionName);
+sAttrTypes = '';
+a = 1;
+WHILE (a <= nAttrCount);
+    sAttr = DIMNM( sAttrDimName , a);
+    sAttr = sAttr | ':=' | SUBST( DTYPE( sAttrDimName, sAttr ), 2, 1 );
+    TEXTOUTPUT(sStructureFileName, Fill(' ', nFill) | sAttr);
+    a = a + 1;
+END;
+
+TEXTOUTPUT(sStructureFileName, '');
+
+sControlName = '}DimensionProperties';
+If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+  sSectionName = 'DimensionProperties:=';
+  TEXTOUTPUT(sStructureFileName, sSectionName);
+  nPropCount = DIMSIZ( sControlName );
+  p = 1;
+  WHILE (p <= nPropCount);
+      sProp = DIMNM( sControlName , p);
+      If( SCAN('TIME', sProp) = 0 & SCAN('STATUS', sProp) = 0 );
+        If(DTYPE(sControlName, sProp) @= 'S');
+          sValue = sProp | ':=' | CellGetS(sControlName, pDimName, sProp);
+        Else;
+          sValue = sProp | ':=' | NumberToString(CellGetN(sControlName, pDimName, sProp));
+        EndIf;
+        TEXTOUTPUT(sStructureFileName, Fill(' ', nFill) | sValue);
+      EndIf;
+      p = p + 1;
+  END;
+  TEXTOUTPUT(sStructureFileName, '');
+EndIf;
+
+sControlName = '}DimensionAttributes';
+If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+  sSectionName = 'DimensionAttributes:=';
+  TEXTOUTPUT(sStructureFileName, sSectionName);
+  nPropCount = DIMSIZ( sControlName );
+  p = 1;
+  WHILE (p <= nPropCount);
+      sProp = DIMNM( sControlName , p);
+      If( SCAN('TIME', sProp) = 0 & SCAN('STATUS', sProp) = 0 );
+        If(DTYPE(sControlName, sProp) @= 'S');
+          sValue = sProp | ':=' | CellGetS(sControlName, pDimName, sProp);
+        Else;
+          sValue = sProp | ':=' | NumberToString(CellGetN(sControlName, pDimName, sProp));
+        EndIf;
+        TEXTOUTPUT(sStructureFileName, Fill(' ', nFill) | sValue);
+      EndIf;
+      p = p + 1;
+  END;
+  TEXTOUTPUT(sStructureFileName, '');
+EndIf;
+
+sControlName = '}DimensionCaptions';
+If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+  sSectionName = 'DimensionCaptions:=';
+  TEXTOUTPUT(sStructureFileName, sSectionName);
+  nPropCount = DIMSIZ( sControlName );
+  p = 1;
+  WHILE (p <= nPropCount);
+      sProp = DIMNM( sControlName , p);
+      If( SCAN('TIME', sProp) = 0 & SCAN('STATUS', sProp) = 0 );
+        If(DTYPE(sControlName, sProp) @= 'S');
+          sValue = sProp | ':=' | CellGetS(sControlName, pDimName, sProp);
+        Else;
+          sValue = sProp | ':=' | NumberToString(CellGetN(sControlName, pDimName, sProp));
+        EndIf;
+        TEXTOUTPUT(sStructureFileName, Fill(' ', nFill) | sValue);
+      EndIf;
+      p = p + 1;
+  END;
+  TEXTOUTPUT(sStructureFileName, '');
+EndIf;
+
+sControlName = '}HierarchyProperties';
+If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+  sSectionName = 'HierarchyProperties:=';
+  TEXTOUTPUT(sStructureFileName, sSectionName);
+  nPropCount = DIMSIZ( sControlName );
+  p = 1;
+  WHILE (p <= nPropCount);
+      sProp = DIMNM( sControlName , p);
+      If(DTYPE(sControlName, sProp) @= 'S');
+        sValue = sProp | ':=' | CellGetS(sControlName, pDimName, 'hierarchy0', sProp);
+      Else;
+        sValue = sProp | ':=' | NumberToString(CellGetN(sControlName, pDimName, 'hierarchy0', sProp));
+      EndIf;
+      TEXTOUTPUT(sStructureFileName, Fill(' ', nFill) | sValue);
+      p = p + 1;
+  END;
+  TEXTOUTPUT(sStructureFileName, '');
+EndIf;
+
+If( pIncludeSecurity = 1);
+  sControlName = '}Groups';
+  sDimSecCube='}DimensionSecurity';
+  If( DimensionExists(sControlName) = 1 & CubeExists(sDimSecCube) = 1);
+    sSectionName = 'DimensionSecurity:=';
+    TEXTOUTPUT(sStructureFileName, sSectionName);
+    nPropCount = DIMSIZ( sControlName );
+    p = 1;
+    WHILE (p <= nPropCount);
+        sProp = DIMNM( sControlName , p);
+        sValue = sProp | ':=' | CellGetS(sDimSecCube, pDimName, sProp);
+        TEXTOUTPUT(sStructureFileName, Fill(' ', nFill) | sValue);
+        p = p + 1;
+    END;
+  EndIf;
+  TEXTOUTPUT(sStructureFileName, '');
+EndIf; 
+
+TEXTOUTPUT(sStructureFileName, '---');
+TEXTOUTPUT(sStructureFileName, '');
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

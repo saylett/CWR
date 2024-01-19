@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Promo Picklist",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0001')"
+		},
+		{
+			"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0002')"
+		},
+		{
+			"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0003')"
+		}
+	]
+}

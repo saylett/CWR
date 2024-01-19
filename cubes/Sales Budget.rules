@@ -1,0 +1,121 @@
+SKIPCHECK;
+
+###  Variances  ###
+[ 'Bud vs PY ACT' ] = 
+  AttrN('Sales Budget Measure', !Sales Budget Measure, 'Var Sign')
+  * ([ 'Budget' ] - [ 'PYACT' ]);
+
+[ 'Bud vs PY ACT %' ] = 
+  [ 'Bud vs PY ACT' ] \ [ 'PY ACT' ];  
+
+[ 'Version':'PY ACT' ]= N: 
+  DB('Sales Budget', 'Actual', AttrS('Year', !Year, 'Previous'), !Month, !Store, !Release Planning, !Sales Budget Measure );
+
+
+###  Avg Prices  ###
+[ 'Version':{'Actual','PY ACT'}, 'Sales Budget Measure':{'Unit Price'} ] = C:
+  [ 'Revenue' ] \ [ 'Units' ];
+  
+[ 'Version':{'Actual','PY ACT'}, 'Sales Budget Measure':{'Unit Cost'} ] = C:
+  [ 'Cost' ] \ [ 'Units' ];
+
+[ 'NA Month', 'Actual' ] = N:
+  [ 'All Months' ];
+
+
+###  Plan by different hierarchies  ###
+[ 'Version':{'Budget','Forecast','Actual'}, 'Sales Budget Measure':{'Units', 'Unit Cost', 'Unit Price'} ] = N:
+  If( ElIsAnc( 'Release Planning', 
+                DB( 'Store Assumption', !Version, !Year, !Store, 'Release Planning Hierarchy'),
+                !Release Planning ) = 0,
+      0,
+      CONTINUE );
+
+###  Input average monthly units/price  ###
+[ 'Version':{'Budget','Forecast'},'NA Month',{'Units','Unit Price'}] = N: STET;
+
+###  Actuals loaded via TI process  ###
+[ 'Version':'Actual'] = N: STET;
+
+###  Volume from individual albums  ###
+[ 'Version':{'Budget','Forecast'}, 'Sales Budget Measure':{'Units', 'Revenue', 'Cost'},
+  'Release Planning':{'Blues Album','Brass Military Album','Childrens Album','Classical Album','Electronic Album','Folk Album','Folk World Country Album',
+  'Funk Soul Album','Hip Hop Album','Jazz Album','Latin Album','No Genre Album','Non-Music Album','Pop Album','Reggae Album','Rock Album','Stage Screen Album'}] = N:
+  DB('Sales', !Version, !Year, !Month, !Store, 'Genre ex Plan:' | SubSt( !Release Planning, 1, Scan(' Album', !Release Planning)-1), !Sales Budget Measure);
+
+###  Unit Prices  ###
+[ 'Version':{'Budget','Forecast'}, 'Sales Budget Measure':'Unit Price',
+  'Release Planning':{'Blues Album','Brass Military Album','Childrens Album','Classical Album','Electronic Album','Folk Album','Folk World Country Album',
+  'Funk Soul Album','Hip Hop Album','Jazz Album','Latin Album','No Genre Album','Non-Music Album','Pop Album','Reggae Album','Rock Album','Stage Screen Album'}] = N:
+  ['Revenue'] \ ['Units'];
+
+[ 'Version':{'Budget','Forecast'}, 'Sales Budget Measure':'Unit Cost',
+  'Release Planning':{'Blues Album','Brass Military Album','Childrens Album','Classical Album','Electronic Album','Folk Album','Folk World Country Album',
+  'Funk Soul Album','Hip Hop Album','Jazz Album','Latin Album','No Genre Album','Non-Music Album','Pop Album','Reggae Album','Rock Album','Stage Screen Album'}] = N:
+  ['Cost'] \ ['Units'];
+
+[ 'Version':'Actual', 'Sales Budget Measure':'Unit Price',
+  'Release Planning':{'Blues','Brass Military','Childrens','Classical','Electronic','Folk','Folk World Country',
+  'Funk Soul','Hip Hop','Jazz','Latin','No Genre','Non-Music','Pop','Reggae','Rock','Stage Screen'}] = N:
+  ['Revenue'] \ ['Units'];
+
+[ 'Version':'Actual', 'Sales Budget Measure':'Unit Cost',
+  'Release Planning':{'Blues','Brass Military','Childrens','Classical','Electronic','Folk','Folk World Country',
+  'Funk Soul','Hip Hop','Jazz','Latin','No Genre','Non-Music','Pop','Reggae','Rock','Stage Screen'}] = N:
+  ['Cost'] \ ['Units'];
+
+[ 'Version':{'Budget','Forecast','Actual'}, 'Sales Budget Measure':'Unit Price' ] = C:
+  ['Revenue'] \ ['Units'];
+
+[ 'Version':{'Budget','Forecast','Actual'}, 'Sales Budget Measure':'Unit Cost' ] = C:
+  ['Cost'] \ ['Units'];
+
+###  Volume lift from Promotions  ###
+[ 'Version':{'Budget','Forecast'},'Units'] = N:
+  ['NA Month','Units']
+    * If( DB('Sales Budget', !Version, !Year, !Month, !Store, 'NA Release Planning', 'Promo' ) @= '',
+          1,
+          1 + DB('Promotions', !Version, !Store, DB('Sales Budget', !Version, !Year, !Month, !Store, !Release Planning, 'Promo' ), 'Units Lift' ));
+
+[ 'Version':{'Budget','Forecast'},'Unit Price'] = N:
+  ['NA Month','Unit Price']
+    * If( DB('Sales Budget', !Version, !Year, !Month, !Store, 'NA Release Planning', 'Promo' ) @= '',
+          1,
+          1 - DB('Promotions', !Version, !Store, DB('Sales Budget', !Version, !Year, !Month, !Store, !Release Planning, 'Promo' ), 'Discount' ));
+          
+
+###  Revenue Calculation  ###
+[ 'Version':{'Budget','Forecast'}, 'Sales Budget Measure':{'Revenue'} ] = N:
+  [Month:'NA Month','Unit Price'] * ['Units'];
+
+[ 'Version':{'Budget','Forecast'}, 'Sales Budget Measure':{'Cost'} ] = N:
+  [Month:'NA Month','Unit Cost'] * ['Units'];
+
+
+
+FEEDERS;
+
+[ 'Version':{'Budget','Forecast'}, 'Sales Budget Measure':{'Units'} ] => [ 'Revenue' ],[ 'Cost' ];
+
+[ 'Version':{'Budget','Forecast'}, 'Month':'NA Month', 'Sales Budget Measure':{'Units'} ] => [ 'Month':'All Months' ];
+
+[ 'Actual', 'All Months' ] =>
+  [ 'NA Month' ];
+  
+[ 'Version':{'Budget','Forecast'}, 'Sales Budget Measure':'Units',
+  'Release Planning':{'Blues Album','Brass Military Album','Childrens Album','Classical Album','Electronic Album','Folk Album','Folk World Country Album',
+  'Funk Soul Album','Hip Hop Album','Jazz Album','Latin Album','No Genre Album','Non-Music Album','Pop Album','Reggae Album','Rock Album','Stage Screen Album'}] =>
+  [ 'Sales Budget Measure':'Unit Price' ],[ 'Sales Budget Measure':'Unit Cost' ];
+  
+[ 'Version':'Actual', 'Sales Budget Measure':'Units',
+  'Release Planning':{'Blues','Brass Military','Childrens','Classical','Electronic','Folk','Folk World Country',
+  'Funk Soul','Hip Hop','Jazz','Latin','No Genre','Non-Music','Pop','Reggae','Rock','Stage Screen'}] =>
+  [ 'Sales Budget Measure':'Unit Price' ],[ 'Sales Budget Measure':'Unit Cost' ];
+
+[ 'Actual' ] => 
+  DB('Sales Budget', 'PY ACT', AttrS('Year', !Year, 'Next'), !Month, !Store, !Release Planning, !Sales Budget Measure );
+
+[ 'Release Planning':'Genre', 'Version':{'Budget','Forecast'}, 'Month':'All Months',
+  'Sales Budget Measure':{'Units','Revenue','Cost','Unit Cost','Unit Price'} ] =>
+  DB('Sales', !Version, !Year, !Month, !Store, 'Planning - ' | !Release Planning, !Sales Budget Measure);
+  

@@ -1,0 +1,32 @@
+{
+	"@type":"Cube",
+	"Name":"Sales Budget",
+	"Rules@Code.link":"Sales Budget.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('Release Planning')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Sales Budget.views/Budget Input.json",
+		"Sales Budget.views/Cost Load.json",
+		"Sales Budget.views/Default.json"
+	]
+}

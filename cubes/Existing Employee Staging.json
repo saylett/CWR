@@ -1,0 +1,21 @@
+{
+	"@type":"Cube",
+	"Name":"Existing Employee Staging",
+	"Rules@Code.link":"Existing Employee Staging.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Year-Month')"
+		},
+		{
+			"@id":"Dimensions('Line Item')"
+		},
+		{
+			"@id":"Dimensions('Existing Employee Staging Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Existing Employee Staging.views/Default.json"
+	]
+}

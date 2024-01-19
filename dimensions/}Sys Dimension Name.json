@@ -1,0 +1,15 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Dimension Name",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Dimension Name')/Hierarchies('}Sys Dimension Name')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Dimension Name.hierarchies/}Sys Dimension Name.json",
+		"}Sys Dimension Name.hierarchies/Control Dimension.json",
+		"}Sys Dimension Name.hierarchies/User Dimension.json"
+	]
+}

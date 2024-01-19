@@ -1,0 +1,83 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Src = 'Employee Plan';
+
+cEmployee = pEmployee;
+cVersion = pVersion;
+cYear = pYear;
+cMonth_Transfer = 
+  NumberToStringEx( AttrN('Month', SubSt(pMonth, 5, 3), 'Month Num'), '00', '', '' )
+  | '/' | SubSt(pMonth, 9, 2)
+  | '/' | SubSt(pMonth, 12, 4);
+cStore_Transfer = pStore;
+
+cCurrency = 'Local';
+cMonth = 'NA Month';
+cModel = 'Existing Employee Model';
+cStore_Current = AttrS('Employee', cEmployee, 'Store');
+
+cDL_Dim = Char(176);
+cDL_Start = Char(177);
+cDL_Elem = Char(178);
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Create Source View
+#########################################################################################################################
+
+AttrPutS(cStore_Transfer, 'Employee', cEmployee, 'Store Budget');
+
+CellPutS(cMonth_Transfer, cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Current, 'Existing Employee Model', cEmployee, 'Date - End');
+CellPutS(cMonth_Transfer, cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Transfer, 'Existing Employee Model', cEmployee, 'Date - Start');
+
+nSalary = CellGetN(cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Current, 'Existing Employee Model', cEmployee, 'Salary - Annual');
+nBonus_Rate = CellGetN(cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Current, 'Existing Employee Model', cEmployee, 'Bonus - Rate');
+nAllowance = CellGetN(cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Current, 'Existing Employee Model', cEmployee, 'Allowance');
+
+CellPutN(nSalary, cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Transfer, 'Existing Employee Model', cEmployee, 'Salary - Annual');
+CellPutN(nBonus_Rate, cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Transfer, 'Existing Employee Model', cEmployee, 'Bonus - Rate');
+CellPutN(nAllowance, cCub_Src, 'Budget', 'Local', cYear, 'NA Month', cStore_Transfer, 'Existing Employee Model', cEmployee, 'Allowance');
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Update Virtual Hierarchies
+#########################################################################################################################
+
+ExecuteProcess('Dim.Employee.Update Hierarchy.Store Budget');
+#endregion

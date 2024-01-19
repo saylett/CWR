@@ -1,0 +1,36 @@
+{
+	"@type":"Hierarchy",
+	"Name":"UX Filter - Year 1",
+	"Elements":
+	[
+		{
+			"Name":"2017",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2018",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2019",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2021",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"UX Filter - Year 1.subsets/All Years.json",
+		"UX Filter - Year 1.subsets/Budget Year.json",
+		"UX Filter - Year 1.subsets/Current Year.json",
+		"UX Filter - Year 1.subsets/Forecast Year.json",
+		"UX Filter - Year 1.subsets/Plan Years.json",
+		"UX Filter - Year 1.subsets/Prior Year.json"
+	]
+}

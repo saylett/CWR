@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('321860')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('14149863')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('14151242')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('14150924')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('14155403')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('14149533')"
+		}
+	]
+}

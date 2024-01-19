@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Planning",
+	"Expression":"{DRILLDOWNMEMBER({[Employee].[Employee].[All Planning Employees]}, {[Employee].[Employee].[All Planning Employees]})}"
+}

@@ -1,0 +1,39 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+cDim = '}ElementAttributes_Release';
+
+nMax = DimSiz ( cDim );
+nCount = 1;
+sChar = '#';
+
+While ( nCount <= nMax );
+  sEl = DimNm ( cDim, nCount );
+  nFind = SCAN ( sChar, sEl );
+  If ( nFind > 0 );
+      sNumber = SubSt ( sEl, nFind + 1, LONG ( sEl) - nFind);
+    If ( Numbr ( sNumber ) > 20 );
+      DimensionElementDelete ( cDim, sEl );
+      nCount = nCount -1;
+    EndIf;
+  EndIf;
+  nCount = nCount + 1;
+End;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

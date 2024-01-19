@@ -1,0 +1,44 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Workflow Measure",
+	"Elements":
+	[
+		{
+			"Name":"Planner",
+			"Type":"String"
+		},
+		{
+			"Name":"Reviewer",
+			"Type":"String"
+		},
+		{
+			"Name":"Status",
+			"Type":"String"
+		},
+		{
+			"Name":"Status Numeric",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Timestamp",
+			"Type":"String"
+		},
+		{
+			"Name":"Timestamp Numeric",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Comment",
+			"Type":"String"
+		},
+		{
+			"Name":"User",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Workflow Measure.subsets/Default.json",
+		"Workflow Measure.subsets/}Export.All.json"
+	]
+}

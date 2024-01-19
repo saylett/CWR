@@ -1,0 +1,59 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Sc Element Access Measure",
+	"Elements":
+	[
+		{
+			"Name":"Inactive",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Exclusions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Permission Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Wildcard Entry",
+			"Type":"String"
+		},
+		{
+			"Name":"Permission Level",
+			"Type":"String"
+		},
+		{
+			"Name":"Current Permission Validation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current Permission Level",
+			"Type":"String"
+		},
+		{
+			"Name":"Exclusion Entry",
+			"Type":"String"
+		},
+		{
+			"Name":"Exclusion Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Effective Permission Level",
+			"Type":"String"
+		},
+		{
+			"Name":"InheritToDimLevel",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ExcludeToDimLevel",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Sc Element Access Measure.subsets/}Export.All.json"
+	]
+}

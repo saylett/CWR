@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Picklist - Application Security",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('0')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('1')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('5')"
+		}
+	]
+}

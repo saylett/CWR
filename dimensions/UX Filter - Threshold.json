@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"UX Filter - Threshold",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('UX Filter - Threshold')/Hierarchies('UX Filter - Threshold')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"UX Filter - Threshold.hierarchies/UX Filter - Threshold.json"
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"@type":"Process",
+	"Name":"sys.}Sys Element Name.update",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"sys.}Sys Element Name.update.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDim",
+			"Prompt":"Optional",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pClear",
+			"Prompt":"",
+			"Value":"1",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

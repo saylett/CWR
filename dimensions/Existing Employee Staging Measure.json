@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Existing Employee Staging Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Existing Employee Staging Measure')/Hierarchies('Existing Employee Staging Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Existing Employee Staging Measure.hierarchies/Existing Employee Staging Measure.json"
+	]
+}

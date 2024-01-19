@@ -1,0 +1,23 @@
+{
+	"@type":"Cube",
+	"Name":"Staffing Seasonality",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Employee')"
+		},
+		{
+			"@id":"Dimensions('Staffing Seasonality Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

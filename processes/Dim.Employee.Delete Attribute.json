@@ -1,0 +1,21 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Employee.Delete Attribute",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Employee.Delete Attribute.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pAttribute",
+			"Prompt":"Attribute to Delete",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

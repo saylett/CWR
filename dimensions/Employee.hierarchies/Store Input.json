@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Store Input",
+	"Elements":
+	[
+		{
+			"Name":"America",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Australia",
+			"Type":"Consolidated"
+		}
+	],
+	"Subsets@Code.links":[]
+}

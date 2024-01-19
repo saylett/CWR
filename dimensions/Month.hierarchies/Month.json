@@ -1,0 +1,281 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Month",
+	"Elements":
+	[
+		{
+			"Name":"All Months",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Jan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Feb",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mar",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Apr",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"May",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jun",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aug",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sep",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Oct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nov",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dec",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Quarters",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Q1",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Q2",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Q3",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Q4",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"H1",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"NA Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Year",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"H2",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Jan",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Feb",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Mar",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Apr",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"May",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Jun",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Jul",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Aug",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Sep",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Oct",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Nov",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Months",
+			"ComponentName":"Dec",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Quarters",
+			"ComponentName":"Q1",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Quarters",
+			"ComponentName":"Q2",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Quarters",
+			"ComponentName":"Q3",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Quarters",
+			"ComponentName":"Q4",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q1",
+			"ComponentName":"Jan",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q1",
+			"ComponentName":"Feb",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q1",
+			"ComponentName":"Mar",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q2",
+			"ComponentName":"Apr",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q2",
+			"ComponentName":"May",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q2",
+			"ComponentName":"Jun",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q3",
+			"ComponentName":"Jul",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q3",
+			"ComponentName":"Aug",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q3",
+			"ComponentName":"Sep",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q4",
+			"ComponentName":"Oct",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q4",
+			"ComponentName":"Nov",
+			"Weight":1
+		},
+		{
+			"ParentName":"Q4",
+			"ComponentName":"Dec",
+			"Weight":1
+		},
+		{
+			"ParentName":"H1",
+			"ComponentName":"Q1",
+			"Weight":1
+		},
+		{
+			"ParentName":"H1",
+			"ComponentName":"Q2",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"H1",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Year",
+			"ComponentName":"H2",
+			"Weight":1
+		},
+		{
+			"ParentName":"H2",
+			"ComponentName":"Q3",
+			"Weight":1
+		},
+		{
+			"ParentName":"H2",
+			"ComponentName":"Q4",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Month.subsets/Current Month.json",
+		"Month.subsets/Default.json",
+		"Month.subsets/Input.json",
+		"Month.subsets/Months.json",
+		"Month.subsets/Months and Year.json",
+		"Month.subsets/Quarters.json",
+		"Month.subsets/Year and Months.json",
+		"Month.subsets/}Drill_GeneralLedgerToBooks_Drill_TMP.json",
+		"Month.subsets/}Drill_GeneralLedgerToMerchandise_Drill_TMP.json",
+		"Month.subsets/}Drill_GeneralLedgerToRecordSales_Drill_TMP.json"
+	]
+}

@@ -1,0 +1,181 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cDim = '}Sys Object Name';
+
+cNode = 'ALL Objects';
+
+DimensionDeleteAllElements( cDim );
+HierarchyDeleteAllElements( cDim, 'Cube' );
+HierarchyDeleteAllElements( cDim, 'Dimension' );
+HierarchyDeleteAllElements( cDim, 'Process' );
+
+DimensionElementInsert( cDim, '', cNode, 'C' );
+DimensionElementInsert( cDim, '', 'ALL Applications', 'C' );
+DimensionElementComponentAdd( cDim, cNode, 'ALL Applications', 1 );
+DimensionElementInsert( cDim, '', 'ALL Chores', 'C' );
+DimensionElementComponentAdd( cDim, cNode, 'ALL Chores', 1 );
+DimensionElementInsert( cDim, '', 'ALL Cubes', 'C' );
+DimensionElementComponentAdd( cDim, cNode, 'ALL Cubes', 1 );
+DimensionElementInsert( cDim, '', 'ALL Dimensions', 'C' );
+DimensionElementComponentAdd( cDim, cNode, 'ALL Dimensions', 1 );
+DimensionElementInsert( cDim, '', 'ALL Processes', 'C' );
+DimensionElementComponentAdd( cDim, cNode, 'ALL Processes', 1 );
+DimensionElementInsert( cDim, '', 'ALL Rules', 'C' );
+DimensionElementComponentAdd( cDim, cNode, 'ALL Rules', 1 );
+
+#########################################################################################################################
+###  Add Hierarchies
+#########################################################################################################################
+
+HierarchyElementInsert( cDim, 'Cube', '', 'ALL Cubes', 'C');
+HierarchyElementInsert( cDim, 'Dimension', '', 'ALL Dimensions', 'C');
+HierarchyElementInsert( cDim, 'Process', '', 'ALL Processes', 'C');
+
+#########################################################################################################################
+###  Update Elements
+#########################################################################################################################
+
+###  Add Cubes  ###
+nCnt = 1;
+While( nCnt <= DimSiz('}Cubes'));
+  sCub = DimNm('}Cubes', nCnt);
+  If( DimIx( cDim, sCub ) = 0 );
+    DimensionElementInsert( cDim, '', sCub, 'N' );
+    DimensionElementComponentAdd( cDim, 'ALL Cubes', sCub, 1 );
+  EndIf;
+  If( HierarchyElementExists( cDim, 'Cube', sCub ) = 0 );
+    HierarchyElementInsert( cDim, 'Cube', '', sCub, 'N' );
+    HierarchyElementComponentAdd( cDim, 'Cube', 'ALL Cubes', sCub, 1 );
+  EndIf;
+  nCnt = nCnt + 1;
+End;
+
+###  Add Dimensions  ###
+nCnt = 1;
+While( nCnt <= ElCompN(cDim, 'ALL Cubes' ));
+  sCub = ElComp(cDim, 'ALL Cubes', nCnt );
+  nCnt_Dim = 1;
+  While( TabDim( sCub, nCnt_Dim ) @<> '' );
+    sDim = TabDim( sCub, nCnt_Dim );
+    If( DimIx( cDim, sDim ) = 0 );
+      DimensionElementInsert( cDim, '', sDim, 'N' );
+      DimensionElementComponentAdd( cDim, 'ALL Dimensions', sDim, 1 );
+    EndIf;
+    If( HierarchyElementExists( cDim, 'Dimension', sDim ) = 0 );
+      HierarchyElementInsert( cDim, 'Dimension', '', sDim, 'N' );
+      HierarchyElementComponentAdd( cDim, 'Dimension', 'ALL Dimensions', sDim, 1 );
+    EndIf;
+    nCnt_Dim = nCnt_Dim + 1;
+  End;
+  nCnt = nCnt + 1;
+End;
+
+###  Add Processes  ###
+nCnt = 1;
+While( nCnt <= DimSiz('}Processes'));
+  sPro = DimNm('}Processes', nCnt);
+  If( DimIx( cDim, sPro ) = 0 );
+    DimensionElementInsert( cDim, '', sPro, 'N' );
+    DimensionElementComponentAdd( cDim, 'ALL Processes', sPro, 1 );
+  EndIf;
+  If( HierarchyElementExists( cDim, 'Process', sPro ) = 0 );
+    HierarchyElementInsert( cDim, 'Process', '', sPro, 'N' );
+    HierarchyElementComponentAdd( cDim, 'Process', 'ALL Processes', sPro, 1 );
+  EndIf;
+  nCnt = nCnt + 1;
+End;
+
+DimensionSortOrder( cDim, 'ByName', 'Ascending', 'ByHierarchy', 'Ascending' );
+HierarchySortOrder( cDim, 'Cube', 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+HierarchySortOrder( cDim, 'Dimension', 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Update Attributes
+#########################################################################################################################
+
+###  Cubes  ###
+nCnt = 1;
+While( nCnt <= ElCompN(cDim, 'ALL Cubes' ));
+  sCub = ElComp(cDim, 'ALL Cubes', nCnt );
+  If( Subst( sCub, 1, 1 ) @<> '}' );
+    nType = 4;
+  ElseIf( Subst( sCub, 1, 19 ) @= '}ElementAttributes_' );
+    nType = 3;
+  ElseIf( Subst( sCub, 1, 4 ) @= '}Sys' );
+    nType = 2;
+  Else;
+    nType = 1;
+  EndIf;
+  AttrPutN( nType, cDim, sCub, 'Object Type Level' );
+  nCnt = nCnt + 1;
+End;
+
+###  Dimensions  ###
+nCnt = 1;
+While( nCnt <= ElCompN(cDim, 'ALL Dimensions' ));
+  sDim = ElComp(cDim, 'ALL Dimensions', nCnt );
+  If( Subst( sDim, 1, 1 ) @<> '}' );
+    nType = 4;
+  ElseIf( Subst( sDim, 1, 19 ) @= '}ElementAttributes_' );
+    nType = 3;
+  ElseIf( Subst( sDim, 1, 4 ) @= '}Sys' );
+    nType = 2;
+  Else;
+    nType = 1;
+  EndIf;
+  AttrPutN( nType, cDim, sDim, 'Object Type Level' );
+  nCnt = nCnt + 1;
+End;
+
+###  Processes  ###
+nCnt = 1;
+While( nCnt <= ElCompN(cDim, 'ALL Processes' ));
+  sDim = ElComp(cDim, 'ALL Processes', nCnt );
+  If( Subst( sDim, 1, 1 ) @<> '}' );
+    nType = 4;
+  ElseIf( Subst( sDim, 1, 19 ) @= '}ElementAttributes_' );
+    nType = 3;
+  ElseIf( Subst( sDim, 1, 4 ) @= '}Sys' );
+    nType = 2;
+  Else;
+    nType = 1;
+  EndIf;
+  AttrPutN( nType, cDim, sDim, 'Object Type Level' );
+  nCnt = nCnt + 1;
+End;
+#endregion

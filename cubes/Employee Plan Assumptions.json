@@ -1,0 +1,21 @@
+{
+	"@type":"Cube",
+	"Name":"Employee Plan Assumptions",
+	"Rules@Code.link":"Employee Plan Assumptions.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Employee')"
+		},
+		{
+			"@id":"Dimensions('Employee Plan Assumptions Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

@@ -1,0 +1,12 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}pulse_measure",
+	"Elements":
+	[
+		{
+			"Name":"String",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

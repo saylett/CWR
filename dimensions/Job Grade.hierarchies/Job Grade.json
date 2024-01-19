@@ -1,0 +1,72 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Job Grade",
+	"Elements":
+	[
+		{
+			"Name":"Grade 01",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Grade 02",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Grade 03",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Grade 04",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Grade 05",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Grade 10",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Job Grades",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Job Grades",
+			"ComponentName":"Grade 01",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Job Grades",
+			"ComponentName":"Grade 02",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Job Grades",
+			"ComponentName":"Grade 03",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Job Grades",
+			"ComponentName":"Grade 04",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Job Grades",
+			"ComponentName":"Grade 05",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Job Grades",
+			"ComponentName":"Grade 10",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Job Grade.subsets/}Export.All.json"
+	]
+}

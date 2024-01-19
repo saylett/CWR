@@ -1,0 +1,73 @@
+{
+	"@type":"Process",
+	"Name":"cub.Employee Plan.Seed Budget",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"cub.Employee Plan.Seed Budget.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=33€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Existing Employee Staging",
+		"dataSourceNameForServer":"Existing Employee Staging",
+		"view":"Default"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pPeriod",
+			"Prompt":"Year-Month Period to seed data from",
+			"Value":"2019-M12",
+			"Type":"String"
+		},
+		{
+			"Name":"pYear_To",
+			"Prompt":"Budget Year to copy data to",
+			"Value":"2020",
+			"Type":"String"
+		},
+		{
+			"Name":"pConfirm",
+			"Prompt":"Confirm Load?",
+			"Value":"1",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vPeriod",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vItem",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vMeasure",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vValue",
+			"Type":"Numeric",
+			"Position":4,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

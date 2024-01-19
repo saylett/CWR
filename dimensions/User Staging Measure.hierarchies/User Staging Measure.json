@@ -1,0 +1,31 @@
+{
+	"@type":"Hierarchy",
+	"Name":"User Staging Measure",
+	"Elements":
+	[
+		{
+			"Name":"Email Address",
+			"Type":"String"
+		},
+		{
+			"Name":"Username",
+			"Type":"String"
+		},
+		{
+			"Name":"Password",
+			"Type":"String"
+		},
+		{
+			"Name":"Full Name",
+			"Type":"String"
+		},
+		{
+			"Name":"Update Flag",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"User Staging Measure.subsets/}Export.All.json"
+	]
+}

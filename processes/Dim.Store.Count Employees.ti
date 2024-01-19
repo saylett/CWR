@@ -1,0 +1,78 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## constants
+
+cDim1 = 'Store';
+cCub = 'Store Assumption';
+cDim2 = 'Employee';
+cVersion = 'Actual';
+cYear = '2017';
+
+cAttr = 'Employee Count';
+
+nMax = DimSiz ( cDim2 );
+nCount = 1;
+
+## clear it out first
+
+While ( nCount <= nMax );
+  sEl = DimNm( cDim2, nCount);
+  sStore = AttrS ( cDim2, sEl, 'Store' );
+  If ( Dimix ( cDim1, sStore ) > 0 );
+    CellPutN ( 0, cCub, cVersion, cYear, sStore, cAttr );
+  EndIf;
+  nCount = nCount + 1;
+End;
+
+nMax = DimSiz ( cDim2 );
+nCount = 1;
+
+
+While ( nCount <= nMax );
+  sEl = DimNm( cDim2, nCount);
+  sStore = AttrS ( cDim2, sEl, 'Store' );
+  If ( Dimix ( cDim1, sStore ) > 0 );
+    nCurrent = CellGetN ( cCub, cVersion, cYear,  sStore, cAttr );
+    nValue = 1 + nCurrent;
+    CellPutN ( nValue, cCub, cVersion, cYear, sStore, cAttr );
+  EndIf;
+  nCount = nCount + 1;
+End;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## while we are here put in some average rent per sq foot into the store and while there add some minimun wages per store too
+
+nCount = 1;
+nMax =  Dimsiz ( cDim1 );
+
+
+While ( ncount <= nMax );
+  nAverage = 50;
+  sEl = DimNm ( cDim1, nCount );
+  sType = dType ( cDim1, sEl );
+  If ( sType @= 'N' );
+    nAverageRent = Round (nAverage * Rand());
+    nAverageWage = Round (nAverage * Rand());
+    CellPutN ( nAverageRent, cCub, cVersion, cYear, sEl, 'Rent per Sq Foot' );
+    CellPutN ( nAverageWage, cCub, cVersion, cYear, sEl, 'Hourly Wage (USD)' );
+  EndIf;
+  nCount = nCount + 1;
+End;
+#endregion

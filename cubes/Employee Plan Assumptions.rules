@@ -1,0 +1,23 @@
+SKIPCHECK;
+
+[ 'Count - Allowance - Monthly' ] = N:
+  If( [ 'Allowance - Monthly' ] > 0, 1, 0 );
+
+[ 'Count - Bonus - Rate' ] = N:
+  If( [ 'Bonus - Rate' ] > 0, 1, 0 );
+
+[ 'Average - Allowance - Monthly' ] =
+  [ 'Allowance - Monthly' ] \ [ 'Count - Allowance - Monthly' ];
+
+[ 'Average - Bonus - Rate' ] =
+  [ 'Bonus - Rate' ] \ [ 'Count - Bonus - Rate' ];
+
+#[ 'Allowance - Monthly' ] = C: 0;
+
+#[ 'Bonus - Rate' ] = C: 0;
+
+
+FEEDERS;
+
+[ 'Allowance - Monthly' ] => [ 'Count - Allowance - Monthly' ]; 
+[ 'Bonus - Rate' ] => [ 'Count - Bonus - Rate' ]; 

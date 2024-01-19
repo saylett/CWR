@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"UX Filter - }Sys Sc Group",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('UX Filter - }Sys Sc Group')/Hierarchies('UX Filter - }Sys Sc Group')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"UX Filter - }Sys Sc Group.hierarchies/UX Filter - }Sys Sc Group.json"
+	]
+}

@@ -1,0 +1,51 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Sc Object Access Measure",
+	"Elements":
+	[
+		{
+			"Name":"IsObject",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Inactive",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Permission Numeric",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Permission Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Wildcard Entry",
+			"Type":"String"
+		},
+		{
+			"Name":"Attribute Name",
+			"Type":"String"
+		},
+		{
+			"Name":"Permission Level",
+			"Type":"String"
+		},
+		{
+			"Name":"Permission Level Override",
+			"Type":"String"
+		},
+		{
+			"Name":"Current Permission Validation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current Permission Level",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Sc Object Access Measure.subsets/}Export.All.json"
+	]
+}

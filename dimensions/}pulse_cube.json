@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"}pulse_cube",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}pulse_cube')/Hierarchies('}pulse_cube')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}pulse_cube.hierarchies/}pulse_cube.json"
+	]
+}

@@ -1,0 +1,94 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+cDim = 'Employee';
+cHier = 'Job Grade';
+cHier_Node = 'All Job Grades';
+
+cProcessName = GetProcessName;
+
+If( HierarchyExists( cDim, cHier ) = 1 );
+  HierarchyDestroy( cDim, cHier );
+EndIf;
+HierarchyCreate( cDim, cHier );
+HierarchyElementInsert( cDim, cHier, '', cHier_Node, 'C');
+
+sNode = 'All Planning Employees';
+sMDX = '{TM1FilterByLevel({Descendants({[' | cDim | '].[' | sNode | ']})}, 0)}';
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( cDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+SubsetCreatebyMDX( sSub, sMDX, cDim, 1 );
+nElem = SubsetGetSize( cDim, sSub );
+sElem_Last = SubsetGetElementName( cDim, sSub, nElem );
+SubsetElementDelete( cDim, sSub, nElem );
+SubsetElementInsert( cDim, sSub, sElem_Last, nElem );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = SubsetGetElementName( cDim, sSub, nCnt );
+  sAttr = AttrS( cDim, sElem, 'Job Grade');
+  If( sAttr @= '' );
+    sGrade = 'NA Job Grade';
+  Else;
+    sGrade = sAttr;
+  EndIf;
+  If( HierarchyElementExists( cDim, cHier, sGrade) = 0 );
+    HierarchyElementInsert( cDim, cHier, '', sGrade, 'C' );
+    HierarchyElementComponentAdd( cDim, cHier, cHier_Node, sGrade, 1 );
+  EndIf;
+  HierarchyElementInsert( cDim, cHier, '', sElem, 'N' );
+  HierarchyElementComponentAdd( cDim, cHier, sGrade, sElem, 1 );
+  nCnt = nCnt + 1;
+End;
+
+HierarchySortOrder(cDim, cHier, 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+
+sMDX = '{{[' | cDim | '].[' | cHier | '].[' | cHier_Node | ']},{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}}';
+SubsetCreatebyMDX( 'Default', sMDX, cDim | ':' | cHier  );
+
+sMDX = '{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}';
+SubsetCreatebyMDX( 'Default no Total', sMDX, cDim | ':' | cHier  );
+
+sMDX = '{Descendants({[' | cDim | '].[' | cHier | ']})}';
+SubsetCreatebyMDX( 'Job Grade Drilldown', sMDX, cDim | ':' | cHier  );
+
+sMDX = '{TM1FilterByLevel({Descendants({[' | cDim | '].[' | cHier | ']})},0)}';
+SubsetCreatebyMDX( 'Employee N Level', sMDX, cDim | ':' | cHier  );
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sMDX = '{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}';
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( HierarchySubsetExists( cDim, cHier, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+SubsetCreatebyMDX( sSub, sMDX, cDim | ':' | cHier, 1 );
+nElem = HierarchySubsetGetSize( cDim, cHier, sSub );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = HierarchySubsetGetElementName( cDim, cHier, sSub, nCnt );
+  ElementAttrPuts( sElem, cDim, cHier, sElem, 'Name' );
+
+  nCnt = nCnt + 1;
+End;
+#endregion

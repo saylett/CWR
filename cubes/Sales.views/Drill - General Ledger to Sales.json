@@ -1,0 +1,105 @@
+{
+	"@type":"NativeView",
+	"Name":"Drill - General Ledger to Sales",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('}Drill_GeneralLedgerToRecordSales_Drill_TMP')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Subsets('}Drill_GeneralLedgerToRecordSales_Drill_TMP')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('All Years')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2017')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2018')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2019')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2021')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('All Years')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Act Bud')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Store')/Hierarchies('Store')"
+				},
+				"Expression":"TM1SubsetAll([Store])"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('All Countries')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Release')/Hierarchies('Release')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('All Releases')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('All Releases')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

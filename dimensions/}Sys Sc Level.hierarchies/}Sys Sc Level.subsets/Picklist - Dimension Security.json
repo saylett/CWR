@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Picklist - Dimension Security",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('0')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('1')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('2')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('3')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('4')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('5')"
+		}
+	]
+}

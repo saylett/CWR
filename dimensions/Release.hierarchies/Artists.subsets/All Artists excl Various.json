@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"All Artists excl Various",
+	"Expression":"{[Release].[Artists].[All Artists],ORDER(EXCEPT(DRILLDOWNMEMBER({[Release].[Artists].[All Artists]} , {[Release].[Artists].[All Artists]} , RECURSIVE) , {[Release].[Artists].[All Artists],[Release].[Artists].[Various]}) , [Release].[Artists].CURRENTMEMBER.PROPERTIES(\"MEMBER_CAPTION\") , BASC)}"
+}

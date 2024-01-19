@@ -1,0 +1,17 @@
+{
+	"@type":"Cube",
+	"Name":"Predictive Forecast",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('PF Version')"
+		},
+		{
+			"@id":"Dimensions('PF Year')"
+		},
+		{
+			"@id":"Dimensions('PF Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

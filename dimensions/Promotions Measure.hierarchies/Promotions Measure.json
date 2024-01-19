@@ -1,0 +1,23 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Promotions Measure",
+	"Elements":
+	[
+		{
+			"Name":"Units Lift",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Discount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ad Cost",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Promotions Measure.subsets/}Export.All.json"
+	]
+}

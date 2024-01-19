@@ -1,0 +1,45 @@
+{
+	"@type":"Process",
+	"Name":"cub.Employee Plan.Transfer Employee",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"cub.Employee Plan.Transfer Employee.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pEmployee",
+			"Prompt":"Employee ID",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pVersion",
+			"Prompt":"Version",
+			"Value":"Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"pYear",
+			"Prompt":"Year",
+			"Value":"2020",
+			"Type":"String"
+		},
+		{
+			"Name":"pMonth",
+			"Prompt":"Transfer Month",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pStore",
+			"Prompt":"Store",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,54 @@
+FEEDSTRINGS;
+SKIPCHECK;
+
+###  Workflow Status  ###
+[ 'Workflow Measure':'Status', 'Workflow Line Item':'All Line Items' ] = S:
+  DB( 'Workflow', !Version, !Year, !Store, !Plan Module, 'Current Item', 'Status' );
+
+[ 'Workflow Measure':'Status', 'Workflow Line Item':'Current Item' ] = S:
+  If( IsLeaf = 1,
+     STET,
+     If( [ 'Workflow Measure':'Status Numeric' ] = 3,
+        'Approved',
+        If( [ 'Workflow Measure':'Status Numeric' ] = 2,
+           'Submitted',
+           If( [ 'Workflow Measure':'Status Numeric' ] = 1,
+              'In Progress',
+             'Not Started' ))));
+
+[ 'Workflow Measure':'Status Numeric', 'Workflow Line Item':'Current Item' ] = N:
+  AttrN( 'Workflow Status',
+    DB( 'Workflow', !Version, !Year, !Store, !Plan Module, !Workflow Line Item, 'Status' ),
+    'Status Num' );
+
+[ 'Workflow Measure':'Status Numeric', 'Workflow Line Item':'Current Item' ] = C:
+  ConsolidatedMin( 1, 'Workflow', !Version, !Year, !Store, !Plan Module, !Workflow Line Item, !Workflow Measure );
+
+[ 'Workflow Measure':'Status Numeric', 'Workflow Line Item':'All Line Items' ] = C:
+  AttrN( 'Workflow Status',
+    DB( 'Workflow', !Version, !Year, !Store, !Plan Module, !Workflow Line Item, 'Status' ),
+    'Status Num' );
+
+[ 'Workflow Measure':'Timestamp Numeric', 'Workflow Line Item':'Current Item' ] = C:
+  ConsolidatedMax( 1, 'Workflow', !Version, !Year, !Store, !Plan Module, !Workflow Line Item, !Workflow Measure );
+
+[ 'Workflow Measure':{'Timestamp','User','Comment'}, 'Workflow Line Item':'All Line Items' ] = S:
+  DB( 'Workflow', !Version, !Year, !Store, !Plan Module, 'Current Item', !Workflow Measure );
+
+[ 'Workflow Measure':{'Timestamp Numeric'}, 'Workflow Line Item':'All Line Items' ] = C:
+  ['Current Item'];
+
+[ 'Workflow Measure':'Timestamp' ] = S:
+  If( ['Timestamp Numeric'] > 0,
+      TimSt( ['Timestamp Numeric'], '\Y-\m-\d' ) | ' | ' | TimSt( ['Timestamp Numeric'], '\h:\i:\s' ),
+      '' );
+
+[ 'Workflow Measure':{'Planner','Reviewer'}] = S:
+  If( ElLev( 'Store', !Store ) = 0, STET, '...' );
+
+FEEDERS;
+
+[ 'Workflow Measure':'Status', 'Workflow Line Item':'Current Item' ] => [ 'Workflow Measure':'Status Numeric' ];
+
+[ 'Workflow Measure':'Timestamp Numeric' ] => [ 'Workflow Measure':'Timestamp' ];
+

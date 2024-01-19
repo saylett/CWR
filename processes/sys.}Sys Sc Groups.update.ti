@@ -1,0 +1,54 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cDim = '}Sys Sc Groups';
+
+cNode = 'ALL Groups';
+
+DimensionElementInsert( cDim, '', cNode, 'C' );
+DimensionElementInsert( cDim, '', 'ADMIN', 'N' );
+DimensionElementComponentAdd( cDim, cNode, 'ADMIN', 1 );
+DimensionElementInsert( cDim, '', 'APQ Admin', 'N' );
+DimensionElementComponentAdd( cDim, cNode, 'APQ Admin', 1 );
+DimensionElementInsert( cDim, '', 'APQ PUser', 'N' );
+DimensionElementComponentAdd( cDim, cNode, 'APQ PUser', 1 );
+DimensionElementInsert( cDim, '', 'APQ User', 'N' );
+DimensionElementComponentAdd( cDim, cNode, 'APQ User', 1 );
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+#endregion

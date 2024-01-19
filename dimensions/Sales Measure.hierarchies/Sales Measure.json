@@ -1,0 +1,55 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Sales Measure",
+	"Elements":
+	[
+		{
+			"Name":"Units",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Revenue",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Price",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Plan Flag",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Margin",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Margin",
+			"ComponentName":"Revenue",
+			"Weight":1
+		},
+		{
+			"ParentName":"Margin",
+			"ComponentName":"Cost",
+			"Weight":-1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Sales Measure.subsets/Default.json",
+		"Sales Measure.subsets/}Drill_GeneralLedgerToBooks_Drill_TMP.json",
+		"Sales Measure.subsets/}Drill_GeneralLedgerToMerchandise_Drill_TMP.json",
+		"Sales Measure.subsets/}Drill_GeneralLedgerToRecordSales_Drill_TMP.json"
+	]
+}

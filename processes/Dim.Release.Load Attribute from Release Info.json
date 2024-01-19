@@ -1,0 +1,27 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Release.Load Attribute from Release Info",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Release.Load Attribute from Release Info.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pMeasure_Fr",
+			"Prompt":"",
+			"Value":"youtube",
+			"Type":"String"
+		},
+		{
+			"Name":"pAttribute_To",
+			"Prompt":"",
+			"Value":"YouTube",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

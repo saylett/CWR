@@ -1,0 +1,77 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+# constants
+
+cCub = 'Staffing';
+cProcess = GetProcessName;
+cProcessZero = cProcess | 'zeroout';
+
+# create a view to zero and zero out
+
+sFilter = 'Version:' | pVersion | '& Staffing Measure: Hours';
+
+ExecuteProcess('}bedrock.cube.view.create',
+   'pLogOutput', 1,
+   'pCube',cCub,
+   'pView', cProcessZero,
+   'pFilter', sFilter,
+   'pSuppressZero', 1,
+   'pSuppressConsol', 1,
+   'pSuppressRules', 1,
+   'pDimDelim', '&',
+   'pEleStartDelim', ':',
+   'pEleDelim', '+',
+   'pTemp', 1,
+   'pSubN', 0
+  );
+
+ViewZeroOut(cCub, cProcessZero);
+
+# create a source view
+
+If ( pVersion @= 'Actual' );
+  sFilter = 'Version:' | pVersion | ' & Year: 2017 + 2018 + 2019'|'& Staffing Measure: Hours';
+Else;
+  sFilter = 'Version:' | pVersion | ' & Year: 2017 + 2018 + 2019 + 2020 + 2021'|'& Staffing Measure: Hours';
+EndIf;
+  
+
+ExecuteProcess('}bedrock.cube.view.create',
+   'pLogOutput', 0,
+   'pCube',cCub,
+   'pView', cProcess,
+   'pFilter', sFilter,
+   'pSuppressZero', 0,
+   'pSuppressConsol', 1,
+   'pSuppressRules', 1,
+   'pDimDelim', '&',
+   'pEleStartDelim', ':',
+   'pEleDelim', '+',
+   'pTemp', 1,
+   'pSubN', 0
+  );
+  
+  DataSourceType = 'VIEW';
+  DataSourceNameForServer = cCub;
+  DatasourceCubeView = cProcess;
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## generate a random number high enough to be realistic 
+
+nHours = Round (Rand() * 200);
+
+CellPutN ( nHours, cCub, vVersion, vYear, vMonth, vEmployee, vMeasure );
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

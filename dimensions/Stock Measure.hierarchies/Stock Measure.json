@@ -1,0 +1,45 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Stock Measure",
+	"Elements":
+	[
+		{
+			"Name":"Opening Stock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Closing Stock",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Purchases",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Closing Stock",
+			"ComponentName":"Opening Stock",
+			"Weight":1
+		},
+		{
+			"ParentName":"Closing Stock",
+			"ComponentName":"Purchases",
+			"Weight":1
+		},
+		{
+			"ParentName":"Closing Stock",
+			"ComponentName":"Sales",
+			"Weight":-1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Stock Measure.subsets/}Export.All.json"
+	]
+}

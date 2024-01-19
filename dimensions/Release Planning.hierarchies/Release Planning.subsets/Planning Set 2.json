@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Planning Set 2",
+	"Expression":"{ORDER(FILTER(TM1FILTERBYLEVEL(TM1SUBSETALL([Release Planning].[Release Planning]) , 0) , [Sales Budget].([Version].[Actual],[Year].[2019],[Month].[All Months],[Store].CURRENTMEMBER,[Sales Budget Measure].[Units]) > 0) , [Sales Budget].([Version].[Actual],[Year].[2019],[Month].[All Months],[Store].CURRENTMEMBER,[Sales Budget Measure].[Units]) , BDESC)}"
+}

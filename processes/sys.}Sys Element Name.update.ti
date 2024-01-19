@@ -1,0 +1,163 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cDim = pDim;
+cDim_Tgt = '}Sys Element Name';
+
+#########################################################################################################################
+###  Validation
+#########################################################################################################################
+
+If( cDim @= '' );
+  cDim = 'ALL'; 
+Else;
+  If( DimensionExists( cDim ) = 0 );
+    ProcessQuit;
+  EndIf;
+EndIf;
+
+#########################################################################################################################
+###  Clear Existing Dimension and prep target dimension
+#########################################################################################################################
+
+If( DimensionExists( cDim_Tgt ) = 0 );
+  DimensionCreate( cDim_Tgt );
+EndIf;
+IF( pClear @= '1' );
+  DimensionDeleteAllElements( cDim_Tgt );
+  nCnt_Hier = 1;
+  sDim_Hier = '}Hierarchies_' | cDim_Tgt;
+  While( nCnt_Hier <= DimSiz( sDim_Hier ));
+    sHier = DimNm( sDim_Hier, nCnt_Hier );
+    HierarchyDeleteAllElements( cDim_Tgt, sDim_Hier );
+    HierarchyDestroy( cDim_Tgt, sDim_Hier );
+    nCnt_Hier = nCnt_Hier + 1;
+  End;
+EndIf;
+DimensionElementInsert( cDim_Tgt, '', 'Dimension User Input', 'N' );
+
+
+#If( DimIx( '}ElementAttributes_' | cDim_Tgt, 'Caption' ) = 0 );
+#  AttrInsert( cDim_Tgt, '', 'Caption', 'S' );
+#EndIf;
+#
+#If( DimIx( cDim_Tgt, 'TOTAL DIMENSION ELEMENTS' ) = 0 );
+#  DimensionElementInsert( cDim_Tgt, '', 'TOTAL DIMENSION ELEMENTS', 'N' );
+#EndIf;
+
+#########################################################################################################################
+###  Loop through all dimensions
+#########################################################################################################################
+
+nObjectCount = DimSiz( '}Dimensions' );
+nObjectIndex = 1;
+
+While( nObjectIndex <= nObjectCount );
+
+  sObjectName = DimNm( '}Dimensions', nObjectIndex );
+  # Need to account for alternate hierarchies which are listed in }Dimensions as dim:hier
+  If( Scan( ':', sObjectName ) = 0 );
+    sElementDim = sObjectName;
+    sHier = '';
+  Else;
+    sElementDim = SubSt( sObjectName, 1, Scan( ':', sObjectName ) - 1 );
+    sHier = SubSt( sObjectName, Scan( ':', sObjectName ) + 1, Long( sObjectName ) - Scan( ':', sObjectName ) );
+  EndIf;
+  
+  If( SubSt( sElementDim, 1, 1 ) @<> '}' % sObjectName @= cDim );
+    If( DimIx( '}Sys Dimension Name', sElementDim ) = 0 );
+      # Do not export
+    ElseIf( AttrS( '}Sys Dimension Name', sElementDim, 'Sys Element Flag' ) @<> '1' );
+      # Do not export
+    ElseIf( cDim @<> 'ALL' & sElementDim @<> cDim );
+      # Do not export
+#    ElseIF( DimSiz( sObjectName ) > nMaxEles & sElementDim @<> cDim );
+      # Do not export
+    Else;
+      # Cleared conditions to export elements
+
+      sAttributeDim = '}ElementAttributes_' | sElementDim;
+    
+      nElementCount = DimSiz( sObjectName );
+      nElementIndex = 1;
+    
+#      sAliases = 'No';
+#      If( CubeExists( sAttributeDim ) = 1 );
+#        nAttributeCount = DimSiz( sAttributeDim );
+#        nAttributeIndex = 1;
+#        While( nAttributeIndex <= nAttributeCount );
+#          sAttributeName = DimNm( sAttributeDim, nAttributeIndex );
+#          sAttributeType = DType( sAttributeDim, sAttributeName );
+#          If( sAttributeType @= 'AA' );
+#            sAliases = 'Yes';
+#            nAttributeIndex = nAttributeCount;
+#          EndIf;
+#          nAttributeIndex = nAttributeIndex + 1;
+#        End;
+#      EndIf;
+      
+      If( sHier @= '' );
+        If( HierarchyExists( cDim_Tgt, sElementDim ) = 0 );
+          HierarchyCreate( cDim_Tgt, sElementDim );     
+        EndIf;
+      EndIf;
+      If( HierarchyElementExists( cDim_Tgt, sElementDim, 'Dimension User Input') = 0 );
+        HierarchyElementInsert( cDim_Tgt, sElementDim, '', 'Dimension User Input', 'N' );
+      EndIf;
+      While( nElementIndex <= nElementCount );
+    
+        sElementName = DimNm( sObjectName, nElementIndex );
+        DimensionElementInsert( cDim_Tgt, '', sElementName, 'N' );
+        
+        HierarchyElementInsert( cDim_Tgt, sElementDim, '', sElementName, 'N' );
+        
+        
+        # Export Alias Names
+#        If( sAliases @= 'Yes' );
+#          nAttributeIndex = 1;
+#          While( nAttributeIndex <= nAttributeCount );
+#            sAttributeName = DimNm( sAttributeDim, nAttributeIndex );
+#            sAttributeType = DType( sAttributeDim, sAttributeName );
+#            If( sAttributeType @= 'AA' );
+#              sAttributeValue = AttrS( sObjectName, sElementName, sAttributeName );
+#              If( sAttributeValue @<> '' );
+#                DimensionElementInsert( sDimTgt, '', sAttributeValue, 'N' );
+#              EndIf;
+#            EndIf;
+#            nAttributeIndex = nAttributeIndex + 1;
+#          End;
+#        EndIf;
+    
+        nElementIndex = nElementIndex + 1;
+      End;
+
+    EndIf;
+  EndIf;
+ 
+  nObjectIndex = nObjectIndex + 1;
+End;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+#endregion

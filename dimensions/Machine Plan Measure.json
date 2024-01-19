@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Machine Plan Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Machine Plan Measure')/Hierarchies('Machine Plan Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Machine Plan Measure.hierarchies/Machine Plan Measure.json"
+	]
+}

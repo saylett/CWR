@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"System Info Param",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('System Info Param')/Hierarchies('System Info Param')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"System Info Param.hierarchies/System Info Param.json"
+	]
+}

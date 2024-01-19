@@ -1,0 +1,88 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Year",
+	"Elements":
+	[
+		{
+			"Name":"All Years",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"2017",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2018",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2019",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"2021",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Average 2017-2019",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Years",
+			"ComponentName":"2017",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Years",
+			"ComponentName":"2018",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Years",
+			"ComponentName":"2019",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Years",
+			"ComponentName":"2020",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Years",
+			"ComponentName":"2021",
+			"Weight":1
+		},
+		{
+			"ParentName":"Average 2017-2019",
+			"ComponentName":"2017",
+			"Weight":0.330000000000000016
+		},
+		{
+			"ParentName":"Average 2017-2019",
+			"ComponentName":"2018",
+			"Weight":0.330000000000000016
+		},
+		{
+			"ParentName":"Average 2017-2019",
+			"ComponentName":"2019",
+			"Weight":0.330000000000000016
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Year.subsets/All Years.json",
+		"Year.subsets/Budget Year.json",
+		"Year.subsets/Current Year.json",
+		"Year.subsets/Default.json",
+		"Year.subsets/Forecast Year.json",
+		"Year.subsets/Plan Years.json",
+		"Year.subsets/Prior Year.json"
+	]
+}

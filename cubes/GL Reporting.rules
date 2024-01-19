@@ -1,0 +1,11 @@
+SKIPCHECK;
+
+['Act vs Bud %'] = ['Act vs Bud'] \ ['Budget'];
+
+[ 'Amount' ] = N:
+  DB('General Ledger', !Version,
+    AttrS( 'Year-Month', !Year-Month, 'Year' ),
+    AttrS( 'Year-Month', !Year-Month, 'Month' ),
+    !Store, !GL Account, 'Amount');
+
+FEEDERS;

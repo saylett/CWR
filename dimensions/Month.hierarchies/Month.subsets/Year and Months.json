@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Year and Months",
+	"Expression":"{[Month].[Month].[All Months],[Month].[Month].[All Months^Jan],[Month].[Month].[All Months^Feb],[Month].[Month].[All Months^Mar],[Month].[Month].[All Months^Apr],[Month].[Month].[All Months^May],[Month].[Month].[All Months^Jun],[Month].[Month].[All Months^Jul],[Month].[Month].[All Months^Aug],[Month].[Month].[All Months^Sep],[Month].[Month].[All Months^Oct],[Month].[Month].[All Months^Nov],[Month].[Month].[All Months^Dec]}"
+}

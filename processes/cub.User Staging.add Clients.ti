@@ -1,0 +1,116 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Src = 'User Staging';
+
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Create Source View
+#########################################################################################################################
+
+###  Define Temp Object Name and Create View  ###
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( ViewExists( cCub_Src, cTempName | '_Src' ) <> 0 );
+    cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cView_Src = cTempName | '_Src';
+cSub = cTempName | '_Src';
+ViewCreate( cCub_Src, cView_Src, 1 );
+
+###  Assign Subset  ###
+sDim = 'Line Item';
+sNode = 'All Line Items';
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If (SubsetExists(sDim, cSub) <> 0);
+  SubsetDestroy(sDim, cSub);
+EndIf;
+SubsetCreatebyMDX(cSub, sMDX, sDim, 1);
+nElem = SubsetGetSize(sDim, cSub);
+sElem_Last = SubsetGetElementName(sDim, cSub, nElem);
+SubsetElementDelete(sDim, cSub, nElem);
+SubsetElementInsert(sDim, cSub, sElem_Last, nElem);
+ViewSubsetAssign(cCub_Src, cView_Src, sDim, cSub);
+
+###  Assign Subset  ###
+sDim = 'User Staging Measure';
+sElem = 'Full Name';
+If (SubsetExists(sDim, cSub) = 0);
+  SubsetCreate(sDim, cSub, 1);
+EndIf;
+SubsetDeleteAllElements(sDim, cSub);
+SubsetElementInsert(sDim, cSub, sElem, 1);
+ViewSubsetAssign(cCub_Src, cView_Src, sDim, cSub);
+
+###  Set View as Data Source  ###
+nCnt = 1;
+While( TabDim( cCub_Src, nCnt ) @<> '' );
+  sDim = TabDim( cCub_Src, nCnt );
+  ViewRowDimensionSet( cCub_Src, cView_Src, sDim, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewExtractSkipCalcsSet( cCub_Src, cView_Src, 1 );
+ViewExtractSkipRuleValuesSet( cCub_Src, cView_Src, 1 );
+ViewExtractSkipZeroesSet( cCub_Src, cView_Src, 1 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Src;
+DataSourceNameForClient = cCub_Src;
+DataSourceCubeView = cView_Src;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sUserName = CellGetS( cCub_Src, vItem, 'Username');
+
+If( DimIx( '}Clients', sUserName) = 0 );
+  AddClient( sUserName );
+EndIf;
+
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sFullName = CellGetS( cCub_Src, vItem, 'Full Name');
+sEmail = CellGetS( cCub_Src, vItem, 'Email Address');
+sUserName = CellGetS( cCub_Src, vItem, 'Username');
+nFlag = CellGetN( cCub_Src, vItem, 'Update Flag');
+
+CellPutN(1, '}ClientProperties', sUserName, 'IsDisabled');
+AttrPutS(sFullName, '}Clients', sUserName, 'Full Name' );
+AttrPutS(sEmail, '}Clients', sUserName, 'Email' );
+
+sHTML = '<span title="' | sFullName | ' - ' | sEmail | '">' | sUserName | '</span>';
+AttrPutS(sHTML, '}Clients', sUserName, 'UX Tooltip' );
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+#endregion

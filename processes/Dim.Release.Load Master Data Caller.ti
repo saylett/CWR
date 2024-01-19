@@ -1,0 +1,32 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## constants
+
+cProcess = 'Dim.Release.Load Master Data';
+nFrom = 1970;
+nTo = 2018;
+
+
+While ( nFrom <= nTo );
+  sFrom = Str( nFrom, 4, 0 );
+  ExecuteProcess('Dim.Release.Load Master Data',
+     'pYear', sFrom,
+     'pStyle', pStyle
+    );
+  nFrom = nFrom + 1;
+End;
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

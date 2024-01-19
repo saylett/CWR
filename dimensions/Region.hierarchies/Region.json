@@ -1,0 +1,45 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Region",
+	"Elements":
+	[
+		{
+			"Name":"All Regions",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Americas",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Asia Pacific",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"EMEA",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Regions",
+			"ComponentName":"Americas",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Regions",
+			"ComponentName":"Asia Pacific",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Regions",
+			"ComponentName":"EMEA",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Region.subsets/Default.json"
+	]
+}

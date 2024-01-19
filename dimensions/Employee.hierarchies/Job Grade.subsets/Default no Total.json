@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default no Total",
+	"Expression":"{[Employee].[Job Grade].[All Job Grades].Children}"
+}

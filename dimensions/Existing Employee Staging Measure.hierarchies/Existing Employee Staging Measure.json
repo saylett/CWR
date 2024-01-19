@@ -1,0 +1,101 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Existing Employee Staging Measure",
+	"Elements":
+	[
+		{
+			"Name":"Name",
+			"Type":"String"
+		},
+		{
+			"Name":"Store",
+			"Type":"String"
+		},
+		{
+			"Name":"Position",
+			"Type":"String"
+		},
+		{
+			"Name":"Annual Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Monthly Allowance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus Rate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Skip Flag",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Validation",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Vld - Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vld - Store",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vld - Position",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vld - Annual Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vld - Monthly Allowance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vld - Bonus Rate",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Validation",
+			"ComponentName":"Vld - Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Validation",
+			"ComponentName":"Vld - Store",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Validation",
+			"ComponentName":"Vld - Position",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Validation",
+			"ComponentName":"Vld - Annual Salary",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Validation",
+			"ComponentName":"Vld - Monthly Allowance",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Validation",
+			"ComponentName":"Vld - Bonus Rate",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Existing Employee Staging Measure.subsets/Default.json",
+		"Existing Employee Staging Measure.subsets/}Export.All.json"
+	]
+}

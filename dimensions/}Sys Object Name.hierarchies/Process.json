@@ -1,0 +1,1482 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Process",
+	"Elements":
+	[
+		{
+			"Name":"ALL Processes",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"cub.Employee Plan.Load New Employees",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Employee Plan.Seed Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Employee Plan.Seed Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Employee Plan.Transfer Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.General Ledger.randomize",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.General Ledger.randomize.caller",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.Generate Randomish Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Sales.load data",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.randomize.caller",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.randomize Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.randomize Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Sales Budget.load data from Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales Budget.Load Pricing",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Staffing.Populate Hours",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Staffing Seasonality.Copy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Stock.Generate Opening Stock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.User Staging.add Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Workflow.update planner",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Workflow.update status",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.}ClientProperties.remove disabled Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Create Attribute",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Create Consols",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Delete Attribute",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.ALL",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Exempt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Job Grade",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Last Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Position",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Start Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Store Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Store Current",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.RefreshMDXHierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Create Consol",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Create Missing Subset",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Delete SPAM",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Fix Attribute Types",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Load Attribute from Release Info",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Load Master Data",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Load Master Data Caller",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Populate Decade Hierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Populate Genre Hierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Populate Missing Video",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Remove Record with no Resource URL",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Store.Count Employees",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Year-Month.Create Hierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"LocalizeCube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pulse TI",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RefreshMDXHierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Arc Demo Loop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.initialize security objects",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Security.update access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Security.update element access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Security.update groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Send Email",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Dimension Name.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Element Name.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Object Name.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Sc Groups.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.chore.execution.check",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.clear",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.copy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.copy.intercube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.import",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.save",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.dimension.add",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.dimension.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.dimension.replace",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.rule.manage",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.rule.processfeeders",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.create.bymdx",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.publish",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.viewandsubsets.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.viewandsubsets.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.importfromfile",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.swapalias",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.consol.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.consol.flat.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromattribute",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromrollup",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromrollup.aliasswap",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromsubset",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.element.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.element.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.element.move",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.elements.validate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.emptyconsols.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.export.script",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.import",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.leaves.orphan.check",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.leaves.sync",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.all",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.attribute.all",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.attribute.leaf",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.byelement",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.bylevel",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.bymdx",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.consolidation.all",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.consolidation.leaf",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.leaf",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.orphans",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.toplevelhierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.exclude",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.exporttofile",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.unwind",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.process.template",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.group.assign",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.password.reset",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.cube.cellsecurity.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.cube.cellsecurity.destroy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.evaluate.mdx",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.evaluate.mdx.private",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.group.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.group.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.object.assign",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.refresh",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.deleteallpersistentfeeders",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.dir.backup",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.dir.listcontents",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.encrypt.directory",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.encrypt.file",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.executecommand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.localize",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.logfile.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.savedataall",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.util.string.validate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.wait",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.writetomessagelog",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Drill_GeneralLedgerToBooks",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Drill_GeneralLedgerToMerchandise",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Drill_GeneralLedgerToRecordSales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_8f2ZFPMsMdrzBvtMTrb0Q",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_fKFRPgafn3YAB9JAkTXeLg",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_iO3naGtY2oHDh52XaVr2LQ",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_K3EPZjfq7e8bmg5L1iHSw",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_og3E2PGu7CnllM4JqL3K4Q",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_clients_export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_control",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_cube_export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_dim_export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_dim_export_data",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_import",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_save",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_stats_export",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Load New Employees",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Seed Actual",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Seed Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Transfer Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.General Ledger.randomize",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.General Ledger.randomize.caller",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.Generate Randomish Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Sales.load data",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.randomize.caller",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.randomize Actual",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.randomize Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Sales Budget.load data from Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales Budget.Load Pricing",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Staffing.Populate Hours",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Staffing Seasonality.Copy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Stock.Generate Opening Stock",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.User Staging.add Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Workflow.update planner",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Workflow.update status",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.}ClientProperties.remove disabled Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Create Attribute",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Create Consols",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Delete Attribute",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.ALL",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Exempt",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Job Grade",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Last Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Position",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Start Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Store Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Store Current",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.RefreshMDXHierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Create Consol",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Create Missing Subset",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Delete SPAM",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Fix Attribute Types",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Load Attribute from Release Info",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Load Master Data",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Load Master Data Caller",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Populate Decade Hierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Populate Genre Hierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Populate Missing Video",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Remove Record with no Resource URL",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Store.Count Employees",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Year-Month.Create Hierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"LocalizeCube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Pulse TI",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"RefreshMDXHierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Arc Demo Loop",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.initialize security objects",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Security.update access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Security.update element access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Security.update groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Send Email",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Dimension Name.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Element Name.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Object Name.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Sc Groups.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.chore.execution.check",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.clear",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.copy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.copy.intercube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.import",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.save",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.dimension.add",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.dimension.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.dimension.replace",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.rule.manage",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.rule.processfeeders",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.create.bymdx",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.publish",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.viewandsubsets.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.viewandsubsets.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.importfromfile",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.swapalias",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.consol.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.consol.flat.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromattribute",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromrollup",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromrollup.aliasswap",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromsubset",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.element.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.element.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.element.move",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.elements.validate",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.emptyconsols.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.export.script",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.import",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.leaves.orphan.check",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.leaves.sync",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.all",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.attribute.all",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.attribute.leaf",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.byelement",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.bylevel",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.bymdx",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.consolidation.all",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.consolidation.leaf",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.leaf",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.orphans",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.toplevelhierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.exclude",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.exporttofile",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.unwind",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.process.template",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.group.assign",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.password.reset",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.cube.cellsecurity.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.cube.cellsecurity.destroy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.evaluate.mdx",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.evaluate.mdx.private",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.group.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.group.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.object.assign",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.refresh",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.deleteallpersistentfeeders",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.dir.backup",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.dir.listcontents",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.encrypt.directory",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.encrypt.file",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.executecommand",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.localize",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.logfile.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.savedataall",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.util.string.validate",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.wait",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.writetomessagelog",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}Drill_GeneralLedgerToBooks",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}Drill_GeneralLedgerToMerchandise",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}Drill_GeneralLedgerToRecordSales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_8f2ZFPMsMdrzBvtMTrb0Q",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_fKFRPgafn3YAB9JAkTXeLg",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_iO3naGtY2oHDh52XaVr2LQ",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_K3EPZjfq7e8bmg5L1iHSw",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_og3E2PGu7CnllM4JqL3K4Q",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_clients_export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_control",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_cube_export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_dim_export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_dim_export_data",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_import",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_save",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_stats_export",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

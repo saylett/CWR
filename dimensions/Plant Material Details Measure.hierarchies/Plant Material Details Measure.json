@@ -1,0 +1,60 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Plant Material Details Measure",
+	"Elements":
+	[
+		{
+			"Name":"Plant",
+			"Type":"String"
+		},
+		{
+			"Name":"Material",
+			"Type":"String"
+		},
+		{
+			"Name":"Customer",
+			"Type":"String"
+		},
+		{
+			"Name":"Name",
+			"Type":"String"
+		},
+		{
+			"Name":"Material Description",
+			"Type":"String"
+		},
+		{
+			"Name":"MRP Controller",
+			"Type":"String"
+		},
+		{
+			"Name":"Review Date",
+			"Type":"String"
+		},
+		{
+			"Name":"POC",
+			"Type":"String"
+		},
+		{
+			"Name":"HFR Agreement",
+			"Type":"String"
+		},
+		{
+			"Name":"Batch Initation Date",
+			"Type":"String"
+		},
+		{
+			"Name":"Sunset Days",
+			"Type":"String"
+		},
+		{
+			"Name":"Notes",
+			"Type":"String"
+		},
+		{
+			"Name":"Additional Notes",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

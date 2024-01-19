@@ -1,0 +1,35 @@
+{
+	"@type":"Cube",
+	"Name":"General Ledger",
+	"Rules@Code.link":"General Ledger.rules",
+	"DrillthroughRules@Code.link":"General Ledger.drillthrough.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('GL Account')"
+		},
+		{
+			"@id":"Dimensions('General Ledger Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"General Ledger.views/Country.json",
+		"General Ledger.views/Default.json",
+		"General Ledger.views/Insurance.json",
+		"General Ledger.views/Insurance Forecast.json",
+		"General Ledger.views/P&L by LOB.json"
+	]
+}

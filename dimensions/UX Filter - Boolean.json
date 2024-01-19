@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"UX Filter - Boolean",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('UX Filter - Boolean')/Hierarchies('UX Filter - Boolean')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"UX Filter - Boolean.hierarchies/UX Filter - Boolean.json"
+	]
+}

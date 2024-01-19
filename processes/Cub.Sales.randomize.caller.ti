@@ -1,0 +1,62 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cYear_Beg = StringToNumber( pYear_Beg );
+cYear_End = StringToNumber( pYear_End );
+
+nCnt = cYear_Beg;
+While( nCnt <= cYear_End );
+  cYear = NumberToString( nCnt );
+  ExecuteProcess('Cub.Sales.randomize Actual',
+     'pYear', cYear,
+     'pMult', '100'
+    );
+
+  ExecuteProcess('Cub.Sales.randomize Plan',
+     'pYear', cYear,
+     'pVersion', 'Budget',
+     'pMult', '100'
+    );
+
+  ExecuteProcess('Cub.Sales.randomize Plan',
+     'pYear', cYear,
+     'pVersion', 'Forecast',
+     'pMult', '85'
+    );
+
+  nCnt = nCnt + 1;
+End;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

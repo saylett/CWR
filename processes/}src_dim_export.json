@@ -1,0 +1,33 @@
+{
+	"@type":"Process",
+	"Name":"}src_dim_export",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}src_dim_export.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDimName",
+			"Prompt":"The name of the dimension",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pIncludeSecurity",
+			"Prompt":"Include the security on the dimension",
+			"Value":1,
+			"Type":"Numeric"
+		},
+		{
+			"Name":"pPath",
+			"Prompt":"Path to file",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

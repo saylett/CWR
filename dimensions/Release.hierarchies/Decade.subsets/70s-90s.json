@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"70s-90s",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('70s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('80s')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Decade')/Elements('90s')"
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"@type":"Cube",
+	"Name":"Promotions",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('Line Item')"
+		},
+		{
+			"@id":"Dimensions('Promotions Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Promotions.views/Default.json"
+	]
+}

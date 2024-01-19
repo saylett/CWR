@@ -1,0 +1,45 @@
+{
+	"@type":"Process",
+	"Name":"sys.Send Email",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"sys.Send Email.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pRecipients",
+			"Prompt":"List of E-mail Recipients (Comma Seperated)",
+			"Value":"bwan@cubewise.com",
+			"Type":"String"
+		},
+		{
+			"Name":"pSubject",
+			"Prompt":"E-mail Subject Line",
+			"Value":"Daily Sales",
+			"Type":"String"
+		},
+		{
+			"Name":"pBody",
+			"Prompt":"E-mail Body",
+			"Value":"Please open attachment for details",
+			"Type":"String"
+		},
+		{
+			"Name":"pAttachment",
+			"Prompt":"List of Attachments (Optional, Comma Seperated)",
+			"Value":"c:\\TM1\\Report\\DailySales.xlsx",
+			"Type":"String"
+		},
+		{
+			"Name":"pDebug",
+			"Prompt":"Debug Mode: (0 = False, 1 = True)",
+			"Value":0,
+			"Type":"Numeric"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,234 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Sc Groups",
+	"Elements":
+	[
+		{
+			"Name":"ALL Groups",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"ADMIN",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"APQ Admin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"APQ PUser",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"APQ User",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Singapore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Belgium",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - United States",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - France",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Germany",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - England",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Netherlands",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Poland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Zurich",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Taiwan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - India",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Sales Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Workforce Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Sales Reporting",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - GL Reporting",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Workforce Reporting",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Func - Admin Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Indonesia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Malaysia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Thailand",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"ADMIN",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"APQ Admin",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"APQ PUser",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"APQ User",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Singapore",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Thailand",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Malaysia",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Indonesia",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Belgium",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - United States",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - France",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Germany",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - England",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Netherlands",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Poland",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Zurich",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - Taiwan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Elem Sc - Store - India",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Func - Sales Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Func - Workforce Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Func - Sales Reporting",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Func - GL Reporting",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Func - Workforce Reporting",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Groups",
+			"ComponentName":"Func - Admin Planning",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Sc Groups.subsets/}Export.All.json"
+	]
+}

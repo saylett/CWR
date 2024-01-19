@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Price Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Price Measure')/Hierarchies('Price Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Price Measure.hierarchies/Price Measure.json"
+	]
+}

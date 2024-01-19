@@ -1,0 +1,115 @@
+#region Prolog
+sMetadataCube = '}pulse_cube';
+sControlDim = '}pulse_cube';
+sPropertyDim = '}pulse_cube_property';
+sMeasureDim = '}pulse_measure';
+sMeasureElement = 'String';
+
+If ( CubeExists (sMetadataCube) = 0 );
+  
+  If( DimensionExists(sControlDim) = 0 );
+    DimensionCreate(sControlDim);
+  EndIf;
+  
+  If( DimensionExists(sPropertyDim) = 0 );
+    DimensionCreate(sPropertyDim);
+  EndIf;
+  
+  If( DimensionExists(sMeasureDim) = 0 );
+    DimensionCreate(sMeasureDim);
+    DimensionElementInsertDirect(sMeasureDim, '', sMeasureElement, 'S');
+  EndIf;
+  
+  CubeCreate(sMetadataCube, sControlDim, sPropertyDim, sMeasureDim);
+  
+EndIf;
+
+CellPutS( 'NO', '}CubeProperties', sMetadataCube, 'LOGGING' );
+
+If(pClear = 1);
+  DimensionDeleteAllElements(sControlDim);
+  DimensionDeleteAllElements(sPropertyDim);
+EndIf;
+#endregion
+#region Epilog
+nChar = 0;
+sName = '';
+nLen = Long(pCubeNames);
+While(nChar <= nLen);
+  nChar = nChar + 1;
+  sName = sName | Subst(pCubeNames, nChar, 1);
+  If(nChar + 1 > nLen % Subst(pCubeNames , nChar + 1, 2) @= '::');
+    sCubeName = sName;
+    sName = '';
+    nChar = nChar + 2;
+    
+    If( CubeExists (sCubeName) = 1 );
+      
+      If( DimIx(sControlDim, sCubeName) = 0 );
+        DimensionElementInsertDirect(sControlDim, '', sCubeName, 'S');
+      EndIf;
+    
+      sControlName = '}CubeProperties';
+      If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+        sSectionName = 'CubeProperties';
+        nPropCount = DIMSIZ( sControlName );
+        p = 1;
+        WHILE (p <= nPropCount);
+            sProp = DIMNM( sControlName , p);
+            If(DTYPE(sControlName, sProp) @= 'S');
+              sValue = CellGetS(sControlName, sCubeName, sProp);
+            Else;
+              sValue = NumberToStringEx(CellGetN(sControlName, sCubeName, sProp), '0', '.', ',');
+            EndIf;
+            If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+              DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+            EndIf;
+            CellPutS(sValue, sMetadataCube, sCubeName, sSectionName | '>>>' | sProp, sMeasureElement);
+            p = p + 1;
+        END;
+      EndIf;
+    
+      sControlName = '}CubeAttributes';
+      If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+        sSectionName = 'CubeAttributes';
+        nPropCount = DIMSIZ( sControlName );
+        p = 1;
+        WHILE (p <= nPropCount);
+            sProp = DIMNM( sControlName , p);
+            If(DTYPE(sControlName, sProp) @= 'S');
+              sValue = CellGetS(sControlName, sCubeName, sProp);
+            Else;
+              sValue = NumberToStringEx(CellGetN(sControlName, sCubeName, sProp), '0', '.', ',');
+            EndIf;
+            If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+              DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+            EndIf;
+            CellPutS(sValue, sMetadataCube, sCubeName, sSectionName | '>>>' | sProp, sMeasureElement);
+            p = p + 1;
+        END;
+      EndIf;
+    
+      sControlName = '}CubeCaptions';
+      If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+        sSectionName = 'CubeCaptions';
+        nPropCount = DIMSIZ( sControlName );
+        p = 1;
+        WHILE (p <= nPropCount);
+            sProp = DIMNM( sControlName , p);
+            If(DTYPE(sControlName, sProp) @= 'S');
+              sValue = CellGetS(sControlName, sCubeName, sProp);
+            Else;
+              sValue = NumberToStringEx(CellGetN(sControlName, sCubeName, sProp), '0', '.', ',');
+            EndIf;
+            If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+              DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+            EndIf;
+            CellPutS(sValue, sMetadataCube, sCubeName, sSectionName | '>>>' | sProp, sMeasureElement);
+            p = p + 1;
+        END;
+      EndIf;
+
+    EndIf;
+  EndIf;
+End;
+#endregion

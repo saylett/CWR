@@ -1,0 +1,201 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Src = 'Sales';
+cCub_Tgt = 'Sales';
+
+cYear = pYear;
+cVersion = pVersion;
+cMult = StringToNumber( pMult );
+
+cMonth = 'NA Month';
+cStore = 'All Countries';
+cRelease = 'All Releases';
+
+cDL_Dim = Char(176);
+cDL_Start = Char(177);
+cDL_Elem = Char(178);
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Create Source View
+#########################################################################################################################
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( ViewExists( cCub_Src, cTempName | '_Src' ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cView_Src = cTempName | '_Src';
+cSub = cTempName | '_Src';
+ViewCreate( cCub_Src, cView_Src, 1 );
+
+sDim = 'Version';
+sElem = cVersion;
+If( SubsetExists( sDim, cSub ) = 0 );
+  SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Year';
+sElem = cYear;
+If( SubsetExists( sDim, cSub ) = 0 );
+  SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Month';
+sElem = cMonth;
+If( SubsetExists( sDim, cSub ) = 0 );
+  SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Store';
+sNode = cStore;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+  SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Release';
+sNode = cRelease;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+  SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Sales Measure';
+sElem = 'Plan Flag';
+If( SubsetExists( sDim, cSub ) = 0 );
+  SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+###  Set View as Data Source  ###
+nCnt = 1;
+While( TabDim( cCub_Src, nCnt ) @<> '' );
+  sDim = TabDim( cCub_Src, nCnt );
+  ViewRowDimensionSet( cCub_Src, cView_Src, sDim, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewExtractSkipCalcsSet( cCub_Src, cView_Src, 1 );
+ViewExtractSkipRuleValuesSet( cCub_Src, cView_Src, 1 );
+ViewExtractSkipZeroesSet( cCub_Src, cView_Src, 1 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Src;
+DataSourceNameForClient = cCub_Src;
+DataSourceCubeView = cView_Src;
+
+#########################################################################################################################
+###  Toggle off Cube Logging
+#########################################################################################################################
+
+CellPutS( 'NO', '}CubeProperties', cCub_Tgt, 'LOGGING' );
+
+#########################################################################################################################
+###  Clear Existing Data
+#########################################################################################################################
+
+###  Filter  ###
+sFilter = 'Year' | cDL_Start | cYear;
+sFilter = sFilter | cDL_Dim | 'Version' | cDL_Start | cVersion;
+sFilter = sFilter | cDL_Dim | 'Sales Measure' | cDL_Start | 'Units' | cDL_Elem | 'Unit Cost' | cDL_Elem | 'Unit Price' ;
+
+###  Clear Data  ###
+ExecuteProcess( '}bedrock.cube.data.clear',
+  'pLogOutput', 0,
+  'pCube', cCub_Tgt,
+  'pView', '',
+  'pFilter', sFilter,
+  'pFilterParallel', '',
+  'pParallelThreads', 0,
+  'pDimDelim', cDL_Dim,
+  'pEleStartDelim', cDL_Start,
+  'pEleDelim', cDL_Elem,
+  'pCubeLogging', 0,
+  'pTemp', 1 );
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+nCnt = 1;
+While( nCnt <= 12 );
+  sMonth = 'M' | NumberToStringEx(nCnt,'00', '', '');
+  
+  nUnit = CellGetN( cCub_Src, 'Actual', vYear, sMonth, vStore, vRelease, 'Units');
+  nCost = CellGetN( cCub_Src, 'Actual', vYear, sMonth, vStore, vRelease, 'Unit Cost');
+  nPrice = CellGetN( cCub_Src, 'Actual', vYear, sMonth, vStore, vRelease, 'Unit Price');
+  
+  nAdj = Rand() - 0.5;
+  nUnit = RoundP( nUnit * ( 1 + nAdj ), 0) * cMult / 100;
+  
+  If( nUnit <= 0 );
+    nPrice = 0;
+    nCost = 0;
+  Else;
+    nAdj = RoundP( (Rand() * 10 / 3 - 2), 0 );
+    nPrice = nPrice + nAdj;
+  
+    nAdj = RoundP( (Rand() * 10 / 3 - 2), 0 );
+    nCost = nCost + nAdj;
+  EndIf;
+  
+  CellPutN ( nUnit, cCub_Tgt, vVersion, vYear, sMonth, vStore, vRelease, 'Units' );
+  CellPutN ( nCost, cCub_Tgt, vVersion, vYear, sMonth, vStore, vRelease, 'Unit Cost' );
+  CellPutN ( nPrice, cCub_Tgt, vVersion, vYear, sMonth, vStore, vRelease, 'Unit Price' );
+  
+  nCnt = nCnt + 1;
+End;
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

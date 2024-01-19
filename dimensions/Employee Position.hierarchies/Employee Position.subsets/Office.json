@@ -1,0 +1,13 @@
+{
+	"@type":"Subset",
+	"Name":"Office",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Employee Position')/Hierarchies('Employee Position')/Elements('Inventory Analyst')"
+		},
+		{
+			"@id":"Dimensions('Employee Position')/Hierarchies('Employee Position')/Elements('Trainee')"
+		}
+	]
+}

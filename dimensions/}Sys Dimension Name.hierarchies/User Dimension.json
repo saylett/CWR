@@ -1,0 +1,438 @@
+{
+	"@type":"Hierarchy",
+	"Name":"User Dimension",
+	"Elements":
+	[
+		{
+			"Name":"ALL User Dimensions",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Artist",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Calendar Day",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Calendar Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Calendar Week",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Currency",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Assumptions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Model",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Existing Employee Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"General Ledger Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GL Account",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GL Reporting Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Navigation Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Employee Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P&L Account",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P&L Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Plan Module",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Price Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Promotions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Measures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Budget Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"State",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"State Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stock Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store Assumption Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"System Info Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"System Info Param",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tim123",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Time",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"User Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workflow Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Year-Month",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Artist",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Calendar Day",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Calendar Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Calendar Week",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Currency",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Employee Plan Assumptions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Employee Plan Model",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Existing Employee Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"General Ledger Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"GL Account",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"GL Reporting Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Navigation Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"New Employee Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"New Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"P&L Account",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"P&L Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Plan Module",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Price Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Promotions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Release Measures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Release Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Sales Budget Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Sales Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Staffing Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Staffing Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"State",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"State Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Stock Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Store",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Store Assumption Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"System Info Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"System Info Param",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Tim123",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Time",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"User Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Workflow Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Year",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL User Dimensions",
+			"ComponentName":"Year-Month",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

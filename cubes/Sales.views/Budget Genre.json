@@ -1,0 +1,197 @@
+{
+	"@type":"NativeView",
+	"Name":"Budget Genre",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Units')"
+					},
+					{
+						"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Unit Cost')"
+					},
+					{
+						"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Unit Price')"
+					},
+					{
+						"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Plan Flag')"
+					},
+					{
+						"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Revenue')"
+					},
+					{
+						"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Cost')"
+					}
+				]
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Release')/Hierarchies('Release')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Funk Soul')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Jazz')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Latin')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Electronic')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Rock')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Pop')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Reggae')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Non-Music')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Classical')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Stage Screen')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Folk')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Hip Hop')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - No Genre')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Childrens')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Blues')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Brass Military')"
+					},
+					{
+						"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('Planning - Folk World Country')"
+					}
+				]
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Budget')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('All Years')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2021')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2019')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2018')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2017')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Elements('Jan')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Store')/Hierarchies('Store')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('All Countries')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Asia')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Australia')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('Europe')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('North America')"
+					},
+					{
+						"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('America')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Store')/Hierarchies('Store')/Elements('America')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

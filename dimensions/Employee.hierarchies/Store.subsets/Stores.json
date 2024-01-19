@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Stores",
+	"Expression":"{[Employee].[Store].[All Stores],DRILLUPMEMBER({[Employee].[Store].[America],[Employee].[Store].[Beijing],[Employee].[Store].[Belgium],[Employee].[Store].[France],[Employee].[Store].[FuZhou],[Employee].[Store].[Germany],[Employee].[Store].[Hong Kong],[Employee].[Store].[India],[Employee].[Store].[London],[Employee].[Store].[Melbourne],[Employee].[Store].[Netherlands],[Employee].[Store].[Poland],[Employee].[Store].[Queensland],[Employee].[Store].[Shanghai],[Employee].[Store].[Singapore],[Employee].[Store].[Sydney],[Employee].[Store].[Taipei],[Employee].[Store].[Warehouse],[Employee].[Store].[Zurich],[Employee].[Store].[EMP00238],[Employee].[Store].[EMP00241],[Employee].[Store].[EMP00164],[Employee].[Store].[EMP00294],[Employee].[Store].[EMP00165],[Employee].[Store].[EMP00166],[Employee].[Store].[EMP00167],[Employee].[Store].[EMP00168],[Employee].[Store].[EMP00003],[Employee].[Store].[EMP00170],[Employee].[Store].[EMP00171],[Employee].[Store].[EMP00283],[Employee].[Store].[EMP00258],[Employee].[Store].[EMP00270],[Employee].[Store].[EMP00253],[Employee].[Store].[EMP00172]} , {[Employee].[Store].[Zurich]})}"
+}

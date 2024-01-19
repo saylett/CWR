@@ -1,0 +1,45 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Release.Fix Attribute Types",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Release.Fix Attribute Types.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Release Info",
+		"dataSourceNameForServer":"Release Info",
+		"view":"View1"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vRelease",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vAttr",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vValue",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

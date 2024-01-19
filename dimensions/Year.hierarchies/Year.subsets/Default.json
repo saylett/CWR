@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2017')"
+		},
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2018')"
+		},
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2019')"
+		},
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+		},
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2021')"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"@type":"Process",
+	"Name":"cub.}ClientProperties.remove disabled Clients",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"cub.}ClientProperties.remove disabled Clients.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pConfirm",
+			"Prompt":"",
+			"Value":"1",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vItem",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vMeasure",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vValue",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

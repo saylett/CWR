@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Top Items",
+	"Expression":"{[Line Item].[Line Item].[0005],[Line Item].[Line Item].[0010],[Line Item].[Line Item].[0015],[Line Item].[Line Item].[0020],[Line Item].[Line Item].[0025]}"
+}

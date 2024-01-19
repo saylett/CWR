@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"UX Filter - Year 2",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('UX Filter - Year 2')/Hierarchies('UX Filter - Year 2')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"UX Filter - Year 2.hierarchies/UX Filter - Year 2.json"
+	]
+}

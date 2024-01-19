@@ -1,0 +1,74 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sOutputPath = pPath;
+
+DatasourceASCIIQuoteCharacter='';
+DatasourceASCIIDelimiter='|';
+
+SetOutputCharacterSet( sOutputPath, 'TM1CS_UTF8'  );
+
+
+i = 0;
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+SetOutputCharacterSet( sOutputPath, 'TM1CS_UTF8'  );
+
+sDisplayName = ATTRS('}Clients', vClient, '}TM1_DefaultDisplayValue');
+sIsAdmin = 'false';
+sIsReadOnly = 'false';
+If ( CellGetS('}ClientGroups', vClient, 'ADMIN') @= 'ADMIN');
+  sIsAdmin = 'true';
+  sIsReadOnly = 'false';
+ElseIf( CellGetN('}ClientProperties',  vClient, 'ReadOnlyUser') = 1);
+  sIsReadOnly = 'true';
+ElseIf (CubeExists('}CubeSecurity') = 1);
+  sIsReadOnly = 'true';
+  nGroupCount = DIMSIZ('}Groups');
+  If(nGroupCount < 50);
+    nCubeCount = DIMSIZ('}Cubes');
+    c = 1;
+    WHILE ( c <= nCubeCount);
+      sCubeName = DIMNM('}Cubes', c);
+      g = 1;
+      WHILE ( g <= nGroupCount );
+        sGroupName = DIMNM('}Groups', g);
+        sAccess = CellGetS('}CubeSecurity', sCubeName, sGroupName);
+        If (sAccess @= 'WRITE');
+          sValue = CellGetS ('}ClientGroups', vClient, sGroupName);
+          If (sGroupName @= sValue);
+              sIsReadOnly = 'false';
+          EndIf;
+        EndIf;
+         g = g + 1;
+      END;
+      c = c + 1;
+    END;
+  Else;
+    sIsReadOnly = 'false';
+  EndIf;
+EndIf;
+
+TEXTOUTPUT(sOutputPath, vClient, sDisplayName, sIsAdmin, sIsReadOnly);
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

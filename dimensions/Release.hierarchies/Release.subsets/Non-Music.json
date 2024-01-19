@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Non-Music",
+	"Expression":"{{FILTER(TM1SubsetAll([Release].[Release]), ([Release].[Release].CURRENTMEMBER.PROPERTIES(\"Genre\") = \"Non-Music\"))}}"
+}

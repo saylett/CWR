@@ -1,0 +1,202 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+# constants
+
+cCub = 'Sales';
+cProcess = GetProcessName;
+cProcessZero = cProcess | 'zeroout';
+
+cAttrCub = '}ElementAttributes_Release';
+
+# create a view to zero and zero out
+
+sFilter = 'Version: Actual & Sales Measure:Units';
+
+ExecuteProcess('}bedrock.cube.view.create',
+   'pLogOutput', 1,
+   'pCube',cCub,
+   'pView', cProcessZero,
+   'pFilter', sFilter,
+   'pSuppressZero', 1,
+   'pSuppressConsol', 1,
+   'pSuppressRules', 1,
+   'pDimDelim', '&',
+   'pEleStartDelim', ':',
+   'pEleDelim', '+',
+   'pTemp', 1,
+   'pSubN', 0
+  );
+
+ViewZeroOut(cCub, cProcessZero);
+
+# create a source view
+
+
+sFilter = 'Version: Actual & Year: 2017 + 2018 + 2019 & Sales Measure:Units';
+
+ExecuteProcess('}bedrock.cube.view.create',
+   'pLogOutput', 0,
+   'pCube',cCub,
+   'pView', cProcess,
+   'pFilter', sFilter,
+   'pSuppressZero', 0,
+   'pSuppressConsol', 1,
+   'pSuppressRules', 1,
+   'pDimDelim', '&',
+   'pEleStartDelim', ':',
+   'pEleDelim', '+',
+   'pTemp', 1,
+   'pSubN', 0
+  );
+  
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub;
+DatasourceCubeView = cProcess;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+# no sales from the warehouse 
+
+If ( vStore @= 'Warehouse' );
+  ItemSkip;
+EndIf;  
+
+
+nMultiplier = 1;
+
+# lets only have a sales possibility % of the time
+
+nCheck = Rand();
+
+If ( nCheck > 0.05 );
+  ItemSkip;
+EndIf;
+
+
+# lets put a bit of seasonality in there for some nice graphs
+
+nMultiplier = (CellGetn('}ElementAttributes_Month', vMonth, 'Seasonality') / 10 ) + nMultiplier;
+
+sStyle =  CellGetS ( cAttrCub, vRelease, 'style');
+
+# bigger stores do more trade - base this on the number of employees
+
+nMultiplier = ( CellGetN ('}ElementAttributes_Store', vStore, 'Employee Count' ) / 10 ) + nMultiplier;
+
+# nobody buys country music apart from americans
+
+If ( Subst ( sStyle, 1, 7 ) @= 'Country' & vStore @<> 'America' );
+  Itemskip;
+EndIf;
+
+If ( Subst ( sStyle, 1, 7 ) @= 'Country' & vStore @= 'America' );
+  nMultiplier = 2;
+ElseIf (vStore @= 'America');
+  nMultipler = 0.55;
+EndIf;
+
+
+# death metal is suprisingly popular in Poland
+
+If ( sStyle @= 'Melodic Death Metal ;');
+  If (vStore @= 'Poland' );
+    nMultiplier = 2;
+  Else;
+    nMultiplier = 0.51;
+  EndIf;  
+EndIf;
+
+# queensland on buys records from 1975 but man do they buy them
+
+If ( vStore @= 'Queensland' );
+  sYear =  CellGetS ( cAttrCub, vRelease, 'year');
+  If ( sYear @<> '1975');
+    ItemSkip;
+  Else;
+    nMultiplier = 3;
+  EndIf;
+EndIf;
+
+# euro is only for thos european types (and not the british either)
+
+sStyle1 =  CellGetS ( cAttrCub, vRelease, 'style #1');
+If ( SubSt ( sStyle1, 1, 4 ) @= 'Euro' );
+  If ( AttrS ( 'Store', vStore, 'Currency') @= 'EUR' );
+    nMultiplier = 1.5;
+  Else;
+    ItemSkip;
+  EndIf;
+EndIf;
+
+# pretty safe to say bollywood is bigger in india than anywhere else
+
+If ( sStyle1 @= 'Bollywood');
+  If ( vStore @= 'India' );
+    nMultiplier = 5;
+  Else;
+    nMultipler = 0.3;
+  EndIf;
+EndIf;
+
+# krautrock - name pretty much gies it away
+
+If ( sStyle1 @= 'Krautrock');
+  If ( vStore @= 'Germany' );
+    nMultiplier = 5;
+  Else;
+    nMultipler = 0.3;
+  EndIf;
+EndIf;
+
+# surfs up - but only for the aussies
+
+If ( sStyle1 @= 'Surf');
+  If ( AttrS ( 'Store', vStore, 'Currency') @= 'AUD' );
+    nMultiplier = 5;
+  Else;
+    ItemSkip;
+  EndIf;
+EndIf;
+
+
+
+# chiptune was massive in January 2017 worldwide but only while stocks lasted
+
+If ( sStyle1 @= 'Chiptune' & vYear @= '2017');
+  nMultiplier = 100;
+EndIf;
+  
+
+
+# generate a sales number - low enough to be realistic 
+
+nSales = Round ( Rand() * Rand() * nMultiplier );
+
+
+
+
+CellPutN ( nSales, cCub, vVersion, vYear, vMonth, vStore, vRelease, vMeasure );
+
+
+
+  
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

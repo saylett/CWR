@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{[Store].[Store].[All Countries],[Store].[Store].[Asia],[Store].[Store].[Australia],[Store].[Store].[Europe],[Store].[Store].[North America]}"
+}

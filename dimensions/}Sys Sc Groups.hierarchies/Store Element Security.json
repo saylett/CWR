@@ -1,0 +1,141 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Store Element Security",
+	"Elements":
+	[
+		{
+			"Name":"ALL Store Element Security Groups",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Elem Sc - Store - Singapore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Belgium",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - United States",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - France",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Germany",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - England",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Netherlands",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Poland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Zurich",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Taiwan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - India",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Thailand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Malaysia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Elem Sc - Store - Indonesia",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Singapore",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Belgium",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - United States",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - France",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Germany",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - England",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Netherlands",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Poland",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Zurich",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Taiwan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - India",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Thailand",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Malaysia",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Store Element Security Groups",
+			"ComponentName":"Elem Sc - Store - Indonesia",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

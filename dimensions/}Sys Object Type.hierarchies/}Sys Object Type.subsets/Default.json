@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{[}Sys Object Type].[}Sys Object Type].[Cube],[}Sys Object Type].[}Sys Object Type].[Dimension],[}Sys Object Type].[}Sys Object Type].[Process],[}Sys Object Type].[}Sys Object Type].[Chore],[}Sys Object Type].[}Sys Object Type].[Application]}"
+}

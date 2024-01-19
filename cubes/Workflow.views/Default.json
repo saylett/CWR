@@ -1,0 +1,113 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Workflow Measure')/Hierarchies('Workflow Measure')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Store')/Hierarchies('Store')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Budget')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('All Years')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2017')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2018')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2019')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2021')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Workflow Line Item')/Hierarchies('Workflow Line Item')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Workflow Line Item')/Hierarchies('Workflow Line Item')/Elements('All Line Items')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Workflow Line Item')/Hierarchies('Workflow Line Item')/Elements('All Line Items')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Plan Module')/Hierarchies('Plan Module')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Plan Module')/Hierarchies('Plan Module')/Elements('Sales')"
+					},
+					{
+						"@id":"Dimensions('Plan Module')/Hierarchies('Plan Module')/Elements('Workforce')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Plan Module')/Hierarchies('Plan Module')/Elements('Sales')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

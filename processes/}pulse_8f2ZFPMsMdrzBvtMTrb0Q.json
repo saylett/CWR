@@ -1,0 +1,20 @@
+{
+	"@type":"Process",
+	"Name":"}pulse_8f2ZFPMsMdrzBvtMTrb0Q",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}pulse_8f2ZFPMsMdrzBvtMTrb0Q.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pId",
+			"Prompt":"",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Sc Clients",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Sc Clients')/Hierarchies('}Sys Sc Clients')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Sc Clients.hierarchies/}Sys Sc Clients.json"
+	]
+}

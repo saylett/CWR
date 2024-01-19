@@ -1,0 +1,88 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+### DESCRIPTION:
+### 
+### 
+#########################################################################################################################
+### CHANGE HISTORY:
+### MODIFICATION DATE 	CHANGED BY 	COMMENT
+### YYYY-MM-DD 		Developer Name 	Creation of Process
+### YYYY-MM-DD 		Developer Name 	Reason for modification here
+### 
+#########################################################################################################################
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Src = 'Sales';
+cCub_Tgt = 'Sales Budget';
+
+cView_Src = '}tmp_Export to Sales Budget';
+
+#########################################################################################################################
+###  Create MDX View
+#########################################################################################################################
+
+sMDX = 'SELECT 
+   {[Year].[Year].[2017],[Year].[Year].[2018],[Year].[Year].[2019]}
+  ON COLUMNS, 
+    {[Month].[Month].[All Months].Children}
+      * {[Sales Measure].[Sales Measure].[Units],[Sales Measure].[Sales Measure].[Revenue],[Sales Measure].[Sales Measure].[Cost]}
+      * {TM1SubsetToSet([Store].[Store], "Stores")}
+      * {[Release].[Genre ex Plan].[All Genres].Children}
+  ON ROWS 
+ FROM [Sales]
+ WHERE 
+  (
+   [Version].[Version].[Actual]
+  )';
+  
+ExecuteProcess('}bedrock.cube.view.create.bymdx',
+   'pLogOutput', 0,
+   'pCube', cCub_Src,
+   'pView', cView_Src,
+   'pMDXExpr', sMDX,
+   'pTemp', 1
+  );
+
+###  Set View as Data Source  ###
+#nCnt = 1;
+#While( TabDim( cCub_Src, nCnt ) @<> '' );
+#  sDim = TabDim( cCub_Src, nCnt );
+#  ViewRowDimensionSet( cCub_Src, cView_Src, sDim, nCnt );
+#  nCnt = nCnt + 1;
+#End;
+
+#ViewExtractSkipCalcsSet( cCub_Src, cView_Src, 0 );
+#ViewExtractSkipRuleValuesSet( cCub_Src, cView_Src, 1 );
+#ViewExtractSkipZeroesSet( cCub_Src, cView_Src, 1 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Src;
+DataSourceNameForClient = cCub_Src;
+DataSourceCubeView = cView_Src;      
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#AsciiOutput( 'abc.txt', vVersion, vYear, vMonth, vStore, vMeasure, vGenre  );
+CellPutN( NValue, cCub_Tgt, vVersion, vYear, vMonth, vStore, vMeasure, vGenre );
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

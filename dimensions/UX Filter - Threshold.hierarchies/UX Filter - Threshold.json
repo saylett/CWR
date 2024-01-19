@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"UX Filter - Threshold",
+	"Elements":
+	[
+		{
+			"Name":"10000",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"qty",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

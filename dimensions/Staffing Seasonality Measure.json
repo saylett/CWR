@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Staffing Seasonality Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Staffing Seasonality Measure')/Hierarchies('Staffing Seasonality Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Staffing Seasonality Measure.hierarchies/Staffing Seasonality Measure.json"
+	]
+}

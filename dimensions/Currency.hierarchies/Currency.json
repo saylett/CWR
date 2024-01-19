@@ -1,0 +1,19 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Currency",
+	"Elements":
+	[
+		{
+			"Name":"Local",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"USD",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Currency.subsets/}Export.All.json"
+	]
+}

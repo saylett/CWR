@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Leaf Level Employee",
+	"Expression":"{ORDER(TM1FILTERBYLEVEL(TM1SUBSETALL([Employee].[Employee]) , 0) , [Employee].[Employee].CURRENTMEMBER.PROPERTIES(\"MEMBER_CAPTION\") , BASC)}"
+}

@@ -1,0 +1,55 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Navigation Plan",
+	"Elements":
+	[
+		{
+			"Name":"Sales Plan - 001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Plan - 002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Plan - 003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Plan - 004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Plan - 005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workforce Plan - 001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workforce Plan - 002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workforce Plan - 003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workforce Plan - 004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workforce Plan - 005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workforce Plan - 006",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Navigation Plan.subsets/}Export.All.json"
+	]
+}

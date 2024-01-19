@@ -1,0 +1,2448 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Release Planning",
+	"Elements":
+	[
+		{
+			"Name":"All Release Planning",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"NA Release Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Country",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"No Release Country",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Angola",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Argentina",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Asia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Australasia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Australia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Australia & New Zealand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Austria",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Azerbaijan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Barbados",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Belarus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Belgium",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Benelux",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bolivia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bosnia & Herzegovina",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Brazil",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bulgaria",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cameroon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Canada",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Central America",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Chile",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"China",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Colombia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Congo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Costa Rica",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Croatia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cuba",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"CuraÃ§ao",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cyprus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Czech Republic",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Czechoslovakia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Denmark",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dominica",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dominican Republic",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ecuador",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Egypt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"El Salvador",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Europe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Fiji",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Finland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"France",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"France & Benelux",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Georgia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"German Democratic Republic (GDR)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Germany",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Germany & Switzerland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Germany, Austria, & Switzerland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ghana",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Greece",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Guadeloupe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Guatemala",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Guyana",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Honduras",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hong Kong",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hungary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Iceland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"India",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Indonesia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Iran",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ireland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Israel",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Italy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ivory Coast",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jamaica",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Japan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kazakhstan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Kenya",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Latvia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lebanon",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Liechtenstein",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Lithuania",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Luxembourg",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Macedonia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Malaysia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Malta",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Martinique",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mexico",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Moldova",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mongolia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mozambique",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Netherlands",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Netherlands Antilles",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Zealand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nicaragua",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nigeria",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"North America (inc Mexico)",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Norway",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Panama",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Peru",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Philippines",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Poland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Portugal",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Puerto Rico",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Reunion",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rhodesia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Romania",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Russia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Saint Kitts and Nevis",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Saint Lucia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Saudi Arabia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Scandinavia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Serbia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Serbia and Montenegro",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Singapore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Singapore, Malaysia & Hong Kong",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sint Maarten",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Slovakia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Slovenia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"South Africa",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"South America",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"South East Asia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"South Korea",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Southern Rhodesia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Spain",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Suriname",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sweden",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Switzerland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Syria",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Taiwan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Thailand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Togo",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Trinidad & Tobago",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Tunisia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Turkey",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"UK",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"UK & Europe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"UK & Ireland",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"UK & US",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Ukraine",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"United Arab Emirates",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unknown",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Uruguay",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"US",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"USA",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"USA & Canada",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"USA & Europe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"USSR",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Venezuela",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Vietnam",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Virgin Islands",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Yugoslavia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Zambia",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Zimbabwe",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Year",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"No Release Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1956",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1957",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1958",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1961",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1962",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1963",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1964",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1966",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1967",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1968",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1969",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1970",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1971",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1972",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1973",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1974",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1975",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1976",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1977",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1978",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1979",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1980",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1981",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1982",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1983",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1984",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1985",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1986",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1987",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1988",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1989",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1990",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1991",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1992",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1993",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1994",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1995",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1996",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1997",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1998",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 1999",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2000",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2006",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2008",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2010",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2011",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2012",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2014",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2015",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2016",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2017",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2018",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release 2019",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Genre",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"All Blues",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Blues",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Blues Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Brass Military",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Brass Military",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Brass Military Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Childrens",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Childrens",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Childrens Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Classical",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Classical",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Classical Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Electronic",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Electronic",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Electronic Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Folk",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Folk",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Folk Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Folk World Country",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Folk World Country",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Folk World Country Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Funk Soul",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Funk Soul",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Funk Soul Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Hip Hop",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Hip Hop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Hip Hop Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Jazz",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Jazz",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jazz Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Latin",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Latin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Latin Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All No Genre",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"No Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"No Genre Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Non-Music",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Non-Music",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Non-Music Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Pop",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Pop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pop Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Reggae",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Reggae",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Reggae Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Rock",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Rock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rock Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"All Stage Screen",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Stage Screen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stage Screen Album",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Decade",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"50s",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"60s",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"70s",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"80s",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"90s",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"00s",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"10s",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"No Decade",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Release Planning",
+			"ComponentName":"NA Release Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Release Planning",
+			"ComponentName":"Release Country",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Release Planning",
+			"ComponentName":"Release Year",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Release Planning",
+			"ComponentName":"Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Release Planning",
+			"ComponentName":"Decade",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"No Release Country",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Angola",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Argentina",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Asia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Australasia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Australia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Australia & New Zealand",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Austria",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Azerbaijan",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Barbados",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Belarus",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Belgium",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Benelux",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Bolivia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Bosnia & Herzegovina",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Brazil",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Bulgaria",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Cameroon",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Canada",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Central America",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Chile",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"China",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Colombia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Congo",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Costa Rica",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Croatia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Cuba",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"CuraÃ§ao",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Cyprus",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Czech Republic",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Czechoslovakia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Denmark",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Dominica",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Dominican Republic",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Ecuador",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Egypt",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"El Salvador",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Europe",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Fiji",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Finland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"France",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"France & Benelux",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Georgia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"German Democratic Republic (GDR)",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Germany",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Germany & Switzerland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Germany, Austria, & Switzerland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Ghana",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Greece",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Guadeloupe",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Guatemala",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Guyana",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Honduras",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Hong Kong",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Hungary",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Iceland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"India",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Indonesia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Iran",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Ireland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Israel",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Italy",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Ivory Coast",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Jamaica",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Japan",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Kazakhstan",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Kenya",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Latvia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Lebanon",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Liechtenstein",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Lithuania",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Luxembourg",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Macedonia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Malaysia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Malta",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Martinique",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Mexico",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Moldova",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Mongolia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Mozambique",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Netherlands",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Netherlands Antilles",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"New Zealand",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Nicaragua",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Nigeria",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"North America (inc Mexico)",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Norway",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Panama",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Peru",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Philippines",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Poland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Portugal",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Puerto Rico",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Reunion",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Rhodesia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Romania",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Russia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Saint Kitts and Nevis",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Saint Lucia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Saudi Arabia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Scandinavia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Serbia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Serbia and Montenegro",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Singapore",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Singapore, Malaysia & Hong Kong",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Sint Maarten",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Slovakia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Slovenia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"South Africa",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"South America",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"South East Asia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"South Korea",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Southern Rhodesia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Spain",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Suriname",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Sweden",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Switzerland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Syria",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Taiwan",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Thailand",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Togo",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Trinidad & Tobago",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Tunisia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Turkey",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"UK",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"UK & Europe",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"UK & Ireland",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"UK & US",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Ukraine",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"United Arab Emirates",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Unknown",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Uruguay",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"US",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"USA",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"USA & Canada",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"USA & Europe",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"USSR",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Venezuela",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Vietnam",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Virgin Islands",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Yugoslavia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Zambia",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Country",
+			"ComponentName":"Zimbabwe",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"No Release Year",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1956",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1957",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1958",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1961",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1962",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1963",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1964",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1966",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1967",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1968",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1969",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1970",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1971",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1972",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1973",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1974",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1975",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1976",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1977",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1978",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1979",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1980",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1981",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1982",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1983",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1984",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1985",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1986",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1987",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1988",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1989",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1990",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1991",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1992",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1993",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1994",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1995",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1996",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1997",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1998",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 1999",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2000",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2001",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2002",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2003",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2004",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2005",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2006",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2007",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2008",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2009",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2010",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2011",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2012",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2013",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2014",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2015",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2016",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2017",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2018",
+			"Weight":1
+		},
+		{
+			"ParentName":"Release Year",
+			"ComponentName":"Release 2019",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Blues",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Brass Military",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Childrens",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Classical",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Electronic",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Folk",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Folk World Country",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Funk Soul",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Hip Hop",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Jazz",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Latin",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All No Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Non-Music",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Pop",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Reggae",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Rock",
+			"Weight":1
+		},
+		{
+			"ParentName":"Genre",
+			"ComponentName":"All Stage Screen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Blues",
+			"ComponentName":"Blues",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Blues",
+			"ComponentName":"Blues Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Brass Military",
+			"ComponentName":"Brass Military",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Brass Military",
+			"ComponentName":"Brass Military Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Childrens",
+			"ComponentName":"Childrens",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Childrens",
+			"ComponentName":"Childrens Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Classical",
+			"ComponentName":"Classical",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Classical",
+			"ComponentName":"Classical Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Electronic",
+			"ComponentName":"Electronic",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Electronic",
+			"ComponentName":"Electronic Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Folk",
+			"ComponentName":"Folk",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Folk",
+			"ComponentName":"Folk Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Folk World Country",
+			"ComponentName":"Folk World Country",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Folk World Country",
+			"ComponentName":"Folk World Country Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Funk Soul",
+			"ComponentName":"Funk Soul",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Funk Soul",
+			"ComponentName":"Funk Soul Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Hip Hop",
+			"ComponentName":"Hip Hop",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Hip Hop",
+			"ComponentName":"Hip Hop Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Jazz",
+			"ComponentName":"Jazz",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Jazz",
+			"ComponentName":"Jazz Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Latin",
+			"ComponentName":"Latin",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Latin",
+			"ComponentName":"Latin Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All No Genre",
+			"ComponentName":"No Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"All No Genre",
+			"ComponentName":"No Genre Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Non-Music",
+			"ComponentName":"Non-Music",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Non-Music",
+			"ComponentName":"Non-Music Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Pop",
+			"ComponentName":"Pop",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Pop",
+			"ComponentName":"Pop Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Reggae",
+			"ComponentName":"Reggae",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Reggae",
+			"ComponentName":"Reggae Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Rock",
+			"ComponentName":"Rock",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Rock",
+			"ComponentName":"Rock Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stage Screen",
+			"ComponentName":"Stage Screen",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Stage Screen",
+			"ComponentName":"Stage Screen Album",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"50s",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"60s",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"70s",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"80s",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"90s",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"00s",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"10s",
+			"Weight":1
+		},
+		{
+			"ParentName":"Decade",
+			"ComponentName":"No Decade",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Release Planning.subsets/All Release Planning.json",
+		"Release Planning.subsets/Decade.json",
+		"Release Planning.subsets/Genres.json",
+		"Release Planning.subsets/NA Release Planning.json",
+		"Release Planning.subsets/Planning Set 2.json",
+		"Release Planning.subsets/Planning Set with Total 2.json",
+		"Release Planning.subsets/Release Country.json",
+		"Release Planning.subsets/Release Year.json",
+		"Release Planning.subsets/{Expression}.json",
+		"Release Planning.subsets/}Export.All.json"
+	]
+}

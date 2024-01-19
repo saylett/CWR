@@ -1,0 +1,40 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Staffing Measure",
+	"Elements":
+	[
+		{
+			"Name":"Hours",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"FTE",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Headcount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Active",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Active?",
+			"Type":"String"
+		},
+		{
+			"Name":"Comment",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Staffing Measure.subsets/Default.json",
+		"Staffing Measure.subsets/}Export.All.json"
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"@type":"Dimension",
+	"Name":"Store",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Store')/Hierarchies('Store')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Store.hierarchies/Store.json",
+		"Store.hierarchies/Country.json",
+		"Store.hierarchies/Director.json",
+		"Store.hierarchies/Reporting Region.json"
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Stock Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Stock Measure')/Hierarchies('Stock Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Stock Measure.hierarchies/Stock Measure.json"
+	]
+}

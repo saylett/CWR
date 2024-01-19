@@ -1,0 +1,38 @@
+SKIPCHECK;
+
+[ 'All Validation' ] = C:
+  If( [ 'Skip Flag' ] = 1,
+      0,
+      [ 'Vld - Name' ] * [ 'Vld - Store' ] * [ 'Vld - Position' ] * [ 'Vld - Annual Salary' ] * [ 'Vld - Monthly Allowance' ] * [ 'Vld - Bonus Rate' ]);
+
+[ 'Vld - Name' ] = N: 
+  If( DB('Existing Employee Staging', !Year-Month, !Line Item, 'Name') @= '',
+      0,
+      1 );
+
+[ 'Vld - Store' ] = N: 
+  If( DB('Existing Employee Staging', !Year-Month, !Line Item, 'Store') @= '',
+      0,
+      1 );
+
+[ 'Vld - Position' ] = N: 
+  Min( 1, DimIx('Employee Position', DB('Existing Employee Staging', !Year-Month, !Line Item, 'Position')));
+
+[ 'Vld - Annual Salary' ] = N: 
+  If( ['Annual Salary'] <= 0,
+      0,
+      1 );
+      
+[ 'Vld - Monthly Allowance' ] = N: 
+  If( ['Monthly Allowance'] < 0,
+      0,
+      1 );
+
+[ 'Vld - Bonus Rate' ] = N: 
+  If( ['Bonus Rate' ] < 0 % ['Bonus Rate' ] > 1,
+      0,
+      1 );
+
+FEEDERS;
+
+[ 'Name' ] => ['Vld - Name'],['Vld - Store'],['Vld - Position'],['Vld - Annual Salary'],['Vld - Monthly Allowance'],['Vld - Bonus Rate'];

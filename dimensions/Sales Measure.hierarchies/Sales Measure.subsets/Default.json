@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{[Sales Measure].[Sales Measure].[Units],[Sales Measure].[Sales Measure].[Unit Price],[Sales Measure].[Sales Measure].[Unit Cost],[Sales Measure].[Sales Measure].[Margin],[Sales Measure].[Sales Measure].[Revenue],[Sales Measure].[Sales Measure].[Cost]}"
+}

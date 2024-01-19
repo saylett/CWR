@@ -1,0 +1,18 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Element Name",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Element Name')/Hierarchies('}Sys Element Name')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Element Name.hierarchies/}Sys Element Name.json",
+		"}Sys Element Name.hierarchies/Employee.json",
+		"}Sys Element Name.hierarchies/GL Account.json",
+		"}Sys Element Name.hierarchies/Store.json",
+		"}Sys Element Name.hierarchies/Version.json",
+		"}Sys Element Name.hierarchies/Workflow Measure.json"
+	]
+}

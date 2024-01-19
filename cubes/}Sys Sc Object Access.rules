@@ -1,0 +1,201 @@
+SKIPCHECK;
+FEEDSTRINGS;
+
+[ '}Sys Sc Groups':'ALL Groups', '}Sys Sc Object Access Measure':{'Permission Level','Current Permission Level'} ] = S:
+  '.';
+
+###  Calc Permission Level  ###
+[ '}Sys Sc Permission Index':'ALL Permissions', '}Sys Sc Object Access Measure':'Permission Level' ] = S:
+  If( ElLev('}Sys Sc Groups', !}Sys Sc Groups) + ElLev( '}Sys Object Type', !}Sys Object Type) + ElLev('}Sys Object Name', !}Sys Object Name) = 0,
+      AttrS( '}Sys Sc Level', Str( [ '}Sys Sc Object Access Measure':'Permission Numeric' ], 1, 0 ), 'Description' ),
+      '' );
+
+[ '}Sys Sc Permission Index':'ALL Permissions' ] = S: '';
+
+[ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Permission Type' ] = S: '';
+
+[ '}Sys Sc Object Access Measure':'IsObject' ] = N:
+  Sign( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ));
+
+[ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Current Permission Level' ] = S:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+      '',
+      If( DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups ) @= '',
+          'NONE',
+          DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups )));
+
+[ '}Sys Sc Object Access Measure':'Current Permission Level' ] = S:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+    '',
+    If( ['}Sys Sc Object Access Measure':'Permission Numeric' ] = 0,
+        '',
+        DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups )));
+
+###  Validation: for application folders NONE access must be explicitly NONE not blank  ###
+[ '}Sys Object Type':'Application', '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Current Permission Validation' ] = N:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+      0,
+      If( DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups ) 
+            @= DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ),
+          0,
+          1 ));
+
+[ '}Sys Object Type':'Application', '}Sys Sc Object Access Measure':'Current Permission Validation' ] = N:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+      0,
+      If( Long( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' )) 
+            + Long( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Current Permission Level' )) = 0,
+          0,
+          If( DB( AttrS('}Sys Object Type', !}Sys Object Type, 'TM1 Ss Object Name'), !}Sys Object Name, !}Sys Sc Groups )
+                @= DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ),
+              0,
+              1 )));
+
+###  Validation: general case NONE access can be blank or NONE  ###
+[ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Current Permission Validation' ] = N:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+      0,
+      If( DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups )
+            @= DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ),
+          0,
+          If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ) @= 'NONE'
+                & DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups ) @= '',
+              0,
+              1 )));
+
+[ '}Sys Sc Object Access Measure':'Current Permission Validation' ] = N:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+      0,
+      If( Long( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ))
+            + Long( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Current Permission Level' )) = 0,
+          0,
+          If( DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups )
+                @= DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ),
+              0,
+              If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ) @= 'NONE'
+                    & DB( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Sc Object Name' ), !}Sys Object Name, !}Sys Sc Groups ) @= '',
+                  0,
+                  1 ))));
+
+###  Make wildcard text entry field available if that is the selected type  ###
+[ '}Sys Sc Object Access Measure':'Wildcard Entry' ] = S:
+  If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Type' ) @= 'WILDCARD'
+        % DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Type' ) @= 'ATTRIBUTE',
+     STET,
+     '' );
+
+###  Make attribute text entry field available if that is the selected type  ###
+[ '}Sys Sc Object Access Measure':'Attribute Name' ] = S:
+  If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Type' ) @= 'ATTRIBUTE',
+      STET,
+      '' );
+
+###  Permission Level for Overall Permission  ###
+[ '}Sys Object Type':'Application', '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Permission Level' ] = S:
+  If( IsLeaf = 0 % [ '}Sys Sc Object Access Measure':'IsObject' ] = 0,
+      '',
+      AttrS( '}Sys Sc Level',  Str( [ '}Sys Sc Object Access Measure':'Permission Numeric' ], 1, 0 ), 'Description' ));
+
+[ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Permission Level' ] = S:
+  If( IsLeaf = 0 % [ '}Sys Sc Object Access Measure':'IsObject' ] = 0,
+      '',
+      If( [ '}Sys Sc Object Access Measure':'Permission Numeric' ] = 0,
+          '',
+          AttrS( '}Sys Sc Level', Str( ['}Sys Sc Object Access Measure':'Permission Numeric'], 1, 0 ), 'Description' )));
+
+###  Permission Level data entry open for Total Objects Placeholder  ###
+[ '}Sys Object Name':'ALL Objects', '}Sys Sc Object Access Measure':{'Permission Type','Permission Level'} ] = S: STET;
+
+###  General case : only allow data entry for leaf elements  ###
+[ '}Sys Sc Object Access Measure':'Permission Level' ] = S:
+  If( IsLeaf = 0,
+      '',
+      CONTINUE );
+
+###  For applications we need to both allow for inheritance and allow the inheritance to be overwritten (e.g. set NONE access for a file or sub-folder within a folder where READ is otherwise inherited)  ###
+[ '}Sys Object Type':'Application', '}Sys Sc Object Access Measure':'Permission Level' ] = S:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+      '',
+      If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level Override' ) @<> '',
+          DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level Override' ),
+          If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, ElPar( '}ApplicationEntries', !}Sys Object Name, 1 ), !}Sys Sc Object Access Measure ) @= '',
+              CONTINUE,
+              DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, ElPar( '}ApplicationEntries', !}Sys Object Name, 1 ), !}Sys Sc Object Access Measure ))));
+
+[ '}Sys Sc Object Access Measure':'Permission Level' ] = S:
+  If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) = 0,
+      '',
+      CONTINUE );
+
+###  Flow APQ Framework permissions through from User & PUser attributes (only for permission 001)  ###
+#[ '}Sys Sc Permission Index':'001', '}Sys Sc Object Access Measure':'Permission Level' ] = S:
+#IF( !}Sys Sc Groups @= DB( '}APQ Settings', 'Security Group: End User', 'String' ),
+#    AttrS( AttrS( '}Sys Object Type', !}Sys Object Type, 'APQObjNm' ), !}Sys Object Name, 'APQ User' ),
+#    IF( !}Sys Sc Groups @= DB( '}APQ Settings', 'Security Group: Power User', 'String' ),
+#        AttrS( AttrS( '}Sys Object Type', !}Sys Object Type, 'APQObjNm' ), !}Sys Object Name, 'APQ PUser' ),
+#        IF( !}Sys Sc Groups @= DB( '}APQ Settings', 'Security Group: Admin  User', 'String' ),
+#            AttrS( AttrS( '}Sys Object Type', !}Sys Object Type, 'APQObjNm' ), !}Sys Object Name, 'APQ Admin' ),
+#            STET
+#        )
+#    )
+#);
+
+###  Permission Level Override. NA if not application. If application and the parent is NONE then should not be writeable  ###
+[ '}Sys Object Type':'Application', '}Sys Sc Object Access Measure':'Permission Level Override' ] = S:
+  If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, ElPar( '}ApplicationEntries', !}Sys Object Name, 1 ), 'Permission Level' ) @= 'NONE',
+      '',
+      If( DimIx( AttrS( '}Sys Object Type', !}Sys Object Type, 'TM1 Object Name' ), !}Sys Object Name ) > 0,
+          STET,
+          '' ));
+
+[ '}Sys Sc Object Access Measure':'Permission Level Override' ] = S: '';
+
+[ '}Sys Sc Permission Index':'All Permissions', '}Sys Sc Object Access Measure':'Inactive' ] = N:
+  ConsolidatedMax( 0, '', !}Sys Sc Groups, !}Sys Object Type, 'Total Permissions', !}Sys Object Name, !}Sys Sc Object Access Measure );
+
+[ '}Sys Object Name':'ALL Objects', '}Sys Sc Object Access Measure':'Permission Numeric' ] = C:
+  If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ) @= '',
+      0,
+      DimIx( '}Sys Sc Level', DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' )) - 1 );
+
+[ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Permission Numeric' ] = N: 
+  [ '}Sys Sc Permission Index':'ALL Permissions' ];
+  
+[ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Permission Numeric' ] = C:
+  ConsolidatedMax( 0, '', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, !}Sys Sc Object Access Measure );
+
+[ '}Sys Sc Object Access Measure':'Permission Numeric' ] = N:
+  If( DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' ) @= '',
+      0,
+      DimIx( '}Sys Sc Level', DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, 'Permission Level' )) - 1 );
+
+[ '}Sys Sc Object Access Measure':'Permission Numeric' ] = C:
+  ConsolidatedMax( 0, '', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, !}Sys Object Name, !}Sys Sc Object Access Measure );
+
+
+FEEDERS;
+
+# String measure feeds numeric reporting measure
+[ '}Sys Sc Object Access Measure':'Permission Level' ] => 
+  [ '}Sys Sc Object Access Measure':'Permission Numeric' ],
+  [ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Permission Numeric' ],
+  [ '}Sys Sc Object Access Measure':'Current Permission Level' ],
+  [ '}Sys Sc Object Access Measure':'Current Permission Validation' ],
+  [ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Current Permission Validation' ];
+
+# For "All Permissions" reporting Placeholder need to feed the strings as they are rule calc not data entry
+[ '}Sys Sc Permission Index':'Overall Permission', '}Sys Sc Object Access Measure':'Permission Numeric' ] => 
+  [ '}Sys Sc Object Access Measure':'Permission Level' ],
+  [ '}Sys Sc Object Access Measure':'Current Permission Level' ];
+
+[ '}Sys Sc Object Access Measure':'Permission Level Override' ] =>
+  [ '}Sys Sc Object Access Measure':'Permission Level' ];
+
+# Applications take feeder from applications feeder cube and pass back to Permission Level
+[ '}Sys Object Type':'Application', '}Sys Sc Object Access Measure':'Permission Numeric' ] =>
+  [ '}Sys Sc Object Access Measure':'Permission Level' ],
+  DB( '}Sys Sc Object Access', !}Sys Sc Groups, !}Sys Object Type, !}Sys Sc Permission Index, ElPar( '}APQ Applications', !}Sys Object Name, 1 ), 'Permission Level' );
+
+# As applications have a hierarchy and we need to deal with inheritance need an intermediate cube with dimension structure to handle feeding of leaves
+#[ '}Sys Object Type':'Application', '}Sys Sc Object Access Measure':'Permission Numeric' ] =>
+#DB( '}APQ Security Manage Application Feeder', !}Sys Sc Groups, !}Sys Sc Permission Index, !}Sys Object Name, !}Sys Sc Object Access Measure );

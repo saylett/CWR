@@ -1,0 +1,9 @@
+SKIPCHECK;
+
+['Count Uptime'] = N:
+  If( ['Goal Uptime Pct'] > 0, 1, 0);
+  
+  
+FEEDERS;
+
+['Goal Uptime Pct'] => ['Count Uptime'];

@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Employee.Update Hierarchy.Last Name",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Employee.Update Hierarchy.Last Name.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

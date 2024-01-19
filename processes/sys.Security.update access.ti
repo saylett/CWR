@@ -1,0 +1,305 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cObjectType     = pObjectType;
+
+cCub_Src        = '}Sys Sc Object Access';
+cDim_Security   = '}Sys Sc Groups';
+cDim_ObjectType = '}Sys Object Type';
+cDim_ObjectName = '}Sys Object Name';
+cDim_ScLevel    = '}Sys Sc Level';
+
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Check to make sure groups exist  
+#########################################################################################################################
+
+nCnt_Grp = 1;
+nFlag_Add = 0;
+While( nCnt_Grp <= DimSiz( cDim_Security ) & nFlag_Add = 0 );
+  sGroup = DimNm( cDim_Security, nCnt_Grp );
+  If( DType( cDim_Security, sGroup ) @= 'N' & DimIx( '}Groups', sGroup ) = 0 );
+    nFlag_Add = 1;
+  EndIf;
+  nCnt_Grp = nCnt_Grp + 1;
+End;
+If( nFlag_Add = 1 );
+###  TBD: update Security Group dim 
+EndIF;
+
+#########################################################################################################################
+###  Create source view  
+#########################################################################################################################
+
+###  Define Temp Object Name and Create View  ###
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( ViewExists( cCub_Src, cTempName | '_Src' ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cView_Src = cTempName | '_Src';
+cSub = cTempName | '_Src';
+ViewCreate( cCub_Src, cView_Src, 1 );
+
+sDim = '}Sys Sc Groups';
+sNode = 'ALL Groups';
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = '}Sys Object Type';
+sNode = cObjectType;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+  SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = '}Sys Sc Permission Index';
+sNode = 'ALL Permissions';
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = '}Sys Object Name';
+sNode = 'ALL Objects';
+sMDX = '{Descendants({[' | sDim | '].[' | sNode | ']})}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = '}Sys Sc Object Access Measure';
+sElem = 'Permission Level';
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+###  Set View as Data Source  ###
+nCnt = 1;
+While( TabDim( cCub_Src, nCnt ) @<> '' );
+  sDim = TabDim( cCub_Src, nCnt );
+  ViewRowDimensionSet( cCub_Src, cView_Src, sDim, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewExtractSkipCalcsSet( cCub_Src, cView_Src, 0 );
+ViewExtractSkipRuleValuesSet( cCub_Src, cView_Src, 0 );
+ViewExtractSkipZeroesSet( cCub_Src, cView_Src, 1 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Src;
+DataSourceNameForClient = cCub_Src;
+DataSourceCubeView = cView_Src;
+
+#########################################################################################################################
+###  Clear Target Security Cube(s)  
+#########################################################################################################################
+
+If( cObjectType @<> 'ALL Object Types' );
+  sCub = AttrS( cDim_ObjectType, cObjectType, 'TM1 Sc Object Name' );
+  If( CubeExists( sCub ) = 1 );
+    CubeClearData( sCub );
+  EndIf;
+Else;
+  nCnt = 1;
+  While( nCnt <= DimSiz( cDim_ObjectType ));
+    sObjType = DimNm( cDim_ObjectType, nCnt );
+    sCub = AttrS( cDim_ObjectType, sObjType, 'TM1 Sc Object Name' );
+    If( CubeExists( sCub ) = 1 );
+      CubeClearData( sCub );
+    EndIf;
+    nCnt = nCnt + 1;
+  End;
+EndIf;
+
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Items to Skip: inactive, no security set  
+#########################################################################################################################
+
+If( CellGetN( cCub_Src, vGroup, vObjType, vIndex, vObjName, 'Inactive' ) = 1 );
+  ItemSkip;
+EndIf;
+
+sPermission = SValue;
+If( DimIx( cDim_ScLevel, sPermission ) = 0 );
+  ItemSkip;
+EndIf;
+
+#########################################################################################################################
+###  Loop
+#########################################################################################################################
+
+# based on object type get names of dimension and sec cube
+sObj_Dim = AttrS( cDim_ObjectType, vObjType, 'TM1 Object Name' );
+sObj_Sec = AttrS( cDim_ObjectType, vObjType, 'TM1 Sc Object Name' );
+sObjTotal = 'ALL ' | vObjType | If( vObjType @= 'Process', 'es', 's' );
+
+# Check if set for all objects
+If( vObjName @= 'ALL Objects' );
+
+  ###  check for wildcard match  ###
+  sType = CellGetS( cCub_Src, vGroup, vObjType, vIndex, vObjName, 'Permission Type' );
+  If( sType @<> 'ALL' & sType @<> 'WILDCARD' );
+    ItemSkip;
+  EndIf;
+  sMatch = Lower( CellGetS( cCub_Src, vGroup, vObjType, vIndex, vObjName, 'Wildcard Entry' ));
+  If( sType @= 'WILDCARD' );
+    If( Scan( '*', sMatch ) = 0 );
+      sWildcardType = 'Contains';
+    ElseIf( SubSt( sMatch, 1, 1 ) @= '*' & SubSt( sMatch, Long(sMatch), 1 ) @= '*' );
+      sWildcardType = 'Contains';
+      sMatch = SubSt( sMatch, 2, Long(sMatch) - 2 );
+    ElseIf( SubSt( sMatch, Long(sMatch), 1 ) @= '*' );
+      sWildcardType = 'Starts';
+      sMatch = SubSt( sMatch, 1, Long(sMatch) - 1 );
+    Else;
+      sWildcardType = 'Ends';
+      sMatch = SubSt( sMatch, 2, Long(sMatch) - 1 );
+    EndIf;
+  EndIf;
+
+  ###  Loop through all objects and set security  ###
+  nCnt = 1;
+  nCnt_End = DimSiz( sObj_Dim );
+  While( nCnt <= nCnt_End );
+    nFlag_Assign = 1;
+    sObj = DimNm( sObj_Dim, nCnt );
+
+    ###  Skip hierarchy and hierarchy elements and other control objects  ###
+    If( (vObjType @= 'Dimension' & (Scan(':', sObj) > 0) % Scan('}Hierarchies_', sObj) = 1 % Scan('}Subsets_', sObj ) = 1 % Scan('}Views_', sObj) = 1 ));
+      nFlag_Assign = 0;
+    Else;
+      If( DimIx( cDim_ObjectName, sObj ) = 0 );
+        DimensionElementInsertDirect( cDim_ObjectName, '', sObj, 'N' );
+        DimensionElementComponentAddDirect( cDim_ObjectName, sObjTotal, sObj, 1 );
+      EndIf;
+      If( sType @= 'WILDCARD' );
+        If( sWildcardType @= 'Contains' & Scan( sMatch, Lower( sObj ) ) > 0 );
+        ElseIf( sWildcardType @= 'Starts' & Scan( sMatch, Lower( sObj ) ) = 1 );
+        ElseIf( sWildcardType @= 'Ends' & sMatch @= SubSt( sObj, Scan( sMatch, Lower( sObj ) ), Long( sObj ) ) );
+        Else;
+          nFlag_Assign = 0;
+        EndIf;
+      EndIf;
+      If( nFlag_Assign = 1 );
+        If( CellIsUpdateable( cCub_Src, vGroup, vObjType, vIndex, sObj, 'Permission Level' ) = 1 );
+          CellPutS( sPermission, cCub_Src, vGroup, vObjType, vIndex, sObj, 'Permission Level' );
+        EndIf;
+        If( CellIsUpdateable( sObj_Sec, sObj, vGroup ) = 1 );
+          CellPutS( sPermission, sObj_Sec, sObj, vGroup );
+        EndIf;
+      ElseIf( CellIsUpdateable( cCub_Src, vGroup, vObjType, vIndex, sObj, 'Permission Level' ) = 1 );
+        CellPutS( '', cCub_Src, vGroup, vObjType, vIndex, sObj, 'Permission Level' );
+      EndIf;
+    EndIf;
+    nCnt = nCnt + 1;
+  End;
+Else;
+  ###  Check that object being processed still exists in target dim  ###
+  If( DimIx( sObj_Dim, vObjName ) = 0 );
+    ItemSkip;
+  EndIf;
+  ###  Set security for single object  ###
+  If( CellIsUpdateable( sObj_Sec, vObjName, vGroup ) = 1 );
+    CellPutS( sPermission, sObj_Sec, vObjName, vGroup );
+  EndIf;
+EndIf;
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  If updating for all object types or for dimensions then update the dimension dependencies  
+#########################################################################################################################
+
+If( cObjectType @= 'Cube' % cObjectType @= 'Dimension' % cObjectType @= '' );
+#  TBD
+EndIf;
+
+#########################################################################################################################
+###  Application Security: default access is READ so for groups with no assignment we need to fill in NONE at the root folder level
+#########################################################################################################################
+
+#If( pObjTyp @= 'Application' % pObjTyp @= '' );
+#    sCubTgt = '}ApplicationSecurity';
+#    sDimApp = '}ApplicationEntries';
+#    sParApp = '}Applications';
+#    nMaxApp = ElCompN( sDimApp, sParApp );
+#    nCtrApp = 1;
+#    While( nCtrApp <= nMaxApp );
+#        sApp    = ElComp( sDimApp, sParApp, nCtrApp );
+#        nMaxGrp = DimSiz( cDimGrp );
+#        nCtrGrp = 1;
+#        While( nCtrGrp <= nMaxGrp );
+#            sGrp = DimNm( cDimGrp, nCtrGrp );
+#            If( sGrp @= 'ADMIN' % sGrp @= 'SecurityAdmin' % sGrp @= 'DataAdmin' % sGrp @= 'OperationsAdmin' );
+#                # Special built-in groups, do nothing.
+#            Else;
+#                If( CellGetS( sCubTgt, sApp, sGrp ) @= '' );
+#                    # Replace blank with NONE
+#                    CellPutS( 'NONE', sCubTgt, sApp, sGrp );
+#                EndIf;
+#            EndIf;
+#            nCtrGrp = nCtrGrp + 1;
+#        End;
+#        nCtrApp = nCtrApp + 1;
+#    End;
+#EndIf;
+
+#########################################################################################################################
+###  Security Refresh  
+#########################################################################################################################
+
+If( pSecurityRefresh @= '1' );
+  ExecuteProcess( '}bedrock.security.refresh', 'pLogOutput', 1 );
+EndIf;
+#endregion

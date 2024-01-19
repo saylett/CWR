@@ -1,0 +1,19 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Plan Method",
+	"Elements":
+	[
+		{
+			"Name":"Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Decade",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Plan Method.subsets/}Export.All.json"
+	]
+}

@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Reporting",
+	"Expression":"{[GL Account].[GL Account].[Record Sales],[GL Account].[GL Account].[Merchandise],[GL Account].[GL Account].[Books],[GL Account].[GL Account].[Revenue],[GL Account].[GL Account].[Cost of Sales],[GL Account].[GL Account].[Distribution Costs],[GL Account].[GL Account].[Direct Costs],[GL Account].[GL Account].[Gross Margin],[GL Account].[GL Account].[Warehouse Costs Allocation],[GL Account].[GL Account].[Other Indirect Costs],[GL Account].[GL Account].[Rent and Rates],[GL Account].[GL Account].[Bonus],[GL Account].[GL Account].[Staff Costs],[GL Account].[GL Account].[Operating Profit]}"
+}

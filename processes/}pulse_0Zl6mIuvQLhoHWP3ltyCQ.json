@@ -1,0 +1,35 @@
+{
+	"@type":"Process",
+	"Name":"}pulse_0Zl6mIuvQLhoHWP3ltyCQ",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}pulse_0Zl6mIuvQLhoHWP3ltyCQ.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDimNames",
+			"Prompt":"The name of the dimension",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pClear",
+			"Prompt":"",
+			"Value":0,
+			"Type":"Numeric"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vElement",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"@type":"Cube",
+	"Name":"}Sys Sc Object Access",
+	"Rules@Code.link":"}Sys Sc Object Access.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Sys Sc Groups')"
+		},
+		{
+			"@id":"Dimensions('}Sys Object Type')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Permission Index')"
+		},
+		{
+			"@id":"Dimensions('}Sys Object Name')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Object Access Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

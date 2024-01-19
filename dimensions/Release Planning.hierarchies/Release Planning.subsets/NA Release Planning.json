@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"NA Release Planning",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('NA Release Planning')"
+		}
+	]
+}

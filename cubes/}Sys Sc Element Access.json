@@ -1,0 +1,21 @@
+{
+	"@type":"Cube",
+	"Name":"}Sys Sc Element Access",
+	"Rules@Code.link":"}Sys Sc Element Access.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Sys Sc Groups')"
+		},
+		{
+			"@id":"Dimensions('}Sys Dimension Name')"
+		},
+		{
+			"@id":"Dimensions('}Sys Element Name')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Element Access Measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

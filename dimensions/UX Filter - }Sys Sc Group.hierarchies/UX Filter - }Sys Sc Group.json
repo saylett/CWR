@@ -1,0 +1,27 @@
+{
+	"@type":"Hierarchy",
+	"Name":"UX Filter - }Sys Sc Group",
+	"Elements":
+	[
+		{
+			"Name":"}Sys Sc Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Functional Module",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"General User",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store Element Security",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"UX Filter - }Sys Sc Group.subsets/}Export.All.json"
+	]
+}

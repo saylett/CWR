@@ -1,0 +1,17 @@
+{
+	"@type":"Cube",
+	"Name":"}pulse_dimension",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}pulse_dimension')"
+		},
+		{
+			"@id":"Dimensions('}pulse_dimension_property')"
+		},
+		{
+			"@id":"Dimensions('}pulse_measure')"
+		}
+	],
+	"Views@Code.links":[]
+}

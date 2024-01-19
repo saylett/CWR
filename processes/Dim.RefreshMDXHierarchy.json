@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Dim.RefreshMDXHierarchy",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.RefreshMDXHierarchy.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

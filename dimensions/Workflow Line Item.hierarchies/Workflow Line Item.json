@@ -1,0 +1,112 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Workflow Line Item",
+	"Elements":
+	[
+		{
+			"Name":"All Line Items",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"0001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0006",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0008",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"0010",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Current Item",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0010",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0009",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0008",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0007",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0006",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0005",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0004",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0003",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0002",
+			"Weight":1
+		},
+		{
+			"ParentName":"All Line Items",
+			"ComponentName":"0001",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Workflow Line Item.subsets/}Export.All.json"
+	]
+}

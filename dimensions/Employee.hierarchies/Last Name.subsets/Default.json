@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{{[Employee].[Last Name].[All Last Names]},{[Employee].[Last Name].[All Last Names].Children}}"
+}

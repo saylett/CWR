@@ -1,0 +1,61 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+cDim = 'Employee';
+cHier = 'Store Budget';
+cHier_Node = 'All Stores';
+
+cProcessName = GetProcessName;
+
+If( HierarchyExists( cDim, cHier ) = 1 );
+  HierarchyDestroy( cDim, cHier );
+EndIf;
+HierarchyCreate( cDim, cHier );
+HierarchyElementInsert( cDim, cHier, '', cHier_Node, 'C');
+
+sNode = 'All Planning Employees';
+sMDX = '{TM1FilterByLevel({Descendants({[' | cDim | '].[' | sNode | ']})}, 0)}';
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( cDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+SubsetCreatebyMDX( sSub, sMDX, cDim, 1 );
+nElem = SubsetGetSize( cDim, sSub );
+sElem_Last = SubsetGetElementName( cDim, sSub, nElem );
+SubsetElementDelete( cDim, sSub, nElem );
+SubsetElementInsert( cDim, sSub, sElem_Last, nElem );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = SubsetGetElementName( cDim, sSub, nCnt );
+  sAttr = AttrS( cDim, sElem, 'Store Budget');
+  If( sAttr @= '' );
+    sStore = 'NA Store';
+  Else;
+    sStore = sAttr;
+  EndIf;
+  If( HierarchyElementExists( cDim, cHier, sStore) = 0 );
+    HierarchyElementInsert( cDim, cHier, '', sStore, 'C' );
+    HierarchyElementComponentAdd( cDim, cHier, cHier_Node, sStore, 1 );
+  EndIf;
+  HierarchyElementInsert( cDim, cHier, '', sElem, 'N' );
+  HierarchyElementComponentAdd( cDim, cHier, sStore, sElem, 1 );
+  nCnt = nCnt + 1;
+End;
+
+HierarchySortOrder(cDim, cHier, 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+
+sMDX = '{{[' | cDim | '].[' | cHier | '].[' | cHier_Node | ']},{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}}';
+SubsetCreatebyMDX( 'Default', sMDX, cDim | ':' | cHier  );
+
+sMDX = '{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}';
+SubsetCreatebyMDX( 'Default no Total', sMDX, cDim | ':' | cHier  );
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

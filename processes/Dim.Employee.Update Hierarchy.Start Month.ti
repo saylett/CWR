@@ -1,0 +1,78 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+cDim = 'Employee';
+cHier = 'Start Month';
+cHier_Node = 'All Start Months';
+
+cProcessName = GetProcessName;
+
+If( HierarchyExists( cDim, cHier ) = 1 );
+  HierarchyDestroy( cDim, cHier );
+EndIf;
+HierarchyCreate( cDim, cHier );
+HierarchyElementInsert( cDim, cHier, '', cHier_Node, 'C');
+
+sNode = 'All Planning Employees';
+sMDX = '{TM1FilterByLevel({Descendants({[' | cDim | '].[' | sNode | ']})}, 0)}';
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( SubsetExists( cDim, cTempName ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+sSub = cTempName;
+
+SubsetCreatebyMDX( sSub, sMDX, cDim, 1 );
+nElem = SubsetGetSize( cDim, sSub );
+sElem_Last = SubsetGetElementName( cDim, sSub, nElem );
+SubsetElementDelete( cDim, sSub, nElem );
+SubsetElementInsert( cDim, sSub, sElem_Last, nElem );
+
+HierarchyElementInsert( cDim, cHier, '', 'NA Start Month', 'C' );
+HierarchyElementComponentAdd( cDim, cHier, cHier_Node, 'NA Start Month', 1 );
+
+nCnt = 1;
+While( nCnt <= nElem );
+  sElem = SubsetGetElementName( cDim, sSub, nCnt );
+  sAttr = AttrS( cDim, sElem, 'Date Start');
+  If( sAttr @= '' );
+    sMonth_Start = 'NA Start Month';
+  Else;
+    sYear = SubSt( sAttr, 7, 4 );
+    sMonth_Start = sYear | ' ' | DimensionElementPrincipalName('Month', 'M' | SubSt( sAttr, 1, 2 ));
+  EndIf;
+  If( HierarchyElementExists( cDim, cHier, sYear) = 0 );
+    HierarchyElementInsert( cDim, cHier, '', sYear, 'C' );
+    HierarchyElementComponentAdd( cDim, cHier, cHier_Node, sYear, 1 );
+  EndIf;
+  If( HierarchyElementExists( cDim, cHier, sMonth_Start) = 0 );
+    HierarchyElementInsert( cDim, cHier, '', sMonth_Start, 'C' );
+    HierarchyElementComponentAdd( cDim, cHier, sYear, sMonth_Start, 1 );
+  EndIf;
+  HierarchyElementInsert( cDim, cHier, '', sElem, 'N' );
+  HierarchyElementComponentAdd( cDim, cHier, sMonth_Start, sElem, 1 );
+  nCnt = nCnt + 1;
+End;
+
+HierarchySortOrder(cDim, cHier, 'ByName', 'Ascending', 'ByHierarchy', 'Ascending');
+
+
+sMDX = '{{[' | cDim | '].[' | cHier | '].[' | cHier_Node | ']},{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}}';
+SubsetCreatebyMDX( 'Default', sMDX, cDim | ':' | cHier  );
+
+sMDX = '{[' | cDim | '].[' | cHier | '].[' | cHier_Node | '].Children}';
+SubsetCreatebyMDX( 'Default no Total', sMDX, cDim | ':' | cHier  );
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

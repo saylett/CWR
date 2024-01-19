@@ -1,0 +1,17 @@
+{
+	"@type":"Cube",
+	"Name":"Release Info",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Release')"
+		},
+		{
+			"@id":"Dimensions('Release Measures')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Release Info.views/Default.json"
+	]
+}

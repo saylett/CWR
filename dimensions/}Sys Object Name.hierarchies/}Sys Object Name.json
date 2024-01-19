@@ -1,0 +1,3258 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}Sys Object Name",
+	"Elements":
+	[
+		{
+			"Name":"ALL Objects",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"ALL Applications",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"ALL Chores",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"ALL Cubes",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Employee Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Assumptions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Existing Employee Staging",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"General Ledger",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GL Reporting",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Employee Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Promotions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Info",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing Seasonality",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store Assumption",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"System Info",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"User Staging",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workflow",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Capabilities",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CellAnnotations_General Ledger",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CellAnnotations_Release Info",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CellAnnotations_Sales Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CellAnnotations_}ElementAttributes_Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CellSecurity_Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CellSecurity_Sales Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ClientCAMAssociatedGroups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ClientGroups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ClientProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ClientSettings",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeDrill_General Ledger",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeSecurity",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeSecurityProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}DimensionAttributes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}DimensionProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}DimensionSecurity",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Artist",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Assumptions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Model",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Existing Employee Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_General Ledger Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_GL Account",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_GL Reporting Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Navigation Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Price Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Promotions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Release Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Budget Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Store",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Store Assumption Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Param",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Status",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_Year-Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ClientProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Cultures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_}Sys Dimension Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_}Sys Sc Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Dimension Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Element Access Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Object Access Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementSecurity_Store",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementSecurity_Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ElementSecurity_Workflow Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}HierarchyProperties",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_New Employee Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_Sales Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_Store Assumption",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_System Info",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_Workflow",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_}ElementAttributes_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_}Sys Sc Element Access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList_}Sys Sc Object Access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}ProcessSecurity",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_cube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_dimension",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsByChore",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsByClient",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsByCube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsByCubeByClient",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsByProcess",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsByRule",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsForServer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Element Access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Object Access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ALL Dimensions",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Artist",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Currency",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Assumptions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Employee Plan Model",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Existing Employee Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"General Ledger Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Genre",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GL Account",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"GL Reporting Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Navigation Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Employee Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"New Employee Plan Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Plan Module",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Price Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Promotions Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Measures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Release Planning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Budget Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sales Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staffing Seasonality Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stock Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store Assumption Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"System Info Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"System Info Param",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"User Staging Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Version",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workflow Line Item",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workflow Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workflow Status",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Year",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Year-Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Annotation_ApplicationID",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}AnnotationMeasures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CAMAssociatedGroups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Chores",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}CubeDrillString",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Cube Functions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Cubes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Cultures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Dimensions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Features",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Hierarchies",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Hierarchies_Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Hierarchies_Release",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}LineNumber",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PerfClients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PerfCubes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Permissions",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}PickList",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Processes",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_cube_property",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_dimension_property",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}RuleStats",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsByClient",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsByCube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsByCubeByClient",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}StatsStatsForServer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Dimension Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Element Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Object Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Object Type",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Object Type Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Element Access Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Level",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Object Access Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Sys Sc Permission Index",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}TimeIntervals",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ALL Processes",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"cub.Employee Plan.Load New Employees",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Employee Plan.Seed Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Employee Plan.Seed Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Employee Plan.Transfer Employee",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.General Ledger.randomize",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.General Ledger.randomize.caller",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.Generate Randomish Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Sales.load data",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.randomize.caller",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.randomize Actual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales.randomize Plan",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.Sales Budget.load data from Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Sales Budget.Load Pricing",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Staffing.Populate Hours",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Staffing Seasonality.Copy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Stock.Generate Opening Stock",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.User Staging.add Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Workflow.update planner",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cub.Workflow.update status",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"cub.}ClientProperties.remove disabled Clients",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Create Attribute",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Create Consols",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Delete Attribute",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.ALL",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Exempt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Job Grade",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Last Name",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Position",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Start Month",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Store Budget",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Employee.Update Hierarchy.Store Current",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.RefreshMDXHierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Create Consol",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Create Missing Subset",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Delete SPAM",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Fix Attribute Types",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Load Attribute from Release Info",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Load Master Data",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Load Master Data Caller",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Populate Decade Hierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Populate Genre Hierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Populate Missing Video",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Release.Remove Record with no Resource URL",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Store.Count Employees",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dim.Year-Month.Create Hierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"LocalizeCube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Pulse TI",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"RefreshMDXHierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Arc Demo Loop",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.initialize security objects",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Security.update access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Security.update element access",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Security.update groups",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.Send Email",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Dimension Name.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Element Name.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Object Name.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"sys.}Sys Sc Groups.update",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.chore.execution.check",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.clear",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.copy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.copy.intercube",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.import",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.data.save",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.dimension.add",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.dimension.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.dimension.replace",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.rule.manage",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.rule.processfeeders",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.create.bymdx",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.view.publish",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.viewandsubsets.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.cube.viewandsubsets.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.importfromfile",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.attr.swapalias",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.dim.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.consol.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.consol.flat.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromattribute",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromrollup",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromrollup.aliasswap",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.create.fromsubset",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.element.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.element.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.element.move",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.elements.validate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.emptyconsols.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.export.script",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.import",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.leaves.orphan.check",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.leaves.sync",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.all",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.attribute.all",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.attribute.leaf",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.byelement",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.bylevel",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.bymdx",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.consolidation.all",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.consolidation.leaf",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.leaf",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.orphans",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.create.toplevelhierarchy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.exclude",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.sub.exporttofile",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.hier.unwind",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.process.template",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.clone",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.group.assign",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.client.password.reset",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.cube.cellsecurity.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.cube.cellsecurity.destroy",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.evaluate.mdx",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.evaluate.mdx.private",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.group.create",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.group.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.object.assign",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.security.refresh",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.deleteallpersistentfeeders",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.dir.backup",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.dir.listcontents",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.encrypt.directory",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.encrypt.file",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.executecommand",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.localize",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.logfile.delete",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.savedataall",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.util.string.validate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.wait",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}bedrock.server.writetomessagelog",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Drill_GeneralLedgerToBooks",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Drill_GeneralLedgerToMerchandise",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}Drill_GeneralLedgerToRecordSales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_8f2ZFPMsMdrzBvtMTrb0Q",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_fKFRPgafn3YAB9JAkTXeLg",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_iO3naGtY2oHDh52XaVr2LQ",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_K3EPZjfq7e8bmg5L1iHSw",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}pulse_og3E2PGu7CnllM4JqL3K4Q",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_clients_export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_control",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_cube_export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_dim_export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_dim_export_data",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_import",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_save",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"}src_stats_export",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"ALL Rules",
+			"Type":"Consolidated"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL Objects",
+			"ComponentName":"ALL Applications",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Objects",
+			"ComponentName":"ALL Chores",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Objects",
+			"ComponentName":"ALL Cubes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Objects",
+			"ComponentName":"ALL Dimensions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Objects",
+			"ComponentName":"ALL Processes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Objects",
+			"ComponentName":"ALL Rules",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Employee Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Employee Plan Assumptions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Existing Employee Staging",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"General Ledger",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"GL Reporting",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"New Employee Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Promotions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Release Info",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Sales Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Staffing",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Staffing Seasonality",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Stock",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Store Assumption",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"System Info",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"User Staging",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"Workflow",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}Capabilities",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CellAnnotations_General Ledger",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CellAnnotations_Release Info",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CellAnnotations_Sales Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CellAnnotations_}ElementAttributes_Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CellSecurity_Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CellSecurity_Sales Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ClientCAMAssociatedGroups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ClientGroups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ClientProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ClientSettings",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CubeDrill_General Ledger",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CubeProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CubeSecurity",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}CubeSecurityProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}DimensionAttributes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}DimensionProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}DimensionSecurity",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Artist",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Employee Plan Assumptions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Employee Plan Model",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Existing Employee Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_General Ledger Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_GL Account",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_GL Reporting Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Navigation Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_New Employee Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_New Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Price Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Promotions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Release Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Sales Budget Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Sales Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Staffing Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Staffing Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Store",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Store Assumption Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_System Info Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_System Info Param",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Workflow Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Workflow Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Workflow Status",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Year",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_Year-Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}ClientProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Cultures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_}Sys Dimension Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}ElementAttributes_}Sys Sc Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Hierarchies_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Hierarchies_Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Dimension Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Object Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Object Type",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Object Type Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Sc Element Access Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Sc Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Sc Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementAttributes_}Sys Sc Object Access Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementSecurity_Store",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementSecurity_Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ElementSecurity_Workflow Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}HierarchyProperties",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_New Employee Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_Sales Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_Store Assumption",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_System Info",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_Workflow",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_}ElementAttributes_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_}Sys Sc Element Access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}PickList_}Sys Sc Object Access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}ProcessSecurity",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}pulse_cube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}pulse_dimension",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}StatsByChore",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}StatsByClient",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}StatsByCube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}StatsByCubeByClient",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}StatsByProcess",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}StatsByRule",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}StatsForServer",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}Sys Sc Element Access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Cubes",
+			"ComponentName":"}Sys Sc Object Access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Artist",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Currency",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee Plan Assumptions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Employee Plan Model",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Existing Employee Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"General Ledger Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Genre",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"GL Account",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"GL Reporting Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Navigation Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"New Employee Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"New Employee Plan Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Plan Module",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Price Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Promotions Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Release Measures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Release Planning",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Sales Budget Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Sales Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Staffing Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Staffing Seasonality Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Stock Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Store",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Store Assumption Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"System Info Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"System Info Param",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"User Staging Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Version",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Workflow Line Item",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Workflow Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Workflow Status",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Year",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"Year-Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Annotation_ApplicationID",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}AnnotationMeasures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}CAMAssociatedGroups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Chores",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}CubeDrillString",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Cube Functions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Cubes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Cultures",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Dimensions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Features",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Hierarchies",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Hierarchies_Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Hierarchies_Release",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}LineNumber",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}PerfClients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}PerfCubes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Permissions",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}PickList",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Processes",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}pulse_cube_property",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}pulse_dimension_property",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}pulse_measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}RuleStats",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsByClient",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsByCube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsByCubeByClient",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}StatsStatsForServer",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Dimension Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Element Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Object Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Object Type",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Object Type Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Element Access Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Level",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Object Access Measure",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}Sys Sc Permission Index",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Dimensions",
+			"ComponentName":"}TimeIntervals",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Load New Employees",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Seed Actual",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Seed Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Employee Plan.Transfer Employee",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.General Ledger.randomize",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.General Ledger.randomize.caller",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.Generate Randomish Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Sales.load data",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.randomize.caller",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.randomize Actual",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales.randomize Plan",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.Sales Budget.load data from Sales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Sales Budget.Load Pricing",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Staffing.Populate Hours",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Staffing Seasonality.Copy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Stock.Generate Opening Stock",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.User Staging.add Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Workflow.update planner",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Cub.Workflow.update status",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"cub.}ClientProperties.remove disabled Clients",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Create Attribute",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Create Consols",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Delete Attribute",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.ALL",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Exempt",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Job Grade",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Last Name",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Position",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Start Month",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Store Budget",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Employee.Update Hierarchy.Store Current",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.RefreshMDXHierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Create Consol",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Create Missing Subset",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Delete SPAM",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Fix Attribute Types",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Load Attribute from Release Info",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Load Master Data",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Load Master Data Caller",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Populate Decade Hierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Populate Genre Hierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Populate Missing Video",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Release.Remove Record with no Resource URL",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Store.Count Employees",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Dim.Year-Month.Create Hierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"LocalizeCube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"Pulse TI",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"RefreshMDXHierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Arc Demo Loop",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.initialize security objects",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Security.update access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Security.update element access",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Security.update groups",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.Send Email",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Dimension Name.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Element Name.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Object Name.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"sys.}Sys Sc Groups.update",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.chore.execution.check",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.clear",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.copy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.copy.intercube",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.import",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.data.save",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.dimension.add",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.dimension.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.dimension.replace",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.rule.manage",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.rule.processfeeders",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.create.bymdx",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.view.publish",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.viewandsubsets.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.cube.viewandsubsets.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.importfromfile",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.attr.swapalias",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.dim.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.consol.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.consol.flat.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromattribute",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromrollup",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromrollup.aliasswap",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.create.fromsubset",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.element.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.element.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.element.move",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.elements.validate",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.emptyconsols.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.export.script",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.import",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.leaves.orphan.check",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.leaves.sync",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.all",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.attribute.all",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.attribute.leaf",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.byelement",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.bylevel",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.bymdx",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.consolidation.all",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.consolidation.leaf",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.leaf",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.orphans",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.create.toplevelhierarchy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.exclude",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.sub.exporttofile",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.hier.unwind",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.process.template",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.clone",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.group.assign",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.client.password.reset",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.cube.cellsecurity.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.cube.cellsecurity.destroy",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.evaluate.mdx",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.evaluate.mdx.private",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.group.create",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.group.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.object.assign",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.security.refresh",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.deleteallpersistentfeeders",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.dir.backup",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.dir.listcontents",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.encrypt.directory",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.encrypt.file",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.executecommand",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.localize",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.logfile.delete",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.savedataall",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.util.string.validate",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.wait",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}bedrock.server.writetomessagelog",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}Drill_GeneralLedgerToBooks",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}Drill_GeneralLedgerToMerchandise",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}Drill_GeneralLedgerToRecordSales",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_8f2ZFPMsMdrzBvtMTrb0Q",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_fKFRPgafn3YAB9JAkTXeLg",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_iO3naGtY2oHDh52XaVr2LQ",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_K3EPZjfq7e8bmg5L1iHSw",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}pulse_og3E2PGu7CnllM4JqL3K4Q",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_clients_export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_control",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_cube_export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_dim_export",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_dim_export_data",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_import",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_save",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL Processes",
+			"ComponentName":"}src_stats_export",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}Sys Object Name.subsets/}Export.All.json"
+	]
+}

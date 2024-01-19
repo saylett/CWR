@@ -1,0 +1,21 @@
+{
+	"@type":"Process",
+	"Name":"a test by chris",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"a test by chris.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pTest",
+			"Prompt":"",
+			"Value":"Hi",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

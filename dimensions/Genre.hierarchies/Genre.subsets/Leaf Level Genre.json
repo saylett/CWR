@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Leaf Level Genre",
+	"Expression":"{ORDER(TM1FILTERBYLEVEL(TM1SUBSETALL([Genre].[Genre]) , 0) , [Genre].[Genre].CURRENTMEMBER.PROPERTIES(\"MEMBER_NAME\") , BASC)}"
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"GL Account",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('GL Account')/Hierarchies('GL Account')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"GL Account.hierarchies/GL Account.json"
+	]
+}

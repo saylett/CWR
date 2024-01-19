@@ -1,0 +1,25 @@
+{
+	"@type":"Subset",
+	"Name":"Popular Genres",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Funk Soul')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Rock')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Electronic')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Folk')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Jazz')"
+		},
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Genre')/Elements('Pop')"
+		}
+	]
+}

@@ -1,0 +1,1 @@
+SELECT {TM1SubsetToSet([Version].[Version],"Default","public")}*{[Year-Month].[Year-Month].[2019]} ON 0, {TM1SubsetToSet([Store].[Store],"Default","public")}*{[GL Account].[Operating Profit],[GL Account].[Gross Margin],[GL Account].[General and Admin Costs]} ON 1 FROM [GL Reporting] WHERE ([GL Reporting Measure].[GL Reporting Measure].[Amount])

@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{EXCEPT({DRILLUPMEMBER({[Employee].[Employee].Members}, {[Employee].[Employee].[All Employees]})},{[Employee].[Employee].[All Employees],[Employee].[Employee].[Planned Employee]})}"
+}

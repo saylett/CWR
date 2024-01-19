@@ -1,0 +1,13 @@
+{
+	"@type":"Subset",
+	"Name":"Retail",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Employee Position')/Hierarchies('Employee Position')/Elements('Sales Associate')"
+		},
+		{
+			"@id":"Dimensions('Employee Position')/Hierarchies('Employee Position')/Elements('Store Manager')"
+		}
+	]
+}

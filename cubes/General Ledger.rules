@@ -1,0 +1,55 @@
+SKIPCHECK;
+
+###  Variance  ###
+['Act vs Bud'] =
+  If( AttrN('GL Account', !GL Account, 'Var Sign') = -1,
+      -1,
+      1 ) * (['Act'] - ['Bud']);
+
+['Act vs Bud %'] =
+  ['Act vs Bud'] \ ['Budget'];
+
+['Act vs FCT %'] =
+  ['Act vs FCT'] \ ['Forecast'];
+
+###  Record Sales from Sales Cube  ###
+#['GL Account':{'Record Sales','Cost of Sales'},'Version':{'Actual','Budget'},'General Ledger Measure':'Amount'] = N:
+['GL Account':{'Cost of Sales'},'Version':{'Actual','Budget'},'General Ledger Measure':'Amount'] = N:
+  If( ATTRS('Year', !Year, 'Flag - GL Revenue from Sales Cube') @= '1',
+      STET,
+      CONTINUE );
+
+#['GL Account':'Record Sales','Version':{'Actual','Budget'},'General Ledger Measure':'Amount'] = N:
+#  DB('Sales', !Version, !Year, !Month, !Store, 'All Releases', 'Revenue');
+
+['GL Account':'Cost of Sales','Version':{'Actual','Budget'},'General Ledger Measure':'Amount'] = N:
+  DB('Sales', !Version, !Year, !Month, !Store, 'All Releases', 'Cost');
+
+
+# allocate the warehouse costs
+
+['Warehouse Costs Allocation', 'Amount', {'Budget'}, 'Warehouse'] = N:
+  ROUNDP( (['Rent and Rates'] + ['Bonus'] + ['Staff Costs']) * -1, 2) ;
+
+
+['Warehouse Costs Allocation', 'Amount', {'Budget'}] = N:
+  ( DB('General Ledger', !Version, !Year, !Month, 'Warehouse', !GL Account, !General Ledger Measure) * - 1 ) *
+  ( DB('Store Assumption', !Version, !Year, !Store, 'Employee Count') \ DB('Store Assumption', !Version, !Year, 'All Stores', 'Employee Count'));
+
+
+FEEDERS;
+
+['Record Sales', 'Amount'] => ['Bonus'];
+
+['Staff Costs', 'Amount'] => ['Rent and Rates'];
+
+['Bonus', 'All Stores', 'Amount'] => ['Warehouse'];
+
+['Staff Costs'] => ['Warehouse Costs Allocation'];
+
+['Actual', {'2017', '2018'}, {'Record Sales', 'Cost of Sales', 'Merchandise', 'Books', 'Distribution Costs'}] =>
+  DB('General Ledger', 'Budget', DB ('}ElementAttributes_Year', !Year, 'Next'), !Month, !Store, !GL Account, !General Ledger Measure);
+
+[ 'Amount' ] =>
+  DB('GL Reporting', !Version, !Year | '-' | AttrS( 'Month', !Month, 'Code' ), !Store, !GL Account, 'Amount');
+

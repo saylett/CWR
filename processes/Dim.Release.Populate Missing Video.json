@@ -1,0 +1,29 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Release.Populate Missing Video",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Release.Populate Missing Video.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"Release",
+		"dataSourceNameForServer":"Release",
+		"subset":"missing"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vRelease",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

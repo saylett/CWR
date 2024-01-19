@@ -1,0 +1,42 @@
+{
+	"@type":"Hierarchy",
+	"Name":"General User",
+	"Elements":
+	[
+		{
+			"Name":"ALL General User Groups",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"APQ Admin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"APQ PUser",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"APQ User",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"ALL General User Groups",
+			"ComponentName":"APQ Admin",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL General User Groups",
+			"ComponentName":"APQ PUser",
+			"Weight":1
+		},
+		{
+			"ParentName":"ALL General User Groups",
+			"ComponentName":"APQ User",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":[]
+}

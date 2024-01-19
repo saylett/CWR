@@ -1,0 +1,118 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+nFill = 1;
+
+sFileName = pPath;
+
+DatasourceASCIIQuoteCharacter = '';
+DatasourceASCIIDelimiter = CHAR(9);
+SetOutputCharacterSet( sFileName, 'TM1CS_UTF8'  );
+
+sSectionName = 'Dimensions:=';
+TEXTOUTPUT(sFileName, sSectionName);
+nCount = 1;
+nDimensionIndex = 0;
+While( TabDim( pCubeName, nCount ) @<> '' );
+  sDimension = TabDim( pCubeName, nCount );
+  TEXTOUTPUT(sFileName, Fill(' ', nFill) | sDimension);
+  nCount = nCount + 1;
+End;
+TEXTOUTPUT(sFileName, '');
+
+sControlName = '}CubeProperties';
+If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+  sSectionName = 'CubeProperties:=';
+  TEXTOUTPUT(sFileName, sSectionName);
+  nPropCount = DIMSIZ( sControlName );
+  p = 1;
+  WHILE (p <= nPropCount);
+      sProp = DIMNM( sControlName , p);
+      If(DTYPE(sControlName, sProp) @= 'S');
+        sValue = CellGetS(sControlName, pCubeName, sProp);
+      Else;
+        sValue = NumberToString(CellGetN(sControlName, pCubeName, sProp));
+      EndIf;
+      sValue = sProp | ':=' | sValue;
+      TEXTOUTPUT(sFileName, Fill(' ', nFill) | sValue);
+      p = p + 1;
+  END;
+  TEXTOUTPUT(sFileName, '');
+EndIf;
+
+sControlName = '}CubeAttributes';
+If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+  sSectionName = 'CubeAttributes:=';
+  TEXTOUTPUT(sFileName, sSectionName);
+  nPropCount = DIMSIZ( sControlName );
+  p = 1;
+  WHILE (p <= nPropCount);
+      sProp = DIMNM( sControlName , p);
+      If(DTYPE(sControlName, sProp) @= 'S');
+        sValue = CellGetS(sControlName, pCubeName, sProp);
+      Else;
+        sValue = NumberToString(CellGetN(sControlName, pCubeName, sProp));
+      EndIf;
+      sValue = sProp | ':=' | sValue;
+      TEXTOUTPUT(sFileName, Fill(' ', nFill) | sValue);
+      p = p + 1;
+  END;
+  TEXTOUTPUT(sFileName, '');
+EndIf;
+
+sControlName = '}CubeCaptions';
+If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+  sSectionName = 'CubeCaptions:=';
+  TEXTOUTPUT(sFileName, sSectionName);
+  nPropCount = DIMSIZ( sControlName );
+  p = 1;
+  WHILE (p <= nPropCount);
+      sProp = DIMNM( sControlName , p);
+      If(DTYPE(sControlName, sProp) @= 'S');
+        sValue = CellGetS(sControlName, pCubeName, sProp);
+      Else;
+        sValue = NumberToString(CellGetN(sControlName, pCubeName, sProp));
+      EndIf;
+      sValue = sProp | ':=' | sValue;
+      TEXTOUTPUT(sFileName, Fill(' ', nFill) | sValue);
+      p = p + 1;
+  END;
+  TEXTOUTPUT(sFileName, '');
+EndIf;
+
+If(pIncludeSecurity <> 0 );
+  sControlName = '}Groups';
+  sCubeSecCube = '}CubeSecurity';
+  If( DimensionExists(sControlName) = 1 & CubeExists(sCubeSecCube) = 1);
+    sSectionName = 'CubeSecurity:=';
+    TEXTOUTPUT(sFileName, sSectionName);
+    nPropCount = DIMSIZ( sControlName );
+    p = 1;
+    WHILE (p <= nPropCount);
+        sProp = DIMNM( sControlName , p);
+        sValue = CellGetS(sCubeSecCube, pCubeName, sProp);
+        sValue = sProp | ':=' | sValue;
+        TEXTOUTPUT(sFileName, Fill(' ', nFill) | sValue);
+        p = p + 1;
+    END;
+    TEXTOUTPUT(sFileName, '');
+  EndIf;
+EndIf;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

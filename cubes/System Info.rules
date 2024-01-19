@@ -1,0 +1,9 @@
+['Current Time Period']=S:
+DB('System Info', 'Current Month', 'String' )|' '|
+DB('System Info', 'Current Year', 'String' );
+
+['Budget Year','Index'] = N:
+DimIx('Year',DB('System Info', 'Budget Year', 'String' ));
+
+['Forecast Year','Index'] = N:
+DimIx('Year',DB('System Info', 'Forecast Year', 'String' ));

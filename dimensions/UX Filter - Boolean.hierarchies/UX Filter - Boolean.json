@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"UX Filter - Boolean",
+	"Elements":
+	[
+		{
+			"Name":"true",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"false",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

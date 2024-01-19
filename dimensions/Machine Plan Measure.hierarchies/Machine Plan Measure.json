@@ -1,0 +1,68 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Machine Plan Measure",
+	"Elements":
+	[
+		{
+			"Name":"Machine ID",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine Description",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine Location",
+			"Type":"String"
+		},
+		{
+			"Name":"Plant",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Goal Linear Feet",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Goal Set Up Time",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Goal Uptime Pct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Goal Scrap Pct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Goal Run Pct",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Goal Tons Per",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Goal Job Per",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cognos Live Indicator",
+			"Type":"String"
+		},
+		{
+			"Name":"Goal Year",
+			"Type":"String"
+		},
+		{
+			"Name":"Count Uptime",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

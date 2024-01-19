@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Artists",
+	"Expression":"{ORDER([Release].[Artists].[All Artists].CHILDREN , [Release].[Artists].CURRENTMEMBER.PROPERTIES(\"MEMBER_CAPTION\") , BASC)}"
+}

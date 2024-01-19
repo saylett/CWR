@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Exempt Status",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Exempt Status')/Hierarchies('Exempt Status')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Exempt Status.hierarchies/Exempt Status.json"
+	]
+}

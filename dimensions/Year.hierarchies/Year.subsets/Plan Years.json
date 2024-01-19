@@ -1,0 +1,13 @@
+{
+	"@type":"Subset",
+	"Name":"Plan Years",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+		},
+		{
+			"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2021')"
+		}
+	]
+}

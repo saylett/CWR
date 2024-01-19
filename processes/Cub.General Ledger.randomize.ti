@@ -1,0 +1,151 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Src = 'General Ledger';
+cCub_Tgt = 'General Ledger';
+
+cYear = pYear;
+cVersion = pVersion;
+cMult = StringToNumber( pMult );
+
+cMonth = 'All Months';
+cStore = 'All Countries';
+cAccount = 'Operating Profit';
+
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Create Source View
+#########################################################################################################################
+
+###  Define Temp Object Name and Create View  ###
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( ViewExists( cCub_Src, cTempName | '_Src' ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cView_Src = cTempName | '_Src';
+cSub = cTempName | '_Src';
+ViewCreate( cCub_Src, cView_Src, 1 );
+
+sDim = 'Version';
+sElem = cVersion;
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Year';
+sElem = cYear;
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Month';
+sNode = cMonth;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'Store';
+sNode = cStore;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'GL Account';
+sNode = cAccount;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = 'General Ledger Measure';
+sElem = 'Amount';
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+###  Set View as Data Source  ###
+nCnt = 1;
+While( TabDim( cCub_Src, nCnt ) @<> '' );
+  sDim = TabDim( cCub_Src, nCnt );
+  ViewRowDimensionSet( cCub_Src, cView_Src, sDim, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewExtractSkipCalcsSet( cCub_Src, cView_Src, 1 );
+ViewExtractSkipRuleValuesSet( cCub_Src, cView_Src, 1 );
+ViewExtractSkipZeroesSet( cCub_Src, cView_Src, 0 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Src;
+DataSourceNameForClient = cCub_Src;
+DataSourceCubeView = cView_Src;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+If( CellIsUpdateable(cCub_Tgt, vVersion, vYear, vMonth, vStore, vAccount, vMeasure) = 0 );
+  ItemSkip;
+EndIf;
+
+nFactor_Account = AttrN('GL Account', vAccount, 'RD Factor');
+nFactor_Store = AttrN('Store', vStore, 'RD Factor');
+nFactor_Seasonality = AttrN('Month', vMonth, 'Seasonality');
+
+nVal = RoundP( Rand() * cMult, 0 );
+nVal = nVal * nFactor_Seasonality;
+nVal = nFactor_Account * nFactor_Store * nVal;
+
+CellPutN(nVal, cCub_Tgt, vVersion, vYear, vMonth, vStore, vAccount, vMeasure);
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+
+#endregion

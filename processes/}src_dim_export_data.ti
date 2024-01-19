@@ -1,0 +1,306 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+sDataFileName = pPath;
+DatasourceASCIIQuoteCharacter = '';
+DatasourceASCIIDelimiter = CHAR(9);
+cCubeProperties = '}CubeProperties';
+
+IF (DimensionExists(pDimName) = 1);
+
+  nFill = 1;
+
+  sSubset = '}Export.All';
+  If( SubsetExists( pDimName, sSubset ) = 0 );
+    SubsetCreate(  pDimName, sSubset );
+    SubsetIsAllSet(  pDimName, sSubset, 1 );
+  EndIf;
+
+  ### Assign Data Source ###
+
+  DatasourceNameForServer =  pDimName;
+  DatasourceNameForClient =  pDimName;
+  DataSourceType = 'SUBSET';
+  DatasourceDimensionSubset = sSubset;
+
+  i = 0;
+
+  SetOutputCharacterSet( sDataFileName, 'TM1CS_UTF8'  );
+
+  If(DIMSIZ(pDimName) = 0);
+     sSectionName = 'Statistics:=';
+    TEXTOUTPUT(sDataFileName, sSectionName);
+    nDimSiz = DimSiz( pDimName );
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Elements:=' | NumberToString(nDimSiz));
+
+    # NUMBER OF ELEMENTS & HIERARCHIES & LEVELS
+    eCount = 1;
+    nNLevel = 0;
+    nHierarchies = 0;
+    nEmptyConsols = 0;
+    nOrphans = 0;
+    nStrings = 0;
+    While( eCount <= nDimSiz );
+      vElName = DimNm( pDimName, eCount );
+      IF( DType( pDimName, vElName ) @= 'N' );
+        nNLevel = nNLevel + 1;
+        If(ElPar( pDimName, vElName, 1 ) @= '');
+          nOrphans = nOrphans + 1;
+        EndIf;
+      ElseIf ( DType( pDimName, vElName ) @= 'C' );
+        If( ElCompN( pDimName, vElName ) > 0 & ElPar( pDimName, vElName, 1 ) @= '' );
+          nHierarchies = nHierarchies + 1;
+        ElseIf ( ElCompN( pDimName, vElName ) = 0);
+          nEmptyConsols = nEmptyConsols + 1;
+        EndIF;
+      ElseIf ( DType( pDimName, vElName ) @= 'S' );
+        nStrings = nStrings + 1;
+      EndIf;
+      eCount = eCount + 1;
+    End;
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Hierarchies:=' | NumberToString(nHierarchies));   
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'NElements:=' | NumberToString(nNLevel));
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'SElements:=' | NumberToString(nStrings));
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'EmptyConsols:=' | NumberToString(nEmptyConsols));
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Orphans:=' | NumberToString(nOrphans));
+    nDnLev = DnLev( pDimName );
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Levels:=' | NumberToString(nDnLev));
+    
+    sAttrDimName = '}ElementAttributes_' | pDimName;
+    nAttrCount = DIMSIZ( sAttrDimName );
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Attributes:=' | NumberToString(nAttrCount));   
+    
+    cCount = 1;
+    iCount = 0;
+    vNumCubes = DimSiz( '}Cubes' );
+    While( cCount <= vNumCubes );
+      sCubeName = DimNm( '}Cubes', cCount );
+      cMaxDims = 30;
+      vDimIndex = 1;
+      
+      nProcessCube = 1;
+      If(CubeExists(cCubeProperties) = 1);
+        sLoadOnDemand = CellGetS (cCubeProperties, sCubeName, 'DEMANDLOAD');
+         If( sLoadOnDemand @= 'YES' );
+            nProcessCube = 0;
+        EndIf;
+      EndIf;
+      
+      if( nProcessCube = 1 );
+        While( vDimIndex <= cMaxDims );
+          sDimTest = TabDim( sCubeName, vDimIndex );
+          IF( sDimTest @= pDimName );
+            # Don't include the control objects
+            IF( SUBST(sCubeName,1,1) @<> '}');
+              iCount = iCount + 1;
+              vDimIndex = cMaxDims + 1;
+            ENDIF;
+          EndIF;
+          vDimIndex = vDimIndex + 1;
+        End;
+      EndIf;
+      cCount = cCount + 1;
+    End;
+    
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Cubes:=' | NumberToString(iCount));
+    
+    TEXTOUTPUT(sDataFileName, '');
+
+    TEXTOUTPUT(sDataFileName, '---');
+
+    TEXTOUTPUT(sDataFileName, '');
+
+  EndIf;
+
+
+ELSE;
+
+  DataSourceType = 'NULL';
+
+ENDIF;
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+i = i + 1;
+
+If( i = 1);
+
+   SetOutputCharacterSet( sDataFileName, 'TM1CS_UTF8'  );
+
+   sSectionName = 'Statistics:=';
+    TEXTOUTPUT(sDataFileName, sSectionName);
+    nDimSiz = DimSiz( pDimName );
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Elements:=' | NumberToString(nDimSiz));
+
+    # NUMBER OF ELEMENTS & HIERARCHIES & LEVELS
+    eCount = 1;
+    nNLevel = 0;
+    nHierarchies = 0;
+    nEmptyConsols = 0;
+    nOrphans = 0;
+    nStrings = 0;
+    While( eCount <= nDimSiz );
+      
+      vElName = DimNm( pDimName, eCount );
+      
+      If(DimIx(pDimName, vElName) > 0);
+        IF( DType( pDimName, vElName ) @= 'N' );
+          nNLevel = nNLevel + 1;
+          If(ElPar( pDimName, vElName, 1 ) @= '');
+            nOrphans = nOrphans + 1;
+          EndIf;
+        ElseIf ( DType( pDimName, vElName ) @= 'C' );
+          If( ElCompN( pDimName, vElName ) > 0 & ElPar( pDimName, vElName, 1 ) @= '' );
+            nHierarchies = nHierarchies + 1;
+          ElseIf ( ElCompN( pDimName, vElName ) = 0);
+            nEmptyConsols = nEmptyConsols + 1;
+        EndIF;
+        ElseIf ( DType( pDimName, vElName ) @= 'S' );
+          nStrings = nStrings + 1;
+        EndIf;
+      EndIf;
+      
+      eCount = eCount + 1;
+      
+    End;
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Hierarchies:=' | NumberToString(nHierarchies));   
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'NElements:=' | NumberToString(nNLevel));
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'SElements:=' | NumberToString(nStrings));
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'EmptyConsols:=' | NumberToString(nEmptyConsols));
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Orphans:=' | NumberToString(nOrphans));
+    nDnLev = DnLev( pDimName );
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Levels:=' | NumberToString(nDnLev));
+    
+    sAttrDimName = '}ElementAttributes_' | pDimName;
+    nAttrCount = DIMSIZ( sAttrDimName );
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Attributes:=' | NumberToString(nAttrCount));   
+    
+    cCount = 1;
+    iCount = 0;
+    vNumCubes = DimSiz( '}Cubes' );
+    While( cCount <= vNumCubes );
+      sCubeName = DimNm( '}Cubes', cCount );
+      cMaxDims = 30;
+      vDimIndex = 1;
+      
+      nProcessCube = 1;
+      If(CubeExists(cCubeProperties) = 1);
+        sLoadOnDemand = CellGetS (cCubeProperties, sCubeName, 'DEMANDLOAD');
+         If( sLoadOnDemand @= 'YES' );
+            nProcessCube = 0;
+        EndIf;
+      EndIf;
+      
+      If( nProcessCube = 1 );
+        While( vDimIndex <= cMaxDims );
+          sDimTest = TabDim( sCubeName, vDimIndex );
+          IF( sDimTest @= pDimName );
+            # Don't include the control objects
+            IF( SUBST(sCubeName,1,1) @<> '}');
+              iCount = iCount + 1;
+              vDimIndex = cMaxDims + 1;
+            ENDIF;
+          EndIF;
+          vDimIndex = vDimIndex + 1;
+        End;
+      EndIf;
+      cCount = cCount + 1;
+    End;
+    
+    TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Cubes:=' | NumberToString(iCount));
+    
+    TEXTOUTPUT(sDataFileName, '');
+
+    TEXTOUTPUT(sDataFileName, '---');
+
+    TEXTOUTPUT(sDataFileName, '');
+
+EndIf;
+  
+If ( nDimSiz < pMaxElements);
+
+  sEl = vElement;
+  If( SCAN (':=', sEl) > 0);
+      ItemReject('Element ' | sEl | ' cannot contain :=');
+  EndIf;
+  TEXTOUTPUT(sDataFileName, sEl | ':=');
+
+  If( DIMIX(pDimName, sEl) <= 0);
+    ItemSkip;
+  EndIf;
+  
+  # Type
+  sType = DTYPE(pDimName, sEl);
+  TEXTOUTPUT(sDataFileName, Fill(' ', nFill) | 'Type:= ' | sType);
+
+  sAttributes = Fill(' ', nFill) | 'Attributes:=';
+  TEXTOUTPUT(sDataFileName, sAttributes);
+  nAttrCount = DIMSIZ( sAttrDimName );
+  a = 1;
+  WHILE (a <= nAttrCount);
+      sAttr = DIMNM(sAttrDimName , a);
+      IF(DimIx(sAttrDimName, sAttr) > 0);
+        sAttrTypeOr = DTYPE( sAttrDimName, sAttr);
+        sAttrType = sAttrTypeOr;
+        sAttrType = SUBST( sAttrType, LONG(sAttrType), 1);
+        If( sAttrType @= 'N' );
+            IF (CUBEEXISTS (sAttrDimName) = 1 );
+                  sAttrVal = NumberToString(CellGetN(sAttrDimName, sEl, sAttr));
+            ELSE;
+                   sAttrVal = '0';
+            ENDIF;
+        Else;
+           IF (sAttrTypeOr @= 'AS');
+                  sAttrVal = ATTRS(pDimName, sEl, sAttr);
+           ELSE;
+              IF (CUBEEXISTS (sAttrDimName) = 1 );
+                sAttrVal = CellGetS(sAttrDimName, sEl, sAttr);
+              ELSE;
+                sAttrVal = '';
+              ENDIF;
+           ENDIF;
+  
+        EndIf;
+        TEXTOUTPUT(sDataFileName, Fill(' ', 4) | sAttr | ':= ' | sAttrVal );
+      ENDIF;
+      a = a + 1;
+  END;
+
+  # Loop through all of the parents
+  sParents = Fill(' ', nFill) | 'Parents:=';
+  TEXTOUTPUT(sDataFileName, sParents);
+  nParentCount = ELPARN(pDimName, sEl);
+  p = 1;
+  WHILE (p <= nParentCount);
+      sPar = ELPAR(pDimName,  sEl, p);
+      TEXTOUTPUT(sDataFileName, Fill(' ', 4) | sPar | ':= ' | NumberToString(ELWEIGHT(pDimName, sPar, sEl)) );
+      p = p + 1;
+  END;
+
+
+  TEXTOUTPUT(sDataFileName, '');
+
+EndIf;
+
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

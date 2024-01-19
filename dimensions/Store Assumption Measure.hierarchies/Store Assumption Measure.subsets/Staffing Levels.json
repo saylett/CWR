@@ -1,0 +1,16 @@
+{
+	"@type":"Subset",
+	"Name":"Staffing Levels",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Store Assumption Measure')/Hierarchies('Store Assumption Measure')/Elements('Low Staffing Level')"
+		},
+		{
+			"@id":"Dimensions('Store Assumption Measure')/Hierarchies('Store Assumption Measure')/Elements('Med Staffing Level')"
+		},
+		{
+			"@id":"Dimensions('Store Assumption Measure')/Hierarchies('Store Assumption Measure')/Elements('High Staffing Level')"
+		}
+	]
+}

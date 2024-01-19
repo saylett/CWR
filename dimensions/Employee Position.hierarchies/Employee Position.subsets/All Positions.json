@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"All Positions",
+	"Expression":"TM1SubsetAll([Employee Position])"
+}

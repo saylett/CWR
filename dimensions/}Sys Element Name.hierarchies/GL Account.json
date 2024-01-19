@@ -1,0 +1,72 @@
+{
+	"@type":"Hierarchy",
+	"Name":"GL Account",
+	"Elements":
+	[
+		{
+			"Name":"Operating Profit",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Gross Margin",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Revenue",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Record Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Merchandise",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Books",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Direct Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost of Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Distribution Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"General and Admin Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Warehouse Costs Allocation",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Other Indirect Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rent and Rates",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Staff Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dimension User Input",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

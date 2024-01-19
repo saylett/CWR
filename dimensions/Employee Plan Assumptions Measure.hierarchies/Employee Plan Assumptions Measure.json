@@ -1,0 +1,52 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Employee Plan Assumptions Measure",
+	"Elements":
+	[
+		{
+			"Name":"Enable Selection",
+			"Type":"String"
+		},
+		{
+			"Name":"Average - Bonus - Rate",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Average - Allowance - Monthly",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Allowance - Monthly",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus - Rate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Count - Bonus - Rate",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Count - Allowance - Monthly",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Average - Bonus - Rate",
+			"ComponentName":"Count - Bonus - Rate",
+			"Weight":1
+		},
+		{
+			"ParentName":"Average - Allowance - Monthly",
+			"ComponentName":"Count - Allowance - Monthly",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Employee Plan Assumptions Measure.subsets/}Export.All.json"
+	]
+}

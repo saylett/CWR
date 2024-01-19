@@ -1,0 +1,224 @@
+#region Prolog
+sMetadataCube = '}pulse_dimension';
+sControlDim = '}pulse_dimension';
+sPropertyDim = '}pulse_dimension_property';
+sMeasureDim = '}pulse_measure';
+sMeasureElement = 'String';
+
+If ( CubeExists (sMetadataCube) = 0 );
+  
+  If( DimensionExists(sControlDim) = 0 );
+    DimensionCreate(sControlDim);
+  EndIf;
+  
+  If( DimensionExists(sPropertyDim) = 0 );
+    DimensionCreate(sPropertyDim);
+  EndIf;
+  
+  If( DimensionExists(sMeasureDim) = 0 );
+    DimensionCreate(sMeasureDim);
+    DimensionElementInsertDirect(sMeasureDim, '', sMeasureElement, 'S');
+  EndIf;
+  
+  CubeCreate(sMetadataCube, sControlDim, sPropertyDim, sMeasureDim);
+  
+EndIf;
+
+CellPutS( 'NO', '}CubeProperties', sMetadataCube, 'LOGGING' );
+
+If(pClear = 1);
+  DimensionDeleteAllElements(sControlDim);
+  DimensionDeleteAllElements(sPropertyDim);
+EndIf;
+
+
+#endregion
+#region Epilog
+nChar = 0;
+sName = '';
+nLen = Long(pDimNames);
+While(nChar <= nLen);
+  nChar = nChar + 1;
+  sName = sName | Subst(pDimNames, nChar, 1);
+  If(nChar + 1 > nLen % Subst(pDimNames , nChar + 1, 2) @= '::');
+    sDimName = sName;
+    sName = '';
+    nChar = nChar + 2;
+
+    If (DimensionExists(sDimName) = 1);
+      
+      If( DimIx(sControlDim, sDimName) = 0 );
+        DimensionElementInsertDirect(sControlDim, '', sDimName, 'S');
+      EndIf;
+    
+      sControlName = '}DimensionProperties';
+      If(DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+        sSectionName = 'DimensionProperties';
+        nPropCount = DIMSIZ( sControlName );
+        p = 1;
+        WHILE (p <= nPropCount);
+          sProp = DIMNM( sControlName , p);
+          If(DTYPE(sControlName, sProp) @= 'S');
+            sValue = CellGetS(sControlName, sDimName, sProp);
+          Else;
+            sValue = NumberToStringEx(CellGetN(sControlName, sDimName, sProp), '0', '.', ',');
+          EndIf;
+          If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+            DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+          EndIf;
+          CellPutS(sValue, sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+          p = p + 1;
+        END;
+        sProp = 'ElementSecurity';
+        sControlName = '}ElementSecurity_' | sDimName;
+        If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+          DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+        EndIf;
+        If(CubeExists(sControlName) = 1);
+          CellPutS('true', sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+        Else;
+          CellPutS('false', sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+        EndIf;
+        
+        
+      EndIf;
+    
+      sControlName = '}HierarchyProperties';
+      If( DimensionExists(sControlName) = 1 & CubeExists(sControlName) = 1);
+        sSectionName = 'HierarchyProperties';
+        nPropCount = DIMSIZ( sControlName );
+        p = 1;
+        WHILE (p <= nPropCount);
+            sProp = DIMNM( sControlName , p);
+            If(DTYPE(sControlName, sProp) @= 'S');
+              sValue = CellGetS(sControlName, sDimName, 'hierarchy0', sProp);
+            Else;
+              sValue = NumberToStringEx(CellGetN(sControlName, sDimName, 'hierarchy0', sProp), '0', '.', ',');
+            EndIf;
+            If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+                DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+              EndIf;
+            CellPutS(sValue, sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+            p = p + 1;
+        END;
+
+      EndIf;
+      
+      # Element stats
+    
+      sSectionName = 'Statistics';
+      sProp = 'Elements';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      nDimSiz = DimSiz(sDimName);
+      CellPutS(NumberToStringEx(nDimSiz, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+      # NUMBER OF ELEMENTS & HIERARCHIES & LEVELS
+      eCount = 1;
+      nNLevel = 0;
+      nHierarchies = 0;
+      nEmptyConsols = 0;
+      nOrphans = 0;
+      nStrings = 0;
+      While( eCount <= nDimSiz );
+        vElName = DimNm( sDimName, eCount );
+        If(DimIx(sDimName, vElName) > 0);
+      IF( DType( sDimName, vElName ) @= 'N' );
+           nNLevel = nNLevel + 1;
+           If(ElPar( sDimName, vElName, 1 ) @= '');
+             nOrphans = nOrphans + 1;
+           EndIf;
+        ElseIf ( DType( sDimName, vElName ) @= 'C' );
+           If( ElCompN( sDimName, vElName ) > 0 & ElPar( sDimName, vElName, 1 ) @= '' );
+             nHierarchies = nHierarchies + 1;
+           ElseIf ( ElCompN( sDimName, vElName ) = 0);
+             nEmptyConsols = nEmptyConsols + 1;
+           EndIF;
+        ElseIf ( DType( sDimName, vElName ) @= 'S' );
+           nStrings = nStrings + 1;
+        EndIf;
+  		EndIf;
+        eCount = eCount + 1;
+      End;
+      
+      sProp = 'RollUps';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      CellPutS(NumberToStringEx(nHierarchies, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+      sProp = 'NElements';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      CellPutS(NumberToStringEx(nNLevel, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+      sProp = 'SElements';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      CellPutS(NumberToStringEx(nStrings, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+      sProp = 'EmptyConsols';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      CellPutS(NumberToStringEx(nEmptyConsols, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+      sProp = 'Orphans';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      CellPutS(NumberToStringEx(nOrphans, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+      sProp = 'Levels';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      nDnLev = DnLev( sDimName );
+      CellPutS(NumberToStringEx(nDnLev, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+
+      sProp = 'Attributes';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      sAttrDimName = '}ElementAttributes_' | sDimName;
+      nAttrCount = DIMSIZ( sAttrDimName );
+      CellPutS(NumberToStringEx(nAttrCount, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+      cCount = 1;
+      iCount = 0;
+      vNumCubes = DimSiz( '}Cubes' );
+      While( cCount <= vNumCubes );
+        sCubeName = DimNm( '}Cubes', cCount );
+        cMaxDims = 30;
+        vDimIndex = 1;
+        While( vDimIndex <= cMaxDims );
+          sDimTest = TabDim( sCubeName, vDimIndex );
+          IF( sDimTest @= sDimName );
+            # Don't include the control objects
+            IF( SUBST(sCubeName,1,1) @<> '}');
+              iCount = iCount + 1;
+              vDimIndex = cMaxDims + 1;
+            ENDIF;
+          EndIF;
+          vDimIndex = vDimIndex + 1;
+        End;
+        cCount = cCount + 1;
+      End;
+      
+      sProp = 'Cubes';
+      If( DimIx(sPropertyDim, sSectionName | '>>>' | sProp) = 0 );
+        DimensionElementInsertDirect(sPropertyDim, '', sSectionName | '>>>' | sProp, 'S');
+      EndIf;
+      CellPutS(NumberToStringEx(iCount, '0', '.', ','), sMetadataCube, sDimName, sSectionName | '>>>' | sProp, sMeasureElement);
+
+
+    EndIf;
+    
+  EndIf;
+  
+End;
+#endregion

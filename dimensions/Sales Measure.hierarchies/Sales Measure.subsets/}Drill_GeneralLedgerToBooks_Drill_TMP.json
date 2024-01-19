@@ -1,0 +1,22 @@
+{
+	"@type":"Subset",
+	"Name":"}Drill_GeneralLedgerToBooks_Drill_TMP",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Units')"
+		},
+		{
+			"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Revenue')"
+		},
+		{
+			"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Cost')"
+		},
+		{
+			"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Unit Price')"
+		},
+		{
+			"@id":"Dimensions('Sales Measure')/Hierarchies('Sales Measure')/Elements('Unit Cost')"
+		}
+	]
+}

@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Release Year",
+	"Expression":"{[Release Planning].[Release Planning].[Release Year].CHILDREN}"
+}

@@ -1,0 +1,32 @@
+{
+	"@type":"Process",
+	"Name":"}pulse_K3EPZjfq7e8bmg5L1iHSw",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}pulse_K3EPZjfq7e8bmg5L1iHSw.ti",
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"}Clients",
+		"dataSourceNameForServer":"}Clients",
+		"subset":"All"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pPath",
+			"Prompt":"Path to file",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vClient",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

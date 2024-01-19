@@ -1,0 +1,23 @@
+{
+	"@type":"Hierarchy",
+	"Name":"General Ledger Measure",
+	"Elements":
+	[
+		{
+			"Name":"Amount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Comment",
+			"Type":"String"
+		},
+		{
+			"Name":"Volumes",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"General Ledger Measure.subsets/}Export.All.json"
+	]
+}

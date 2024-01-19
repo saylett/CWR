@@ -1,0 +1,21 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Employee.Create Attribute",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Employee.Create Attribute.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pAttribute",
+			"Prompt":"New Attribute Name",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

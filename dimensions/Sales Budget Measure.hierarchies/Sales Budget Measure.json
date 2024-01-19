@@ -1,0 +1,129 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Sales Budget Measure",
+	"Elements":
+	[
+		{
+			"Name":"Gross Margin",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Revenue",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Returns",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Discounts",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Product Cost",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Logistics Costs",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Direct Labor",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Store Overhead",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Rent",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Cleaning",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Units",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Cost",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Unit Price",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Promo",
+			"Type":"String"
+		},
+		{
+			"Name":"Comment",
+			"Type":"String"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Revenue",
+			"Weight":1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Returns",
+			"Weight":1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Discounts",
+			"Weight":1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Product Cost",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Direct Labor",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Gross Margin",
+			"ComponentName":"Store Overhead",
+			"Weight":-1
+		},
+		{
+			"ParentName":"Product Cost",
+			"ComponentName":"Logistics Costs",
+			"Weight":1
+		},
+		{
+			"ParentName":"Product Cost",
+			"ComponentName":"Cost",
+			"Weight":1
+		},
+		{
+			"ParentName":"Store Overhead",
+			"ComponentName":"Rent",
+			"Weight":1
+		},
+		{
+			"ParentName":"Store Overhead",
+			"ComponentName":"Cleaning",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Sales Budget Measure.subsets/Gross Margin.json",
+		"Sales Budget Measure.subsets/}Export.All.json"
+	]
+}

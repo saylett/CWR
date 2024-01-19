@@ -1,0 +1,49 @@
+{
+	"@type":"Process",
+	"Name":"}src_dim_export_data",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}src_dim_export_data.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"}Dimensions",
+		"dataSourceNameForServer":"}Dimensions",
+		"subset":"All"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDimName",
+			"Prompt":"The name of the dimension",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pPath",
+			"Prompt":"The directory to export the file to",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pMaxElements",
+			"Prompt":"Maximum dimension size",
+			"Value":0,
+			"Type":"Numeric"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vElement",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

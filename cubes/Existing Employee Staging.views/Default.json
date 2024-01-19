@@ -1,0 +1,318 @@
+{
+	"@type":"NativeView",
+	"Name":"Default",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Existing Employee Staging Measure')/Hierarchies('Existing Employee Staging Measure')"
+				},
+				"Expression":"TM1SubsetAll([Existing Employee Staging Measure])"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Line Item')/Hierarchies('Line Item')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('All Line Items')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0001')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0002')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0003')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0004')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0005')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0006')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0007')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0008')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0009')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0010')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0011')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0012')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0013')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0014')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0015')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0016')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0017')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0018')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0019')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0020')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0021')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0022')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0023')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0024')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0025')"
+					},
+					{
+						"@id":"Dimensions('Line Item')/Hierarchies('Line Item')/Elements('0026')"
+					}
+				]
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('NA Year-Month')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M01')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M02')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M03')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M04')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M05')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M06')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M07')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M08')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M09')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M10')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M11')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2017-M12')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M01')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M02')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M03')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M04')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M05')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M06')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M07')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M08')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M09')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M10')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M11')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2018-M12')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M01')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M02')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M03')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M04')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M05')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M06')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M07')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M08')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M09')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M10')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M11')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M12')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M01')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M02')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M03')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M04')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M05')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M06')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M07')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M08')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M09')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M10')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M11')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2020-M12')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M01')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M02')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M03')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M04')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M05')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M06')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M07')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M08')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M09')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M10')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M11')"
+					},
+					{
+						"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2021-M12')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M12')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

@@ -1,0 +1,44 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Workflow Measure",
+	"Elements":
+	[
+		{
+			"Name":"Dimension User Input",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Planner",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Reviewer",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Status",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Status Numeric",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Timestamp",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Timestamp Numeric",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Comment",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"User",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

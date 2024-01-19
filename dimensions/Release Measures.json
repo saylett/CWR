@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Release Measures",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Release Measures')/Hierarchies('Release Measures')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Release Measures.hierarchies/Release Measures.json"
+	]
+}

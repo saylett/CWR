@@ -1,0 +1,122 @@
+SKIPCHECK;
+
+###  Pull in Budget by Genre  ###
+[ 'Sales Measure':{'Units','Revenue','Cost','Unit Cost','Unit Price'}, 'Version':{'Budget','Forecast'},
+  'Release':{'Planning - Funk Soul','Planning - Jazz','Planning - Latin','Planning - Electronic','Planning - Rock','Planning - Pop',
+  'Planning - Reggae','Planning - Non-Music','Planning - Classical','Planning - Stage Screen','Planning - Folk','Planning - Hip Hop',
+  'Planning - No Genre','Planning - Childrens','Planning - Blues','Planning - Brass Military','Planning - Folk World Country'} ] = N:
+  DB('Sales Budget', !Version, !Year, !Month, !Store, SubSt(!Release, Scan(' - ', !Release) + 3, Long(!Release)-11), !Sales Measure);
+
+[ 'Sales Measure':'Revenue', 'Version':{'Budget','Forecast'} ] = N:
+  [ 'Sales Measure':'Unit Price' ] * [ 'Sales Measure':'Units' ]; 
+
+[ 'Sales Measure':'Cost', 'Version':{'Budget','Forecast'} ] = N:
+  [ 'Sales Measure':'Unit Cost' ] * [ 'Sales Measure':'Units' ]; 
+
+###  Plan Input  ###
+[ 'Plan Flag', 'NA Month', 'Version':{'Budget','Forecast'} ] = N:
+  STET;
+
+[ 'Plan Flag' ] = N: 0;
+
+[ 'Units', 'Version':{'Budget','Forecast'} ] = N:
+  If( [ 'Plan Flag', 'NA Month' ] = 1,
+      STET,
+      0 );
+
+###  Variances  ###
+['Act vs Bud'] =
+  If( DimIx('Year', !Year) >= DB('System Info', 'Budget Year', 'Index'),
+      DB('Sales', 'Budget', !Year, !Month, !Store, !Release, !Sales Measure)
+        - DB('Sales', 'Actual', AttrS('Year', !Year, 'Previous'), !Month, !Store, !Release, !Sales Measure),
+      ['Version':'Actual'] - ['Version':'Budget'] );  
+
+['Act vs Bud %'] = 
+  ['Act vs Bud'] 
+    \ If( DimIx('Year', !Year) >= DB('System Info', 'Budget Year', 'Index'),
+          DB('Sales', 'Actual', AttrS('Year', !Year, 'Previous'), !Month, !Store, !Release, !Sales Measure),
+          ['Version':'Budget'] );
+
+['Act vs Fct'] =
+  If( DimIx('Year', !Year) >= DB('System Info', 'Forecast Year', 'Index'),
+      DB('Sales', 'Forecast', !Year, !Month, !Store, !Release, !Sales Measure)
+        - DB('Sales', 'Actual', AttrS('Year', !Year, 'Previous'), !Month, !Store, !Release, !Sales Measure),
+      ['Version':'Actual'] - ['Version':'Forecast'] );
+
+['Act vs Fct %'] = 
+  ['Act vs Fct']
+      \ If( DimIx('Year', !Year) >= DB('System Info', 'Forecast Year', 'Index'),
+          DB('Sales', 'Actual', AttrS('Year', !Year, 'Previous'), !Month, !Store, !Release, !Sales Measure),
+          ['Version':'Forecast'] );
+
+
+###  Avg Prices  ###
+[ 'Version':{'Actual','Budget','Forecast'}, 'Sales Measure':{'Unit Price'} ] = C:
+  [ 'Revenue' ] \ [ 'Units' ];
+
+[ 'Version':{'Actual','Budget','Forecast'}, 'Sales Measure':{'Unit Cost'} ] = C:
+  [ 'Cost' ] \ [ 'Units' ];
+
+FEEDERS;
+
+###  General Ledger  ###
+[ 'Version':{'Actual','Budget'}, 'Sales Measure':'Units', 'Release':'All Releases' ] =>
+  DB('General Ledger', !Version, !Year, !Month, !Store, 'Record Sales', 'Amount'),
+  DB('General Ledger', !Version, !Year, !Month, !Store, 'Cost of Sales', 'Amount'),
+  DB('General Ledger', !Version, !Year, !Month, !Store, 'Distribution Costs', 'Amount');
+	
+[ 'Version':{'Budget','Forecast'}, 'Sales Measure':'Units' ] =>
+  [ 'Sales Measure':'Revenue' ],
+  [ 'Sales Measure':'Cost' ];
+
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Blues' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Blues Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Brass Military' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Brass Military Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Childrens' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Childrens Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Classical' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Classical Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Electronic' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Electronic Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Folk' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Folk Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Folk World Country' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Folk World Country Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Funk Soul' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Funk Soul Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Hip Hop' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Hip Hop Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Jazz' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Jazz Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Latin' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Latin Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'No Genre' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'No Genre Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Non-Music' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Non-Music Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Pop' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Pop Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Reggae' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Reggae Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Rock' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Rock Album', !Sales Measure);
+
+[ 'Sales Measure':{'Units','Revenue','Cost'}, 'Version':{'Budget','Forecast'}, 'Release':'Genre':'Stage Screen' ] =>
+  DB('Sales Budget', !Version, !Year, !Month, !Store, 'Stage Screen Album', !Sales Measure);

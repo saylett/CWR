@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Waterfall",
+	"Expression":"{[GL Account].[GL Account].[Revenue],[GL Account].[GL Account].[Direct Costs],[GL Account].[GL Account].[Warehouse Costs Allocation],[GL Account].[GL Account].[Other Indirect Costs],[GL Account].[GL Account].[Rent and Rates],[GL Account].[GL Account].[Bonus],[GL Account].[GL Account].[Staff Costs]}"
+}

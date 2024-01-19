@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Machine Type",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Machine Type')/Hierarchies('Machine Type')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Machine Type.hierarchies/Machine Type.json"
+	]
+}

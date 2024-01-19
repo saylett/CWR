@@ -1,0 +1,12 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Employee.Create Consols",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Employee.Create Consols.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

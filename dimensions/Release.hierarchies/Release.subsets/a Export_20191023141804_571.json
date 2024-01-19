@@ -1,0 +1,10 @@
+{
+	"@type":"Subset",
+	"Name":"a Export_20191023141804_571",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Release')/Hierarchies('Release')/Elements('All Releases')"
+		}
+	]
+}

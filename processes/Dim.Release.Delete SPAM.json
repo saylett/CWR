@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Release.Delete SPAM",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Release.Delete SPAM.ti",
+	"UIData":"CubeAction=1511€DataAction=1503€CubeLogChanges=0€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

@@ -1,0 +1,30 @@
+{
+	"@type":"Cube",
+	"Name":"Workflow",
+	"Rules@Code.link":"Workflow.rules",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('Plan Module')"
+		},
+		{
+			"@id":"Dimensions('Workflow Line Item')"
+		},
+		{
+			"@id":"Dimensions('Workflow Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"Workflow.views/Default.json"
+	]
+}

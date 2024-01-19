@@ -1,0 +1,19 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Plan Module",
+	"Elements":
+	[
+		{
+			"Name":"Sales",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Workforce",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Plan Module.subsets/}Export.All.json"
+	]
+}

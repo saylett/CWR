@@ -1,0 +1,13 @@
+{
+	"@type":"Subset",
+	"Name":"Picklist - Process Security",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('0')"
+		},
+		{
+			"@id":"Dimensions('}Sys Sc Level')/Hierarchies('}Sys Sc Level')/Elements('1')"
+		}
+	]
+}

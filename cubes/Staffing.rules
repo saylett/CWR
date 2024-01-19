@@ -1,0 +1,57 @@
+SKIPCHECK;
+
+# Active
+['Budget','Active','Month':{'NA Month','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'}] = N:
+  IF(DB('Staffing',!Version,!Year,'NA Month',!Employee,'Active?')@='✔️',1,0); 
+  
+['Budget','Active','Month':{'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'}] = N:
+  If( ['NA Month']=1, 
+	  DB('Staffing', 'Actual', DB('}ElementAttributes_Year',!Year, 'Previous'), !Month, !Employee, 'FTE')*
+    DB('Store Assumption', !Version, !Year, ElementParent( 'Employee', 'Store', !Employee, 1 ), 
+      DB('Staffing Seasonality', !Version, !Year, !Month, 'Store' : ElementParent( 'Employee', 'Store', !Employee, 1 ),'Staffing Level Input') | ' Staffing Level')
+  ,STET);
+  
+['Active','All Months'] = C: ['Dec'];
+
+['Budget','FTE'] = N: ['Active'];
+
+
+# FTE
+# Employees for All Months
+[{'Actual','Budget'},'All Months','FTE']=C:
+	IF(DTYPE('Employee',!Employee)@='N',
+    	['Hours']\(DB('Store Assumption', !Version, !Year, ElementParent( 'Employee', 'Store', !Employee, 1 ), 'Work Hours per Month' )*12),
+	CONTINUE);
+
+# Stores for All Months
+[{'Actual','Budget'},'All Months','FTE']=C:
+	IF(ElementIsAncestor( 'Employee', 'Store', 'All Stores', !Employee )=1,
+ 		['Hours']\(DB('Store Assumption', !Version, !Year, !Employee, 'Work Hours per Month' )*12),
+    CONTINUE);
+
+['Actual','FTE']=['Hours']\DB('Store Assumption', !Version, !Year, ElementParent( 'Employee', 'Store', !Employee, 1 ), 'Work Hours per Month' );
+
+
+#['Budget','Cost'] = N:['Hours'] * DB('Store Assumption',!Version, !Year,DB('}ElementAttributes_Employee', !Employee,'Store'),'Hourly Wage (USD)');
+#['Budget','Hours']=N:['FTE']*DB('Store Assumption', !Version, !Year, ElementParent( 'Employee', 'Store', !Employee, 1 ), 'Work Hours per Month' );
+
+# Headcount
+[{'Actual','Budget'},'All Months','Headcount']=C:['Dec'];
+
+[{'Actual','Budget'},'Headcount']=N:
+IF(['FTE']>0,1,STET);
+
+FEEDERS;
+['Actual','Hours']=>['FTE'];
+
+['Budget','Hours'] => ['Cost'];
+['Budget','FTE']=>['Hours'], ['Active'];
+
+# Feeding from Actual and Budget as P&L pulls both in...can we convert Actuals in P&L to static numbers?
+['Hours']=>
+  DB('P&L', !Version, !Year, !Month, DB ('}ElementAttributes_Employee', !Employee, 'Store' ), '200', 'Value');
+
+['FTE','NA Month'] => ['All Months'];
+
+# Feed Headcount
+[{'Actual','Budget'},'FTE']=>['Headcount'];

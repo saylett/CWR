@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Picklist",
+	"Expression":"TM1SubsetAll([Workflow Status])"
+}

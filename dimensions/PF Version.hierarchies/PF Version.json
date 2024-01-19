@@ -1,0 +1,20 @@
+{
+	"@type":"Hierarchy",
+	"Name":"PF Version",
+	"Elements":
+	[
+		{
+			"Name":"Forecast",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast_High",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Forecast_Low",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":[]
+}

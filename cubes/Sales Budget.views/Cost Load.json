@@ -1,0 +1,255 @@
+{
+	"@type":"NativeView",
+	"Name":"Cost Load",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Store')/Hierarchies('Store')"
+				},
+				"Expression":"TM1SubsetAll([Store])"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Version')/Hierarchies('Version')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+					},
+					{
+						"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Budget')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('All Years')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2021')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2020')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2019')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2018')"
+					},
+					{
+						"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2017')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2019')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Direct Labor')"
+					},
+					{
+						"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Rent')"
+					},
+					{
+						"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Cleaning')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Rent')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Release Planning')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Release Country')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Release Year')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Genre')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Blues')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Blues')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Blues Album')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Brass Military')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Childrens')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Classical')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Electronic')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Folk')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Folk World Country')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Funk Soul')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Hip Hop')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Jazz')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Latin')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All No Genre')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('No Genre')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('No Genre Album')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Non-Music')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Pop')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Reggae')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Rock')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('All Stage Screen')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Blues')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Brass Military')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Childrens')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Classical')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Electronic')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Folk')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Folk World Country')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Funk Soul')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Hip Hop')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Jazz')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Latin')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('No Genre')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Non-Music')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Pop')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Reggae')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Rock')"
+					},
+					{
+						"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('Stage Screen')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Release Planning')/Hierarchies('Release Planning')/Elements('No Genre')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

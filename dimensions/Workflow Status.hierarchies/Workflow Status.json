@@ -1,0 +1,32 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Workflow Status",
+	"Elements":
+	[
+		{
+			"Name":"Not Started",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"In Progress",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Submitted",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Approved",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Rejected",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Workflow Status.subsets/Picklist.json",
+		"Workflow Status.subsets/}Export.All.json"
+	]
+}

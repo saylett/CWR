@@ -1,0 +1,81 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Employee Plan Measure",
+	"Elements":
+	[
+		{
+			"Name":"Salary",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Allowance",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Total Employee Costs",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Salary - Annual",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Salary - Individual Increase",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Salary - Percent Increase",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Date - Start",
+			"Type":"String"
+		},
+		{
+			"Name":"Date - End",
+			"Type":"String"
+		},
+		{
+			"Name":"Month - Start",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Month - End",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Headcount",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Bonus - Rate",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Total Employee Costs",
+			"ComponentName":"Salary",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Employee Costs",
+			"ComponentName":"Bonus",
+			"Weight":1
+		},
+		{
+			"ParentName":"Total Employee Costs",
+			"ComponentName":"Allowance",
+			"Weight":1
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Employee Plan Measure.subsets/}Export.All.json"
+	]
+}

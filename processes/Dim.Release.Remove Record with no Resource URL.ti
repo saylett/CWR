@@ -1,0 +1,45 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sMDX = '{FILTER({TM1FILTERBYLEVEL( {TM1SUBSETALL( [Release] )}, 0)}, [Release].[resource_url] = "")}';
+
+cDim = 'Release';
+cSub = 'missingURL';
+
+ExecuteProcess('}bedrock.hier.sub.create.bymdx',
+   'pLogOutput', 0,
+   'pDim', cDim,
+   'pHier', '',
+   'pSub', cSub,
+   'pMDXExpr',sMDX,
+   'pConvertToStatic', 1,
+   'pTemp', 0
+  );
+  
+DataSourceType = 'SUBSET';
+DataSourceNameForServer = cDim;
+DatasourceDimensionSubset = cSub;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+AsciiOutput ( GetProcessErrorFileDirectory | 'missingurl.txt', vRelease );
+
+DimensionElementDelete ( cDim, vRelease);
+
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

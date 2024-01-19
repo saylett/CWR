@@ -1,0 +1,43 @@
+{
+	"@type":"Subset",
+	"Name":"2019 Months",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M01')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M02')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M03')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M04')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M05')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M06')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M07')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M08')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M09')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M10')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M11')"
+		},
+		{
+			"@id":"Dimensions('Year-Month')/Hierarchies('Year-Month')/Elements('2019-M12')"
+		}
+	]
+}

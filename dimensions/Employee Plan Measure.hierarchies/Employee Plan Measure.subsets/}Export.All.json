@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"}Export.All",
+	"Expression":"TM1SubsetAll([Employee Plan Measure])"
+}

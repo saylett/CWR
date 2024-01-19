@@ -1,0 +1,13 @@
+{
+	"@type":"Dimension",
+	"Name":"Employee Plan Assumptions Measure",
+	"AllLeavesHierarchyName":"",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Employee Plan Assumptions Measure')/Hierarchies('Employee Plan Assumptions Measure')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"Employee Plan Assumptions Measure.hierarchies/Employee Plan Assumptions Measure.json"
+	]
+}

@@ -1,0 +1,168 @@
+#region Prolog
+#Region CallThisProcess
+# A snippet of code provided as an example how to call this process should the developer be working on a system without access to an editor with auto-complete.
+If( 1 = 0 );
+    ExecuteProcess( '}bedrock.server.logfile.delete', 'pLogOutput', pLogOutput,
+      'pStrictErrorHandling', pStrictErrorHandling,
+	    'pTgtDir', '',
+    	'pLogDays', 7, 'pErrorDays', 21, 'pBedrockDays', 7, 'pCSVDays', 7
+    );
+EndIf;
+#EndRegion CallThisProcess
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+################################################################################################# 
+##~~Join the bedrock TM1 community on GitHub https://github.com/cubewise-code/bedrock Ver 4.0~~##
+################################################################################################# 
+
+#Region @DOC
+# Description:
+# This process will deletes the log files, csv file, debug files which are 'x' days old.
+
+# Use case: Intended for production.
+# 1/ Process cleans up old files to save space on hard disk.
+
+# Note:
+# The target directory (pTgtDir) will default to setting in TM1 configuration file if left blank.
+#EndRegion @DOC
+
+### Global Variables
+StringGlobalVariable('sProcessReturnCode');
+NumericGlobalVariable('nProcessReturnCode');
+nProcessReturnCode= 0;
+
+### Constants ###
+cThisProcName     = GetProcessName();
+cUserName         = TM1User();
+cMsgErrorLevel    = 'ERROR';
+cMsgErrorContent  = 'User:%cUserName% Process:%cThisProcName% ErrorMsg:%sMessage%';
+cLogInfo          = 'Process:%cThisProcName% run with parameters pTgtDir:%pTgtDir%, pLogDays:%pLogDays%, pErrorDays:%pErrorDays%, pBedrockDays:%pBedrockDays%, pCSVDays:%pCSVDays%.' ;  
+
+## Check Operating System
+If( Scan('/', GetProcessErrorFileDirectory)>0);
+  sOS = 'Linux';
+  sOSDelim = '/';
+Else;
+  sOS = 'Windows';
+  sOSDelim = '\';
+EndIf;
+
+## LogOutput parameters
+IF( pLogoutput = 1 );
+    LogOutput('INFO', Expand( cLogInfo ) );   
+ENDIF;
+
+
+### Validate Parameters ###
+nErrors = 0;
+
+IF( pTgtDir @= '');
+    pTgtDir = GetProcessErrorFileDirectory;
+ELSE;
+    ## Remove leading and/or trailing spaces
+    pTgtDir = Trim( pTgtDir );
+ENDIF;
+
+## Remove trailing \ from directory names if present
+If( SubSt( pTgtDir, Long( pTgtDir ), 1 ) @= sOSDelim );
+    pTgtDir = SubSt( pTgtDir, 1, Long( pTgtDir ) - 1 );
+EndIf;
+
+# Check that target Logging Directory exists
+If( FileExists( pTgtDir ) = 0 );
+    nErrors = 1;
+    sMessage = 'Logging directory does not exist: ' | pTgtDir;
+    LogOutput( cMsgErrorLevel, Expand( cMsgErrorContent ) );
+EndIf;
+
+### Check for errors before continuing
+If( nErrors <> 0 );
+  If( pStrictErrorHandling = 1 ); 
+      ProcessQuit; 
+  Else;
+      ProcessBreak;
+  EndIf;
+EndIf;
+
+sLogDays        = NumberToString( ROUND( pLogDays ) );
+sErrorDays      = NumberToString( ROUND( pErrorDays ) );
+sBedrockDays    = NumberToString( ROUND( pBedrockDays ) );
+sCSVDays        = NumberToString( ROUND( pCSVDays ) );
+
+### Save the model to disk
+ExecuteProcess( '}bedrock.server.savedataall', 'pStrictErrorHandling', pStrictErrorHandling );
+
+### Create Execute File File ###
+DatasourceASCIIQuoteCharacter='';
+
+If( sOS @= 'Windows');
+  sFileName = 'Bedrock Remove Logs.bat';
+  ASCIIOUTPUT( sFileName, 'forfiles -p "'| pTgtDir |'" -s -m tm1s*.log -d -' | sLogDays | ' -c "cmd /c del @path"' );
+  ASCIIOUTPUT( sFileName, 'forfiles -p "'| pTgtDir |'" -s -m tm1auditstore*.log -d -' | sLogDays | ' -c "cmd /c del @path"' );
+  ASCIIOUTPUT( sFileName, 'forfiles -p "'| pTgtDir |'" -s -m TM1ProcessError*.log -d -' | sErrorDays | ' -c "cmd /c del @path"' );
+  ASCIIOUTPUT( sFileName, 'forfiles -p "'| pTgtDir |'" -s -m Bedrock*.* -d -' | sBedrockDays | ' -c "cmd /c del @path"' );
+  ASCIIOUTPUT( sFileName, 'forfiles -p "'| pTgtDir |'" -s -m *.csv -d -' | sCSVDays | ' -c "cmd /c del @path"' );
+  ASCIIOUTPUT( sFileName, 'forfiles -p "'| pTgtDir |'" -s -m *.cma -d -' | sCSVDays | ' -c "cmd /c del @path"' );
+  ASCIIOUTPUT( sFileName, 'forfiles -p "'| pTgtDir |'" -s -m *.txt -d -' | sCSVDays | ' -c "cmd /c del @path"' );
+Else;
+  sFileName = 'bedrock.remove.logs.sh';
+  ASCIIOUTPUT( sFileName, 'find "'| pTgtDir |'" -type f -mtime +' | sLogDays |' -name "tm1s*.log" -exec rm {}\;');
+  ASCIIOUTPUT( sFileName, 'find "'| pTgtDir |'" -type f -mtime +' | sLogDays |' -name "tm1auditstore*.log" -exec rm {}\;');
+  ASCIIOUTPUT( sFileName, 'find "'| pTgtDir |'" -type f -mtime +' | sErrorDays |' -iname "TM1ProcessError*.log" -exec rm {}\;');
+  ASCIIOUTPUT( sFileName, 'find "'| pTgtDir |'" -type f -mtime +' | sBedrockDays |' -iname "bedrock*.*" -exec rm {}\;');
+  ASCIIOUTPUT( sFileName, 'find "'| pTgtDir |'" -type f -mtime +' | sCSVDays |' -iname "*.csv" -exec rm {}\;');
+  ASCIIOUTPUT( sFileName, 'find "'| pTgtDir |'" -type f -mtime +' | sCSVDays |' -iname "*.cma" -exec rm {}\;');
+  ASCIIOUTPUT( sFileName, 'find "'| pTgtDir |'" -type f -mtime +' | sCSVDays |' -iname "*.txt" -exec rm {}\;');
+EndIf;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+################################################################################################# 
+##~~Join the bedrock TM1 community on GitHub https://github.com/cubewise-code/bedrock Ver 3.0.0~~##
+################################################################################################# 
+
+### Copy Data Dir to Backup ###
+sCommand = sFileName;
+
+If(sOS @= 'Windows');
+  ExecuteCommand ( sCommand, 1 );
+Else;
+  ExecuteCommand ( 'sh ' | sCommand, 1 );
+EndIf;
+ASCIIDelete( sFileName);
+
+### Return code & final error message handling
+If( nErrors > 0 );
+    sMessage = 'the process incurred at least 1 error. Please see above lines in this file for more details.';
+    nProcessReturnCode = 0;
+    LogOutput( cMsgErrorLevel, Expand( cMsgErrorContent ) );
+    sProcessReturnCode = Expand( '%sProcessReturnCode% Process:%cThisProcName% completed with errors. Check tm1server.log for details.' );
+    If( pStrictErrorHandling = 1 ); 
+        ProcessQuit; 
+    EndIf;
+Else;
+    sProcessAction = Expand( 'Process:%cThisProcName% successfully deleted log files from %pTgtDir% older then  %pLogDays%.' );
+    sProcessReturnCode = Expand( '%sProcessReturnCode% %sProcessAction%' );
+    nProcessReturnCode = 1;
+    If( pLogoutput = 1 );
+        LogOutput('INFO', Expand( sProcessAction ) );   
+    EndIf;
+EndIf;
+
+### End Epilog ###
+#endregion

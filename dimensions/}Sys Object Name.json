@@ -1,0 +1,16 @@
+{
+	"@type":"Dimension",
+	"Name":"}Sys Object Name",
+	"AllLeavesHierarchyName":"Leaves",
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Sys Object Name')/Hierarchies('}Sys Object Name')"
+	},
+	"Hierarchies@Code.links":
+	[
+		"}Sys Object Name.hierarchies/}Sys Object Name.json",
+		"}Sys Object Name.hierarchies/Cube.json",
+		"}Sys Object Name.hierarchies/Dimension.json",
+		"}Sys Object Name.hierarchies/Process.json"
+	]
+}

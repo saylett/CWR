@@ -1,0 +1,50 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## constants
+
+cDim = 'Release';
+cAttrCub = '}ElementAttributes_Release';
+cConsol = 'All Releases';
+
+# insert main consol
+
+DimensionElementInsert(cDim, '', cConsol, 'C');
+
+#loop and create style consol
+
+nMax = DimSiz( cDim );
+nCtr = 1;
+While( nCtr <= nMax );
+  sEle = DimNm( cDim, nCtr );
+  sType = DType( cDim, sEle);
+  If ( sType @= 'N' );
+    DimensionElementComponentAdd( cDim, cConsol, sEle, 1);
+  EndIf;
+  sStyle = CellGetS ( cAttrCub, sEle, 'style #1');
+  If ( sStyle @<> '' );
+    DimensionElementInsert(cDim, '', sStyle, 'C');
+    DimensionElementComponentAdd( cDim, sStyle, sEle, 1);
+  EndIf;
+  nCtr = nCtr + 1;
+End;
+
+
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

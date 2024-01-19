@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default no Total",
+	"Expression":"{[Employee].[Store Current].[All Stores].Children}"
+}

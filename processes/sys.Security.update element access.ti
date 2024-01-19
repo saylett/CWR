@@ -1,0 +1,517 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cDimension      = pDimension;
+
+cCub_Src        = '}Sys Sc Element Access';
+cDim_Security   = '}Sys Sc Groups';
+cDim_ObjDim     = '}Sys Dimension Name';
+cDim_ObjElem    = '}Sys Element Name';
+cDim_ScLevel    = '}Sys Sc Level';
+
+cProcessName = GetProcessName();
+
+#########################################################################################################################
+###  Check to make sure groups exist  
+#########################################################################################################################
+
+nCnt_Grp = 1;
+nFlag_Add = 0;
+While( nCnt_Grp <= DimSiz( cDim_Security ) & nFlag_Add = 0 );
+  sGroup = DimNm( cDim_Security, nCnt_Grp );
+  If( DType( cDim_Security, sGroup ) @= 'N' & DimIx( '}Groups', sGroup ) = 0 );
+    nFlag_Add = 1;
+  EndIf;
+  nCnt_Grp = nCnt_Grp + 1;
+End;
+If( nFlag_Add = 1 );
+###  TBD: update Security Group dim 
+EndIF;
+
+#########################################################################################################################
+###  Check for element security cube  
+#########################################################################################################################
+
+
+
+#########################################################################################################################
+###  Create source view  
+#########################################################################################################################
+
+###  Define Temp Object Name and Create View  ###
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( ViewExists( cCub_Src, cTempName | '_Src' ) <> 0 );
+  cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cView_Src = cTempName | '_Src';
+cSub = cTempName | '_Src';
+ViewCreate( cCub_Src, cView_Src, 1 );
+
+sDim = '}Sys Sc Groups';
+sNode = 'ALL Groups';
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = '}Sys Dimension Name';
+sNode = cDimension;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+  SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = '}Sys Element Name';
+sMDX = '{TM1SubsetAll([' | sDim | '])}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+  SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+sDim = '}Sys Sc Element Access Measure';
+sElem = 'Permission Type';
+If( SubsetExists( sDim, cSub ) = 0 );
+  SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Src, cView_Src, sDim, cSub );
+
+###  Set View as Data Source  ###
+nCnt = 1;
+While( TabDim( cCub_Src, nCnt ) @<> '' );
+  sDim = TabDim( cCub_Src, nCnt );
+  ViewRowDimensionSet( cCub_Src, cView_Src, sDim, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewExtractSkipCalcsSet( cCub_Src, cView_Src, 0 );
+ViewExtractSkipRuleValuesSet( cCub_Src, cView_Src, 0 );
+ViewExtractSkipZeroesSet( cCub_Src, cView_Src, 1 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Src;
+DataSourceNameForClient = cCub_Src;
+DataSourceCubeView = cView_Src;
+
+#########################################################################################################################
+###  Clear Target Security Cube(s)  
+#########################################################################################################################
+
+If( pClear @= '1' );
+  If( pDimension @<> '' );
+    sCub = '}ElementSecurity_' | cDimension;
+    If( CubeExists( sCub ) = 1 );
+      CubeClearData( sCub );
+    EndIf;
+  Else;
+    nCnt = 1;
+    While( nCnt <= DimSiz( cDim_ObjDim ));
+      sDim = DimNm( cDim_ObjDim, nCnt );
+      sCub = '}ElementSecurity_' | sDim;
+      If( CubeExists( sCub ) = 1 );
+        CubeClearData( sCub );
+      EndIf;
+      nCnt = nCnt + 1;
+    End;
+  EndIf;
+  SecurityRefresh;
+EndIf;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+nRecursionLevel = 0;
+nExclusionLevel = 0;
+
+###  Items to Skip  ###
+
+If( CellGetN( cCub_Src, vGroup, vDim, vElem, 'Inactive' ) = 1 );
+  ItemSkip;
+EndIf;
+
+If( vElem @= 'Dimension User Input' );
+  # don't skip
+ElseIf( DimIx( vDim, vElem ) = 0 );
+  ItemSkip;
+EndIf;
+
+sType = SValue;
+sScLevel = CellGetS( cCub_Src, vGroup, vDim, vElem, 'Permission Level' );
+
+If( DimIx( cDim_ScLevel, sScLevel ) = 0 );
+  ItemSkip;
+EndIf;
+
+###  Get extra data if wildcard type  ###
+If( sType @= 'WILDCARD' );
+  # Scan is case sensitive. Make test case insensitive
+  sWildcard = Lower( CellGetS( cCub_Src, vGroup, vDim, vElem, 'Wildcard Entry' ) );
+  If( Scan( '*', sWildcard ) = 0 );
+    sWildcardType = 'Contains';
+  ElseIf( SubSt( sWildcard, 1, 1 ) @= '*' & SubSt( sWildcard, Long(sWildcard), 1 ) @= '*' );
+    sWildcardType = 'Contains';
+    sWildcard = SubSt( sWildcard, 2, Long(sWildcard) - 2 );
+  ElseIf( SubSt( sWildcard, Long(sWildcard), 1 ) @= '*' );
+    sWildcardType = 'Starts';
+    sWildcard = SubSt( sWildcard, 1, Long(sWildcard) - 1 );
+  Else;
+    sWildcardType = 'Ends';
+    sWildcard = SubSt( sWildcard, 2, Long(sWildcard) - 1 );
+  EndIf;
+EndIf;
+
+# Get extra data if attribute type
+If( sType @= 'ATTRIBUTE' );
+  sAttrVal = CellGetS( cCub_Src, vGroup, vDim, vElem, 'Wildcard Entry' );
+  If( DimensionExists( '}ElementAttributes_' | vDim ) = 0 );
+      sAttrName = '';
+  ElseIf( DimIx( '}ElementAttributes_' | vDim, sAttrName ) = 0 );
+      sAttrName = '';
+  EndIf;
+EndIf;
+
+# Check if there are exclusions
+sExcludeType = '';
+bExclude = CellGetN( cCub_Src, vGroup, vDim, vElem, 'Exclusions' );
+If( bExclude = 1 );
+  sExcludeType = CellGetS( cCub_Src, vGroup, vDim, vElem, 'Exclusion Type' );
+  sExclude = Lower( CellGetS( cCub_Src, vGroup, vDim, vElem, 'Exclusion Entry' ) );
+  sExcludeWildcardType = '';
+  sExcludeAttrName = '';
+  If( sExcludeType @= '' % sExclude @= '' );
+    bExclude = 0;
+    sExcludeType = '';
+    sExclude = '';
+  Else;
+    If( sExcludeType @= 'WILDCARD' );
+      If( Scan( '*', sExclude ) = 0 );
+        sExcludeWildcardType = 'Contains';
+      ElseIf( SubSt( sExclude, 1, 1 ) @= '*' & SubSt( sExclude, Long(sExclude), 1 ) @= '*' );
+        sExcludeWildcardType = 'Contains';
+        sExclude = SubSt( sExclude, 2, Long(sExclude) - 2 );
+      ElseIf( SubSt( sExclude, Long(sExclude), 1 ) @= '*' );
+        sExcludeWildcardType = 'Starts';
+        sExclude = SubSt( sExclude, 1, Long(sExclude) - 1 );
+      Else;
+        sExcludeWildcardType = 'Ends';
+        sExclude = SubSt( sExclude, 2, Long(sExclude) - 1 );
+      EndIf;
+    ElseIf( sExcludeType @= 'ATTRIBUTE' );
+      sExclude = CellGetS( cCub_Src, vGroup, vDim, vElem, 'Exclusion Entry' );
+      If( DimensionExists( '}ElementAttributes_' | vDim ) = 0 );
+        sExcludeAttrName = '';
+      ElseIf( DimIx( '}ElementAttributes_' | vDim, sExcludeAttrName ) = 0 );
+        sExcludeAttrName = '';
+      EndIf;
+    ElseIf( sExcludeType @= 'POINT' % sExcludeType @= 'RECURSIVE' );
+      If( DimIx( vDim, sExclude ) = 0 );
+        bExclude = 0;
+        sExcludeType = '';
+        sExclude = '';
+      Else;
+        sExclude = DimensionElementPrincipalName( vDim, sExclude );
+      EndIf;
+    EndIf;
+  EndIf;
+EndIf;
+
+# Special case of whole dimension placeholder. Only All, Wildcard & Attribute are supported.
+If( vElem @= 'Dimension User Input' );
+  iEle = 1;
+  nMax = DimSiz( vDim );
+  While( iEle <= nMax );
+    sEle = DimNm( vDim, iEle );
+    bAssign = 1;
+    If( nRecursionLevel > 0 );
+      If( ElLev( vDim, sEle ) < nRecursionLevel );
+        bAssign = 0;
+      EndIf;
+    EndIf;
+    If( sType @= 'ALL' );
+      If( bExclude = 0 % sExcludeType @= '' );
+        # no exclusions just apply security to all elements
+      Else;
+        # apply security if exclusion doesn't apply
+        If( ElLev( vDim, sEle ) >= nExclusionLevel );
+          If( sExcludeType @= 'POINT' );
+            If( sEle @= sExclude );
+              bAssign = 0;
+            EndIf;
+          ElseIf( sExcludeType @= 'RECURSIVE' );
+            If( sEle @= sExclude % ElIsAnc( vDim, sExclude, sEle ) = 1 );
+              bAssign = 0;
+            EndIf;
+          ElseIf( sExcludeType @= 'ATTRIBUTE' );
+            If( sExcludeAttrName @<> '' );
+              sExcludeEleAttrVal = CellGetS( '}ElementAttributes_' | vDim, sEle, sExcludeAttrName );
+              If( sExcludeEleAttrVal @= sExclude );
+                  bAssign = 0;
+              EndIf;
+            EndIf;
+          ElseIf( sExcludeType @= 'WILDCARD' );
+            If( sExcludeWildcardType @= 'Contains' );
+              If( Scan( sExclude, sEle ) > 0 );
+                  bAssign = 0;
+              EndIf;
+            ElseIf( sExcludeWildcardType @= 'Starts' );
+              If( Scan( sExclude, sEle ) = 1 );
+                  bAssign = 0;
+              EndIf;
+            Else;
+              # Ends
+              If( sExclude @= SubSt( sEle, Scan( sExclude, sEle ), Long( sEle ) ) );
+                  bAssign = 0;
+              EndIf;
+            EndIf;
+          EndIf;
+        EndIf;
+      EndIf;
+    ElseIf( sType @= 'ROOT' );
+      If( bExclude = 0 % sExcludeType @= '' );
+        # Apply access to all "root" elements (elements without a parent)
+        If( ElPar( vDim, sEle, 1 ) @<> '' );
+            bAssign = 0;
+        EndIf;
+      Else;
+        # apply security if exclusion doesn't apply
+        If( ElLev( vDim, sEle ) >= nExclusionLevel );
+          If( sExcludeType @= 'POINT' );
+            If( sEle @= sExclude );
+              bAssign = 0;
+            EndIf;
+          ElseIf( sExcludeType @= 'RECURSIVE' );
+            If( sEle @= sExclude % ElIsAnc( vDim, sExclude, sEle ) = 1 );
+              bAssign = 0;
+            EndIf;
+          ElseIf( sExcludeType @= 'ATTRIBUTE' );
+            If( sExcludeAttrName @<> '' );
+              sExcludeEleAttrVal = CellGetS( '}ElementAttributes_' | vDim, sEle, sExcludeAttrName );
+              If( sExcludeEleAttrVal @= sExclude );
+                bAssign = 0;
+              EndIf;
+            EndIf;
+          ElseIf( sExcludeType @= 'WILDCARD' );
+            If( sExcludeWildcardType @= 'Contains' );
+              If( Scan( sExclude, sEle ) > 0 );
+                bAssign = 0;
+              EndIf;
+            ElseIf( sExcludeWildcardType @= 'Starts' );
+              If( Scan( sExclude, sEle ) = 1 );
+                  bAssign = 0;
+              EndIf;
+            Else;
+              # Ends
+              If( sExclude @= SubSt( sEle, Scan( sExclude, sEle ), Long( sEle ) ) );
+                bAssign = 0;
+              EndIf;
+            EndIf;
+          EndIf;
+        EndIf;
+      EndIf;
+    ElseIf( sType @= 'WILDCARD' );
+      If( sWildcardType @= 'Contains' );
+        If( Scan( sWildcard, Lower( sEle ) ) = 0 );
+          bAssign = 0;
+        EndIf;
+      ElseIf( sWildcardType @= 'Starts' );
+        If( Scan( sWildcard, Lower( sEle ) ) <> 1 );
+          bAssign = 0;
+        EndIf;
+      Else;
+        # Ends
+        If( sWildcard @<> SubSt( sEle, Scan( sWildcard, sEle ), Long( sEle ) ) );
+          bAssign = 0;
+        EndIf;
+      EndIf;
+      If( bExclude = 1 % sExcludeType @<> '' );
+        If( ElLev( vDim, sEle ) >= nExclusionLevel );
+          If( sExcludeType @= 'ATTRIBUTE' );
+            If( sExcludeAttrName @<> '' );
+              sExcludeEleAttrVal = CellGetS( '}ElementAttributes_' | vDim, sEle, sExcludeAttrName );
+              If( sExcludeEleAttrVal @= sExclude );
+                bAssign = 0;
+              EndIf;
+            EndIf;
+          ElseIf( sExcludeType @= 'WILDCARD' );
+            If( sExcludeWildcardType @= 'Contains' );
+              If( Scan( sExclude, Lower( sEle ) ) > 0 );
+                bAssign = 0;
+              EndIf;
+            ElseIf( sExcludeWildcardType @= 'Starts' );
+              If( Scan( sExclude, Lower( sEle ) ) = 1 );
+                bAssign = 0;
+              EndIf;
+            Else;
+              # Ends
+              If( sExclude @= SubSt( sEle, Scan( sExclude, sEle ), Long( sEle ) ) );
+                bAssign = 0;
+              EndIf;
+            EndIf;
+          EndIf;
+        EndIf;
+      ElseIf( sType @= 'ATTRIBUTE' );
+        If( sAttrName @<> '' );
+          sEleAttrVal = CellGetS( '}ElementAttributes_' | vDim, sEle, sAttrName );
+        EndIf;
+          If( sEleAttrVal @<> sAttrVal );
+            bAssign = 0;
+          EndIf;
+          If( bExclude = 1 % sExcludeType @<> '' );
+            If( ElLev( vDim, sEle ) >= nExclusionLevel );
+              If( sExcludeType @= 'ATTRIBUTE' );
+                If( sExcludeAttrName @<> '' );
+                  sExcludeEleAttrVal = CellGetS( '}ElementAttributes_' | vDim, sEle, sExcludeAttrName );
+                  If( sExcludeEleAttrVal @= sExclude );
+                      bAssign = 0;
+                  EndIf;
+                EndIf;
+              ElseIf( sExcludeType @= 'WILDCARD' );
+                If( sExcludeWildcardType @= 'Contains' );
+                  If( Scan( sExclude, Lower( sEle ) ) > 0 );
+                    bAssign = 0;
+                  EndIf;
+                ElseIf( sExcludeWildcardType @= 'Starts' );
+                  If( Scan( sExclude, Lower( sEle ) ) = 1 );
+                    bAssign = 0;
+                  EndIf;
+                Else;
+                  # Ends
+                  If( sExclude @= SubSt( sEle, Scan( sExclude, sEle ), Long( sEle ) ) );
+                    bAssign = 0;
+                  EndIf;
+                EndIf;
+            EndIf;
+          EndIf;
+        EndIf;
+      EndIf;
+    Else;
+      # Nothing. Unsupported permission type.
+      bAssign = 0;
+    EndIf;
+    # If alias on wildcard need to convert back to principal element name
+    sEle = DimensionElementPrincipalName( vDim, sEle );
+    If( bAssign = 1 );
+      CellPutS( sScLevel, cCub_Src, vGroup, vDim, sEle, 'Permission Level' );
+      ElementSecurityPut( sScLevel, vDim, sEle, vGroup );
+    Else;
+      CellPutS( '', cCub_Src, vGroup, vDim, sEle, 'Permission Level' );
+      ElementSecurityPut( 'NONE', vDim, sEle, vGroup );
+    EndIf;
+    iEle = iEle + 1;
+  End;
+EndIf;
+
+# General case of dimension element. Only Point & Recursive are supported.
+If( sType @= 'POINT' );
+  CellPutS( sScLevel, cCub_Src, vGroup, vDim, vElem, 'Permission Level' );
+  ElementSecurityPut( sScLevel, vDim, vElem, vGroup );
+ElseIf( sType @= 'RECURSIVE' );
+  iEle = 1;
+  nMax = DimSiz( vDim );
+  While( iEle <= nMax );
+    sEle = DimNm( vDim, iEle );
+    bAssign = 0;
+    If( sEle @= vElem % ElIsAnc( vDim, vElem, sEle ) = 1 );
+      bAssign = 1;
+      If( nRecursionLevel > 0 );
+        If( ElLev( vDim, sEle ) < nRecursionLevel );
+          bAssign = 0;
+        EndIf;
+      EndIf;
+        If( bExclude = 0 % sExcludeType @= '' );
+          # no exclusions just apply security to all descendants
+        Else;
+          # apply security if exclusion doesn't apply
+          If( ElLev( vDim, sEle ) >= nExclusionLevel );
+            If( sExcludeType @= 'POINT' );
+              If( sEle @= sExclude );
+                bAssign = 0;
+              EndIf;
+            ElseIf( sExcludeType @= 'RECURSIVE' );
+              If( sEle @= sExclude % ElIsAnc( vDim, sExclude, sEle ) = 1 );
+                bAssign = 0;
+              EndIf;
+            ElseIf( sExcludeType @= 'ATTRIBUTE' );
+              If( sExcludeAttrName @<> '' );
+                sExcludeEleAttrVal = CellGetS( '}ElementAttributes_' | vDim, sEle, sExcludeAttrName );
+                If( sExcludeEleAttrVal @= sExclude );
+                  bAssign = 0;
+                EndIf;
+              EndIf;
+            ElseIf( sExcludeType @= 'WILDCARD' );
+              If( sExcludeWildcardType @= 'Contains' );
+                If( Scan( sExclude, Lower( sEle ) ) > 0 );
+                  bAssign = 0;
+                EndIf;
+              ElseIf( sExcludeWildcardType @= 'Starts' );
+                If( Scan( sExclude, Lower( sEle ) ) = 1 );
+                  bAssign = 0;
+                EndIf;
+              Else;
+                # Ends
+                If( sExclude @= SubSt( sEle, Scan( sExclude, sEle ), Long( sEle ) ) );
+                  bAssign = 0;
+                EndIf;
+              EndIf;
+            EndIf;
+          EndIf;
+        EndIf;
+        If( DimIx( cDim_ObjElem, sEle ) = 0 );
+          DimensionElementInsertDirect( cDim_ObjElem, '', sEle, 'N' );
+        EndIf;
+        If( bAssign = 1 );
+          CellPutS( sScLevel, cCub_Src, vGroup, vDim, sEle, 'Permission Level' );
+          ElementSecurityPut( sScLevel, vDim, sEle, vGroup );
+        Else;
+          CellPutS( '', cCub_Src, vGroup, vDim, sEle, 'Permission Level' );
+          ElementSecurityPut( 'NONE', vDim, sEle, vGroup );
+        EndIf;
+      EndIf;
+      iEle = iEle + 1;
+    End;
+EndIf;
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Security Refresh  
+#########################################################################################################################
+
+If( pSecurityRefresh @= '1' );
+  ExecuteProcess( '}bedrock.security.refresh', 'pLogOutput', 1 );
+EndIf;
+#endregion

@@ -1,0 +1,37 @@
+{
+	"@type":"Subset",
+	"Name":"Gross Margin",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Units')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Revenue')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Returns')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Discounts')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Product Cost')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Direct Labor')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Rent')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Cleaning')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Store Overhead')"
+		},
+		{
+			"@id":"Dimensions('Sales Budget Measure')/Hierarchies('Sales Budget Measure')/Elements('Gross Margin')"
+		}
+	]
+}

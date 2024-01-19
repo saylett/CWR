@@ -1,0 +1,38 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+sMDX = '{FILTER({TM1FILTERBYLEVEL( {TM1SUBSETALL( [Release] )}, 0)}, [Release].[video #1] = "")}';
+
+cDim = 'Release';
+cSub = 'missingvideo';
+cVideo = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+
+
+  
+DataSourceType = 'SUBSET';
+DataSourceNameForServer = cDim;
+DatasourceDimensionSubset = cSub;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+AttrPutS( cvideo, cDim, vRelease, 'video #1');
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

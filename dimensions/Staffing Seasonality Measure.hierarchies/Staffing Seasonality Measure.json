@@ -1,0 +1,15 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Staffing Seasonality Measure",
+	"Elements":
+	[
+		{
+			"Name":"Staffing Level Input",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"Staffing Seasonality Measure.subsets/}Export.All.json"
+	]
+}

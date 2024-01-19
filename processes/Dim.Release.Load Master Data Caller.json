@@ -1,0 +1,20 @@
+{
+	"@type":"Process",
+	"Name":"Dim.Release.Load Master Data Caller",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Dim.Release.Load Master Data Caller.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pStyle",
+			"Prompt":"",
+			"Value":"disco",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

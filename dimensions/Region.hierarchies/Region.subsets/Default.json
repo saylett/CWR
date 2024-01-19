@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Default",
+	"Expression":"{[Region].[Region].[All Regions],[Region].[Region].[Americas],[Region].[Region].[Asia Pacific],[Region].[Region].[EMEA]}"
+}

@@ -1,0 +1,13 @@
+{
+	"@type":"Subset",
+	"Name":"Plan Years",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('UX Filter - Year 2')/Hierarchies('UX Filter - Year 2')/Elements('2020')"
+		},
+		{
+			"@id":"Dimensions('UX Filter - Year 2')/Hierarchies('UX Filter - Year 2')/Elements('2021')"
+		}
+	]
+}

@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"Employee N Level",
+	"Expression":"{TM1FilterByLevel({Descendants({[Employee].[Job Grade]})},0)}"
+}

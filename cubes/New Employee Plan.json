@@ -1,0 +1,26 @@
+{
+	"@type":"Cube",
+	"Name":"New Employee Plan",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Store')"
+		},
+		{
+			"@id":"Dimensions('New Employee Line Item')"
+		},
+		{
+			"@id":"Dimensions('New Employee Plan Measure')"
+		}
+	],
+	"Views@Code.links":
+	[
+		"New Employee Plan.views/Default.json"
+	]
+}

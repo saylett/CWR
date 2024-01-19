@@ -1,0 +1,181 @@
+#region Prolog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+#########################################################################################################################
+###  Constants
+#########################################################################################################################
+
+cCub_Source = 'Workflow';
+
+cModule = pModule;
+cMeasure = 'Status Numeric';
+
+cStatus = pStatus;
+cVersion = pVersion;
+cYear = pYear;
+cStore = pStore;
+
+cStatus_Num = AttrN('Workflow Status', cStatus, 'Status Num');
+
+cProcessName = GetProcessName();
+cTimeStamp = TimSt( Now, '\Y-\m-\d' ) | ' | ' | TimSt( Now, '\h:\i:\s' );
+cTimeStamp_Num = Now();
+cUser = TM1User();
+
+#########################################################################################################################
+###  Create Source View
+#########################################################################################################################
+
+cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+While( ViewExists( cCub_Source, cTempName | '_Source' ) <> 0 );
+    cTempName = '}TI_' | cProcessName | NumberToString( Int( Rand() * 10000 ) );
+End;
+cView_Source = cTempName | '_Source';
+cSub = cTempName | '_Source';
+ViewCreate( cCub_Source, cView_Source, 1 );
+
+sDim = 'Version';
+sElem = cVersion;
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Source, cView_Source, sDim, cSub );
+
+sDim = 'Year';
+sElem = cYear;
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Source, cView_Source, sDim, cSub );
+
+sDim = 'Store';
+sNode = cStore;
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Source, cView_Source, sDim, cSub );
+
+sDim = 'Plan Module';
+sElem = cModule;
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Source, cView_Source, sDim, cSub );
+
+sDim = 'Workflow Line Item';
+sNode = 'Current Item';
+sMDX = '{TM1FilterByLevel({Descendants({[' | sDim | '].[' | sNode | ']})}, 0)}';
+If( SubsetExists( sDim, cSub ) <> 0 );
+    SubsetDestroy( sDim, cSub );
+EndIf;
+SubsetCreatebyMDX( cSub, sMDX, sDim, 1 );
+nElem = SubsetGetSize( sDim, cSub );
+sElem_Last = SubsetGetElementName( sDim, cSub, nElem );
+SubsetElementDelete( sDim, cSub, nElem );
+SubsetElementInsert( sDim, cSub, sElem_Last, nElem );
+ViewSubsetAssign( cCub_Source, cView_Source, sDim, cSub );
+
+sDim = 'Workflow Measure';
+sElem = cMeasure;
+If( SubsetExists( sDim, cSub ) = 0 );
+    SubsetCreate( sDim, cSub, 1 );
+EndIf;
+SubsetDeleteAllElements( sDim, cSub );
+SubsetElementInsert( sDim, cSub, sElem, 1 );
+ViewSubsetAssign( cCub_Source, cView_Source, sDim, cSub );
+
+###  Set View as Data Source  ###
+nCnt = 1;
+While( TabDim( cCub_Source, nCnt ) @<> '' );
+  sDim = TabDim( cCub_Source, nCnt );
+  ViewRowDimensionSet( cCub_Source, cView_Source, sDim, nCnt );
+  nCnt = nCnt + 1;
+End;
+
+ViewExtractSkipCalcsSet( cCub_Source, cView_Source, 0 );
+ViewExtractSkipRuleValuesSet( cCub_Source, cView_Source, 0 );
+ViewExtractSkipZeroesSet( cCub_Source, cView_Source, 0 );
+
+DataSourceType = 'VIEW';
+DataSourceNameForServer = cCub_Source;
+DataSourceNameForClient = cCub_Source;
+DataSourceCubeView = cView_Source;
+#endregion
+#region Metadata
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+nStatus = vValue;
+sStatus = CellGetS(cCub_Source, cVersion, cYear, vStore, cModule, vItem, 'Status'); 
+
+CellPutS(cStatus, cCub_Source, cVersion, cYear, vStore, cModule, vItem, 'Status');
+CellPutN(cTimeStamp_Num, cCub_Source, cVersion, cYear, vStore, cModule, vItem, 'Timestamp Numeric');
+CellPutS(cUser, cCub_Source, cVersion, cYear, vStore, cModule, vItem, 'User');
+
+###  Archive current status  ###
+
+nCnt = 1;
+nCnt_End = ElCompN('Workflow Line Item', 'All Line Items');
+nFlag_End = 0;
+While( nCnt <= nCnt_End & nFlag_End = 0);
+  sItem = NumberToStringEx(nCnt, '0000', '', '');
+  sUser = CellGetS(cCub_Source, vVersion, vYear, vStore, cModule, sItem, 'Status');
+  If( sUser @= '' );
+    nFlag_End = 1;
+  EndIf;
+  nCnt = nCnt + 1;
+End;
+
+If( nCnt > nCnt_End );
+  sItem = '0001';
+EndIf;
+
+CellPutS(cStatus, cCub_Source, cVersion, cYear, vStore, cModule, sItem, 'Status');
+CellPutN(cStatus_Num, cCub_Source, cVersion, cYear, vStore, cModule, sItem, 'Status Numeric');
+CellPutN(cTimeStamp_Num, cCub_Source, cVersion, cYear, vStore, cModule, sItem, 'Timestamp Numeric');
+CellPutS(cUser, cCub_Source, cVersion, cYear, vStore, cModule, sItem, 'User');
+
+
+#endregion
+#region Epilog
+
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+If( cStatus @= 'Submitted' & ElLev('Store', cStore) = 0 );
+
+  If( pSendEmail @= 'DUMMY' );
+    
+    sSubject = cYear | ' ' | cVersion | ' ' | cStore | ' Budget Submitted';
+    sBody = 'Please go to Apliqo to review the submitted plan';
+    
+    ExecuteProcess( 'sys.Send Email',
+       'pRecipients', 'Admin@cwrecords.com',
+       'pSubject', sSubject,
+       'pBody', sBody,
+       'pAttachment', '',
+       'pDebug', 0 );
+       
+  EndIf;
+EndIf;
+#endregion

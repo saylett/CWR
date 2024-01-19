@@ -1,0 +1,37 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+
+## constants
+
+cDim = 'Employee';
+cAttrCub = '}ElementAttributes_Employee';
+
+
+#loop and create store consol
+
+nMax = DimSiz( cDim );
+nCtr = 1;
+While( nCtr <= nMax );
+  sEle = DimNm( cDim, nCtr );
+  sType = DType( cDim, sEle);
+  sStore = CellGetS ( cAttrCub, sEle, 'Store');
+  If ( sStore @<> '' );
+    DimensionElementInsert(cDim, '', sStore, 'C');
+    DimensionElementComponentAdd( cDim, sStore, sEle, 1);
+  EndIf;
+  nCtr = nCtr + 1;
+End;
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

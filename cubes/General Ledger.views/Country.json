@@ -1,0 +1,90 @@
+{
+	"@type":"NativeView",
+	"Name":"Country",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Month')/Hierarchies('Month')/Subsets('Default')"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Store')/Hierarchies('Store')/Subsets('Default')"
+			}
+		}
+	],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Subsets('Default')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Year')/Hierarchies('Year')"
+				},
+				"Expression":"TM1SubsetAll([Year])"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Year')/Hierarchies('Year')/Elements('2019')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('General Ledger Measure')/Hierarchies('General Ledger Measure')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('General Ledger Measure')/Hierarchies('General Ledger Measure')/Elements('Amount')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('General Ledger Measure')/Hierarchies('General Ledger Measure')/Elements('Amount')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('GL Account')/Hierarchies('GL Account')"
+				},
+				"Elements":
+				[
+					{
+						"@id":"Dimensions('GL Account')/Hierarchies('GL Account')/Elements('Cost of Sales')"
+					}
+				]
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('GL Account')/Hierarchies('GL Account')/Elements('Cost of Sales')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.#########"
+}

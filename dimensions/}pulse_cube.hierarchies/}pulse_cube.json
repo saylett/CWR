@@ -1,0 +1,508 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}pulse_cube",
+	"Elements":
+	[
+		{
+			"Name":"Employee Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee Plan Assumptions",
+			"Type":"String"
+		},
+		{
+			"Name":"Existing Employee Staging",
+			"Type":"String"
+		},
+		{
+			"Name":"General Ledger",
+			"Type":"String"
+		},
+		{
+			"Name":"GL Reporting",
+			"Type":"String"
+		},
+		{
+			"Name":"New Employee Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"Promotions",
+			"Type":"String"
+		},
+		{
+			"Name":"Release Info",
+			"Type":"String"
+		},
+		{
+			"Name":"Sales",
+			"Type":"String"
+		},
+		{
+			"Name":"Sales Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"Staffing",
+			"Type":"String"
+		},
+		{
+			"Name":"Staffing Seasonality",
+			"Type":"String"
+		},
+		{
+			"Name":"Stock",
+			"Type":"String"
+		},
+		{
+			"Name":"Store Assumption",
+			"Type":"String"
+		},
+		{
+			"Name":"System Info",
+			"Type":"String"
+		},
+		{
+			"Name":"User Staging",
+			"Type":"String"
+		},
+		{
+			"Name":"Workflow",
+			"Type":"String"
+		},
+		{
+			"Name":"}Capabilities",
+			"Type":"String"
+		},
+		{
+			"Name":"}CellAnnotations_General Ledger",
+			"Type":"String"
+		},
+		{
+			"Name":"}CellAnnotations_Release Info",
+			"Type":"String"
+		},
+		{
+			"Name":"}CellAnnotations_Sales Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"}CellAnnotations_}ElementAttributes_Release",
+			"Type":"String"
+		},
+		{
+			"Name":"}CellSecurity_Sales",
+			"Type":"String"
+		},
+		{
+			"Name":"}CellSecurity_Sales Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"}ClientCAMAssociatedGroups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ClientGroups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ClientProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}ClientSettings",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeDrill_General Ledger",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeSecurity",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeSecurityProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}DimensionAttributes",
+			"Type":"String"
+		},
+		{
+			"Name":"}DimensionProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}DimensionSecurity",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Artist",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Assumptions Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Employee Plan Model",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Existing Employee Staging Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_General Ledger Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Genre",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_GL Account",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_GL Reporting Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Month",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Navigation Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_New Employee Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Price Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Promotions Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Release",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Release Planning",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Budget Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Sales Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Staffing Seasonality Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Store",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Store Assumption Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_System Info Param",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Version",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Workflow Status",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Year",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Year-Month",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ClientProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Clients",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Cultures",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Line Item",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_Version",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_}Sys Dimension Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}ElementAttributes_}Sys Sc Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Release",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Dimension Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Name",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Object Type Level",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Element Access Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Groups",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Level",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Sys Sc Object Access Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementSecurity_Store",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementSecurity_Version",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementSecurity_Workflow Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}HierarchyProperties",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_New Employee Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_Sales Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_Store Assumption",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_System Info",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_Workflow",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_}ElementAttributes_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_}Sys Sc Element Access",
+			"Type":"String"
+		},
+		{
+			"Name":"}PickList_}Sys Sc Object Access",
+			"Type":"String"
+		},
+		{
+			"Name":"}ProcessSecurity",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsByChore",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsByClient",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsByCube",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsByCubeByClient",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsByProcess",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsByRule",
+			"Type":"String"
+		},
+		{
+			"Name":"}StatsForServer",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Element Access",
+			"Type":"String"
+		},
+		{
+			"Name":"}Sys Sc Object Access",
+			"Type":"String"
+		},
+		{
+			"Name":"}pulse_cube",
+			"Type":"String"
+		},
+		{
+			"Name":"}pulse_dimension",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Subsets_Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"}CubeAttributes",
+			"Type":"String"
+		},
+		{
+			"Name":"Machine Plan",
+			"Type":"String"
+		},
+		{
+			"Name":"Plant Material Details",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Customer",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Machine",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Machine Plan Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Material",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Plant",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Plant Material",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_Plant Material Details Measure",
+			"Type":"String"
+		},
+		{
+			"Name":"}ElementAttributes_}Hierarchies_Machine",
+			"Type":"String"
+		},
+		{
+			"Name":"Predictive Forecast",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}
